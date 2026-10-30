@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Validate reviewed issues, AoE time eligibility, separate pending items and archives."""
-import json,re
+import json,re,hashlib
 from datetime import datetime,timedelta,timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -71,14 +71,27 @@ def validate_issue(j,item,source_ids,formal=True):
    assert isinstance(c.get('public_display'),bool)
  print(j['date'],len(j['papers']),'confirmed/legacy;',len(j.get('pending_papers',[])),'pending: PASS')
 def main():
- manifest=json.loads((R/'data/issues.json').read_text());cat=json.loads((R/'data/sources.json').read_text());source_ids={s['id'] for s in cat['sources'] if s.get('role')!='discovery_index'}
+ manifest=json.loads((R/'data/issues.json').read_text());cat=json.loads((R/'data/sources.json').read_text())
+ assert manifest['source_scope']=='arxiv_only' and cat['active_scope']=='arxiv_only'
+ assert [s['id'] for s in cat['sources']]==['arxiv'] and cat.get('discovery_indexes',[])==[]
  assert (manifest['latest'] in [i['date'] for i in manifest['issues']]) if manifest['issues'] else manifest['latest'] is None
  formal_ids={}
- for item in manifest['issues']+manifest.get('historical_trials',[]):
-  j=json.loads((R/item['path']).read_text());formal=item in manifest['issues'];validate_issue(j,item,source_ids,formal)
-  if formal:
-   for p in j['papers']:
-    assert p['id'] not in formal_ids,(p['id'],'repeated as new across formal days',formal_ids.get(p['id']))
-    formal_ids[p['id']]=j['date']
- print('Archive index, review, public-time and cross-day dedup PASS')
+ for item in manifest['issues']:
+  assert item['path'].startswith('data/arxiv/') and item['report'].startswith('reports/arxiv/')
+  j=json.loads((R/item['path']).read_text());assert j['source_scope']=='arxiv_only'
+  assert j['retrieval_log'].startswith('data/retrieval/arxiv/')
+  validate_issue(j,item,{'arxiv'},True)
+  for p in j['papers']+j.get('pending_papers',[]):
+   evidence=[p['url'],p['public_time_source']]+p['affiliation_sources']+p['evidence_urls']
+   evidence+=p.get('substantive_review',{}).get('content_urls',[])
+   if p.get('abstract_review'):evidence.append(p['abstract_review']['source_url'])
+   assert all(urlparse(u).hostname in ['arxiv.org','www.arxiv.org','rss.arxiv.org','info.arxiv.org'] for u in evidence),(p['id'],'research evidence must be arXiv official')
+  assert item['confirmed_count']==len(j['papers']) and item.get('pending_count',0)==len(j.get('pending_papers',[]))
+  for p in j['papers']:
+   assert p['id'] not in formal_ids,(p['id'],'repeated as new across days');formal_ids[p['id']]=j['date']
+ preserved=json.loads((R/'data/history/multisource-preservation.json').read_text())
+ for path,expected in preserved['sha256'].items():assert hashlib.sha256((R/path).read_bytes()).hexdigest()==expected,(path,'historical content changed')
+ seen=json.loads((R/manifest['active_seen']).read_text());assert seen['source_scope']=='arxiv_only'
+ assert set(formal_ids)<=set(r['id'] for r in seen['records'])
+ print('arXiv-only index, counts, review, time, dedup and historical preservation PASS')
 if __name__=='__main__':main()

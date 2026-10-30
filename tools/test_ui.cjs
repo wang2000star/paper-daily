@@ -1,29 +1,27 @@
 'use strict';
-// Dependency-free regression checks. Historical papers are rendering fixtures only;
-// they are never added to the formal index or given fabricated review evidence.
+// Dependency-free UI regression using actual reviewed arXiv content.
+// Temporary test states are never saved as research data.
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
 const root=path.join(__dirname,'..');
-const trial=JSON.parse(fs.readFileSync(path.join(root,'data/trials/2026-10-30.json')));
+const trial=JSON.parse(fs.readFileSync(path.join(root,'data/arxiv/2026-10-29.json')));
+const manifest=JSON.parse(fs.readFileSync(path.join(root,'data/issues.json')));
+const original=JSON.parse(fs.readFileSync(path.join(root,'data/issues/2026-10-29.json')));
+let response=trial;let fetchedPath='';
 const catalog=JSON.parse(fs.readFileSync(path.join(root,'data/sources.json')));
 const elements=new Map();
 function element(selector){if(!elements.has(selector))elements.set(selector,{value:'',innerHTML:'',textContent:'',hidden:false,addEventListener(){},querySelectorAll(){return []}});return elements.get(selector);}
 const panels=new Map();
-const context=vm.createContext({console,URL,URLSearchParams,location:{href:'https://example.test/',search:''},history:{replaceState(){}},window:{addEventListener(){}},document:{querySelector:element,getElementById:id=>panels.get(id)},fetch:async()=>({ok:true,json:async()=>structuredClone(trial)})});
+const context=vm.createContext({console,URL,URLSearchParams,location:{href:'https://example.test/',search:''},history:{replaceState(){}},window:{addEventListener(){}},document:{querySelector:element,getElementById:id=>panels.get(id)},fetch:async url=>{fetchedPath=url;return {ok:true,json:async()=>structuredClone(response)}}});
 let code=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
 assert.ok(code.endsWith('init();\n'),'test harness must suppress only the final initialization');
 code=code.slice(0,-'init();\n'.length);
-vm.runInContext(code+'\nglobalThis.api={sourceCounts,sourceCountLabel,renderSourceSummary,card,render,toggleSummary,overview,eligible,loadIssue,expandedPapers,setIssue:x=>issue=x,setSources:x=>sources=x};',context);
+vm.runInContext(code+'\nglobalThis.api={card,render,toggleSummary,overview,eligible,loadIssue,expandedPapers,setIssue:x=>issue=x,setSources:x=>sources=x,setRefs:x=>issueRefs=new Map(x.map(i=>[i.date,i]))};',context);
 const api=context.api;
-// Metadata-only fixtures verify overlapping confirmed/pending sources without paper claims.
-const rows=api.sourceCounts({papers:[{source:'arxiv'},{source:'arxiv'},{source:'eccc'}],pending_papers:[{source:'openai-research'},{source:'arxiv'}]});
-assert.equal(rows.filter(row=>row.confirmed>0).length,2,'pending-only sources do not inflate confirmed-source count');
-assert.equal(rows.filter(row=>row.confirmed===0&&row.pending>0).length,1);
-assert.equal(api.sourceCountLabel(rows.find(row=>row.id==='openai-research')),'确认 0 / 待核实 1');
-assert.equal(api.sourceCountLabel(rows.find(row=>row.id==='arxiv')),'确认 2 / 待核实 1');
-api.renderSourceSummary(rows);assert.match(element('#source-counts').innerHTML,/确认 0 \/ 待核实 1/);
+api.setRefs(manifest.issues);
+assert.ok(!code.includes("$('#source')")&&!code.includes('source-counts'),'obsolete source UI removed');
 api.setSources(Object.fromEntries(catalog.sources.map(s=>[s.id,s])));
 api.setIssue(trial);
 element('#issue-select').value=trial.date;
@@ -53,16 +51,16 @@ for(let i=0;i<4;i++){
 click(controls[0]);
 api.render();assert.match(element('#results').innerHTML,/aria-expanded="true"/);
 element('#search').value='no matching paper sentinel';api.render();assert.match(element('#results').innerHTML,/没有符合/);
-element('#search').value='';element('#source').value=paper.source;element('#domain').value=paper.domains[0];element('#subfield').value=paper.subfields[0];element('#depth').value=paper.reading_depth;api.render();
+element('#search').value='';element('#domain').value=paper.domains[0];element('#subfield').value=paper.subfields[0];element('#depth').value=paper.reading_depth;api.render();
 assert.ok(element('#results').innerHTML.includes(`id="${paper.id}"`));assert.match(element('#results').innerHTML,/aria-expanded="true"/);
-element('#group').value='source';api.render();assert.equal(element('#results-heading').textContent,'按来源浏览');
-for(const id of ['search','source','domain','subfield','depth','group'])element('#'+id).value='';api.render();
+assert.equal(element('#results-heading').textContent,'按领域浏览');
+for(const id of ['search','domain','subfield','depth'])element('#'+id).value='';api.render();
 assert.equal((element('#results').innerHTML.match(/class="paper-card"/g)||[]).length,trial.papers.length);
-assert.ok(!api.eligible(paper),'historical fixture must not acquire fabricated review eligibility');
+assert.ok(api.eligible(paper),'actual reviewed arxiv paper qualifies');
 // Pending entries remain a distinct filtered list and never inflate confirmed counts.
 api.setIssue({...trial,papers:trial.papers.slice(1),pending_papers:[{...paper,eligibility:'pending'}]});
 api.render();
-assert.match(element('#count').textContent,/22 \/ 22 篇确认新增/);
+assert.match(element('#count').textContent,/59 \/ 59 篇 arXiv 论文/);
 assert.match(element('#pending-count').textContent,/1 \/ 1 篇时间待核实/);
 assert.equal(element('#pending-section').hidden,false);
 assert.match(element('#pending-results').innerHTML,/时间待核实 · 不计入当日新增/);
@@ -72,4 +70,16 @@ assert.match(element('#pending-count').textContent,/0 \/ 1/);
 element('#search').value='';api.render();
 assert.match(element('#pending-results').innerHTML,/aria-expanded="true"/);
 
-(async()=>{await api.loadIssue(trial.date);assert.equal(api.expandedPapers.size,0,'date loading resets expansion');assert.match(element('#results').innerHTML,/没有符合/,'ineligible trial entries stay excluded');console.log('PASS: collapsed markup, full summary preservation, escaping, title/link separation, repeated synchronized toggles, filtering, grouping, clearing, state retention and date reset.');})().catch(e=>{console.error(e);process.exitCode=1;});
+(async()=>{
+ response={...trial,papers:[...trial.papers,original.papers.find(p=>p.source!=='arxiv')],pending_papers:original.pending_papers};
+ await api.loadIssue(trial.date);
+ assert.equal(fetchedPath,manifest.issues[0].path,'load indexed arxiv path, never hardcoded legacy path');
+ assert.equal(api.expandedPapers.size,0,'date loading resets expansion');
+ assert.equal((element('#results').innerHTML.match(/class="paper-card"/g)||[]).length,60,'non-arxiv data is defensively excluded');
+ assert.equal(element('#pending-section').hidden,true,'foreign pending entries cannot leak into current view');
+ assert.equal(element('#markdown-link').href,'reports/arxiv/2026-10-29.md');
+ assert.equal(element('#retrieval-link').href,'data/retrieval/arxiv/2026-10-29.json');
+ assert.match(element('#issue-meta').innerHTML,/60 篇 arXiv 论文/);
+ const before=fetchedPath;await api.loadIssue('1900-01-01');assert.equal(fetchedPath,before,'unknown dates are not fetched');assert.match(element('#results').innerHTML,/不在 arXiv 日报索引/);
+ console.log('PASS: arXiv-only60, indexed data/download paths, defensive scope guard, collapsed summaries, repeated toggles, escaping, filters/reset/state and unknown-date guard.');
+})().catch(e=>{console.error(e);process.exitCode=1;});

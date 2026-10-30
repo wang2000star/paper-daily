@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "window_start": "2026-10-29T12:00:00Z",
+  "window_end": "2026-10-30T12:00:00Z",
+  "generated_at": "2026-10-30T12:12:35Z",
+  "arxiv_inventory_provenance": {
+    "issue_aoe": "2026-10-29",
+    "window_utc": [
+      "2026-10-29T12:00:00Z",
+      "2026-10-30T12:00:00Z"
+    ],
+    "checked_at": "2026-10-30T12:12:10.634084+00:00",
+    "list_counts": {
+      "cs": {
+        "New submissions (showing 1306 of 1306 entries)": 1306,
+        "Cross submissions (showing 129 of 129 entries)": 129,
+        "Replacement submissions (showing first 565 of 755 entries)": 565
+      },
+      "math": {
+        "New submissions (showing 744 of 744 entries)": 744,
+        "Cross submissions (showing 128 of 128 entries)": 128,
+        "Replacement submissions (showing 475 of 475 entries)": 475
+      }
+    },
+    "unique_new_union": 1970,
+    "new_list_overlap": 80,
+    "selected_cs_ids": [
+      "arxiv-2610.37673",
+      "arxiv-2610.37676",
+      "arxiv-2610.37679",
+      "arxiv-2610.37720",
+      "arxiv-2610.37869",
+      "arxiv-2610.38054",
+      "arxiv-2610.38262",
+      "arxiv-2610.38355",
+      "arxiv-2610.38479",
+      "arxiv-2610.38602",
+      "arxiv-2610.38616",
+      "arxiv-2610.38789",
+      "arxiv-2610.39189",
+      "arxiv-2610.39374",
+      "arxiv-2610.39572",
+      "arxiv-2610.39753",
+      "arxiv-2610.39910",
+      "arxiv-2610.40012",
+      "arxiv-2610.40538",
+      "arxiv-2610.40591",
+      "arxiv-2610.40620",
+      "arxiv-2610.37701",
+      "arxiv-2610.37799",
+      "arxiv-2610.37818",
+      "arxiv-2610.37862",
+      "arxiv-2610.38004",
+      "arxiv-2610.38276"
+    ],
+    "reading_depth_counts": {
+      "partial": 9,
+      "abstract": 18
+    },
+    "rss_item_count": 2000,
+    "rss_type_counts": {
+      "new": 1306,
+      "cross": 135,
+      "replace": 559
+    },
+    "rss_lastBuildDate": "Fri, 30 Oct 2026 06:39:20 +0000",
+    "per_selected_item_pubDate": "Fri, 30 Oct 2026 00:00:00 -0400",
+    "public_time_interpretation": "RSS source-supplied new announcement batch timestamp; not independent per-item exact first availability; first submission time not used as publication event. Other platforms not exhaustively searched for prior publication.",
+    "coverage_limit": "Downloaded all CS/math new-list abstract inventory; semantically read and summarized only these 27 CS records; separate mathematics reading set. Full inventory is not evidence of semantic review. Replacements and cross-list sections excluded from new events.",
+    "public_sources": [
+      "https://arxiv.org/list/cs/new?skip=0&show=2000",
+      "https://arxiv.org/list/math/new?skip=0&show=2000",
+      "https://rss.arxiv.org/rss/cs",
+      "https://info.arxiv.org/help/availability.html"
+    ],
+    "manuscript_html_failures": [
+      {
+        "id": "2610.38602",
+        "status": "HTML获取未成功，原工具输出未完整保留；不据此判定网站不可访问",
+        "fallback": "complete abstract read; institutions unverified"
+      },
+      {
+        "id": "2610.39910",
+        "status": "HTTP404",
+        "fallback": "complete abstract read; institutions unverified"
+      }
+    ],
+    "redistribution": "Do not publish downloaded full manuscript HTML or TXT; publish original Chinese summaries and this metadata log only.",
+    "source_hashes": {
+      "cs.html": "9a16646737787acb799cf5930ff51b18eaf5b95d846654bf6be82931ebb2f51d",
+      "math.html": "22a573d44ee17748db75bd1536c8cd9435f9e67a5bcec8668a1513c710a1634a",
+      "cs.rss": "8c5a1d1bce35bbda070667d69feb45d3bb2a41cb1189ff360b915ff211728a4b",
+      "new_inventory.json": "30f8929d61405013b266f520e316b67df87b5e6f3ea98d80eef13683630599b4"
+    }
+  },
+  "source_scope": "arxiv_only",
+  "updated_at": "2026-10-30T14:45:00Z",
+  "scope_note": "仅整理 arXiv 的数学、计算机科学、网络与信息安全及密码学研究。本期 CS/数学新公告目录去重发现 1,970 项，实际完成 60 项完整摘要阅读，其中 15 项另读核心正文；其余目录条目未逐篇解读。这是选择性阅读日报，不是全量覆盖。当前 60 篇确认新增、0 篇时间待核实。",
+  "coverage": [
+    {
+      "source": "arxiv",
+      "name": "arXiv 数学新稿",
+      "url": "https://arxiv.org/list/math/new",
+      "status": "partial",
+      "scope": "完整取得 2026-10-30 数学列表 New submissions 744 条，其中 692 条主分类为 math.*；本数学来源检索实际阅读并原创总结 33 篇完整摘要。交叉列表和修订不计新稿。",
+      "note": "33 篇为分领域选择，不是数学新稿全量解读。未总结的数学主分类条目659篇；另52条非数学主分类由其他来源检索去重处理。27篇摘要级、6篇局部正文阅读并核对机构；未完成全证明审计。 数学HTML列表1347项，RSS共1349项（含不同公告类型），两个源的总数差异保留，不当作完全同一快照；33项均逐项核对RSS new标记与批次pubDate。",
+      "checked_at": "2026-10-30T12:10:00Z",
+      "entrypoints_checked": [
+        "https://arxiv.org/list/math/new",
+        "https://info.arxiv.org/help/availability.html",
+        "https://arxiv.org/abs/2610.38877",
+        "https://arxiv.org/abs/2610.37677",
+        "https://arxiv.org/abs/2610.37777",
+        "https://arxiv.org/abs/2610.37817",
+        "https://arxiv.org/abs/2610.37877",
+        "https://arxiv.org/abs/2610.37975",
+        "https://arxiv.org/abs/2610.38200",
+        "https://arxiv.org/abs/2610.38323",
+        "https://arxiv.org/abs/2610.38328",
+        "https://arxiv.org/abs/2610.38374",
+        "https://arxiv.org/abs/2610.38447",
+        "https://arxiv.org/abs/2610.39705",
+        "https://arxiv.org/abs/2610.39743",
+        "https://arxiv.org/abs/2610.39759",
+        "https://arxiv.org/abs/2610.39838",
+        "https://arxiv.org/abs/2610.39870",
+        "https://arxiv.org/abs/2610.39883",
+        "https://arxiv.org/abs/2610.39967",
+        "https://arxiv.org/abs/2610.40095",
+        "https://arxiv.org/abs/2610.40232",
+        "https://arxiv.org/abs/2610.40270",
+        "https://arxiv.org/abs/2610.40291",
+        "https://arxiv.org/abs/2610.40486",
+        "https://arxiv.org/abs/2610.40590",
+        "https://arxiv.org/abs/2610.40605",
+        "https://arxiv.org/abs/2610.37693",
+        "https://arxiv.org/abs/2610.37885",
+        "https://arxiv.org/abs/2610.37944",
+        "https://arxiv.org/abs/2610.38142",
+        "https://arxiv.org/abs/2610.39767",
+        "https://arxiv.org/abs/2610.40057",
+        "https://arxiv.org/abs/2610.40308",
+        "https://arxiv.org/abs/2610.40438",
+        "https://arxiv.org/html/2610.38877v1",
+        "https://arxiv.org/html/2610.38323v1",
+        "https://arxiv.org/html/2610.39870v1",
+        "https://arxiv.org/html/2610.40486v1",
+        "https://arxiv.org/html/2610.40590v1",
+        "https://arxiv.org/html/2610.39705v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "public_display": true,
+      "rss_last_build": "Fri, 30 Oct 2026 06:39:53 +0000",
+      "rss_total_items": 1349,
+      "id": "arxiv"
+    },
+    {
+      "source": "arxiv",
+      "name": "arXiv Computer Science 新公告批次",
+      "url": "https://arxiv.org/list/cs/new",
+      "status": "partial",
+      "scope": "完整获取 2026-10-30 新公告列表的全部 1306 条 New submissions；129 条 Cross submissions 与 755 条 replacements 不冒充新稿。按 New submissions 与 math 批次合并得到 1970 个唯一候选。CS 本轮实际逐条审阅并写中文总结 27 篇。",
+      "note": "这是有完整候选清单的有限审阅，不是全量论文总结；其余CS新稿未逐篇语义审阅。27篇覆盖程序语言/证明、理论算法、系统/数据库、安全/密码、AI评测、视觉、机器人、HCI、网络、检索与音频，不意味着各子领域完整。CS replacements仅抓到565/755条且不纳入新稿。时刻来自逐条核对RSS new批次pubDate，非submitted日期；原始列表与RSS保存到检索证据。",
+      "checked_at": "2026-10-30T12:11:30Z",
+      "entrypoints_checked": [
+        "https://arxiv.org/list/cs/new?skip=0&show=2000",
+        "https://arxiv.org/list/math/new?skip=0&show=2000",
+        "https://info.arxiv.org/help/availability.html",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "public_display": false,
+      "id": "arxiv"
+    }
+  ],
+  "inventory": {
+    "description": "arXiv CS/math New submissions metadata-only inventory, saved separately in 学术论文日报 Space; no full abstracts republished.",
+    "discovered_unique": 1970,
+    "formal_arxiv_summaries": 60
+  },
+  "derived_from": "data/retrieval/2026-10-29.json"
+}

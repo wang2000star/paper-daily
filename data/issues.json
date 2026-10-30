@@ -1,14 +1,14 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "latest": "2026-10-29",
   "issues": [
     {
       "date": "2026-10-29",
-      "kind": "选择性阅读日报",
-      "path": "data/issues/2026-10-29.json",
-      "report": "reports/2026-10-29.md",
-      "confirmed_count": 63,
-      "pending_count": 8
+      "kind": "arXiv 选择性阅读日报",
+      "path": "data/arxiv/2026-10-29.json",
+      "report": "reports/arxiv/2026-10-29.md",
+      "confirmed_count": 60,
+      "pending_count": 0
     }
   ],
   "timezone": "Etc/GMT+12",
@@ -22,6 +22,19 @@
       "kind": "历史试刊（非 AOE 日报，不计入日报统计）",
       "path": "data/trials/2026-10-30.json",
       "report": "reports/trials/2026-10-30.md"
+    }
+  ],
+  "source_scope": "arxiv_only",
+  "active_seen": "data/arxiv/seen.json",
+  "historical_catalog": "data/history/sources-multisource-2026-10-30.json",
+  "historical_multisource": [
+    {
+      "date": "2026-10-29",
+      "kind": "历史多来源版本（不计当前arXiv展示）",
+      "path": "data/issues/2026-10-29.json",
+      "report": "reports/2026-10-29.md",
+      "confirmed_count": 63,
+      "pending_count": 8
     }
   ]
 }

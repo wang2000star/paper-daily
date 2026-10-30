@@ -3,7 +3,7 @@ const $=s=>document.querySelector(s);
 const domainOrder=['数学','计算机科学','网络与信息安全','密码学'];
 const contentTypes={paper:'论文 / 预印本',research_blog:'研究博客',technical_report:'技术报告',research_code:'研究代码',model_release:'模型技术发布'};
 const timePrecisions={second:'来源秒级时间戳',minute:'来源分钟级时间戳',date:'仅日期',day:'仅日期',rss_batch_timestamp:'RSS 公告批次时间',scheduled_batch:'计划公告批次',unknown:'精度待核实'};
-let issue=null, sources={}, request=0;
+let issue=null, sources={}, issueRefs=new Map(), request=0;
 const expandedPapers=new Set();
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeURL=s=>{try{const u=new URL(s,location.href);return ['https:','http:'].includes(u.protocol)?esc(u.href):'#';}catch{return '#';}};
@@ -42,39 +42,45 @@ function toggleSummary(event){
  article.querySelectorAll('[data-paper-toggle]').forEach(control=>control.setAttribute('aria-expanded',String(expanded)));
  article.querySelector('.toggle-label').textContent=expanded?'收起总结':'展开总结';
 }
-function syncURL(){const q=new URLSearchParams();q.set('date',$('#issue-select').value);for(const id of ['source','domain','subfield','depth','group','search'])if($('#'+id).value)q.set(id,$('#'+id).value);history.replaceState(null,'','?'+q.toString());}
-function sourceCounts(data){
- const counts=new Map();
- for(const [key,entries] of [['confirmed',list(data.papers)],['pending',list(data.pending_papers)]])for(const p of entries){if(!counts.has(p.source))counts.set(p.source,{id:p.source,confirmed:0,pending:0});counts.get(p.source)[key]++;}
- return [...counts.values()].sort((a,b)=>b.confirmed-a.confirmed||b.pending-a.pending||a.id.localeCompare(b.id));
-}
-function sourceCountLabel(row){return `确认 ${row.confirmed}${row.pending?` / 待核实 ${row.pending}`:''}`;}
-function renderSourceSummary(rows){
- $('#source-summary').hidden=!rows.length;
- $('#source-counts').innerHTML=rows.map(row=>`<button type="button" data-source-filter="${esc(row.id)}" aria-pressed="false"><strong>${esc(sources[row.id]?.name||row.id)}</strong><span>${esc(sourceCountLabel(row))}</span></button>`).join('');
-}
-function selectSource(event){
- const button=event.target.closest('[data-source-filter]');if(!button)return;
- const id=button.getAttribute('data-source-filter');$('#source').value=$('#source').value===id?'':id;render();
-}
+function syncURL(){const q=new URLSearchParams();q.set('date',$('#issue-select').value);for(const id of ['domain','subfield','depth','search'])if($('#'+id).value)q.set(id,$('#'+id).value);history.replaceState(null,'','?'+q.toString());}
 function render(){
  if(!issue)return;
- $('#source-counts').querySelectorAll('[data-source-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.getAttribute('data-source-filter')===$('#source').value)));
  const q=$('#search').value.trim().toLowerCase();
- const matches=p=>(!$('#source').value||p.source===$('#source').value)&&(!$('#domain').value||list(p.domains).includes($('#domain').value))&&(!$('#subfield').value||list(p.subfields).includes($('#subfield').value))&&(!$('#depth').value||depth(p)===$('#depth').value)&&(!q||[p.title,p.title_zh,...list(p.authors),...list(p.subfields),p.problem,p.result].join(' ').toLowerCase().includes(q));
- const filtered=issue.papers.filter(matches), pending=list(issue.pending_papers).filter(matches);
- function sections(papers){const groups={};papers.forEach(p=>{const d=$('#group').value==='source'?p.source:($('#domain').value||p.domains[0]);(groups[d]??=[]).push(p);});return papers.length?($('#group').value==='source'?Object.keys(groups):domainOrder.filter(d=>groups[d])).map(d=>`<section aria-label="${esc(d)}"><h2 class="domain-heading">${esc(sources[d]?.name||d)} <small>${groups[d].length}</small></h2>${groups[d].map(card).join('')}</section>`).join(''):'<p class="empty">没有符合这些筛选条件的论文。请调整条件或清除筛选。</p>';}
- $('#results-heading').textContent=$('#group').value==='source'?'按来源浏览':'按领域浏览';
- $('#count').textContent=`显示 ${filtered.length} / ${issue.papers.length} 篇确认新增（去重后）`;
+ const matches=p=>(!$('#domain').value||list(p.domains).includes($('#domain').value))&&(!$('#subfield').value||list(p.subfields).includes($('#subfield').value))&&(!$('#depth').value||depth(p)===$('#depth').value)&&(!q||[p.title,p.title_zh,...list(p.authors),...list(p.subfields),p.problem,p.result].join(' ').toLowerCase().includes(q));
+ const filtered=issue.papers.filter(matches),pending=list(issue.pending_papers).filter(matches);
+ function sections(papers){const groups={};papers.forEach(p=>{const d=$('#domain').value||p.domains[0];(groups[d]??=[]).push(p);});return papers.length?domainOrder.filter(d=>groups[d]).map(d=>`<section aria-label="${esc(d)}"><h2 class="domain-heading">${esc(d)} <small>${groups[d].length}</small></h2>${groups[d].map(card).join('')}</section>`).join(''):'<p class="empty">没有符合这些筛选条件的论文。请调整条件或清除筛选。</p>';}
+ $('#results-heading').textContent='按领域浏览';
+ $('#count').textContent=`显示 ${filtered.length} / ${issue.papers.length} 篇 arXiv 论文（确认新增，去重后）`;
  $('#results').innerHTML=sections(filtered);
  $('#pending-section').hidden=!list(issue.pending_papers).length;
  $('#pending-count').textContent=`显示 ${pending.length} / ${list(issue.pending_papers).length} 篇时间待核实；不计入确认新增`;
- $('#pending-results').innerHTML=sections(pending);
- syncURL();
+ $('#pending-results').innerHTML=sections(pending);syncURL();
 }
-async function loadIssue(date,initial=false){const token=++request;$('#results').innerHTML='<p>正在读取日报…</p>';$('#source-summary').hidden=true;$('#pending-section').hidden=true;$('#pending-results').innerHTML='';try{const res=await fetch(`data/issues/${encodeURIComponent(date)}.json`);if(!res.ok)throw Error('日报文件暂时不可用');const data=await res.json();if(token!==request)return;issue=data;expandedPapers.clear();issue.papers=data.papers.filter(p=>eligible(p)&&p.eligibility==='confirmed');issue.pending_papers=list(data.pending_papers).filter(p=>eligible(p)&&p.eligibility==='pending');const allPapers=[...issue.papers,...issue.pending_papers], sourceRows=sourceCounts(issue);renderSourceSummary(sourceRows);$('#issue-editorial').textContent=issue.editorial_note||'';$('#issue-editorial').hidden=!issue.editorial_note;$('#issue-meta').innerHTML=`<span class="meta-pill">${esc(issue.date)}</span><span class="meta-pill">${issue.papers.length} 篇确认新增</span><span class="meta-pill">${issue.pending_papers.length} 篇时间待核实</span><span class="meta-pill">${sourceRows.filter(row=>row.confirmed>0).length} 个确认收录来源</span>${sourceRows.some(row=>row.confirmed===0&&row.pending>0)?`<span class="meta-pill">${sourceRows.filter(row=>row.confirmed===0&&row.pending>0).length} 个仅待核实来源</span>`:''}<span class="meta-pill">${esc(issue.window_label)}</span>`;const sourceIDs=sourceRows.map(row=>row.id);const old=$('#source').value;$('#source').innerHTML='<option value="">全部来源</option>'+sourceRows.map(row=>`<option value="${esc(row.id)}">${esc(sources[row.id]?.name||row.id)}（${esc(sourceCountLabel(row))}）</option>`).join('');if(sourceIDs.includes(old))$('#source').value=old;options($('#domain'),domainOrder.filter(d=>allPapers.some(p=>p.domains.includes(d))),'全部领域');options($('#subfield'),[...new Set(allPapers.flatMap(p=>list(p.subfields)))].sort((a,b)=>a.localeCompare(b,'zh')),'全部主题');$('#markdown-link').href=`reports/${date}.md`;$('#coverage-list').innerHTML=issue.coverage.filter(c=>c.public_display===true).map(c=>`<div class="coverage-item"><div><strong><a href="${safeURL(c.url)}">${esc(c.name)}</a></strong><span class="state">${esc(c.status)}</span></div><div><p>${esc(c.scope)}</p><p>${esc(c.note)}</p></div></div>`).join('');if(initial){const qs=new URLSearchParams(location.search);for(const id of ['source','domain','subfield','depth','group','search'])if(qs.has(id))$('#'+id).value=qs.get(id);}render();}catch(e){if(token===request){issue=null;$('#results').innerHTML=`<p class="error">${esc(e.message)}。请刷新重试，或通过 GitHub reports 目录阅读日报。</p>`;$('#count').textContent='加载失败';}}}
-async function init(){try{const [ir,sr]=await Promise.all([fetch('data/issues.json'),fetch('data/sources.json')]);if(!ir.ok||!sr.ok)throw Error('目录加载失败');const manifest=await ir.json(),catalog=await sr.json();sources=Object.fromEntries(catalog.sources.map(s=>[s.id,s]));$('#issue-select').innerHTML=manifest.issues.map(i=>`<option value="${esc(i.date)}">${esc(i.date)}${i.kind?' · '+esc(i.kind):''}</option>`).join('');if(!manifest.issues.length){$('#issue-select').innerHTML='<option>首份正式日报尚未发布</option>';$('.controls').hidden=true;$('#issue-meta').textContent='AOE（UTC−12）每日 24:00 更新 · 北京时间次日 20:00';$('#results-heading').textContent='等待首份正式日报';$('#count').textContent='正式日报 0 期；历史试刊不计入统计';$('#results').innerHTML='<p class="empty">首份计划于北京时间 2026-10-30 20:00 发布，归档日期为 AOE 2026-10-29；收录窗口为 UTC 10-29 12:00 至 10-30 12:00（左闭右开）。尚未完成的窗口不作为已完成日报发布。</p>';$('#coverage-list').textContent='首份正式日报发布后显示实际检索覆盖；当前没有正式日报覆盖声明。';$('#markdown-link').hidden=true;return;}const wanted=new URLSearchParams(location.search).get('date');$('#issue-select').value=manifest.issues.some(i=>i.date===wanted)?wanted:manifest.latest;await loadIssue($('#issue-select').value,true);}catch(e){$('#results').innerHTML=`<p class="error">${esc(e.message)}。请稍后刷新或查看 GitHub 归档。</p>`;$('#issue-meta').textContent='暂时无法读取日报';}}
-$('#source-counts').addEventListener('click',selectSource);
-$('#results').addEventListener('click',toggleSummary);
-$('#pending-results').addEventListener('click',toggleSummary);
-for(const id of ['source','domain','subfield','depth','group'])$('#'+id).addEventListener('change',render);$('#search').addEventListener('input',render);$('#issue-select').addEventListener('change',()=>loadIssue($('#issue-select').value));$('#reset').addEventListener('click',()=>{for(const id of ['source','domain','subfield','depth','group','search'])$('#'+id).value='';render();});window.addEventListener('popstate',()=>location.reload());init();
+async function loadIssue(date,initial=false){
+ const token=++request;$('#results').innerHTML='<p>正在读取日报…</p>';$('#pending-section').hidden=true;$('#pending-results').innerHTML='';
+ try{
+  const ref=issueRefs.get(date);if(!ref)throw Error('该日期不在 arXiv 日报索引中');
+  const res=await fetch(ref.path);if(!res.ok)throw Error('日报文件暂时不可用');const data=await res.json();if(token!==request)return;
+  if(data.source_scope!=='arxiv_only'||data.date!==date)throw Error('日报范围或日期不匹配');
+  issue={...data,papers:list(data.papers).filter(p=>p.source==='arxiv'&&eligible(p)&&p.eligibility==='confirmed'),pending_papers:list(data.pending_papers).filter(p=>p.source==='arxiv'&&eligible(p)&&p.eligibility==='pending')};expandedPapers.clear();
+  const allPapers=[...issue.papers,...issue.pending_papers];$('#issue-editorial').textContent=issue.editorial_note||'';$('#issue-editorial').hidden=!issue.editorial_note;
+  $('#issue-meta').innerHTML=`<span class="meta-pill">${esc(issue.date)}</span><span class="meta-pill">${issue.papers.length} 篇 arXiv 论文</span>${issue.pending_papers.length?`<span class="meta-pill">${issue.pending_papers.length} 篇时间待核实</span>`:''}<span class="meta-pill">${esc(issue.window_label)}</span>`;
+  options($('#domain'),domainOrder,'全部领域');options($('#subfield'),[...new Set(allPapers.flatMap(p=>list(p.subfields)))].sort((a,b)=>a.localeCompare(b,'zh')),'全部主题');
+  $('#markdown-link').href=ref.report;$('#retrieval-link').href=issue.retrieval_log;
+  $('#coverage-list').innerHTML=list(issue.coverage).filter(c=>c.id==='arxiv'&&c.public_display===true).map(c=>`<div class="coverage-item"><div><strong><a href="${safeURL(c.url)}">arXiv</a></strong><span class="state">${esc(c.status)}</span></div><div><p>${esc(c.scope)}</p><p>${esc(c.note)}</p></div></div>`).join('');
+  if(initial){const qs=new URLSearchParams(location.search);for(const id of ['domain','subfield','depth','search'])if(qs.has(id))$('#'+id).value=qs.get(id);}
+  render();
+ }catch(e){if(token===request){issue=null;$('#results').innerHTML=`<p class="error">${esc(e.message)}。请刷新重试，或通过 GitHub reports/arxiv 目录阅读日报。</p>`;$('#count').textContent='加载失败';}}
+}
+async function init(){
+ try{
+  const [ir,sr]=await Promise.all([fetch('data/issues.json'),fetch('data/sources.json')]);if(!ir.ok||!sr.ok)throw Error('目录加载失败');const manifest=await ir.json(),catalog=await sr.json();
+  if(manifest.source_scope!=='arxiv_only')throw Error('日报索引范围不匹配');
+  sources=Object.fromEntries(catalog.sources.filter(s=>s.id==='arxiv').map(s=>[s.id,s]));issueRefs=new Map(manifest.issues.map(i=>[i.date,i]));
+  $('#issue-select').innerHTML=manifest.issues.map(i=>`<option value="${esc(i.date)}">${esc(i.date)}${i.kind?' · '+esc(i.kind):''}</option>`).join('');
+  if(!manifest.issues.length){$('#issue-select').innerHTML='<option>暂无已发布日报</option>';$('.controls').hidden=true;$('#issue-meta').textContent='AOE（UTC−12）每日 24:00 更新 · 北京时间次日 20:00';$('#results').innerHTML='<p class="empty">暂无已结束窗口的 arXiv 日报。</p>';$('#markdown-link').hidden=true;$('#retrieval-link').hidden=true;return;}
+  const wanted=new URLSearchParams(location.search).get('date');$('#issue-select').value=issueRefs.has(wanted)?wanted:manifest.latest;await loadIssue($('#issue-select').value,true);
+ }catch(e){$('#results').innerHTML=`<p class="error">${esc(e.message)}。请稍后刷新或查看 GitHub 归档。</p>`;$('#issue-meta').textContent='暂时无法读取日报';}
+}
+$('#results').addEventListener('click',toggleSummary);$('#pending-results').addEventListener('click',toggleSummary);
+for(const id of ['domain','subfield','depth'])$('#'+id).addEventListener('change',render);$('#search').addEventListener('input',render);$('#issue-select').addEventListener('change',()=>loadIssue($('#issue-select').value));$('#reset').addEventListener('click',()=>{for(const id of ['domain','subfield','depth','search'])$('#'+id).value='';render();});window.addEventListener('popstate',()=>location.reload());init();
