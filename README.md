@@ -63,11 +63,12 @@
 
 历史试刊的稳定归档在 `data/trials/` 与 `reports/trials/`，避免与未来同名 AOE 日期冲突；原始旧路径暂留兼容，不作为正式索引。
 
-## 正式日报的实质审阅准入门槛
+## 正式日报的资料准入门槛（最新规则）
 
-- 无法取得并审阅正文或实质技术内容的作品，不进入正式日报；仅有标题、摘要、搜索片段不足以收录。历史试刊不受追溯重写，但不得转作正式日报条目。
-- 可使用合法的官方同版本全文替代入口；必须记录 URL 与版本对应证据。企业研究博客应实际读到方法、结果和条件；代码发布应实际阅读核心代码及技术说明。
-- 正式条目 reading_depth 仅可为 partial/full_review，且须提供 substantive_review：content_urls（实质内容URL）、scope（实际读过的章节/文件）、method_evidence、result_evidence、conditions_evidence（具体段落/定理/实验/代码位置及核到内容）。不得用空泛“已读”或摘要抄写填字段。
-- partial 仅表示已审阅核心内容，不等于通篇证明审计或实验复现。未覆盖步骤、条件和信任边界须在 limitations 中披露；full_review 同样不自动代表独立复现。
-- 正式日报生成与网页展示均拒绝 abstract-only / 不具上述实质证据的条目。访问失败写入独立检索记录或数据 coverage，不在日报正文占卡片、标题或“推荐阅读”位置。
-- 来源目录仍可保留待访问网站；目录收录不代表推荐某篇未经审阅的论文。
+- 优先获取并阅读全文；最低须取得可靠原始来源的标题及完整摘要，且确实阅读。仅标题、搜索片段或无法查看摘要的条目不收录。
+- 摘要级 reading_depth=abstract，显著标明“摘要级解读”。必须提供 abstract_review：source_url（原始完整摘要URL）、complete_abstract_accessed=true、read_confirmed=true、scope（实际阅读范围）。这些标记必须有真实访问与阅读依据，不得为通过验证而虚填。
+- 摘要不能支持的方法细节、参数、安全性或证明步骤写“摘要未披露/未核实”，不推测，不把作者主张当独立验证。
+- partial/full_review 须提供 substantive_review：content_urls、scope、method_evidence、result_evidence、conditions_evidence，说明实际阅读位置、内容与未覆盖范围。局部阅读不等于完整证明审计或实验复现。
+- 研究博客、技术报告、代码发布若没有规范摘要，可用原始页面实质研究概述代替，abstract_review.overview_kind 标 research_overview，说明来源类型与实际范围；营销描述不算研究概述。
+- 可使用合法官方同版本全文或完整摘要替代入口，记录URL和版本对应。无法达到最低标题+完整摘要/实质概述门槛者仅记入检索日志，不在日报占条目。
+- 历史试刊仍独立归档，不自动视为符合新准入门槛。作者机构、客观表述、AOE日界和跨来源去重规则不变。
