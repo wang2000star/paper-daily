@@ -16,6 +16,6 @@ for item in m['issues']+m.get('historical_trials',[]):
   for u in [x['url']]+x['evidence_urls']+x['affiliation_sources']:assert urlparse(u).scheme=='https' and urlparse(u).netloc
   for k in ['first_date','updated_date']:assert x[k] is None or re.fullmatch(r'\d{4}-\d{2}-\d{2}',x[k]),(x['id'],k,x[k])
   assert not any(t in json.dumps(x,ensure_ascii=False) for t in ['与你的研究','我的已有研究','我们研究路线'])
- assert (R/'reports'/f"{j['date']}.md").exists()
+ assert (R/item.get('report',f"reports/{j['date']}.md")).exists()
  print(j['date'],len(ids),'papers: schema, dates, URLs, dedup, editorial checks PASS')
 print('Archive index PASS')

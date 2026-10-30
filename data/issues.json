@@ -11,8 +11,8 @@
     {
       "date": "2026-10-30",
       "kind": "历史试刊（非 AOE 日报，不计入日报统计）",
-      "path": "data/issues/2026-10-30.json",
-      "report": "reports/2026-10-30.md"
+      "path": "data/trials/2026-10-30.json",
+      "report": "reports/trials/2026-10-30.md"
     }
   ]
 }
