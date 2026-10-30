@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "arxiv-2610.40625",
+      "url": "https://arxiv.org/abs/2610.40625",
+      "title": "Uniform Capacitated Clustering with Few Extra Centers",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.40620",
+      "url": "https://arxiv.org/abs/2610.40620",
+      "title": "Tessera: Fast Join-Aggregates over Skewed Sparse Relations in Database Engines",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.40613",
+      "url": "https://arxiv.org/abs/2610.40613",
+      "title": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.40590",
+      "url": "https://arxiv.org/abs/2610.40590",
+      "title": "An Adian-Rabin theorem for quantum automorphism groups of graphs",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.40622",
+      "url": "https://arxiv.org/abs/2610.40622",
+      "title": "The Number of Tropical Order Types and Coherent Matching Fields",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.40608",
+      "url": "https://arxiv.org/abs/2610.40608",
+      "title": "Improved Gradient Complexity for Quasi-Newton Proximal Extragradient Methods via Certified Curvature Reuse",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.40645",
+      "url": "https://arxiv.org/abs/2610.40645",
+      "title": "JT gravity as a conformal scaling limit of random flat combinatorial disks",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.40553",
+      "url": "https://arxiv.org/abs/2610.40553",
+      "title": "Nonuniqueness of the 2D Euler Evolutions with L¹∩Lᵖ Vorticity",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.40562",
+      "url": "https://arxiv.org/abs/2610.40562",
+      "title": "Nearly-Optimal Time-Sample Trade-off in Consensus Dynamics",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.37634",
+      "url": "https://arxiv.org/abs/2610.37634",
+      "title": "UPP^cc is Not Closed Under Intersection",
+      "version": "v1",
+      "updated_date": "2026-10-27",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.39999",
+      "url": "https://arxiv.org/abs/2610.39999",
+      "title": "PhOSv1: Efficient Scaling of Model Sleeping on a Single Server for Autoscaling with GPU-Context Deduplication",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "arxiv-2610.40521",
+      "url": "https://arxiv.org/abs/2610.40521",
+      "title": "Directed Cut-Query Complexity of Finding a King",
+      "version": "v1",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "iacr-2026-2667",
+      "url": "https://eprint.iacr.org/2026/2667",
+      "title": "Faster complete formulas and their application to curves with efficient endomorphisms",
+      "version": "未核具体序号",
+      "updated_date": null,
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "iacr-2026-2666",
+      "url": "https://eprint.iacr.org/2026/2666",
+      "title": "Efficient SIMD SHAKE through Cost-Aware Permutation Scheduling",
+      "version": "未核具体序号",
+      "updated_date": null,
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "iacr-2026-2665",
+      "url": "https://eprint.iacr.org/2026/2665",
+      "title": "Shor's algorithm compiled on cat qubits: 22 593 qubits for RSA-2048 in 3.14 days",
+      "version": "未核具体序号",
+      "updated_date": null,
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "iacr-2026-2664",
+      "url": "https://eprint.iacr.org/2026/2664",
+      "title": "Rerandomizable Garbling Beyond BHHO-KMHE and a Construction from LWE",
+      "version": "未核具体序号",
+      "updated_date": null,
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "iacr-2026-2658",
+      "url": "https://eprint.iacr.org/2026/2658",
+      "title": "Unshuffling Fisher-Yates: Practical Recovery of Length-128 Permutations and Application to ML-DSA",
+      "version": "未核具体序号",
+      "updated_date": null,
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "iacr-2026-2660",
+      "url": "https://eprint.iacr.org/2026/2660",
+      "title": "Towards Quantum Sensing for Side-Channel Analysis",
+      "version": "未核具体序号",
+      "updated_date": null,
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "iacr-2026-2669",
+      "url": "https://eprint.iacr.org/2026/2669",
+      "title": "PIR through the Lens of Probabilistic Inference",
+      "version": "未核具体序号",
+      "updated_date": null,
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "iacr-2026-2670",
+      "url": "https://eprint.iacr.org/2026/2670",
+      "title": "Barriers to Identity-Based Encryption in Generic Group-Action Models",
+      "version": "未核具体序号",
+      "updated_date": null,
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "eccc-TR26-287",
+      "url": "https://eccc.weizmann.ac.il/report/2026/287/",
+      "title": "Extending OpenAI's cubic lower bound for the permanent to odd characteristic, Pfaffian representations, and polynomial entries",
+      "version": "ECCC TR26-287，论文标注 2026-10-28",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "eccc-TR26-286",
+      "url": "https://eccc.weizmann.ac.il/report/2026/286/",
+      "title": "On the complexities of Interactive Proofs of Proximity",
+      "version": "ECCC TR26-286，论文标注 2026-10-29",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    },
+    {
+      "id": "eccc-TR26-285",
+      "url": "https://eccc.weizmann.ac.il/report/2026/285/",
+      "title": "Parallel Repetition for k-Player XOR Games",
+      "version": "ECCC TR26-285；平台 Publication 2026-10-29",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-30"
+    }
+  ]
+}

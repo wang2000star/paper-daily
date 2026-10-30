@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-30",
+  "sources": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "kind": "预印本",
+      "url": "https://arxiv.org/",
+      "domains": [
+        "数学",
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "entrypoints": [
+        "https://arxiv.org/list/math/recent",
+        "https://arxiv.org/list/cs/recent",
+        "https://arxiv.org/list/cs.CR/recent"
+      ],
+      "policy": "跟踪新稿与修订；核对 submitted、announced、版本号。按稳定arXiv编号合并跨分类。"
+    },
+    {
+      "id": "eprint",
+      "name": "IACR ePrint",
+      "kind": "密码学预印本",
+      "url": "https://eprint.iacr.org/",
+      "domains": [
+        "密码学",
+        "网络与信息安全"
+      ],
+      "entrypoints": [
+        "https://eprint.iacr.org/days/7",
+        "https://eprint.iacr.org/2026/"
+      ],
+      "policy": "更新列表包括旧稿；分别保留首次收稿和最后修订，不把更新计为首次发表。"
+    },
+    {
+      "id": "eccc",
+      "name": "ECCC",
+      "kind": "理论计算机技术报告",
+      "url": "https://eccc.weizmann.ac.il/",
+      "domains": [
+        "计算机科学",
+        "数学"
+      ],
+      "entrypoints": [
+        "https://eccc.weizmann.ac.il/"
+      ],
+      "policy": "记录报告号、页面登记与Publication日期；未有同行评审证据时不标正式发表。"
+    },
+    {
+      "id": "drops",
+      "name": "DROPS / LIPIcs",
+      "kind": "开放会议论文集",
+      "url": "https://drops.dagstuhl.de/entities/series/LIPIcs",
+      "domains": [
+        "计算机科学",
+        "密码学"
+      ],
+      "entrypoints": [
+        "https://drops.dagstuhl.de/entities/series/LIPIcs"
+      ],
+      "policy": "核对卷和单篇正式出版日期；会议举办日期不替代出版日期。"
+    },
+    {
+      "id": "tosc",
+      "name": "IACR ToSC / FSE",
+      "kind": "期刊与会议",
+      "url": "https://tosc.iacr.org/",
+      "domains": [
+        "密码学"
+      ],
+      "entrypoints": [
+        "https://tosc.iacr.org/"
+      ],
+      "policy": "关注对称密码、密码分析及实现；遇访问限制如实记缺口。"
+    },
+    {
+      "id": "tches",
+      "name": "IACR TCHES / CHES",
+      "kind": "期刊与会议",
+      "url": "https://tches.iacr.org/",
+      "domains": [
+        "密码学",
+        "网络与信息安全"
+      ],
+      "entrypoints": [
+        "https://tches.iacr.org/"
+      ],
+      "policy": "关注硬件实现、侧信道与故障攻击；不能以ePrint收录推断录用。"
+    },
+    {
+      "id": "iacr-conferences",
+      "name": "IACR 会议",
+      "kind": "正式会议",
+      "url": "https://www.iacr.org/",
+      "domains": [
+        "密码学"
+      ],
+      "entrypoints": [
+        "https://www.iacr.org/conferences/"
+      ],
+      "policy": "CRYPTO/EUROCRYPT/ASIACRYPT/TCC等以官方program/proceedings核对录用，按实际更新记日报。"
+    },
+    {
+      "id": "pets",
+      "name": "PoPETs / PETS",
+      "kind": "隐私研究期刊与会议",
+      "url": "https://petsymposium.org/popets/",
+      "domains": [
+        "网络与信息安全",
+        "密码学"
+      ],
+      "entrypoints": [
+        "https://petsymposium.org/popets/2026/"
+      ],
+      "policy": "按官方卷期出版日期，不将旧卷重新访问视作新增。"
+    },
+    {
+      "id": "usenix",
+      "name": "USENIX Security",
+      "kind": "正式安全会议",
+      "url": "https://www.usenix.org/conferences",
+      "domains": [
+        "网络与信息安全"
+      ],
+      "entrypoints": [
+        "https://www.usenix.org/conferences"
+      ],
+      "policy": "官方会议技术日程和开放论文；论文录用与公开日期分开。"
+    },
+    {
+      "id": "ieee-sp",
+      "name": "IEEE S&P",
+      "kind": "正式安全会议",
+      "url": "https://www.ieee-security.org/",
+      "domains": [
+        "网络与信息安全"
+      ],
+      "entrypoints": [
+        "https://www.ieee-security.org/"
+      ],
+      "policy": "查官方accepted papers及原文；拒绝仅以二手新闻作研究结论。"
+    },
+    {
+      "id": "ndss",
+      "name": "NDSS",
+      "kind": "正式安全会议",
+      "url": "https://www.ndss-symposium.org/",
+      "domains": [
+        "网络与信息安全"
+      ],
+      "entrypoints": [
+        "https://www.ndss-symposium.org/"
+      ],
+      "policy": "查官方论文页、DOI和技术内容，按新公开或修订日期记录。"
+    },
+    {
+      "id": "acm",
+      "name": "ACM Digital Library / CCS / STOC",
+      "kind": "正式出版与会议",
+      "url": "https://dl.acm.org/",
+      "domains": [
+        "计算机科学",
+        "网络与信息安全"
+      ],
+      "entrypoints": [
+        "https://dl.acm.org/"
+      ],
+      "policy": "付费全文不可得时明确仅摘要，不能声称全文审读。"
+    },
+    {
+      "id": "dblp",
+      "name": "DBLP",
+      "kind": "辅助文献索引",
+      "url": "https://dblp.org/",
+      "domains": [
+        "计算机科学",
+        "密码学",
+        "网络与信息安全"
+      ],
+      "entrypoints": [
+        "https://dblp.org/"
+      ],
+      "policy": "用于同名辨认、DOI与跨来源去重，不单独充当最新论文或结论来源。"
+    }
+  ]
+}

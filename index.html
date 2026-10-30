@@ -1,35 +1,9 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Paper Daily：关注数学、计算机科学、网络与信息安全及密码学的论文阅读与研究动态。">
-<title>Paper Daily · 论文与研究动态</title>
-<style>
-:root{color-scheme:light dark;--bg:#f5f7fb;--fg:#18243b;--muted:#526078;--card:#fff;--line:#dbe2ee;--accent:#235ac7}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif}
-main{max-width:960px;margin:auto;padding:64px 24px}header{padding:24px 0 36px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em}
-h1{font-size:clamp(2.4rem,7vw,4rem);line-height:1.15;margin:14px 0}h2{font-size:1.25rem;margin:0 0 12px}
-p{margin:12px 0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
-.status{margin:24px 0}.tag{display:inline-block;padding:4px 12px;border:1px solid var(--line);border-radius:99px;margin:4px 6px 4px 0;font-size:.9rem}
-a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
-ul{padding-left:22px}footer{margin-top:32px;color:var(--muted);font-size:.88rem}
-@media(max-width:600px){main{padding:32px 18px}.grid{grid-template-columns:1fr}}
-@media(prefers-color-scheme:dark){:root{--bg:#111827;--fg:#e5eaf4;--muted:#b4bfd2;--card:#1b2537;--line:#344259;--accent:#99bbff}}
-</style>
-</head>
-<body>
-<main>
-<header><div class="eyebrow">PAPER DAILY</div><h1>论文与研究动态</h1>
-<p>聚焦数学、计算机科学、网络与信息安全、密码学，回到原始论文理解方法、结果与局限。</p>
-<div aria-label="关注领域"><span class="tag">数学</span><span class="tag">计算机科学</span><span class="tag">网络与信息安全</span><span class="tag">密码学</span></div></header>
-<section class="status"><h2>网站初始化</h2><p>首页已准备。本页目前是建站占位页，尚未发布论文摘要，也尚未配置自动更新。</p></section>
-<div class="grid">
-<section><h2>论文入口</h2><ul><li><a href="https://arxiv.org/">arXiv 预印本</a></li><li><a href="https://eprint.iacr.org/">IACR Cryptology ePrint Archive</a></li><li><a href="https://dblp.org/">DBLP 文献索引</a></li></ul></section>
-<section><h2>阅读原则</h2><p>区分预印本与正式发表，注明论文版本与原始来源。作者的结论不等于本站已独立验证的结论。</p></section>
-</div>
-<footer><a href="https://github.com/wang2000star/paper-daily">查看网站源码</a> · Paper Daily</footer>
-</main>
-</body>
-</html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="按来源与领域分类的客观学术论文日报：数学、计算机科学、网络与信息安全、密码学。"><title>Paper Daily · 学术论文日报</title><link rel="stylesheet" href="assets/style.css"><script src="assets/app.js" defer></script></head>
+<body><a class="skip" href="#results">跳到论文列表</a><header class="masthead"><div class="shell"><a class="brand" href="./">PAPER<span>DAILY</span></a><nav aria-label="主要导航"><a href="#results">论文</a><a href="#coverage">来源与覆盖</a><a href="#about">编选说明</a><a href="https://github.com/wang2000star/paper-daily">GitHub</a></nav></div></header>
+<main class="shell"><section class="hero"><p class="kicker">学术论文日报 · PUBLIC RESEARCH DIGEST</p><h1>从论文出发，<br>看见研究的进展。</h1><p class="lede">数学、计算机科学、网络与信息安全、密码学。独立按来源与领域筛选，保留原文、版本、条件和验证边界。</p><div id="issue-meta" class="issue-meta">正在读取日报…</div></section>
+<section class="controls" aria-label="筛选论文"><div class="control-row"><label>日报日期<select id="issue-select" aria-label="选择日报日期"></select></label><label class="search-label">搜索论文<input id="search" type="search" placeholder="标题、作者、主题或关键字" autocomplete="off"></label><button id="reset" type="button">清除筛选</button></div><div class="control-row"><label>论文来源<select id="source"><option value="">全部来源</option></select></label><label>一级领域<select id="domain"><option value="">全部领域</option></select></label><label>细分主题<select id="subfield"><option value="">全部主题</option></select></label><label>分组方式<select id="group"><option value="">按领域</option><option value="source">按来源</option></select></label><label>阅读深度<select id="depth"><option value="">全部深度</option><option value="abstract">摘要与元数据</option><option value="partial">正文局部阅读</option></select></label></div></section>
+<div class="list-heading"><div><p class="kicker">本期论文</p><h2 id="results-heading">按领域浏览</h2></div><p id="count" role="status" aria-live="polite"></p></div><div id="results" tabindex="-1"><p>正在加载。若网络不可用，可在 GitHub 的 reports 目录查看 Markdown 日报。</p></div>
+<section id="coverage" class="panel"><div class="section-heading"><p class="kicker">透明的检索范围</p><h2>来源与覆盖</h2></div><p>“尚未确认新增”与“无法完整访问”分开记录。以下是本期实际覆盖，不代表相应领域的全部论文。</p><div id="coverage-list"></div></section>
+<section id="about" class="panel"><p class="kicker">编辑说明</p><h2>如何阅读这份日报</h2><div class="about-grid"><div><h3>来源 ≠ 领域</h3><p>arXiv、IACR ePrint、ECCC 是发布来源；算法、密码分析、数论等是研究主题。一篇论文可以属于多个领域，但只保留一个条目。</p></div><div><h3>摘要 ≠ 证明复核</h3><p>每条标明阅读深度。结果是作者报告的主张，除非条目明确另述，不表示独立复现、证明审计或安全背书。</p></div><div><h3>新稿 ≠ 新版本</h3><p>首次日期、更新日期、公告日期与日报日期分别保存。后续修订以同一论文身份关联，不重复当作新成果。</p></div><div><h3>可追溯的日报</h3><p>保存日期归档、结构化数据和中文 Markdown。每天增量检索；无可靠新增时明确说明，不用旧论文凑数。</p></div></div><p><a id="markdown-link" href="reports/2026-10-30.md">下载本期 Markdown</a> · <a href="data/sources.json">来源目录</a> · <a href="README.md">数据与更新规范</a></p></section>
+</main><footer class="shell footer">Paper Daily · 仅整理公开学术资料，不转载论文全文。<span>原文版权属于作者与出版方。</span></footer><noscript><p class="shell">请启用 JavaScript 使用筛选；也可阅读 <a href="reports/2026-10-30.md">Markdown 日报</a>。</p></noscript></body></html>

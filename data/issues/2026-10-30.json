@@ -1,0 +1,1346 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "kind": "重建首期",
+  "generated_at": "2026-10-30T08:52:00Z",
+  "timezone": "Asia/Shanghai",
+  "window_start": "2026-10-23T00:00:00Z",
+  "window_end": "2026-10-30T08:52:00Z",
+  "window_label": "首期回看 10.23–10.30 · 非全量",
+  "editorial_note": "客观公开学术日报；仅公开资料，独立按来源和领域分类。首次建立基线，后续按源增量更新。",
+  "coverage": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "url": "https://arxiv.org/list/cs/recent",
+      "status": "已检索并收录12篇",
+      "scope": "math、cs及cs.CR近期公告；本期主要核到10月30日公告、10月29日提交的新稿，另含10月27日稿。",
+      "note": "定向筛选而非七天全量；逐篇核版本，2篇局部正文，其余摘要级；署名机构另查官方HTML/PDF首页。"
+    },
+    {
+      "id": "eprint",
+      "name": "IACR ePrint",
+      "url": "https://eprint.iacr.org/days/7",
+      "status": "已检索并收录8篇",
+      "scope": "七天更新列表134条（含旧稿修订），年度新稿列表；所选首次收稿10月27–28日，更新列表已到10月30日。",
+      "note": "未逐条精读134条，也未完成全部修订差异核对；所选8篇为摘要级。版本历史与尝试的PDF访问403，具体版本序号未确认。"
+    },
+    {
+      "id": "eccc",
+      "name": "ECCC",
+      "url": "https://eccc.weizmann.ac.il/",
+      "status": "已检索并收录3篇",
+      "scope": "首页最新报告TR26-285至287，平台Publication日期10月29日；另读3篇PDF的定义或主定理部分。",
+      "note": "TR26-285登记日期为10月21日，不算10月29日首次提交；正文只局部阅读，未完整证明审计。"
+    },
+    {
+      "id": "drops",
+      "name": "DROPS / LIPIcs",
+      "url": "https://drops.dagstuhl.de/entities/series/LIPIcs",
+      "status": "本期未确认窗口内新增",
+      "scope": "查LIPIcs系列最新卷与AFT 2026卷元数据，后者出版于10月2日。",
+      "note": "未遍历全部DROPS系列及单篇更新，不把旧卷作为本周新稿，也不宣称平台没有新论文。"
+    },
+    {
+      "id": "tosc",
+      "name": "IACR ToSC / FSE",
+      "url": "https://tosc.iacr.org/",
+      "status": "访问受限",
+      "scope": "访问官方期刊入口遭Anubis限制。",
+      "note": "未完成当前卷期与新稿核对；不能根据此次访问推断没有新增。"
+    },
+    {
+      "id": "tches",
+      "name": "IACR TCHES / CHES",
+      "url": "https://tches.iacr.org/",
+      "status": "访问受限",
+      "scope": "访问官方期刊入口遭Anubis限制。",
+      "note": "未完成当前卷期与新稿核对；ePrint收录不等于TCHES录用。"
+    },
+    {
+      "id": "pets",
+      "name": "PoPETs / PETS",
+      "url": "https://petsymposium.org/popets/2026/",
+      "status": "本期未确认窗口内新增",
+      "scope": "查官方2026卷期页。",
+      "note": "未找到能确认10月23–30日新发表的证据，未以旧卷补数。"
+    },
+    {
+      "id": "other-venues",
+      "name": "其他正式会议与期刊",
+      "url": "https://dblp.org/",
+      "status": "已建来源目录，本期未完整检索",
+      "scope": "USENIX Security、IEEE S&P、NDSS、ACM CCS/STOC与IACR会议纳入持续来源目录。",
+      "note": "本期不声称已覆盖这些来源的新论文。DBLP仅辅助索引和去重；后续按源独立推进检索截止日期。"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2610.40625",
+      "title": "Uniform Capacitated Clustering with Few Extra Centers",
+      "authors": [
+        "Kangke Cheng",
+        "Guanlin Mo",
+        "Hu Ding"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "cs.CG",
+        "cs.DS"
+      ],
+      "url": "https://arxiv.org/abs/2610.40625",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "少量额外中心下的统一容量聚类",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "算法与计算几何"
+      ],
+      "problem": "统一容量聚类中，如何只增加少量中心而严格满足每个中心容量？",
+      "result": "允许增加floor(εk)个中心；在有界倍增维客户端的欧氏空间，给出k-median的3−2ε+δ、k-means的5−4ε+δ近似比。一般度量k-median也改善此前对ε的依赖。",
+      "method": "rescue lemma将无容量解切成至多2k−1个容量块，再利用额外中心节省绕行代价。",
+      "limitations": "近似比依赖空间结构及是否允许同址中心；不是原始恰好k中心问题的同等保证。未审读证明。",
+      "reading_depth": "abstract",
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40625"
+      ],
+      "author_institutions": [
+        "Kangke Cheng：中国科学技术大学",
+        "Guanlin Mo：中国科学技术大学",
+        "Hu Ding：中国科学技术大学"
+      ],
+      "author_intro": "Kangke Cheng、Guanlin Mo和Hu Ding均署名中国科学技术大学；本研究聚焦容量聚类与近似算法。",
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2610.40625"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.40620",
+      "title": "Tessera: Fast Join-Aggregates over Skewed Sparse Relations in Database Engines",
+      "authors": [
+        "Gyuyeong Kim"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "cs.DB"
+      ],
+      "url": "https://arxiv.org/abs/2610.40620",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "Tessera：倾斜稀疏关系上的快速连接聚合",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "数据库系统"
+      ],
+      "problem": "稀疏且倾斜的数据执行连接聚合时，中间连接结果和无效矩阵元素造成巨大开销。",
+      "result": "作者报告较其测试中最快现有系统加速2.8–18.8倍，相对DuckDB执行计划最高1802倍。",
+      "method": "直接在数据库行上做稀疏矩阵乘法，仅输出非零项；预剪枝不满足阈值的值，并将足够稠密的高频块交给CPU矩阵加速器。",
+      "limitations": "速度来自作者测试，不可视为普遍保证；尚未核对数据集、硬件、公平基线及端到端代价。",
+      "reading_depth": "abstract",
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40620"
+      ],
+      "author_institutions": [
+        "Gyuyeong Kim：延世大学"
+      ],
+      "author_intro": "Gyuyeong Kim署名韩国延世大学；本文研究数据库连接聚合与稀疏矩阵执行。",
+      "affiliation_sources": [
+        "https://arxiv.org/html/2610.40620v1"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.40613",
+      "title": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
+      "authors": [
+        "Tom Sander",
+        "Pierre Fernandez",
+        "Itai Gat",
+        "Haiming Bao",
+        "Jiaxin Shi",
+        "Jason Park",
+        "Valeriu Lacatusu",
+        "Sylvestre-Alvise Rebuffi",
+        "Hongyan Chang",
+        "Hady Elsahar",
+        "Tomáš Souček",
+        "Tuan Tran",
+        "Surya Parimi",
+        "Alexandre Mourachko"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "url": "https://arxiv.org/abs/2610.40613",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "TextSeal2：兼容推测解码的无失真语言模型水印",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "网络与信息安全",
+        "计算机科学"
+      ],
+      "subfields": [
+        "安全与文本水印"
+      ],
+      "problem": "如何让无分布失真水印兼容推测解码，同时保留多样性和检测信号？",
+      "result": "三种LLM实验中，在10⁻³误报率、相同多样性下，100-token回答检出率较TextSeal提高8–22个百分点；作者称推测解码接受率不变。",
+      "method": "多密钥合成虚拟密钥，以Gaussian copula耦合新噪声；利用指数竞赛无记忆性验证草稿。",
+      "limitations": "实验只覆盖三种模型；摘要不能支持对改写攻击、部署场景或所有延迟配置的普遍结论。",
+      "reading_depth": "abstract",
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40613"
+      ],
+      "author_institutions": [
+        "Tom Sander：Meta Superintelligence Labs",
+        "Pierre Fernandez：Meta Superintelligence Labs",
+        "Itai Gat：Meta Superintelligence Labs",
+        "Haiming Bao：Meta Superintelligence Labs",
+        "Jiaxin Shi：Meta Superintelligence Labs",
+        "Jason Park：Meta Superintelligence Labs",
+        "Valeriu Lacatusu：Meta Superintelligence Labs",
+        "Sylvestre-Alvise Rebuffi：Meta Superintelligence Labs",
+        "Hongyan Chang：Meta Superintelligence Labs",
+        "Hady Elsahar：Meta Superintelligence Labs",
+        "Tomáš Souček：Meta Superintelligence Labs",
+        "Tuan Tran：Meta Superintelligence Labs",
+        "Surya Parimi：Meta Superintelligence Labs",
+        "Alexandre Mourachko：Meta Superintelligence Labs"
+      ],
+      "author_intro": "Tom Sander、Pierre Fernandez等14位作者均署名Meta Superintelligence Labs；本研究聚焦语言模型水印与推测解码。",
+      "affiliation_sources": [
+        "https://arxiv.org/html/2610.40613v1"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.40590",
+      "title": "An Adian-Rabin theorem for quantum automorphism groups of graphs",
+      "authors": [
+        "Josse van Dobben de Bruyn",
+        "William Slofstra"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "math.QA",
+        "math.CO",
+        "math.GR",
+        "math.OA"
+      ],
+      "url": "https://arxiv.org/abs/2610.40590",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "图量子自同构群的Adian–Rabin型定理",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "数学"
+      ],
+      "subfields": [
+        "量子代数与不可判定性"
+      ],
+      "problem": "能否算法判定有限图是否拥有非经典量子对称？",
+      "result": "作者证明图的量子自同构群满足Adian–Rabin型定理；包括是否具有量子对称、离散量子自同构群是否非平凡等性质不可判定。",
+      "method": "以线性系统非局域博弈的solution groups为桥梁，并在该语境证明相应定理。",
+      "limitations": "这是一般输入的不可判定性，不意味着特殊图族或有限规模实例都无法处理；证明尚未独立核验。",
+      "reading_depth": "abstract",
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40590"
+      ],
+      "author_institutions": [
+        "Josse van Dobben de Bruyn：查理大学应用数学系",
+        "William Slofstra：滑铁卢大学纯数学系、量子计算研究所"
+      ],
+      "author_intro": "Josse van Dobben de Bruyn署名查理大学应用数学系，William Slofstra署名滑铁卢大学纯数学系及量子计算研究所；本文连接量子群、图论与不可判定性。",
+      "affiliation_sources": [
+        "https://arxiv.org/html/2610.40590v1"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.40622",
+      "title": "The Number of Tropical Order Types and Coherent Matching Fields",
+      "authors": [
+        "Xavier Allamigeon",
+        "Yiyuan Chen",
+        "Stéphane Gaubert",
+        "Xavier Goaoc"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "math.CO",
+        "math.AG",
+        "math.OC"
+      ],
+      "url": "https://arxiv.org/abs/2610.40622",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "热带序型与相干匹配场的计数",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "数学"
+      ],
+      "subfields": [
+        "组合数学与热带几何"
+      ],
+      "problem": "热带几何离散结构有多少种，它们如何衡量线性规划与平均收益博弈的表达能力？",
+      "result": "固定r、n趋于无穷时，相关结构及单纯形乘积正则三角剖分数量为n^((r−1)²n+o(n))；作者称回答Santos问题，并比较实数/带符号热带序型的一阶数量。",
+      "method": "为相干匹配场建立上界、为热带超平面序列组合类型建立下界，并分析双重热带化。",
+      "limitations": "渐近结论固定r；不能直接外推到维数同时增长的情形，计数表达能力也不是求解时间等价。",
+      "reading_depth": "abstract",
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40622"
+      ],
+      "author_institutions": [
+        "Xavier Allamigeon：CMAP，巴黎综合理工学院及INRIA Saclay",
+        "Yiyuan Chen：CMAP，巴黎综合理工学院及INRIA Saclay",
+        "Stéphane Gaubert：CMAP，巴黎综合理工学院及INRIA Saclay",
+        "Xavier Goaoc：LORIA，洛林大学及INRIA Nancy"
+      ],
+      "author_intro": "Xavier Allamigeon、Yiyuan Chen和Stéphane Gaubert署名CMAP、巴黎综合理工学院及INRIA Saclay，Xavier Goaoc署名LORIA、洛林大学及INRIA Nancy；本文研究热带组合几何。",
+      "affiliation_sources": [
+        "https://arxiv.org/html/2610.40622v1"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.40608",
+      "title": "Improved Gradient Complexity for Quasi-Newton Proximal Extragradient Methods via Certified Curvature Reuse",
+      "authors": [
+        "Aryan Mokhtari",
+        "Francisco Patitucci"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "math.OC"
+      ],
+      "url": "https://arxiv.org/abs/2610.40608",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "通过可认证曲率复用改进拟牛顿近端外梯度法",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "数学"
+      ],
+      "subfields": [
+        "连续优化与复杂度"
+      ],
+      "problem": "如何复用旧曲率信息，同时控制误差并改善拟牛顿外梯度法的梯度查询复杂度？",
+      "result": "每次迭代至多三次梯度查询及一次正则化线性求解；凸情形给出O(min{k⁻²,dk⁻³})，并报告强凸和非凸复杂度改进。",
+      "method": "每轮有限差分刷新一组Hessian列，以路径长度证书约束旧列误差并确定步长。",
+      "limitations": "复杂度仍有光滑性等问题参数；梯度次数不是总运行时间，线性求解成本不可忽略。需全文核对假设。",
+      "reading_depth": "abstract",
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40608"
+      ],
+      "author_institutions": [
+        "Aryan Mokhtari：Google Research、得克萨斯大学奥斯汀分校",
+        "Francisco Patitucci：得克萨斯大学奥斯汀分校"
+      ],
+      "author_intro": "Aryan Mokhtari署名Google Research及得克萨斯大学奥斯汀分校，Francisco Patitucci署名后者；本文研究连续优化算法及梯度复杂度。",
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2610.40608"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.40645",
+      "title": "JT gravity as a conformal scaling limit of random flat combinatorial disks",
+      "authors": [
+        "Morris Ang"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "url": "https://arxiv.org/abs/2610.40645",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "JT引力作为随机平坦组合圆盘的共形缩放极限",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "数学"
+      ],
+      "subfields": [
+        "概率与数学物理"
+      ],
+      "problem": "如何严格把离散随机平坦圆盘的缩放极限联系到平坦JT引力？",
+      "result": "作者证明一类直线边界Boltzmann圆盘收敛到Ferrari路径积分描述的连续随机曲面，并给出基于分支探索的收敛准则。",
+      "method": "将离散逐行探索与以条件Cauchy过程演化的连续分支探索连接，利用共形焊接和紧性提升收敛。",
+      "limitations": "普适性仍是猜想背景；具体应用并非覆盖所有离散模型，准则需满足紧性条件且依赖伴随论文。",
+      "reading_depth": "abstract",
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40645"
+      ],
+      "author_institutions": [
+        "Morris Ang：加州大学圣迭戈分校"
+      ],
+      "author_intro": "Morris Ang署名加州大学圣迭戈分校；本文研究概率、随机几何与数学物理的交叉问题。",
+      "affiliation_sources": [
+        "https://arxiv.org/html/2610.40645v1"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.40553",
+      "title": "Nonuniqueness of the 2D Euler Evolutions with L¹∩Lᵖ Vorticity",
+      "authors": [
+        "Thomas Y. Hou",
+        "Xiang Qin",
+        "Peicong Song",
+        "Wenhan Zhang"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "math.AP"
+      ],
+      "url": "https://arxiv.org/abs/2610.40553",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "L¹∩Lᵖ涡量下二维Euler演化的非唯一性",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "数学"
+      ],
+      "subfields": [
+        "偏微分方程与流体"
+      ],
+      "problem": "无外力二维Euler方程在有限p涡量正则性下是否唯一？",
+      "result": "作者对每个1<p<∞构造紧支撑L¹∩Lᵖ初始涡量，使其在[0,1]存在两种不同演化，且保持强连续及精确拉格朗日输运。",
+      "method": "以跨尺度不稳定四涡结构与带符号涡斑激活级联，再用逆流稳定性和强紧性取极限。",
+      "limitations": "92页预印本的重大证明主张，本文仅核验摘要，不能视为已验证定理；初始数据可依赖p，不覆盖p=∞。",
+      "reading_depth": "abstract",
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40553"
+      ],
+      "author_institutions": [
+        "Thomas Y. Hou：加州理工学院应用与计算数学",
+        "Xiang Qin：加州理工学院应用与计算数学",
+        "Peicong Song：加州理工学院应用与计算数学",
+        "Wenhan Zhang：加州理工学院应用与计算数学"
+      ],
+      "author_intro": "Thomas Y. Hou、Xiang Qin、Peicong Song和Wenhan Zhang均署名加州理工学院应用与计算数学；本文研究Euler方程与涡量动力学。",
+      "affiliation_sources": [
+        "https://arxiv.org/html/2610.40553v1"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.40562",
+      "title": "Nearly-Optimal Time-Sample Trade-off in Consensus Dynamics",
+      "authors": [
+        "Francesco d'Amore",
+        "Joel Rybicki",
+        "Nobutaka Shimizu",
+        "Takeharu Shiraga",
+        "Robin Vacus"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "cs.DC",
+        "cs.DS",
+        "math.PR"
+      ],
+      "url": "https://arxiv.org/abs/2610.40562",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "共识动力学中近最优的时间—采样权衡",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "分布式算法"
+      ],
+      "problem": "每轮抽样多少意见与达到共识所需轮数之间有什么最优权衡？",
+      "result": "给出同步h-Majority在所有h≥3、任意初始配置下的高概率收敛上界，并在一大类对称规则中证明只差多对数因子的下界。",
+      "method": "分析独立均匀有放回采样、多数更新和平票随机打破的共识动力学，并为固定对称规则建立下界。",
+      "limitations": "模型要求同步与均匀采样；不是拜占庭容错、异步网络或任意拓扑的工程保证。",
+      "reading_depth": "abstract",
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40562"
+      ],
+      "author_institutions": [
+        "Francesco d'Amore：Gran Sasso Science Institute",
+        "Joel Rybicki：柏林洪堡大学",
+        "Nobutaka Shimizu：东京科学大学",
+        "Takeharu Shiraga：中央大学（日本）",
+        "Robin Vacus：索邦大学、CNRS、LIP6"
+      ],
+      "author_intro": "Francesco d’Amore、Joel Rybicki、Nobutaka Shimizu、Takeharu Shiraga、Robin Vacus分别来自GSSI、柏林洪堡大学、东京科学大学、日本中央大学及索邦大学/CNRS/LIP6；本文研究随机共识动力学与分布式算法。",
+      "affiliation_sources": [
+        "https://arxiv.org/html/2610.40562v1"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.37634",
+      "title": "UPP^cc is Not Closed Under Intersection",
+      "authors": [
+        "Mark Bun",
+        "Mandar Juvekar"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "cs.CC"
+      ],
+      "url": "https://arxiv.org/abs/2610.37634",
+      "version": "v1",
+      "announcement_date": "2026-10-28",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "已阅读官方摘要与元数据，未审读全文、未复现实验或证明；结果按作者主张转述。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "无界错误通信复杂度类UPP^cc对交不封闭",
+      "first_date": "2026-10-27",
+      "updated_date": "2026-10-27",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "通信复杂度"
+      ],
+      "problem": "无界错误通信复杂度类UPP^cc是否对交运算封闭？",
+      "result": "构造符号秩Θ(d)的显式矩阵，而在互不相交输入上取合取后符号秩增至2^Θ(d)，推出不封闭性。",
+      "method": "从Forster平均间隔方法出发，分析球面内积符号测试的连续版本，经旋转对称性和多项式符号表示转回有限显式矩阵。",
+      "limitations": "结论针对无界错误通信模型；不应混淆成通常时间复杂度类的交封闭性结论。",
+      "reading_depth": "abstract",
+      "priority": "重点阅读",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.37634"
+      ],
+      "author_institutions": [
+        "Mark Bun：波士顿大学",
+        "Mandar Juvekar：波士顿大学"
+      ],
+      "author_intro": "Mark Bun和Mandar Juvekar均署名波士顿大学；本文研究通信复杂度与符号秩。",
+      "affiliation_sources": [
+        "https://arxiv.org/html/2610.37634v1"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.39999",
+      "title": "PhOSv1: Efficient Scaling of Model Sleeping on a Single Server for Autoscaling with GPU-Context Deduplication",
+      "authors": [
+        "Tianle Sun",
+        "Xingda Wei",
+        "Rong Chen"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "cs.DC",
+        "cs.OS"
+      ],
+      "url": "https://arxiv.org/abs/2610.39999",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "选择性阅读全文第2、3、4、5节；未复现实验。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "PhOSv1：GPU上下文去重支持单服务器多模型休眠扩容",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "arXiv预印本；作者Comments注明IEEE HPCC 2026接收",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "操作系统与模型服务"
+      ],
+      "problem": "大量休眠模型如何避免GPU上下文常驻内存税而保持快速扩容？",
+      "result": "在单张A800 80GB测试中，23个休眠模型的上下文显存从25.67 GiB降到0.49 GiB（不含权重）；特定10模型长尾请求回放的平均首token延迟由146.82秒降到19.09秒。",
+      "method": "通过API remoting把GPU上下文分配代理到中央daemon，共享CUDA上下文并去重重叠kernel二进制。",
+      "limitations": "每张GPU同时仅运行一个活跃引擎；假设共享上下文的引擎可信，不支持CUDA graphs。端到端评估为每模型0.3请求/分钟的10分钟Poisson/ShareGPT轨迹，不能直接外推高并发或不可信多租户场景。",
+      "reading_depth": "partial",
+      "priority": "重点阅读",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.39999",
+        "https://arxiv.org/html/2610.39999v1"
+      ],
+      "code_url": "https://github.com/blitz-serving/PhoenixOSv1",
+      "author_institutions": [
+        "Tianle Sun：上海交通大学",
+        "Xingda Wei：上海交通大学",
+        "Rong Chen：上海交通大学"
+      ],
+      "author_intro": "Tianle Sun、Xingda Wei和Rong Chen均署名上海交通大学；本文研究GPU运行时与多模型服务系统。",
+      "affiliation_sources": [
+        "https://arxiv.org/html/2610.39999v1"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "id": "arxiv-2610.40521",
+      "title": "Directed Cut-Query Complexity of Finding a King",
+      "authors": [
+        "Ziad Ismaili Alaoui",
+        "Oded Lachish",
+        "Nikhil S. Mande"
+      ],
+      "source": "arxiv",
+      "source_type": "预印本平台",
+      "arxiv_categories": [
+        "cs.CC",
+        "math.CO"
+      ],
+      "url": "https://arxiv.org/abs/2610.40521",
+      "version": "v1",
+      "announcement_date": "2026-10-30",
+      "date_basis": "arXiv原始摘要页Submitted on及v1标记；公告日来自对应recent分类页",
+      "reading_note": "选择性阅读全文第1–2节的模型、主定理和度序列等价引理；未完成全部下界证明审查。",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "title_zh": "寻找锦标赛king的有向割查询复杂度",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "publication_status": "预印本；未独立确认同行评审状态",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "查询复杂度与图算法"
+      ],
+      "problem": "只查询顶点集到补集的有向边数量，找到锦标赛图的king需要多少次查询？",
+      "result": "确定性最坏情况查询复杂度为Θ(n)：充分大的n满足n/3<D≤n−1，证明进一步给出任意固定ε>0时(1/2−ε)n的渐近下界。",
+      "method": "割回答等于集合顶点出度之和减去内部边数，因此只能揭示度序列。保持度序列的重新定向证明，正确算法必须找到最大出度顶点；n−1次单点查询给上界，对手构造给线性下界。",
+      "limitations": "已知带标号顶点集、每次割计数查询单位成本、允许自适应，且算法确定性；不等于实际读取边的总计算时间，也不覆盖随机查询复杂度。",
+      "reading_depth": "partial",
+      "priority": "重点阅读",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40521",
+        "https://arxiv.org/html/2610.40521v1"
+      ],
+      "author_institutions": [
+        "Ziad Ismaili Alaoui：利物浦大学、马尔堡大学",
+        "Oded Lachish：伦敦大学伯贝克学院",
+        "Nikhil S. Mande：利物浦大学"
+      ],
+      "author_intro": "Ziad Ismaili Alaoui署名利物浦大学及马尔堡大学，Oded Lachish署名伦敦大学伯贝克学院，Nikhil S. Mande署名利物浦大学；本文研究图问题的查询复杂度。",
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2610.40521"
+      ],
+      "affiliation_note": "按论文v1署名核验；介绍中的研究主题仅指本篇，不推定职称、资历或完整研究方向。",
+      "event_type": "本期收录新稿"
+    },
+    {
+      "source": "eprint",
+      "source_group": "IACR ePrint｜密码学与安全预印本",
+      "domain": "密码学与安全",
+      "publication_status": "Preprint（官方条目明确标注；未核到同行评审发表）",
+      "version": "未核具体序号",
+      "reading_depth": "abstract",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "freshness": "本周首次收稿，非旧稿修订",
+      "id": "iacr-2026-2667",
+      "title": "Faster complete formulas and their application to curves with efficient endomorphisms",
+      "authors": [
+        "Diego F. Aranha",
+        "Paulo L. Barreto"
+      ],
+      "first_received": "2026-10-28",
+      "approved_date": "2026-10-28",
+      "date": "2026-10-28",
+      "url": "https://eprint.iacr.org/2026/2667",
+      "pdf_url": "https://eprint.iacr.org/2026/2667.pdf",
+      "subfield": "椭圆曲线实现／配对",
+      "problem": "完整加法公式如何降低恒定时间标量乘成本？",
+      "method": "利用末级三维叉积优化完整加法，并结合完整三倍点与 τ-NAF。",
+      "result": "完整加法从12降至11次乘法；作者报告 libsecp256k1 固定基恒定时间标量乘提速5.2%。",
+      "limitations": "限定具有相应自同态的曲线族；百分比依赖基线、实现与平台，不能外推为所有ECC提速。",
+      "reading_recommendation": "优先读：ECC、配对库工程师；先核公式适用条件与基准配置。",
+      "title_zh": "更快的完整公式及其在具有高效自同态的曲线中的应用",
+      "first_date": "2026-10-28",
+      "updated_date": null,
+      "domains": [
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "subfields": [
+        "椭圆曲线实现",
+        "配对"
+      ],
+      "priority": "重点阅读",
+      "evidence_urls": [
+        "https://eprint.iacr.org/2026/2667",
+        "https://eprint.iacr.org/days/7"
+      ],
+      "status": "new",
+      "freshness_status": "本周首次收稿",
+      "author_institutions": [
+        "Diego F. Aranha：Aarhus University",
+        "Paulo L. Barreto：University of Washington Tacoma"
+      ],
+      "author_intro": "作者来自奥胡斯大学与华盛顿大学塔科马分校；本文合作研究椭圆曲线完整公式与高效标量乘。",
+      "affiliation_sources": [
+        "https://eprint.iacr.org/2026/2667"
+      ],
+      "affiliation_note": "按论文官方ePrint条目作者栏核对，为该稿署名机构；简介中的研究方向仅描述本文，不推断作者长期专长、职称或当前任职。",
+      "reading_note": "仅核对官方摘要、元数据及署名机构；未审读全文或独立复现。",
+      "event_type": "本期收录新稿",
+      "date_note": "首次日期为官方首次收稿日；approved_date为批准日；最后修订日与具体版本序号未核，不以首次收稿代替。"
+    },
+    {
+      "source": "eprint",
+      "source_group": "IACR ePrint｜密码学与安全预印本",
+      "domain": "密码学与安全",
+      "publication_status": "Preprint（官方条目明确标注；未核到同行评审发表）",
+      "version": "未核具体序号",
+      "reading_depth": "abstract",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "freshness": "本周首次收稿，非旧稿修订",
+      "id": "iacr-2026-2666",
+      "title": "Efficient SIMD SHAKE through Cost-Aware Permutation Scheduling",
+      "authors": [
+        "Hang Zhang",
+        "Ya Shi",
+        "Ying Liu",
+        "Xianhui Lu"
+      ],
+      "first_received": "2026-10-28",
+      "approved_date": "2026-10-28",
+      "date": "2026-10-28",
+      "url": "https://eprint.iacr.org/2026/2666",
+      "pdf_url": "https://eprint.iacr.org/2026/2666.pdf",
+      "subfield": "后量子实现／SHAKE",
+      "problem": "不同长度及依赖关系的哈希流如何避免SIMD空转？",
+      "method": "按置换、状态搬运、初始化和输入准备成本，将就绪流分组并拆分长流重调度。",
+      "result": "作者在三类处理器评测：ML-KEM封装最高1.31倍、解封装最高1.44倍加速。",
+      "limitations": "最高值不是普遍平均收益；是否适配其他微架构及恒定时间要求需读全文核实。",
+      "reading_recommendation": "优先读：PQC性能优化；重点看成本模型和跨平台收益。",
+      "title_zh": "基于成本感知置换调度的高效SIMD SHAKE",
+      "first_date": "2026-10-28",
+      "updated_date": null,
+      "domains": [
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "subfields": [
+        "后量子实现",
+        "SHAKE"
+      ],
+      "priority": "重点阅读",
+      "evidence_urls": [
+        "https://eprint.iacr.org/2026/2666",
+        "https://eprint.iacr.org/days/7"
+      ],
+      "status": "new",
+      "freshness_status": "本周首次收稿",
+      "author_institutions": [
+        "Hang Zhang：中国科学院信息工程研究所；中国科学院大学",
+        "Ya Shi：中国科学院信息工程研究所；中国科学院大学",
+        "Ying Liu：中国科学院信息工程研究所；中国科学院大学",
+        "Xianhui Lu：中国科学院信息工程研究所；中国科学院大学"
+      ],
+      "author_intro": "四位作者在条目中均署名中国科学院信息工程研究所及中国科学院大学；本文研究SHAKE调度与后量子密码实现优化。",
+      "affiliation_sources": [
+        "https://eprint.iacr.org/2026/2666"
+      ],
+      "affiliation_note": "按论文官方ePrint条目作者栏核对，为该稿署名机构；简介中的研究方向仅描述本文，不推断作者长期专长、职称或当前任职。",
+      "reading_note": "仅核对官方摘要、元数据及署名机构；未审读全文或独立复现。",
+      "event_type": "本期收录新稿",
+      "date_note": "首次日期为官方首次收稿日；approved_date为批准日；最后修订日与具体版本序号未核，不以首次收稿代替。"
+    },
+    {
+      "source": "eprint",
+      "source_group": "IACR ePrint｜密码学与安全预印本",
+      "domain": "密码学与安全",
+      "publication_status": "Preprint（官方条目明确标注；未核到同行评审发表）",
+      "version": "未核具体序号",
+      "reading_depth": "abstract",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "freshness": "本周首次收稿，非旧稿修订",
+      "id": "iacr-2026-2665",
+      "title": "Shor's algorithm compiled on cat qubits: 22 593 qubits for RSA-2048 in 3.14 days",
+      "authors": [
+        "Axel Pappalardo",
+        "Dahmun Goudarzi",
+        "Victor Hertz",
+        "Hugo Jacinto",
+        "Larissa Kroell",
+        "André Schrottenloher",
+        "Peter Shanahan",
+        "Élie Gouzien",
+        "Rémi de La Vieuville",
+        "Vivien Londe"
+      ],
+      "first_received": "2026-10-28",
+      "approved_date": "2026-10-28",
+      "date": "2026-10-28",
+      "url": "https://eprint.iacr.org/2026/2665",
+      "pdf_url": "https://eprint.iacr.org/2026/2665.pdf",
+      "subfield": "量子密码分析／资源估计",
+      "problem": "将Shor算法编译至猫量子比特硬件后需要多少物理资源？",
+      "method": "从逻辑电路到重复码及LDPC猫码架构的物理操作、芯片布局和调度进行估计。",
+      "result": "在指定噪声与时序假设下，RSA-2048约需2.3万猫量子比特与3.14天。",
+      "limitations": "这不是实际破解：假设1微秒纠错周期、10微秒反应时间、相位翻转率5×10^-4且无比特翻转；增加保护层会改变成本。",
+      "reading_recommendation": "优先读：PQC迁移及量子资源研究；先读假设，不以标题当现有硬件能力。",
+      "title_zh": "在猫量子比特上编译Shor算法：22,593个量子比特、3.14天分解RSA-2048",
+      "first_date": "2026-10-28",
+      "updated_date": null,
+      "domains": [
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "subfields": [
+        "量子密码分析",
+        "资源估计"
+      ],
+      "priority": "重点阅读",
+      "evidence_urls": [
+        "https://eprint.iacr.org/2026/2665",
+        "https://eprint.iacr.org/days/7"
+      ],
+      "status": "new",
+      "freshness_status": "本周首次收稿",
+      "author_institutions": [
+        "Axel Pappalardo：Alice & Bob",
+        "Dahmun Goudarzi：Alice & Bob",
+        "Victor Hertz：Alice & Bob",
+        "Hugo Jacinto：Alice & Bob；Université Paris-Saclay；CEA；CNRS",
+        "Larissa Kroell：Alice & Bob",
+        "André Schrottenloher：Université de Rennes；Inria",
+        "Peter Shanahan：Alice & Bob；University of Edinburgh, School of Informatics",
+        "Élie Gouzien：Alice & Bob",
+        "Rémi de La Vieuville：Alice & Bob",
+        "Vivien Londe：Alice & Bob"
+      ],
+      "author_intro": "作者团队以Alice & Bob为主，并包括法国高校、CEA、CNRS、Inria及爱丁堡大学相关署名；本文研究猫量子比特架构上的密码分析资源估计。",
+      "affiliation_sources": [
+        "https://eprint.iacr.org/2026/2665"
+      ],
+      "affiliation_note": "按论文官方ePrint条目作者栏核对，为该稿署名机构；简介中的研究方向仅描述本文，不推断作者长期专长、职称或当前任职。",
+      "reading_note": "仅核对官方摘要、元数据及署名机构；未审读全文或独立复现。",
+      "event_type": "本期收录新稿",
+      "date_note": "首次日期为官方首次收稿日；approved_date为批准日；最后修订日与具体版本序号未核，不以首次收稿代替。"
+    },
+    {
+      "source": "eprint",
+      "source_group": "IACR ePrint｜密码学与安全预印本",
+      "domain": "密码学与安全",
+      "publication_status": "Preprint（官方条目明确标注；未核到同行评审发表）",
+      "version": "未核具体序号",
+      "reading_depth": "abstract",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "freshness": "本周首次收稿，非旧稿修订",
+      "id": "iacr-2026-2664",
+      "title": "Rerandomizable Garbling Beyond BHHO-KMHE and a Construction from LWE",
+      "authors": [
+        "Raphael Heitjohann",
+        "Jonas von der Heyden",
+        "Tibor Jager"
+      ],
+      "first_received": "2026-10-28",
+      "approved_date": "2026-10-28",
+      "date": "2026-10-28",
+      "url": "https://eprint.iacr.org/2026/2664",
+      "pdf_url": "https://eprint.iacr.org/2026/2664.pdf",
+      "subfield": "理论密码／LWE／混淆电路",
+      "problem": "可重随机化混淆能否摆脱离散对数类假设？",
+      "method": "把隐藏同态变换的责任移到混淆层，放宽KMHE要求，并采用具有同态/有损模式的GSW变体。",
+      "result": "作者给出基于LWE的RGS构造，提供不依赖离散对数的路线。",
+      "limitations": "摘要仅称可能提供后量子安全；需检查完整模型、归约和参数成本，不能当作可部署性能成果。",
+      "reading_recommendation": "理论深读：关注假设变化与KMHE接口。",
+      "title_zh": "超越BHHO-KMHE的可重随机化混淆与基于LWE的构造",
+      "first_date": "2026-10-28",
+      "updated_date": null,
+      "domains": [
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "subfields": [
+        "理论密码",
+        "LWE",
+        "混淆电路"
+      ],
+      "priority": "重点阅读",
+      "evidence_urls": [
+        "https://eprint.iacr.org/2026/2664",
+        "https://eprint.iacr.org/days/7"
+      ],
+      "status": "new",
+      "freshness_status": "本周首次收稿",
+      "author_institutions": [
+        "Raphael Heitjohann：University of Wuppertal",
+        "Jonas von der Heyden：University of Wuppertal",
+        "Tibor Jager：University of Wuppertal"
+      ],
+      "author_intro": "三位作者均署名伍珀塔尔大学；本文研究可重随机化混淆及其LWE构造。",
+      "affiliation_sources": [
+        "https://eprint.iacr.org/2026/2664"
+      ],
+      "affiliation_note": "按论文官方ePrint条目作者栏核对，为该稿署名机构；简介中的研究方向仅描述本文，不推断作者长期专长、职称或当前任职。",
+      "reading_note": "仅核对官方摘要、元数据及署名机构；未审读全文或独立复现。",
+      "event_type": "本期收录新稿",
+      "date_note": "首次日期为官方首次收稿日；approved_date为批准日；最后修订日与具体版本序号未核，不以首次收稿代替。"
+    },
+    {
+      "source": "eprint",
+      "source_group": "IACR ePrint｜密码学与安全预印本",
+      "domain": "密码学与安全",
+      "publication_status": "Preprint（官方条目明确标注；未核到同行评审发表）",
+      "version": "未核具体序号",
+      "reading_depth": "abstract",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "freshness": "本周首次收稿，非旧稿修订",
+      "id": "iacr-2026-2658",
+      "title": "Unshuffling Fisher-Yates: Practical Recovery of Length-128 Permutations and Application to ML-DSA",
+      "authors": [
+        "Jonas Schupp",
+        "Anna Baumeister",
+        "Antonia Wachter-Zeh",
+        "Georg Sigl"
+      ],
+      "first_received": "2026-10-27",
+      "approved_date": "2026-10-28",
+      "date": "2026-10-27",
+      "url": "https://eprint.iacr.org/2026/2658",
+      "pdf_url": "https://eprint.iacr.org/2026/2658.pdf",
+      "subfield": "后量子侧信道／实现安全",
+      "problem": "仅靠Fisher–Yates洗牌能否保护ML-DSA的NTT？",
+      "method": "把软件洗牌的单迹泄漏转为带软目标的约束问题，恢复排序后分析NTT泄漏。",
+      "result": "作者针对ML-DSA-44实验恢复秘密多项式，表明单独洗牌不足以阻止该类侧信道密钥恢复。",
+      "limitations": "结论针对有可利用物理泄漏的具体软件实现，不是ML-DSA数学安全性被攻破；不能外推所有防护实现。",
+      "reading_recommendation": "实现防御者优先读：检查威胁模型、防护组合与实验硬件。",
+      "title_zh": "逆向Fisher–Yates洗牌：实用恢复128长度排列及其在ML-DSA中的应用",
+      "first_date": "2026-10-27",
+      "updated_date": null,
+      "domains": [
+        "网络与信息安全",
+        "计算机科学",
+        "密码学"
+      ],
+      "subfields": [
+        "后量子侧信道",
+        "实现安全"
+      ],
+      "priority": "重点阅读",
+      "evidence_urls": [
+        "https://eprint.iacr.org/2026/2658",
+        "https://eprint.iacr.org/days/7"
+      ],
+      "status": "new",
+      "freshness_status": "本周首次收稿",
+      "author_institutions": [
+        "Jonas Schupp：Technical University of Munich",
+        "Anna Baumeister：Technical University of Munich",
+        "Antonia Wachter-Zeh：Technical University of Munich",
+        "Georg Sigl：Technical University of Munich；Fraunhofer Institute for Applied and Integrated Security"
+      ],
+      "author_intro": "四位作者均署名慕尼黑工业大学，Georg Sigl另署名Fraunhofer应用与集成安全研究所；本文研究后量子密码实现的侧信道防护。",
+      "affiliation_sources": [
+        "https://eprint.iacr.org/2026/2658"
+      ],
+      "affiliation_note": "按论文官方ePrint条目作者栏核对，为该稿署名机构；简介中的研究方向仅描述本文，不推断作者长期专长、职称或当前任职。",
+      "reading_note": "仅核对官方摘要、元数据及署名机构；未审读全文或独立复现。",
+      "event_type": "本期收录新稿",
+      "date_note": "首次日期为官方首次收稿日；approved_date为批准日；最后修订日与具体版本序号未核，不以首次收稿代替。"
+    },
+    {
+      "source": "eprint",
+      "source_group": "IACR ePrint｜密码学与安全预印本",
+      "domain": "密码学与安全",
+      "publication_status": "Preprint（官方条目明确标注；未核到同行评审发表）",
+      "version": "未核具体序号",
+      "reading_depth": "abstract",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "freshness": "本周首次收稿，非旧稿修订",
+      "id": "iacr-2026-2660",
+      "title": "Towards Quantum Sensing for Side-Channel Analysis",
+      "authors": [
+        "Oliver Butowski",
+        "Paul Haas",
+        "Jonas Hasenkrug",
+        "Niklas Mathes",
+        "Emanuele Strieder",
+        "Michael Kunzer",
+        "Jan Jeske",
+        "Nisha Jacob Kabakci",
+        "Marc Stöttinger"
+      ],
+      "first_received": "2026-10-27",
+      "approved_date": "2026-10-28",
+      "date": "2026-10-27",
+      "url": "https://eprint.iacr.org/2026/2660",
+      "pdf_url": "https://eprint.iacr.org/2026/2660.pdf",
+      "subfield": "硬件安全／量子传感",
+      "problem": "NV中心量子传感能否测量芯片动态电磁侧信道？",
+      "method": "使用可调中心频率的NV中心射频谱仪直接探测频谱。",
+      "result": "报告1.1 GHz实时带宽；分析RSA解密辐射，并对Cortex M4的NTT实现做泄漏检测。",
+      "limitations": "泄漏检测不等于完整密钥恢复；设备成本、灵敏度及可重复性须全文核验。",
+      "reading_recommendation": "硬件安全读者选读：新测量工具，而非宣布密码被量子破解。",
+      "title_zh": "面向侧信道分析的量子传感",
+      "first_date": "2026-10-27",
+      "updated_date": null,
+      "domains": [
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "subfields": [
+        "硬件安全",
+        "量子传感"
+      ],
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://eprint.iacr.org/2026/2660",
+        "https://eprint.iacr.org/days/7"
+      ],
+      "status": "new",
+      "freshness_status": "本周首次收稿",
+      "author_institutions": [
+        "Oliver Butowski：Fraunhofer Institute for Applied and Integrated Security",
+        "Paul Haas：Fraunhofer Institute for Applied Solid State Physics IAF",
+        "Jonas Hasenkrug：Fraunhofer Institute for Applied Solid State Physics IAF",
+        "Niklas Mathes：Fraunhofer Institute for Applied Solid State Physics IAF",
+        "Emanuele Strieder：Fraunhofer Institute for Applied and Integrated Security",
+        "Michael Kunzer：Fraunhofer Institute for Applied Solid State Physics IAF",
+        "Jan Jeske：Fraunhofer Institute for Applied Solid State Physics IAF",
+        "Nisha Jacob Kabakci：Fraunhofer Institute for Applied and Integrated Security",
+        "Marc Stöttinger：RheinMain University of Applied Sciences"
+      ],
+      "author_intro": "团队来自Fraunhofer应用与集成安全研究所、Fraunhofer应用固体物理研究所及莱茵美因应用科学大学；本文结合量子传感仪器与密码实现侧信道检测。",
+      "affiliation_sources": [
+        "https://eprint.iacr.org/2026/2660"
+      ],
+      "affiliation_note": "按论文官方ePrint条目作者栏核对，为该稿署名机构；简介中的研究方向仅描述本文，不推断作者长期专长、职称或当前任职。",
+      "reading_note": "仅核对官方摘要、元数据及署名机构；未审读全文或独立复现。",
+      "event_type": "本期收录新稿",
+      "date_note": "首次日期为官方首次收稿日；approved_date为批准日；最后修订日与具体版本序号未核，不以首次收稿代替。"
+    },
+    {
+      "source": "eprint",
+      "source_group": "IACR ePrint｜密码学与安全预印本",
+      "domain": "密码学与安全",
+      "publication_status": "Preprint（官方条目明确标注；未核到同行评审发表）",
+      "version": "未核具体序号",
+      "reading_depth": "abstract",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "freshness": "本周首次收稿，非旧稿修订",
+      "id": "iacr-2026-2669",
+      "title": "PIR through the Lens of Probabilistic Inference",
+      "authors": [
+        "Dana Dachman-Soled"
+      ],
+      "first_received": "2026-10-28",
+      "approved_date": "2026-10-28",
+      "date": "2026-10-28",
+      "url": "https://eprint.iacr.org/2026/2669",
+      "pdf_url": "https://eprint.iacr.org/2026/2669.pdf",
+      "subfield": "隐私检索／复杂度",
+      "problem": "结构化数据库能否降低信息论PIR服务器计算而保留通信与隐私保障？",
+      "method": "将经典多服务器PIR的响应计算映射到乘积分布边缘概率，定义推断复杂度。",
+      "result": "对有界树宽、只读一次公式、稀疏傅里叶表示等结构给出服务器计算改进，并保持底层协议通信等性质。",
+      "limitations": "并非任意数据库通用次线性方案；在rCSETH下给出一般多项式规模电路的条件下界。",
+      "reading_recommendation": "理论深读：数据库结构是否符合应用比孤立速度指标更重要。",
+      "title_zh": "从概率推断视角看私有信息检索",
+      "first_date": "2026-10-28",
+      "updated_date": null,
+      "domains": [
+        "计算机科学",
+        "网络与信息安全",
+        "密码学",
+        "数学"
+      ],
+      "subfields": [
+        "隐私检索",
+        "复杂度"
+      ],
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://eprint.iacr.org/2026/2669",
+        "https://eprint.iacr.org/days/7"
+      ],
+      "status": "new",
+      "freshness_status": "本周首次收稿",
+      "author_institutions": [
+        "Dana Dachman-Soled：University of Maryland, College Park"
+      ],
+      "author_intro": "Dana Dachman-Soled署名马里兰大学帕克分校；本文研究私有信息检索与概率推断之间的联系。",
+      "affiliation_sources": [
+        "https://eprint.iacr.org/2026/2669"
+      ],
+      "affiliation_note": "按论文官方ePrint条目作者栏核对，为该稿署名机构；简介中的研究方向仅描述本文，不推断作者长期专长、职称或当前任职。",
+      "reading_note": "仅核对官方摘要、元数据及署名机构；未审读全文或独立复现。",
+      "event_type": "本期收录新稿",
+      "date_note": "首次日期为官方首次收稿日；approved_date为批准日；最后修订日与具体版本序号未核，不以首次收稿代替。"
+    },
+    {
+      "source": "eprint",
+      "source_group": "IACR ePrint｜密码学与安全预印本",
+      "domain": "密码学与安全",
+      "publication_status": "Preprint（官方条目明确标注；未核到同行评审发表）",
+      "version": "未核具体序号",
+      "reading_depth": "abstract",
+      "verified_at": "2026-10-30T08:52:00Z",
+      "freshness": "本周首次收稿，非旧稿修订",
+      "id": "iacr-2026-2670",
+      "title": "Barriers to Identity-Based Encryption in Generic Group-Action Models",
+      "authors": [
+        "Sikhar Patranabis"
+      ],
+      "first_received": "2026-10-28",
+      "approved_date": "2026-10-28",
+      "date": "2026-10-28",
+      "url": "https://eprint.iacr.org/2026/2670",
+      "pdf_url": "https://eprint.iacr.org/2026/2670.pdf",
+      "subfield": "基础理论／IBE／同源密码",
+      "problem": "通用群作用接口能否构造支持巨大身份空间的IBE？",
+      "method": "建立类型安全及随机表示通用群作用模型下的界，并给出匹配构造。",
+      "result": "类型安全模型中，公参含n个非原点作用集句柄时至多支持n个身份；作者给出紧性结果。",
+      "limitations": "是特定通用模型与条件下的障碍，不是所有同源IBE或非黑盒构造的不可能性证明。",
+      "reading_recommendation": "理论深读：先查模型限制，再评估对构造路线的意义。",
+      "title_zh": "通用群作用模型中基于身份加密的障碍",
+      "first_date": "2026-10-28",
+      "updated_date": null,
+      "domains": [
+        "计算机科学",
+        "网络与信息安全",
+        "密码学",
+        "数学"
+      ],
+      "subfields": [
+        "基础理论",
+        "IBE",
+        "同源密码"
+      ],
+      "priority": "值得关注",
+      "evidence_urls": [
+        "https://eprint.iacr.org/2026/2670",
+        "https://eprint.iacr.org/days/7"
+      ],
+      "status": "new",
+      "freshness_status": "本周首次收稿",
+      "author_institutions": [
+        "Sikhar Patranabis：IBM Research India"
+      ],
+      "author_intro": "Sikhar Patranabis署名IBM印度研究院；本文研究通用群作用模型下基于身份加密的理论边界。",
+      "affiliation_sources": [
+        "https://eprint.iacr.org/2026/2670"
+      ],
+      "affiliation_note": "按论文官方ePrint条目作者栏核对，为该稿署名机构；简介中的研究方向仅描述本文，不推断作者长期专长、职称或当前任职。",
+      "reading_note": "仅核对官方摘要、元数据及署名机构；未审读全文或独立复现。",
+      "event_type": "本期收录新稿",
+      "date_note": "首次日期为官方首次收稿日；approved_date为批准日；最后修订日与具体版本序号未核，不以首次收稿代替。"
+    },
+    {
+      "id": "eccc-TR26-287",
+      "title": "Extending OpenAI's cubic lower bound for the permanent to odd characteristic, Pfaffian representations, and polynomial entries",
+      "title_zh": "Permanent 三次下界向奇特征域、Pfaffian 与多项式条目的推广",
+      "authors": [
+        "Karthik Sheshadri"
+      ],
+      "source": "eccc",
+      "url": "https://eccc.weizmann.ac.il/report/2026/287/",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "version": "ECCC TR26-287，论文标注 2026-10-28",
+      "publication_status": "技术报告／预印本",
+      "domains": [
+        "计算机科学",
+        "数学"
+      ],
+      "subfields": [
+        "代数复杂度",
+        "电路下界"
+      ],
+      "problem": "已在复数域研究的 permanent border determinantal complexity 三次下界，能否推广到正特征以及更强的表示模型？",
+      "result": "作者给出固定奇素特征 p 的代数闭域上 Ωₚ(n³) 下界，并处理 Pfaffian 表示及次数受限的多项式矩阵条目；后者在指定范围内为 Ωₚ(n³/a)。",
+      "method": "对光滑超曲面与极线交点按重数计数，以 Bézout 上界连接矩阵核，再构造线性规模 permanent 限制。",
+      "limitations": "常数依赖 p；次数 a 和 n 存在明确范围限制。特征2不适用。局部读取定理1.1–1.2及证明路线，未完整审计附录，不能称已解决 Valiant 猜想。",
+      "reading_depth": "partial",
+      "reading_note": "已读首页、引言、定理1.1–1.2及技术路线；未独立验证19页证明。",
+      "priority": "重点阅读",
+      "author_intro": "Karthik Sheshadri；本文研究代数复杂度与几何下界，稿件首页未列机构。",
+      "author_institutions": [
+        "Karthik Sheshadri：机构未披露（所读稿件首页）"
+      ],
+      "affiliation_sources": [
+        "https://eccc.weizmann.ac.il/report/2026/287/download"
+      ],
+      "evidence_urls": [
+        "https://eccc.weizmann.ac.il/report/2026/287/",
+        "https://eccc.weizmann.ac.il/report/2026/287/download"
+      ],
+      "event_type": "本期收录新稿",
+      "verified_at": "2026-10-30T08:52:00Z"
+    },
+    {
+      "id": "eccc-TR26-286",
+      "title": "On the complexities of Interactive Proofs of Proximity",
+      "title_zh": "交互式邻近证明的查询与通信复杂度",
+      "authors": [
+        "Noga Amit",
+        "Oded Goldreich"
+      ],
+      "source": "eccc",
+      "url": "https://eccc.weizmann.ac.il/report/2026/286/",
+      "first_date": "2026-10-29",
+      "updated_date": "2026-10-29",
+      "version": "ECCC TR26-286，论文标注 2026-10-29",
+      "publication_status": "技术报告／预印本",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "复杂度理论",
+        "交互式证明"
+      ],
+      "problem": "不限制验证者计算时间时，交互式邻近证明的查询次数 q 与双向通信量 c 能否同时很小？",
+      "result": "作者为双指数时间可判定性质给出无条件 q+c=Ω(n/log n) 下界；E/NP 性质的相近下界与 P 性质的较弱下界分别依赖电路困难性或伪随机假设。",
+      "method": "把有限查询与通信的验证策略压成小支持分布和受控规模电路，再连接编码与电路下界；另将验证者消息压缩到 O(p+r q log n) 总通信。",
+      "limitations": "主定理固定常数量级邻近参数；无条件结论是存在某种复杂性质，不是每个 P/NP 性质。消息压缩不保持验证者计算时间；仅阅读定义与主定理，未逐步复核。",
+      "reading_depth": "partial",
+      "reading_note": "已读第1节定理1.1–1.4、技术路线和第2节模型定义；未审计后续证明。",
+      "priority": "重点阅读",
+      "author_intro": "Noga Amit（MIT）与 Oded Goldreich（魏茨曼科学研究所）；本文关注交互式证明和性质测试的复杂度。",
+      "author_institutions": [
+        "Noga Amit：Massachusetts Institute of Technology",
+        "Oded Goldreich：Weizmann Institute of Science"
+      ],
+      "affiliation_sources": [
+        "https://eccc.weizmann.ac.il/report/2026/286/download"
+      ],
+      "evidence_urls": [
+        "https://eccc.weizmann.ac.il/report/2026/286/",
+        "https://eccc.weizmann.ac.il/report/2026/286/download"
+      ],
+      "event_type": "本期收录新稿",
+      "verified_at": "2026-10-30T08:52:00Z"
+    },
+    {
+      "id": "eccc-TR26-285",
+      "title": "Parallel Repetition for k-Player XOR Games",
+      "title_zh": "k 方 XOR 博弈的平行重复",
+      "authors": [
+        "Mark Braverman",
+        "Dor Minzer"
+      ],
+      "source": "eccc",
+      "url": "https://eccc.weizmann.ac.il/report/2026/285/",
+      "first_date": "2026-10-21",
+      "updated_date": "2026-10-29",
+      "version": "ECCC TR26-285；平台 Publication 2026-10-29",
+      "publication_status": "技术报告／预印本",
+      "domains": [
+        "计算机科学",
+        "数学"
+      ],
+      "subfields": [
+        "复杂度理论",
+        "平行重复与博弈"
+      ],
+      "problem": "有限域上 k 方 XOR 博弈的值小于1时，独立重复 n 次能否得到指数衰减？",
+      "result": "对固定且 val(Ψ)<1 的 F_p 上 k-XOR 博弈，作者给出 val(Ψ⊗n)≤2⁻ᶜⁿ，其中 c>0 依赖 Ψ，将部分三方 XOR 博弈的已有指数衰减结果扩展到此类 k 方博弈。",
+      "method": "引入 commuting value 松弛，将原博弈变为2k方博弈，再张量化 Cauchy–Schwarz 不等式论证。",
+      "limitations": "c 依赖具体博弈，不是统一衰减常数；结果限定于 XOR 接受谓词，不能外推到全部多方博弈。只读摘要、模型和引言，尚未独立核验完整证明。",
+      "reading_depth": "partial",
+      "reading_note": "已读摘要、首页作者机构、引言及定义1.1；未逐步复核后续证明。",
+      "priority": "值得关注",
+      "author_intro": "Mark Braverman（普林斯顿大学计算机系）与 Dor Minzer（MIT 数学系）；本文研究平行重复与复杂度理论。",
+      "author_institutions": [
+        "Mark Braverman：Princeton University, Department of Computer Science",
+        "Dor Minzer：Massachusetts Institute of Technology, Department of Mathematics"
+      ],
+      "affiliation_sources": [
+        "https://eccc.weizmann.ac.il/report/2026/285/download"
+      ],
+      "evidence_urls": [
+        "https://eccc.weizmann.ac.il/report/2026/285/",
+        "https://eccc.weizmann.ac.il/report/2026/285/download"
+      ],
+      "change_note": "登记日期10月21日、平台Publication日期10月29日分别记录；未取得版本差异，不能把它称为10月29日首次新稿。",
+      "event_type": "平台近期公开",
+      "verified_at": "2026-10-30T08:52:00Z"
+    }
+  ]
+}
