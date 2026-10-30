@@ -11,6 +11,11 @@ for item in m['issues']+m.get('historical_trials',[]):
  for x in j['papers']:
   assert all(k in x for k in fields),(x.get('id'),'missing fields')
   assert x['id'] not in ids;ids.add(x['id']);t=re.sub(r'\W','',x['title']).casefold();assert t not in titles; titles.add(t)
+  if item in m['issues']:
+   r=x.get('substantive_review',{}); assert x['reading_depth'] in ['partial','full_review'],(x['id'],'abstract-only excluded')
+   assert isinstance(r.get('content_urls'),list) and r['content_urls'],(x['id'],'missing substantive content URLs')
+   assert all(isinstance(r.get(k),str) and r[k].strip() for k in ['scope','method_evidence','result_evidence','conditions_evidence']),(x['id'],'missing actual reading evidence')
+   assert all(urlparse(u).scheme=='https' and urlparse(u).netloc for u in r['content_urls'])
   assert x['source'] in ss; assert x['reading_depth'] in ['abstract','partial','full_review'];assert x['authors'] and x['author_institutions']
   assert all(d in ['数学','计算机科学','网络与信息安全','密码学'] for d in x['domains'])
   for u in [x['url']]+x['evidence_urls']+x['affiliation_sources']:assert urlparse(u).scheme=='https' and urlparse(u).netloc
