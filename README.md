@@ -80,3 +80,12 @@
 - 展开区保留研究问题、主要结果、方法、条件与局限、作者机构、日期/版本及实际阅读范围；“原始论文”保持为单独来源链接。展开总结不代表已阅读全文。
 - 同一期中筛选、清除筛选或改分组不会丢失已展开状态；成功切换日期后重置为折叠。试刊不进入正式索引，不能为测试交互而给旧数据补造阅读证据。
 - 回归检查：`node tools/test_ui.cjs`（无外部依赖）。浏览器还须检查标题/按钮重复开关、键盘、筛选后状态及手机换行；使用隔离的测试页，不改正式数据。
+
+## 正式日报的时间证据与阅读范围展示
+
+- `papers` 仅放 `eligibility=confirmed` 且最低阅读证据齐备的新增；`pending_papers` 仅放已读完整摘要/实质内容、但公开时间边界待核实的条目。待核实单列，不计入确认新增；筛选和原有展开总结交互同样适用。
+- 保存 `public_at`、`public_time_source`（原始时间证据 URL）、`public_time_precision` 和 `date_note`。不得把仅日期或未知时区转换成伪造的精确午夜时间。
+- 确认项须有窗口内的带时区精确时间，或原始证据支持的 `public_time_range={start,end}` 且整个区间落在窗口内。日期/时区不能排除跨界的条目只能 pending；提交、收稿、仓库 commit 时间不能冒充首次公开。
+- `editorial_note` 在网页顶部与 Markdown 显著说明本期为选择性/部分阅读覆盖，区分发现条数、实际阅读条数、确认新增和时间待核实。目录发现不等于完成逐篇摘要阅读，更不等于全文审读。
+- `retrieval_log` 指向当日详细检索 JSON，记录所有目录来源的实际入口、覆盖范围、失败/未查、发现与阅读计数及排除原因。未读标题、摘要不可得和访问失败只在检索档案，不进入论文卡片。
+- 新的正式日报 Markdown 仅由正式索引生成，不重写历史试刊。检验命令：`python3 tools/render_markdown.py && python3 tools/validate.py && python3 tools/test_time_validation.py && node --check assets/app.js && node tools/test_ui.cjs`。

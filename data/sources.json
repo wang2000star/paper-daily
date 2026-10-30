@@ -255,6 +255,34 @@
       ],
       "checked_at": "2026-10-30",
       "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。"
+    },
+    {
+      "id": "nvidia-research",
+      "name": "NVIDIA Research / Technical Blog",
+      "kind": "企业研究博客 / 技术报告",
+      "url": "https://research.nvidia.com/",
+      "domains": [
+        "计算机科学"
+      ],
+      "entrypoints": [
+        "https://research.nvidia.com/publications",
+        "https://developer.nvidia.com/blog/"
+      ],
+      "policy": "只收有实质方法、结果与条件的公开研究资料；核验原始时间、作者机构和阅读范围，跨来源合并同一研究。"
+    },
+    {
+      "id": "checkpoint-research",
+      "name": "Check Point Research",
+      "kind": "企业安全研究博客",
+      "url": "https://research.checkpoint.com/",
+      "domains": [
+        "网络与信息安全",
+        "计算机科学"
+      ],
+      "entrypoints": [
+        "https://research.checkpoint.com/category/ai-research/"
+      ],
+      "policy": "只收有实质方法、结果与条件的公开研究资料；核验原始时间、作者机构和阅读范围，跨来源合并同一研究。"
     }
   ],
   "content_types": {

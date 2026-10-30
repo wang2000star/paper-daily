@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "records": [
     {
       "id": "arxiv-2610.40625",
@@ -17,7 +17,12 @@
       "version": "v1",
       "updated_date": "2026-10-29",
       "first_issue": "2026-10-30",
-      "first_issue_type": "historical_trial"
+      "first_issue_type": "historical_trial",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ],
+      "latest_formal_version": "v1"
     },
     {
       "id": "arxiv-2610.40613",
@@ -35,7 +40,12 @@
       "version": "v1",
       "updated_date": "2026-10-29",
       "first_issue": "2026-10-30",
-      "first_issue_type": "historical_trial"
+      "first_issue_type": "historical_trial",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ],
+      "latest_formal_version": "v1"
     },
     {
       "id": "arxiv-2610.40622",
@@ -188,7 +198,12 @@
       "version": "ECCC TR26-287，论文标注 2026-10-28",
       "updated_date": "2026-10-29",
       "first_issue": "2026-10-30",
-      "first_issue_type": "historical_trial"
+      "first_issue_type": "historical_trial",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ],
+      "latest_formal_version": "ECCC TR26-287 首次发布；并见 arXiv:2610.40484v1（标题略异）"
     },
     {
       "id": "eccc-TR26-286",
@@ -207,7 +222,907 @@
       "updated_date": "2026-10-29",
       "first_issue": "2026-10-30",
       "first_issue_type": "historical_trial"
+    },
+    {
+      "id": "nvidia-mlip-tensor-core-20261029",
+      "work_id": "nvidia-mlip-tensor-core-20261029",
+      "aliases": [],
+      "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
+      "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
+      "version": "网页所示 2026-10-29 版本；无独立版本号",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "checkpoint-qwen-jaggedness-20261029",
+      "work_id": "checkpoint-qwen-jaggedness-20261029",
+      "aliases": [],
+      "url": "https://research.checkpoint.com/2026/coheres-qwen-story-looks-more-like-model-jaggedness/",
+      "title": "Cohere’s Qwen Story: Looks More Like Model Jaggedness",
+      "version": "网页所示 2026-10-29 版本；无独立版本号",
+      "updated_date": "2026-10-29",
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38877",
+      "work_id": "arxiv-2610.38877",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38877v1",
+      "title": "Homogeneous polynomial approximation on symmetric convex bodies: A proof of Kroó's conjecture",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37677",
+      "work_id": "arxiv-2610.37677",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37677v1",
+      "title": "Explicit matrix hitting points for noncommutative algebraic branching programs",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37777",
+      "work_id": "arxiv-2610.37777",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37777v1",
+      "title": "Maximal Curves with Few Automorphisms",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37817",
+      "work_id": "arxiv-2610.37817",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37817v1",
+      "title": "The generalized Cartan-Hadamard conjecture",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37877",
+      "work_id": "arxiv-2610.37877",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37877v1",
+      "title": "A complete classification of minimal value set polynomials",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37975",
+      "work_id": "arxiv-2610.37975",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37975v1",
+      "title": "Spectral unions of four intervals tile the real line",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38200",
+      "work_id": "arxiv-2610.38200",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38200v1",
+      "title": "Two-neighbor lattice percolation percolates in all dimensions",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38323",
+      "work_id": "arxiv-2610.38323",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38323v1",
+      "title": "Determination of weight enumerators of binary extremal self-dual codes of length 60",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38328",
+      "work_id": "arxiv-2610.38328",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38328v1",
+      "title": "Sizes of cross-intersecting families",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38374",
+      "work_id": "arxiv-2610.38374",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38374v1",
+      "title": "A five-species counterexample to the Hofbauer--Kon--Saito conjecture on qualitative permanence",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38447",
+      "work_id": "arxiv-2610.38447",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38447v1",
+      "title": "Davenport constants with growing binary rank",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39705",
+      "work_id": "arxiv-2610.39705",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39705v1",
+      "title": "Optimality of the BCC lattice among 3D lattice quantizers",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39743",
+      "work_id": "arxiv-2610.39743",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39743v1",
+      "title": "The Berry--Esseen estimate in the Boolean central limit theorem",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39759",
+      "work_id": "arxiv-2610.39759",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39759v1",
+      "title": "Minimum-degree thresholds beyond bounded colourability",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39838",
+      "work_id": "arxiv-2610.39838",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39838v1",
+      "title": "The Kawatani--Okawa conjecture in dimensions three and four",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39870",
+      "work_id": "arxiv-2610.39870",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39870v1",
+      "title": "Optimal self-orthogonal binary linear codes",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39883",
+      "work_id": "arxiv-2610.39883",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39883v1",
+      "title": "A counterexample to the pure semisimplicity conjecture",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39967",
+      "work_id": "arxiv-2610.39967",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39967v1",
+      "title": "Petty's equilateral-set conjecture in dimension five",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40095",
+      "work_id": "arxiv-2610.40095",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40095v1",
+      "title": "On the Erdős--Ginzburg--Ziv Problem for $\\mathbb{Z}_n^r$",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40232",
+      "work_id": "arxiv-2610.40232",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40232v1",
+      "title": "The fractional Faber--Krahn inequality in sharp quantitative form",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40270",
+      "work_id": "arxiv-2610.40270",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40270v1",
+      "title": "On separators in $K_t$-minor-free graphs",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40291",
+      "work_id": "arxiv-2610.40291",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40291v1",
+      "title": "A complete solution to the reverse isoperimetric problem for $λ$-convex bodies",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40486",
+      "work_id": "arxiv-2610.40486",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40486v1",
+      "title": "Average pairwise Hamming distance of a subset in a hypercube",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40605",
+      "work_id": "arxiv-2610.40605",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40605v1",
+      "title": "A self-normalized law of the iterated logarithm for Rademacher random multiplicative functions",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37693",
+      "work_id": "arxiv-2610.37693",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37693v1",
+      "title": "Cohomological change of coefficients for noncocommutative Hopf algebras",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37885",
+      "work_id": "arxiv-2610.37885",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37885v1",
+      "title": "Complete $RO$-Graded Tambara Structure of $H\\underline{\\mathbb Z}$ for cyclic groups",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37944",
+      "work_id": "arxiv-2610.37944",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37944v1",
+      "title": "Symmetric List Objects",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38142",
+      "work_id": "arxiv-2610.38142",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38142v1",
+      "title": "New structure for Villadsen algebras of the first type",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39767",
+      "work_id": "arxiv-2610.39767",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39767v1",
+      "title": "Formality transmission",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40057",
+      "work_id": "arxiv-2610.40057",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40057v1",
+      "title": "Invariant probability measures on holomorphic functions on the unit disk",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40308",
+      "work_id": "arxiv-2610.40308",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40308v1",
+      "title": "Enhanced convergence guarantees of score-based generative models in $\\mathcal{W}_2$-distance beyond log-concavity",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40438",
+      "work_id": "arxiv-2610.40438",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40438v1",
+      "title": "On generic subsystems of a Smale space",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37673",
+      "work_id": "arxiv-2610.37673",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37673v1",
+      "title": "Well-Typed ComfyUI Cannot Go Wrong: Gradual Refinement Types for Generative-AI Workflow Graphs",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37676",
+      "work_id": "arxiv-2610.37676",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37676v1",
+      "title": "Scoring Explanations Without Reading Them: Structural Shortcuts in Automated-Interpretability Evaluation Data",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37679",
+      "work_id": "arxiv-2610.37679",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37679v1",
+      "title": "Exposure Is Not Commitment: Double-Stratified Evaluation of Latent Monitors for Tool-Using Agents",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37720",
+      "work_id": "arxiv-2610.37720",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37720v1",
+      "title": "LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37869",
+      "work_id": "arxiv-2610.37869",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37869v1",
+      "title": "Hardness of Coloring $2$-Colorable $3$-Uniform Hypergraphs with $\\log^{Ω(1)} n$ Colors",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38054",
+      "work_id": "arxiv-2610.38054",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38054v1",
+      "title": "Understanding Post-Quantum Cryptography Adoption: Practices, Challenges, and Evolution in Open-Source Software",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38262",
+      "work_id": "arxiv-2610.38262",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38262v1",
+      "title": "Rosemary: Efficient and Adaptable In-Storage Acceleration for Fully Homomorphic Encryption",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38355",
+      "work_id": "arxiv-2610.38355",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38355v1",
+      "title": "FlatCake: A Flat KVCache Storage Architecture for LLM Serving",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38479",
+      "work_id": "arxiv-2610.38479",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38479v1",
+      "title": "Recurrent Bipartite Graph Neural Networks for QC-MDPC Error Decoding in McEliece Cryptosystems",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38602",
+      "work_id": "arxiv-2610.38602",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38602v1",
+      "title": "STAR: Scalable TEE-based Anonymous Rate-limiter",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38616",
+      "work_id": "arxiv-2610.38616",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38616v1",
+      "title": "Order Maintenance in Worst-Case Constant Time, Verified",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38789",
+      "work_id": "arxiv-2610.38789",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38789v1",
+      "title": "Complexity of Differentially Private Selection via Federated APIs",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39189",
+      "work_id": "arxiv-2610.39189",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39189v1",
+      "title": "Provably Secure Diffusion Watermarking Against Removal Adversaries with Batched Detector Access",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39374",
+      "work_id": "arxiv-2610.39374",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39374v1",
+      "title": "DualGuard: Comprehensive and Efficient Memory Safety across Sequential and Speculative Execution",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39572",
+      "work_id": "arxiv-2610.39572",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39572v1",
+      "title": "RV2GC: Reconstructing the Garbling Boundary in a RISC-V Garbled Processor",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39753",
+      "work_id": "arxiv-2610.39753",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39753v1",
+      "title": "Four-Coloring Planar Graphs in Linear Time",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.39910",
+      "work_id": "arxiv-2610.39910",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.39910v1",
+      "title": "From if to Oops: Turning a conditional into a key-recovery oracle",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40012",
+      "work_id": "arxiv-2610.40012",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40012v1",
+      "title": "Reachability in Five-Dimensional Vector Addition Systems Is PSPACE-Complete",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40538",
+      "work_id": "arxiv-2610.40538",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40538v1",
+      "title": "crush: Extensible Proof Automation for Lean",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.40591",
+      "work_id": "arxiv-2610.40591",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.40591v1",
+      "title": "Maximum Cardinality Matching in $n^{2+o(1)}$ Time",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37701",
+      "work_id": "arxiv-2610.37701",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37701v1",
+      "title": "DuQUAD: A Dual-View Framework with Quality-Aware Evidence Pruning for Multi-Document Question Answering",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37799",
+      "work_id": "arxiv-2610.37799",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37799v1",
+      "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37818",
+      "work_id": "arxiv-2610.37818",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37818v1",
+      "title": "GOFish: Full Field-of-View Gaussian Splatting and Mesh Extraction",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.37862",
+      "work_id": "arxiv-2610.37862",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.37862v1",
+      "title": "Improving Group Deliberation through AI-Guided Self-Reflection",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38004",
+      "work_id": "arxiv-2610.38004",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38004v1",
+      "title": "Opportunistic Optical Link Scheduling in the Scalable Matching Model",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "arxiv-2610.38276",
+      "work_id": "arxiv-2610.38276",
+      "aliases": [],
+      "url": "https://arxiv.org/abs/2610.38276v1",
+      "title": "MixCards: Evaluating Structured Descriptions of Multi-Source Sound Scenes",
+      "version": "v1",
+      "updated_date": null,
+      "first_issue": "2026-10-29",
+      "first_issue_type": "daily",
+      "first_formal_issue": "2026-10-29",
+      "formal_issues": [
+        "2026-10-29"
+      ]
     }
   ],
-  "dedup_note": "历史试刊记录仅用于识别已读资料，不视为正式日报收录；若论文公开发布时间确实落入首个 AOE 窗口，可以按正常规则收录，注明先前试刊记录。"
+  "dedup_note": "历史试刊只作阅读历史，正式跨日去重依据 first_formal_issue/formal_issues；待核实条目不占确认新增身份。"
 }

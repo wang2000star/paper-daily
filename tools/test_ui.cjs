@@ -52,4 +52,17 @@ element('#group').value='source';api.render();assert.equal(element('#results-hea
 for(const id of ['search','source','domain','subfield','depth','group'])element('#'+id).value='';api.render();
 assert.equal((element('#results').innerHTML.match(/class="paper-card"/g)||[]).length,trial.papers.length);
 assert.ok(!api.eligible(paper),'historical fixture must not acquire fabricated review eligibility');
+// Pending entries remain a distinct filtered list and never inflate confirmed counts.
+api.setIssue({...trial,papers:trial.papers.slice(1),pending_papers:[{...paper,eligibility:'pending'}]});
+api.render();
+assert.match(element('#count').textContent,/22 \/ 22 篇确认新增/);
+assert.match(element('#pending-count').textContent,/1 \/ 1 篇时间待核实/);
+assert.equal(element('#pending-section').hidden,false);
+assert.match(element('#pending-results').innerHTML,/时间待核实 · 不计入当日新增/);
+assert.ok(!element('#results').innerHTML.includes(`id="${paper.id}"`));
+element('#search').value='no matching paper sentinel';api.render();
+assert.match(element('#pending-count').textContent,/0 \/ 1/);
+element('#search').value='';api.render();
+assert.match(element('#pending-results').innerHTML,/aria-expanded="true"/);
+
 (async()=>{await api.loadIssue(trial.date);assert.equal(api.expandedPapers.size,0,'date loading resets expansion');assert.match(element('#results').innerHTML,/没有符合/,'ineligible trial entries stay excluded');console.log('PASS: collapsed markup, full summary preservation, escaping, title/link separation, repeated synchronized toggles, filtering, grouping, clearing, state retention and date reset.');})().catch(e=>{console.error(e);process.exitCode=1;});

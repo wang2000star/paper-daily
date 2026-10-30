@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "window_start": "2026-10-29T12:00:00Z",
+  "window_end": "2026-10-30T12:00:00Z",
+  "generated_at": "2026-10-30T12:12:35Z",
+  "scope_note": "本期为选择性阅读日报，不是全量论文解读：arXiv CS/数学新公告目录去重发现 1,970 项，实际完成 60 项完整摘要阅读，其中 15 项另读核心正文；其余目录条目未作逐篇解读。另核 ECCC 与机构原始研究内容。确认新增 63 项、公开时间待核实 1 项；预印本、技术报告和研究博客分型标注。其他来源仅按实际入口进行有限检查，覆盖缺口见检索档案。",
+  "coverage": [
+    {
+      "source": "eccc",
+      "name": "ECCC",
+      "url": "https://eccc.weizmann.ac.il/",
+      "status": "checked",
+      "scope": "最新报告首页、最新 RSS 的10条记录；对临近边界的TR26-286/287核对详情及完整摘要，287阅读正文核心陈述。",
+      "note": "本窗口确认TR26-287，已与arXiv2610.40484合并。286的公开时间为10月29日06:58:21Z，窗口外；RSS更新不自动等于首次发表。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://eccc.weizmann.ac.il/",
+        "https://eccc.weizmann.ac.il/feeds/latestReports",
+        "https://eccc.weizmann.ac.il/report/2026/286/",
+        "https://eccc.weizmann.ac.il/report/2026/287/"
+      ],
+      "public_display": true,
+      "id": "eccc"
+    },
+    {
+      "source": "eprint",
+      "name": "IACR ePrint",
+      "url": "https://eprint.iacr.org/",
+      "status": "partial",
+      "scope": "2026年度倒序目录、7日更新目录的最新部分与IACR首页新闻；核对最新编号2026/2671详情。7日列表仅作为筛选入口，不将其整体当本期窗口。",
+      "note": "2026目录最新可见编号2671在10月28日approved，窗口外；29/30日最新更新区包含旧编号修订，未计作新论文。未逐条审计全部132条7日更新；RSS直取403，停止该路径。不能据此断言ePrint全站没有新论文或正式发表事件。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://eprint.iacr.org/2026/",
+        "https://eprint.iacr.org/days/7",
+        "https://eprint.iacr.org/2026/2671",
+        "https://eprint.iacr.org/rss/rss.xml",
+        "https://iacr.org/"
+      ],
+      "public_display": false,
+      "id": "eprint"
+    },
+    {
+      "source": "drops",
+      "name": "DROPS",
+      "url": "https://drops.dagstuhl.de/",
+      "status": "partial",
+      "scope": "首页最近出版的5个卷/期及其出版元数据，辅以限定域日期检索。",
+      "note": "TIME2026为10月10日、ESEM2026为10月5日、AFT2026和ATMOS2026为10月2日、TGDK4(3)为9月30日，均非窗口内新卷。未遍历全库逐篇元数据或OAI增量，不能排除其他条目。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://drops.dagstuhl.de/",
+        "https://drops.dagstuhl.de/entities/volume/OASIcs-volume-146",
+        "https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-394",
+        "https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-395",
+        "https://drops.dagstuhl.de/entities/volume/OASIcs-volume-147",
+        "https://drops.dagstuhl.de/entities/issue/TGDK-volume-4-issue-3"
+      ],
+      "public_display": false,
+      "id": "drops"
+    },
+    {
+      "source": "tches",
+      "name": "IACR TCHES",
+      "url": "https://tches.iacr.org/index.php/TCHES/issue/current",
+      "status": "blocked",
+      "scope": "尝试读取当前期入口。",
+      "note": "服务器返回Anubis Access Denied，未绕过；无法审阅的条目未纳入日报。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://tches.iacr.org/index.php/TCHES/issue/current"
+      ],
+      "public_display": false,
+      "id": "tches"
+    },
+    {
+      "source": "tosc",
+      "name": "IACR ToSC",
+      "url": "https://tosc.iacr.org/index.php/ToSC/issue/current",
+      "status": "blocked",
+      "scope": "尝试读取当前期入口。",
+      "note": "服务器返回Anubis Access Denied，未绕过；无法审阅的条目未纳入日报。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://tosc.iacr.org/index.php/ToSC/issue/current"
+      ],
+      "public_display": false,
+      "id": "tosc"
+    },
+    {
+      "source": "iacr-conferences",
+      "name": "IACR 会议",
+      "url": "https://iacr.org/",
+      "status": "partial",
+      "scope": "IACR首页、Crypto2026和Asiacrypt2026 acceptedpapers入口、TCC2026首页与accepted入口。",
+      "note": "Crypto入口仅返回页面框架，Asiacrypt入口显示名单未提供，TCC入口获取失败；未取得本窗口正式发表证据。会议日期与录用名单不作为论文首次公开日期。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://iacr.org/",
+        "https://crypto.iacr.org/2026/acceptedpapers.php",
+        "https://asiacrypt.iacr.org/2026/acceptedpapers.php",
+        "https://tcc.iacr.org/2026/",
+        "https://tcc.iacr.org/2026/acceptedpapers.php"
+      ],
+      "public_display": false,
+      "id": "iacr-conferences"
+    },
+    {
+      "source": "usenix",
+      "name": "USENIX Security",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/technical-sessions",
+      "status": "partial",
+      "scope": "Security26技术议程/论文集入口及页面可见摘要。",
+      "note": "这是8月会议既有议程，未逐篇核查后续元数据或勘误发布时间，未发现可确认的本窗口首次正式发表事件；不把现有论文补作新稿。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://www.usenix.org/conference/usenixsecurity26/technical-sessions"
+      ],
+      "public_display": false,
+      "id": "usenix"
+    },
+    {
+      "source": "ieee-sp",
+      "name": "IEEE S&P",
+      "url": "https://sp2026.ieee-security.org/accepted-papers.html",
+      "status": "partial",
+      "scope": "S&P2026官方录用论文名单。",
+      "note": "名单提供题目与作者机构，不提供本窗口逐篇公开时间；未据此产生日报条目。未覆盖IEEE Xplore全量在线优先发表。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://sp2026.ieee-security.org/accepted-papers.html"
+      ],
+      "public_display": false,
+      "id": "ieee-sp"
+    },
+    {
+      "source": "ndss",
+      "name": "NDSS",
+      "url": "https://www.ndss-symposium.org/ndss2026/accepted-papers/",
+      "status": "partial",
+      "scope": "NDSS2026官方录用论文名单入口。",
+      "note": "未取得本窗口新发表事件的时间证据；未逐篇审阅全体录用论文，不把名单展示当新公开。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://www.ndss-symposium.org/ndss2026/accepted-papers/"
+      ],
+      "public_display": false,
+      "id": "ndss"
+    },
+    {
+      "source": "pets",
+      "name": "PoPETs",
+      "url": "https://petsymposium.org/popets/2026/",
+      "status": "partial",
+      "scope": "PETS2026录用目录及PoPETs2026卷目录。",
+      "note": "目录可访问，但本轮未遍历每篇DOI记录核对首次发表时间；未确认本窗口新增。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://petsymposium.org/2026/paperlist.php",
+        "https://petsymposium.org/popets/2026/"
+      ],
+      "public_display": false,
+      "id": "pets"
+    },
+    {
+      "source": "acm",
+      "name": "ACM CCS / STOC；IEEE FOCS",
+      "url": "https://www.sigsac.org/ccs/CCS2026/",
+      "status": "partial",
+      "scope": "CCS2026新闻首页、STOC2026官方论文集目录、FOCS2026首页及录用列表。",
+      "note": "CCS最新公告为10月27日会务消息；STOC为既有会议目录；FOCS录用列表不提供本窗口首次公开时间。未覆盖ACM DL/IEEE Xplore的全量线上发表增量。",
+      "checked_at": "2026-10-30T12:06:00Z",
+      "entrypoints_checked": [
+        "https://www.sigsac.org/ccs/CCS2026/",
+        "https://acm-stoc.org/stoc2026/toc.html",
+        "https://focs.computer.org/2026/",
+        "https://focs.computer.org/2026/accepted-papers/"
+      ],
+      "public_display": false,
+      "id": "acm"
+    },
+    {
+      "source": "openai-research",
+      "name": "OpenAI Research",
+      "url": "https://openai.com/research/",
+      "status": "partial",
+      "scope": "目标窗口：2026-10-29 12:00 至 2026-10-30 12:00 UTC；只核实实际可访问索引和以下入口，不宣称全量。",
+      "note": "研究索引及两篇原始页面内容已读；监控研究博客仅日期证据，列待核实。Luna 系统卡补充的已读引言说明已有模型更新与沿用此前训练/防护，未建立独立新研究，排除到检索记录。Model Spec 更新也不作研究条目。RSS 的 web 读取不支持 XML、直接读取返回 403；未绕过。GitHub 仅组织首页最近 10 个仓库，未把普通更新当首发。",
+      "checked_at": "2026-10-30T12:07:25.982575+00:00",
+      "entrypoints_checked": [
+        "https://openai.com/research/",
+        "https://openai.com/research/index/",
+        "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+        "https://deploymentsafety.openai.com/gpt-6-luna-october-28-2026-addendum",
+        "https://github.com/openai",
+        "https://openai.com/news/rss.xml"
+      ],
+      "public_display": false,
+      "id": "openai-research"
+    },
+    {
+      "source": "anthropic-research",
+      "name": "Anthropic Research",
+      "url": "https://www.anthropic.com/research",
+      "status": "partial",
+      "scope": "目标窗口：2026-10-29 12:00 至 2026-10-30 12:00 UTC；只核实实际可访问索引和以下入口，不宣称全量。",
+      "note": "官方研究页可见最新研究为 10月27日；本次未确认窗口内新增。GitHub 仅组织首页最近 10 仓库；并未遍历全部仓库或 release。",
+      "checked_at": "2026-10-30T12:07:25.982575+00:00",
+      "entrypoints_checked": [
+        "https://www.anthropic.com/research",
+        "https://github.com/anthropics"
+      ],
+      "public_display": false,
+      "id": "anthropic-research"
+    },
+    {
+      "source": "deepmind-research",
+      "name": "Google DeepMind / Google Research",
+      "url": "https://deepmind.google/research/",
+      "status": "partial",
+      "scope": "目标窗口：2026-10-29 12:00 至 2026-10-30 12:00 UTC；只核实实际可访问索引和以下入口，不宣称全量。",
+      "note": "Genie 4 原页为10月27日，Carbon 原页为10月28日，均不作为本窗口新增。Google Research 首页最新可见为10月27日。GitHub近期仓库更新不等于研究首发；reaf-sim release v0.0.1 显示10月19日，iris关联论文为旧作。未遍历所有仓库。",
+      "checked_at": "2026-10-30T12:07:25.982575+00:00",
+      "entrypoints_checked": [
+        "https://deepmind.google/research/",
+        "https://deepmind.google/blog/",
+        "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "https://research.google/blog/",
+        "https://github.com/google-deepmind",
+        "https://github.com/google-deepmind/iris",
+        "https://github.com/google-deepmind/reaf-sim/releases"
+      ],
+      "public_display": false,
+      "id": "deepmind-research"
+    },
+    {
+      "source": "microsoft-research",
+      "name": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/",
+      "status": "partial",
+      "scope": "目标窗口：2026-10-29 12:00 至 2026-10-30 12:00 UTC；只核实实际可访问索引和以下入口，不宣称全量。",
+      "note": "研究主页与博客首页最新可见文章为10月22日；未确认窗口内研究发布。GitHub组织首页最近10项以软件维护为主，未逐个审计release；不能推断全机构无新增。",
+      "checked_at": "2026-10-30T12:07:25.982575+00:00",
+      "entrypoints_checked": [
+        "https://www.microsoft.com/en-us/research/",
+        "https://www.microsoft.com/en-us/research/blog/",
+        "https://github.com/microsoft"
+      ],
+      "public_display": false,
+      "id": "microsoft-research"
+    },
+    {
+      "source": "meta-research",
+      "name": "Meta AI / Meta Research",
+      "url": "https://ai.meta.com/research/",
+      "status": "partial",
+      "scope": "目标窗口：2026-10-29 12:00 至 2026-10-30 12:00 UTC；只核实实际可访问索引和以下入口，不宣称全量。",
+      "note": "研究主页无可读行；博客返回的列表非完整最新发布索引。组织近期仓库首页已查，logact相关论文4月公开，v0.1.0 release为10月1日，不把10月30日代码更新当新论文。其他仓库未全量核查。",
+      "checked_at": "2026-10-30T12:07:25.982575+00:00",
+      "entrypoints_checked": [
+        "https://ai.meta.com/research/",
+        "https://ai.meta.com/blog/",
+        "https://github.com/facebookresearch",
+        "https://github.com/facebookresearch/logact",
+        "https://github.com/facebookresearch/logact/releases",
+        "https://arxiv.org/abs/2604.07988"
+      ],
+      "public_display": false,
+      "id": "meta-research"
+    },
+    {
+      "source": "nvidia-research",
+      "name": "NVIDIA Research / Technical Blog",
+      "url": "https://research.nvidia.com/publications",
+      "status": "partial",
+      "scope": "目标窗口：2026-10-29 12:00 至 2026-10-30 12:00 UTC；只核实实际可访问索引和以下入口，不宣称全量。",
+      "note": "原始技术博客正文、时间元数据与作者介绍已读，确认1项研究博客。研究出版物索引未逐篇完成首发时间审计。代码仅链接核对，不克隆、不运行。",
+      "checked_at": "2026-10-30T12:07:25.982575+00:00",
+      "entrypoints_checked": [
+        "https://research.nvidia.com/publications",
+        "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
+        "https://github.com/lab-cosmo/upet",
+        "https://github.com/NVIDIA/cutlass/blob/main/examples/27_ampere_3xtf32_fast_accurate_tensorop_gemm/27_ampere_3xtf32_fast_accurate_tensorop_gemm.cu"
+      ],
+      "public_display": false,
+      "id": "nvidia-research"
+    },
+    {
+      "source": "checkpoint-research",
+      "name": "Check Point Research",
+      "url": "https://research.checkpoint.com/",
+      "status": "partial",
+      "scope": "目标窗口：2026-10-29 12:00 至 2026-10-30 12:00 UTC；只核实实际可访问索引和以下入口，不宣称全量。",
+      "note": "原技术页完整正文及时间元数据已读，确认1项。配套解释博客属同一研究，合并不重复；研究页 web 打开失败后正常公开 HTTP 读取成功。未将后台账号猜作作者。",
+      "checked_at": "2026-10-30T12:07:25.982575+00:00",
+      "entrypoints_checked": [
+        "https://research.checkpoint.com/category/ai-research/",
+        "https://research.checkpoint.com/2026/coheres-qwen-story-looks-more-like-model-jaggedness/",
+        "https://blog.checkpoint.com/ai-security/qwen-incident-backdoor-ai-agents/"
+      ],
+      "public_display": false,
+      "id": "checkpoint-research"
+    },
+    {
+      "source": "other-institutions",
+      "name": "其他机构补充入口",
+      "url": "https://metr.org/",
+      "status": "partial",
+      "scope": "目标窗口：2026-10-29 12:00 至 2026-10-30 12:00 UTC；只核实实际可访问索引和以下入口，不宣称全量。",
+      "note": "METR原文为10月22日而非本窗口新增；Eclypsium仅检索到合作新闻及研究线索，未完成实质技术材料审阅，不入日报。IBM/其他企业仅有限定日期检索，没有全量入口审查。",
+      "checked_at": "2026-10-30T12:07:25.982575+00:00",
+      "entrypoints_checked": [
+        "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/",
+        "https://eclypsium.com/press-release/eclypsium-and-nvidia-collaborate-to-address-emerging-ai-infrastructure-attack-surface-and-strengthen-ai-trust/"
+      ],
+      "public_display": false,
+      "id": "other-institutions"
+    },
+    {
+      "source": "arxiv",
+      "name": "arXiv 数学新稿",
+      "url": "https://arxiv.org/list/math/new",
+      "status": "partial",
+      "scope": "完整取得 2026-10-30 数学列表 New submissions 744 条，其中 692 条主分类为 math.*；本数学来源检索实际阅读并原创总结 33 篇完整摘要。交叉列表和修订不计新稿。",
+      "note": "33 篇为分领域选择，不是数学新稿全量解读。未总结的数学主分类条目659篇；另52条非数学主分类由其他来源检索去重处理。27篇摘要级、6篇局部正文阅读并核对机构；未完成全证明审计。 数学HTML列表1347项，RSS共1349项（含不同公告类型），两个源的总数差异保留，不当作完全同一快照；33项均逐项核对RSS new标记与批次pubDate。",
+      "checked_at": "2026-10-30T12:10:00Z",
+      "entrypoints_checked": [
+        "https://arxiv.org/list/math/new",
+        "https://info.arxiv.org/help/availability.html",
+        "https://arxiv.org/abs/2610.38877",
+        "https://arxiv.org/abs/2610.37677",
+        "https://arxiv.org/abs/2610.37777",
+        "https://arxiv.org/abs/2610.37817",
+        "https://arxiv.org/abs/2610.37877",
+        "https://arxiv.org/abs/2610.37975",
+        "https://arxiv.org/abs/2610.38200",
+        "https://arxiv.org/abs/2610.38323",
+        "https://arxiv.org/abs/2610.38328",
+        "https://arxiv.org/abs/2610.38374",
+        "https://arxiv.org/abs/2610.38447",
+        "https://arxiv.org/abs/2610.39705",
+        "https://arxiv.org/abs/2610.39743",
+        "https://arxiv.org/abs/2610.39759",
+        "https://arxiv.org/abs/2610.39838",
+        "https://arxiv.org/abs/2610.39870",
+        "https://arxiv.org/abs/2610.39883",
+        "https://arxiv.org/abs/2610.39967",
+        "https://arxiv.org/abs/2610.40095",
+        "https://arxiv.org/abs/2610.40232",
+        "https://arxiv.org/abs/2610.40270",
+        "https://arxiv.org/abs/2610.40291",
+        "https://arxiv.org/abs/2610.40486",
+        "https://arxiv.org/abs/2610.40590",
+        "https://arxiv.org/abs/2610.40605",
+        "https://arxiv.org/abs/2610.37693",
+        "https://arxiv.org/abs/2610.37885",
+        "https://arxiv.org/abs/2610.37944",
+        "https://arxiv.org/abs/2610.38142",
+        "https://arxiv.org/abs/2610.39767",
+        "https://arxiv.org/abs/2610.40057",
+        "https://arxiv.org/abs/2610.40308",
+        "https://arxiv.org/abs/2610.40438",
+        "https://arxiv.org/html/2610.38877v1",
+        "https://arxiv.org/html/2610.38323v1",
+        "https://arxiv.org/html/2610.39870v1",
+        "https://arxiv.org/html/2610.40486v1",
+        "https://arxiv.org/html/2610.40590v1",
+        "https://arxiv.org/html/2610.39705v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "public_display": true,
+      "rss_last_build": "Fri, 30 Oct 2026 06:39:53 +0000",
+      "rss_total_items": 1349,
+      "id": "arxiv"
+    },
+    {
+      "source": "arxiv",
+      "name": "arXiv Computer Science 新公告批次",
+      "url": "https://arxiv.org/list/cs/new",
+      "status": "partial",
+      "scope": "完整获取 2026-10-30 新公告列表的全部 1306 条 New submissions；129 条 Cross submissions 与 755 条 replacements 不冒充新稿。按 New submissions 与 math 批次合并得到 1970 个唯一候选。CS 本轮实际逐条审阅并写中文总结 27 篇。",
+      "note": "这是有完整候选清单的有限审阅，不是全量论文总结；其余CS新稿未逐篇语义审阅。27篇覆盖程序语言/证明、理论算法、系统/数据库、安全/密码、AI评测、视觉、机器人、HCI、网络、检索与音频，不意味着各子领域完整。CS replacements仅抓到565/755条且不纳入新稿。时刻来自逐条核对RSS new批次pubDate，非submitted日期；原始列表与RSS保存到检索证据。",
+      "checked_at": "2026-10-30T12:11:30Z",
+      "entrypoints_checked": [
+        "https://arxiv.org/list/cs/new?skip=0&show=2000",
+        "https://arxiv.org/list/math/new?skip=0&show=2000",
+        "https://info.arxiv.org/help/availability.html",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "public_display": false,
+      "id": "arxiv"
+    },
+    {
+      "id": "dblp",
+      "source": "dblp",
+      "name": "DBLP",
+      "url": "https://dblp.org/",
+      "status": "not_checked",
+      "scope": "本轮未完成该来源入口检查。",
+      "note": "不据此判断是否存在窗口内新增。",
+      "checked_at": null,
+      "entrypoints_checked": [],
+      "public_display": false
+    }
+  ],
+  "cross_source_merges": [],
+  "excluded_examples": [
+    {
+      "id": "eccc-TR26-286",
+      "reason": "RSS publication 2026-10-29T06:58:21Z，窗口外。"
+    },
+    {
+      "id": "eprint-2026-2671",
+      "reason": "approved2026-10-28，窗口外。"
+    },
+    {
+      "title": "Addendum to GPT-6 Luna System Card: October 29, 2026 Update",
+      "url": "https://deploymentsafety.openai.com/gpt-6-luna-october-28-2026-addendum",
+      "source": "openai-research",
+      "reason": "已读取引言及训练概述；内容说明已有模型行为更新，并沿用此前训练与防护。未建立本次补充卡具有独立的新原创研究贡献；按旧版本更新排除，不列为待核实论文。",
+      "reading_scope": "Introduction 与 Model Data and Training；未审阅完整评估。"
+    }
+  ],
+  "inventory": {
+    "description": "arXiv CS/math New submissions metadata-only inventory, saved separately in 学术论文日报 Space; no full abstracts republished.",
+    "discovered_unique": 1970,
+    "formal_arxiv_summaries": 60
+  },
+  "source_timestamp_evidence": {
+    "checked_at": "2026-10-30T12:07:25.982575+00:00",
+    "sources": [
+      {
+        "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
+        "html_sha256": "31216da1e47b5e29f42990f5ed72564580d8c983972dbabb62122cd74fdb8eb0",
+        "article_published_time": "2026-10-29T15:00:00+00:00",
+        "verification": "Publisher article:published_time equals JSON-LD datePublished; original HTML read without executing scripts."
+      },
+      {
+        "url": "https://research.checkpoint.com/2026/coheres-qwen-story-looks-more-like-model-jaggedness/",
+        "html_sha256": "9b8a969d111a83bf429fe868af89a86b63443ad35c961b376bd48815f2104627",
+        "article_published_time": "2026-10-29T14:08:46+00:00",
+        "verification": "Publisher article:published_time equals JSON-LD datePublished; original HTML read without executing scripts."
+      }
+    ]
+  },
+  "arxiv_inventory_provenance": {
+    "issue_aoe": "2026-10-29",
+    "window_utc": [
+      "2026-10-29T12:00:00Z",
+      "2026-10-30T12:00:00Z"
+    ],
+    "checked_at": "2026-10-30T12:12:10.634084+00:00",
+    "list_counts": {
+      "cs": {
+        "New submissions (showing 1306 of 1306 entries)": 1306,
+        "Cross submissions (showing 129 of 129 entries)": 129,
+        "Replacement submissions (showing first 565 of 755 entries)": 565
+      },
+      "math": {
+        "New submissions (showing 744 of 744 entries)": 744,
+        "Cross submissions (showing 128 of 128 entries)": 128,
+        "Replacement submissions (showing 475 of 475 entries)": 475
+      }
+    },
+    "unique_new_union": 1970,
+    "new_list_overlap": 80,
+    "selected_cs_ids": [
+      "arxiv-2610.37673",
+      "arxiv-2610.37676",
+      "arxiv-2610.37679",
+      "arxiv-2610.37720",
+      "arxiv-2610.37869",
+      "arxiv-2610.38054",
+      "arxiv-2610.38262",
+      "arxiv-2610.38355",
+      "arxiv-2610.38479",
+      "arxiv-2610.38602",
+      "arxiv-2610.38616",
+      "arxiv-2610.38789",
+      "arxiv-2610.39189",
+      "arxiv-2610.39374",
+      "arxiv-2610.39572",
+      "arxiv-2610.39753",
+      "arxiv-2610.39910",
+      "arxiv-2610.40012",
+      "arxiv-2610.40538",
+      "arxiv-2610.40591",
+      "arxiv-2610.40620",
+      "arxiv-2610.37701",
+      "arxiv-2610.37799",
+      "arxiv-2610.37818",
+      "arxiv-2610.37862",
+      "arxiv-2610.38004",
+      "arxiv-2610.38276"
+    ],
+    "reading_depth_counts": {
+      "partial": 9,
+      "abstract": 18
+    },
+    "rss_item_count": 2000,
+    "rss_type_counts": {
+      "new": 1306,
+      "cross": 135,
+      "replace": 559
+    },
+    "rss_lastBuildDate": "Fri, 30 Oct 2026 06:39:20 +0000",
+    "per_selected_item_pubDate": "Fri, 30 Oct 2026 00:00:00 -0400",
+    "public_time_interpretation": "RSS source-supplied new announcement batch timestamp; not independent per-item exact first availability; first submission time not used as publication event. Other platforms not exhaustively searched for prior publication.",
+    "coverage_limit": "Downloaded all CS/math new-list abstract inventory; semantically read and summarized only these 27 CS records; separate mathematics reading set. Full inventory is not evidence of semantic review. Replacements and cross-list sections excluded from new events.",
+    "public_sources": [
+      "https://arxiv.org/list/cs/new?skip=0&show=2000",
+      "https://arxiv.org/list/math/new?skip=0&show=2000",
+      "https://rss.arxiv.org/rss/cs",
+      "https://info.arxiv.org/help/availability.html"
+    ],
+    "manuscript_html_failures": [
+      {
+        "id": "2610.38602",
+        "status": "HTML获取未成功，原工具输出未完整保留；不据此判定网站不可访问",
+        "fallback": "complete abstract read; institutions unverified"
+      },
+      {
+        "id": "2610.39910",
+        "status": "HTTP404",
+        "fallback": "complete abstract read; institutions unverified"
+      }
+    ],
+    "redistribution": "Do not publish downloaded full manuscript HTML or TXT; publish original Chinese summaries and this metadata log only.",
+    "source_hashes": {
+      "cs.html": "9a16646737787acb799cf5930ff51b18eaf5b95d846654bf6be82931ebb2f51d",
+      "math.html": "22a573d44ee17748db75bd1536c8cd9435f9e67a5bcec8668a1513c710a1634a",
+      "cs.rss": "8c5a1d1bce35bbda070667d69feb45d3bb2a41cb1189ff360b915ff211728a4b",
+      "new_inventory.json": "30f8929d61405013b266f520e316b67df87b5e6f3ea98d80eef13683630599b4"
+    }
+  }
+}
