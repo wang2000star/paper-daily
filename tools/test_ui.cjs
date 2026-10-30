@@ -18,8 +18,9 @@ const context=vm.createContext({console,URL,URLSearchParams,location:{href:'http
 let code=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
 assert.ok(code.endsWith('init();\n'),'test harness must suppress only the final initialization');
 code=code.slice(0,-'init();\n'.length);
-vm.runInContext(code+'\nglobalThis.api={card,render,toggleSummary,overview,eligible,loadIssue,expandedPapers,setIssue:x=>issue=x,setSources:x=>sources=x,setRefs:x=>issueRefs=new Map(x.map(i=>[i.date,i]))};',context);
+vm.runInContext(code+'\nglobalThis.api={card,render,toggleSummary,overview,eligible,loadIssue,expandedPapers,setTaxonomy:x=>taxonomy=x,setIssue:x=>issue=x,setSources:x=>sources=x,setRefs:x=>issueRefs=new Map(x.map(i=>[i.date,i]))};',context);
 const api=context.api;
+api.setTaxonomy(JSON.parse(fs.readFileSync(path.join(root,'data/arxiv-taxonomy.json'))));
 api.setRefs(manifest.issues);
 assert.ok(!code.includes("$('#source')")&&!code.includes('source-counts'),'obsolete source UI removed');
 api.setSources(Object.fromEntries(catalog.sources.map(s=>[s.id,s])));
@@ -51,12 +52,22 @@ for(let i=0;i<4;i++){
 click(controls[0]);
 api.render();assert.match(element('#results').innerHTML,/aria-expanded="true"/);
 element('#search').value='no matching paper sentinel';api.render();assert.match(element('#results').innerHTML,/没有符合/);
-element('#search').value='';element('#domain').value=paper.domains[0];element('#subfield').value=paper.subfields[0];element('#depth').value=paper.reading_depth;api.render();
+element('#search').value='';element('#arxiv-group').value=paper.arxiv_group;element('#category').value=paper.canonical_primary_category;element('#depth').value=paper.reading_depth;api.render();
 assert.ok(element('#results').innerHTML.includes(`id="${paper.id}"`));assert.match(element('#results').innerHTML,/aria-expanded="true"/);
-assert.equal(element('#results-heading').textContent,'按领域浏览');
-for(const id of ['search','domain','subfield','depth'])element('#'+id).value='';api.render();
+assert.equal(element('#results-heading').textContent,'按 arXiv 主分类浏览');
+for(const id of ['search','arxiv-group','category','depth'])element('#'+id).value='';api.render();
 assert.equal((element('#results').innerHTML.match(/class="paper-card"/g)||[]).length,trial.papers.length);
 assert.ok(api.eligible(paper),'actual reviewed arxiv paper qualifies');
+assert.equal((element('#results').innerHTML.match(/class="arxiv-category"/g)||[]).length,34);
+assert.equal((element('#results').innerHTML.match(/class="arxiv-group"/g)||[]).length,3);
+for(const [group,category,count] of [['cs','cs.CR',12],['physics','math-ph',2]]){
+ element('#arxiv-group').value=group;element('#category').value=category;api.render();
+ assert.equal((element('#results').innerHTML.match(/class="paper-card"/g)||[]).length,count);
+ assert.ok(element('#results').innerHTML.includes(`data-arxiv-group="${group}"`));
+}
+for(const id of ['arxiv-group','category'])element('#'+id).value='';api.render();
+assert.ok(!code.includes('p.domains')&&!code.includes('p.subfields')&&!code.includes('p.keywords'));
+
 // Pending entries remain a distinct filtered list and never inflate confirmed counts.
 api.setIssue({...trial,papers:trial.papers.slice(1),pending_papers:[{...paper,eligibility:'pending'}]});
 api.render();

@@ -1,0 +1,1753 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-30T16:21:02.719660+00:00",
+  "groups": {
+    "cs": {
+      "id": "cs",
+      "name": "Computer Science",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "name_zh": "计算机科学"
+    },
+    "econ": {
+      "id": "econ",
+      "name": "Economics",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "name_zh": "经济学"
+    },
+    "eess": {
+      "id": "eess",
+      "name": "Electrical Engineering and Systems Science",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "name_zh": "电气工程与系统科学"
+    },
+    "math": {
+      "id": "math",
+      "name": "Mathematics",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "name_zh": "数学"
+    },
+    "physics": {
+      "id": "physics",
+      "name": "Physics",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "name_zh": "物理学"
+    },
+    "q-bio": {
+      "id": "q-bio",
+      "name": "Quantitative Biology",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "name_zh": "定量生物学"
+    },
+    "q-fin": {
+      "id": "q-fin",
+      "name": "Quantitative Finance",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "name_zh": "定量金融"
+    },
+    "stat": {
+      "id": "stat",
+      "name": "Statistics",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "name_zh": "统计学"
+    }
+  },
+  "archives": {
+    "astro-ph": {
+      "id": "astro-ph",
+      "name": "Astrophysics",
+      "group": "physics"
+    },
+    "cond-mat": {
+      "id": "cond-mat",
+      "name": "Condensed Matter",
+      "group": "physics"
+    },
+    "gr-qc": {
+      "id": "gr-qc",
+      "name": "General Relativity and Quantum Cosmology",
+      "group": "physics"
+    },
+    "hep-ex": {
+      "id": "hep-ex",
+      "name": "High Energy Physics - Experiment",
+      "group": "physics"
+    },
+    "hep-lat": {
+      "id": "hep-lat",
+      "name": "High Energy Physics - Lattice",
+      "group": "physics"
+    },
+    "hep-ph": {
+      "id": "hep-ph",
+      "name": "High Energy Physics - Phenomenology",
+      "group": "physics"
+    },
+    "hep-th": {
+      "id": "hep-th",
+      "name": "High Energy Physics - Theory",
+      "group": "physics"
+    },
+    "math-ph": {
+      "id": "math-ph",
+      "name": "Mathematical Physics",
+      "group": "physics"
+    },
+    "nlin": {
+      "id": "nlin",
+      "name": "Nonlinear Sciences",
+      "group": "physics"
+    },
+    "nucl-ex": {
+      "id": "nucl-ex",
+      "name": "Nuclear Experiment",
+      "group": "physics"
+    },
+    "nucl-th": {
+      "id": "nucl-th",
+      "name": "Nuclear Theory",
+      "group": "physics"
+    },
+    "physics": {
+      "id": "physics",
+      "name": "Physics",
+      "group": "physics"
+    },
+    "quant-ph": {
+      "id": "quant-ph",
+      "name": "Quantum Physics",
+      "group": "physics"
+    }
+  },
+  "category_catalog": {
+    "cs.AI": {
+      "code": "cs.AI",
+      "name": "Artificial Intelligence",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.AI",
+      "canonical_group": "cs",
+      "name_zh": "人工智能"
+    },
+    "cs.AR": {
+      "code": "cs.AR",
+      "name": "Hardware Architecture",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.AR",
+      "canonical_group": "cs",
+      "name_zh": "硬件体系结构"
+    },
+    "cs.CC": {
+      "code": "cs.CC",
+      "name": "Computational Complexity",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.CC",
+      "canonical_group": "cs",
+      "name_zh": "计算复杂性"
+    },
+    "cs.CE": {
+      "code": "cs.CE",
+      "name": "Computational Engineering, Finance, and Science",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.CE",
+      "canonical_group": "cs"
+    },
+    "cs.CG": {
+      "code": "cs.CG",
+      "name": "Computational Geometry",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.CG",
+      "canonical_group": "cs",
+      "name_zh": "计算几何"
+    },
+    "cs.CL": {
+      "code": "cs.CL",
+      "name": "Computation and Language",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.CL",
+      "canonical_group": "cs",
+      "name_zh": "计算与语言"
+    },
+    "cs.CR": {
+      "code": "cs.CR",
+      "name": "Cryptography and Security",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.CR",
+      "canonical_group": "cs",
+      "name_zh": "密码学与安全"
+    },
+    "cs.CV": {
+      "code": "cs.CV",
+      "name": "Computer Vision and Pattern Recognition",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.CV",
+      "canonical_group": "cs",
+      "name_zh": "计算机视觉与模式识别"
+    },
+    "cs.CY": {
+      "code": "cs.CY",
+      "name": "Computers and Society",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.CY",
+      "canonical_group": "cs",
+      "name_zh": "计算机与社会"
+    },
+    "cs.DB": {
+      "code": "cs.DB",
+      "name": "Databases",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.DB",
+      "canonical_group": "cs",
+      "name_zh": "数据库"
+    },
+    "cs.DC": {
+      "code": "cs.DC",
+      "name": "Distributed, Parallel, and Cluster Computing",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.DC",
+      "canonical_group": "cs",
+      "name_zh": "分布式、并行与集群计算"
+    },
+    "cs.DL": {
+      "code": "cs.DL",
+      "name": "Digital Libraries",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.DL",
+      "canonical_group": "cs",
+      "name_zh": "数字图书馆"
+    },
+    "cs.DM": {
+      "code": "cs.DM",
+      "name": "Discrete Mathematics",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.DM",
+      "canonical_group": "cs",
+      "name_zh": "离散数学"
+    },
+    "cs.DS": {
+      "code": "cs.DS",
+      "name": "Data Structures and Algorithms",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.DS",
+      "canonical_group": "cs",
+      "name_zh": "数据结构与算法"
+    },
+    "cs.ET": {
+      "code": "cs.ET",
+      "name": "Emerging Technologies",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.ET",
+      "canonical_group": "cs"
+    },
+    "cs.FL": {
+      "code": "cs.FL",
+      "name": "Formal Languages and Automata Theory",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.FL",
+      "canonical_group": "cs",
+      "name_zh": "形式语言与自动机理论"
+    },
+    "cs.GL": {
+      "code": "cs.GL",
+      "name": "General Literature",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.GL",
+      "canonical_group": "cs"
+    },
+    "cs.GR": {
+      "code": "cs.GR",
+      "name": "Graphics",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.GR",
+      "canonical_group": "cs"
+    },
+    "cs.GT": {
+      "code": "cs.GT",
+      "name": "Computer Science and Game Theory",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.GT",
+      "canonical_group": "cs"
+    },
+    "cs.HC": {
+      "code": "cs.HC",
+      "name": "Human-Computer Interaction",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.HC",
+      "canonical_group": "cs",
+      "name_zh": "人机交互"
+    },
+    "cs.IR": {
+      "code": "cs.IR",
+      "name": "Information Retrieval",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.IR",
+      "canonical_group": "cs"
+    },
+    "cs.IT": {
+      "code": "cs.IT",
+      "name": "Information Theory",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.IT",
+      "canonical_group": "cs",
+      "name_zh": "信息论"
+    },
+    "cs.LG": {
+      "code": "cs.LG",
+      "name": "Machine Learning",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.LG",
+      "canonical_group": "cs",
+      "name_zh": "机器学习"
+    },
+    "cs.LO": {
+      "code": "cs.LO",
+      "name": "Logic in Computer Science",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.LO",
+      "canonical_group": "cs",
+      "name_zh": "计算机科学中的逻辑"
+    },
+    "cs.MA": {
+      "code": "cs.MA",
+      "name": "Multiagent Systems",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.MA",
+      "canonical_group": "cs"
+    },
+    "cs.MM": {
+      "code": "cs.MM",
+      "name": "Multimedia",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.MM",
+      "canonical_group": "cs"
+    },
+    "cs.MS": {
+      "code": "cs.MS",
+      "name": "Mathematical Software",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.MS",
+      "canonical_group": "cs",
+      "name_zh": "数学软件"
+    },
+    "cs.NA": {
+      "code": "cs.NA",
+      "name": "Numerical Analysis",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": "math.NA",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.NA",
+      "canonical_group": "math",
+      "name_zh": "数值分析"
+    },
+    "cs.NE": {
+      "code": "cs.NE",
+      "name": "Neural and Evolutionary Computing",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.NE",
+      "canonical_group": "cs"
+    },
+    "cs.NI": {
+      "code": "cs.NI",
+      "name": "Networking and Internet Architecture",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.NI",
+      "canonical_group": "cs"
+    },
+    "cs.OH": {
+      "code": "cs.OH",
+      "name": "Other Computer Science",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.OH",
+      "canonical_group": "cs"
+    },
+    "cs.OS": {
+      "code": "cs.OS",
+      "name": "Operating Systems",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.OS",
+      "canonical_group": "cs"
+    },
+    "cs.PF": {
+      "code": "cs.PF",
+      "name": "Performance",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.PF",
+      "canonical_group": "cs"
+    },
+    "cs.PL": {
+      "code": "cs.PL",
+      "name": "Programming Languages",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.PL",
+      "canonical_group": "cs",
+      "name_zh": "程序设计语言"
+    },
+    "cs.RO": {
+      "code": "cs.RO",
+      "name": "Robotics",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.RO",
+      "canonical_group": "cs",
+      "name_zh": "机器人学"
+    },
+    "cs.SC": {
+      "code": "cs.SC",
+      "name": "Symbolic Computation",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.SC",
+      "canonical_group": "cs"
+    },
+    "cs.SD": {
+      "code": "cs.SD",
+      "name": "Sound",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.SD",
+      "canonical_group": "cs"
+    },
+    "cs.SE": {
+      "code": "cs.SE",
+      "name": "Software Engineering",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.SE",
+      "canonical_group": "cs",
+      "name_zh": "软件工程"
+    },
+    "cs.SI": {
+      "code": "cs.SI",
+      "name": "Social and Information Networks",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.SI",
+      "canonical_group": "cs",
+      "name_zh": "社会与信息网络"
+    },
+    "cs.SY": {
+      "code": "cs.SY",
+      "name": "Systems and Control",
+      "group": "cs",
+      "archive": "cs",
+      "alias_of": "eess.SY",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "eess.SY",
+      "canonical_group": "eess",
+      "name_zh": "系统与控制"
+    },
+    "econ.EM": {
+      "code": "econ.EM",
+      "name": "Econometrics",
+      "group": "econ",
+      "archive": "econ",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "econ.EM",
+      "canonical_group": "econ"
+    },
+    "econ.GN": {
+      "code": "econ.GN",
+      "name": "General Economics",
+      "group": "econ",
+      "archive": "econ",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "econ.GN",
+      "canonical_group": "econ"
+    },
+    "econ.TH": {
+      "code": "econ.TH",
+      "name": "Theoretical Economics",
+      "group": "econ",
+      "archive": "econ",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "econ.TH",
+      "canonical_group": "econ"
+    },
+    "eess.AS": {
+      "code": "eess.AS",
+      "name": "Audio and Speech Processing",
+      "group": "eess",
+      "archive": "eess",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "eess.AS",
+      "canonical_group": "eess"
+    },
+    "eess.IV": {
+      "code": "eess.IV",
+      "name": "Image and Video Processing",
+      "group": "eess",
+      "archive": "eess",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "eess.IV",
+      "canonical_group": "eess"
+    },
+    "eess.SP": {
+      "code": "eess.SP",
+      "name": "Signal Processing",
+      "group": "eess",
+      "archive": "eess",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "eess.SP",
+      "canonical_group": "eess"
+    },
+    "eess.SY": {
+      "code": "eess.SY",
+      "name": "Systems and Control",
+      "group": "eess",
+      "archive": "eess",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "eess.SY",
+      "canonical_group": "eess",
+      "name_zh": "系统与控制"
+    },
+    "math.AC": {
+      "code": "math.AC",
+      "name": "Commutative Algebra",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.AC",
+      "canonical_group": "math",
+      "name_zh": "交换代数"
+    },
+    "math.AG": {
+      "code": "math.AG",
+      "name": "Algebraic Geometry",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.AG",
+      "canonical_group": "math",
+      "name_zh": "代数几何"
+    },
+    "math.AP": {
+      "code": "math.AP",
+      "name": "Analysis of PDEs",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.AP",
+      "canonical_group": "math",
+      "name_zh": "偏微分方程分析"
+    },
+    "math.AT": {
+      "code": "math.AT",
+      "name": "Algebraic Topology",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.AT",
+      "canonical_group": "math",
+      "name_zh": "代数拓扑"
+    },
+    "math.CA": {
+      "code": "math.CA",
+      "name": "Classical Analysis and ODEs",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.CA",
+      "canonical_group": "math",
+      "name_zh": "经典分析与常微分方程"
+    },
+    "math.CO": {
+      "code": "math.CO",
+      "name": "Combinatorics",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.CO",
+      "canonical_group": "math",
+      "name_zh": "组合数学"
+    },
+    "math.CT": {
+      "code": "math.CT",
+      "name": "Category Theory",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.CT",
+      "canonical_group": "math"
+    },
+    "math.CV": {
+      "code": "math.CV",
+      "name": "Complex Variables",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.CV",
+      "canonical_group": "math"
+    },
+    "math.DG": {
+      "code": "math.DG",
+      "name": "Differential Geometry",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.DG",
+      "canonical_group": "math",
+      "name_zh": "微分几何"
+    },
+    "math.DS": {
+      "code": "math.DS",
+      "name": "Dynamical Systems",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.DS",
+      "canonical_group": "math",
+      "name_zh": "动力系统"
+    },
+    "math.FA": {
+      "code": "math.FA",
+      "name": "Functional Analysis",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.FA",
+      "canonical_group": "math",
+      "name_zh": "泛函分析"
+    },
+    "math.GM": {
+      "code": "math.GM",
+      "name": "General Mathematics",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.GM",
+      "canonical_group": "math"
+    },
+    "math.GN": {
+      "code": "math.GN",
+      "name": "General Topology",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.GN",
+      "canonical_group": "math"
+    },
+    "math.GR": {
+      "code": "math.GR",
+      "name": "Group Theory",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.GR",
+      "canonical_group": "math",
+      "name_zh": "群论"
+    },
+    "math.GT": {
+      "code": "math.GT",
+      "name": "Geometric Topology",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.GT",
+      "canonical_group": "math",
+      "name_zh": "几何拓扑"
+    },
+    "math.HO": {
+      "code": "math.HO",
+      "name": "History and Overview",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.HO",
+      "canonical_group": "math"
+    },
+    "math.IT": {
+      "code": "math.IT",
+      "name": "Information Theory",
+      "group": "math",
+      "archive": "math",
+      "alias_of": "cs.IT",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cs.IT",
+      "canonical_group": "cs",
+      "name_zh": "信息论"
+    },
+    "math.KT": {
+      "code": "math.KT",
+      "name": "K-Theory and Homology",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.KT",
+      "canonical_group": "math"
+    },
+    "math.LO": {
+      "code": "math.LO",
+      "name": "Logic",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.LO",
+      "canonical_group": "math",
+      "name_zh": "逻辑"
+    },
+    "math.MG": {
+      "code": "math.MG",
+      "name": "Metric Geometry",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.MG",
+      "canonical_group": "math",
+      "name_zh": "度量几何"
+    },
+    "math.MP": {
+      "code": "math.MP",
+      "name": "Mathematical Physics",
+      "group": "math",
+      "archive": "math",
+      "alias_of": "math-ph",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math-ph",
+      "canonical_group": "physics",
+      "name_zh": "数学物理"
+    },
+    "math.NA": {
+      "code": "math.NA",
+      "name": "Numerical Analysis",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.NA",
+      "canonical_group": "math",
+      "name_zh": "数值分析"
+    },
+    "math.NT": {
+      "code": "math.NT",
+      "name": "Number Theory",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.NT",
+      "canonical_group": "math",
+      "name_zh": "数论"
+    },
+    "math.OA": {
+      "code": "math.OA",
+      "name": "Operator Algebras",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.OA",
+      "canonical_group": "math",
+      "name_zh": "算子代数"
+    },
+    "math.OC": {
+      "code": "math.OC",
+      "name": "Optimization and Control",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.OC",
+      "canonical_group": "math",
+      "name_zh": "优化与控制"
+    },
+    "math.PR": {
+      "code": "math.PR",
+      "name": "Probability",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.PR",
+      "canonical_group": "math",
+      "name_zh": "概率论"
+    },
+    "math.QA": {
+      "code": "math.QA",
+      "name": "Quantum Algebra",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.QA",
+      "canonical_group": "math",
+      "name_zh": "量子代数"
+    },
+    "math.RA": {
+      "code": "math.RA",
+      "name": "Rings and Algebras",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.RA",
+      "canonical_group": "math",
+      "name_zh": "环与代数"
+    },
+    "math.RT": {
+      "code": "math.RT",
+      "name": "Representation Theory",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.RT",
+      "canonical_group": "math"
+    },
+    "math.SG": {
+      "code": "math.SG",
+      "name": "Symplectic Geometry",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.SG",
+      "canonical_group": "math"
+    },
+    "math.SP": {
+      "code": "math.SP",
+      "name": "Spectral Theory",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.SP",
+      "canonical_group": "math"
+    },
+    "math.ST": {
+      "code": "math.ST",
+      "name": "Statistics Theory",
+      "group": "math",
+      "archive": "math",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.ST",
+      "canonical_group": "math",
+      "name_zh": "统计理论"
+    },
+    "astro-ph.CO": {
+      "code": "astro-ph.CO",
+      "name": "Cosmology and Nongalactic Astrophysics",
+      "group": "physics",
+      "archive": "astro-ph",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "astro-ph.CO",
+      "canonical_group": "physics"
+    },
+    "astro-ph.EP": {
+      "code": "astro-ph.EP",
+      "name": "Earth and Planetary Astrophysics",
+      "group": "physics",
+      "archive": "astro-ph",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "astro-ph.EP",
+      "canonical_group": "physics"
+    },
+    "astro-ph.GA": {
+      "code": "astro-ph.GA",
+      "name": "Astrophysics of Galaxies",
+      "group": "physics",
+      "archive": "astro-ph",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "astro-ph.GA",
+      "canonical_group": "physics"
+    },
+    "astro-ph.HE": {
+      "code": "astro-ph.HE",
+      "name": "High Energy Astrophysical Phenomena",
+      "group": "physics",
+      "archive": "astro-ph",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "astro-ph.HE",
+      "canonical_group": "physics"
+    },
+    "astro-ph.IM": {
+      "code": "astro-ph.IM",
+      "name": "Instrumentation and Methods for Astrophysics",
+      "group": "physics",
+      "archive": "astro-ph",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "astro-ph.IM",
+      "canonical_group": "physics"
+    },
+    "astro-ph.SR": {
+      "code": "astro-ph.SR",
+      "name": "Solar and Stellar Astrophysics",
+      "group": "physics",
+      "archive": "astro-ph",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "astro-ph.SR",
+      "canonical_group": "physics"
+    },
+    "cond-mat.dis-nn": {
+      "code": "cond-mat.dis-nn",
+      "name": "Disordered Systems and Neural Networks",
+      "group": "physics",
+      "archive": "cond-mat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cond-mat.dis-nn",
+      "canonical_group": "physics",
+      "name_zh": "无序系统与神经网络"
+    },
+    "cond-mat.mes-hall": {
+      "code": "cond-mat.mes-hall",
+      "name": "Mesoscale and Nanoscale Physics",
+      "group": "physics",
+      "archive": "cond-mat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cond-mat.mes-hall",
+      "canonical_group": "physics"
+    },
+    "cond-mat.mtrl-sci": {
+      "code": "cond-mat.mtrl-sci",
+      "name": "Materials Science",
+      "group": "physics",
+      "archive": "cond-mat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cond-mat.mtrl-sci",
+      "canonical_group": "physics"
+    },
+    "cond-mat.other": {
+      "code": "cond-mat.other",
+      "name": "Other Condensed Matter",
+      "group": "physics",
+      "archive": "cond-mat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cond-mat.other",
+      "canonical_group": "physics"
+    },
+    "cond-mat.quant-gas": {
+      "code": "cond-mat.quant-gas",
+      "name": "Quantum Gases",
+      "group": "physics",
+      "archive": "cond-mat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cond-mat.quant-gas",
+      "canonical_group": "physics"
+    },
+    "cond-mat.soft": {
+      "code": "cond-mat.soft",
+      "name": "Soft Condensed Matter",
+      "group": "physics",
+      "archive": "cond-mat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cond-mat.soft",
+      "canonical_group": "physics"
+    },
+    "cond-mat.stat-mech": {
+      "code": "cond-mat.stat-mech",
+      "name": "Statistical Mechanics",
+      "group": "physics",
+      "archive": "cond-mat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cond-mat.stat-mech",
+      "canonical_group": "physics",
+      "name_zh": "统计力学"
+    },
+    "cond-mat.str-el": {
+      "code": "cond-mat.str-el",
+      "name": "Strongly Correlated Electrons",
+      "group": "physics",
+      "archive": "cond-mat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cond-mat.str-el",
+      "canonical_group": "physics",
+      "name_zh": "强关联电子"
+    },
+    "cond-mat.supr-con": {
+      "code": "cond-mat.supr-con",
+      "name": "Superconductivity",
+      "group": "physics",
+      "archive": "cond-mat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "cond-mat.supr-con",
+      "canonical_group": "physics"
+    },
+    "gr-qc": {
+      "code": "gr-qc",
+      "name": "General Relativity and Quantum Cosmology",
+      "group": "physics",
+      "archive": "gr-qc",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "gr-qc",
+      "canonical_group": "physics"
+    },
+    "hep-ex": {
+      "code": "hep-ex",
+      "name": "High Energy Physics - Experiment",
+      "group": "physics",
+      "archive": "hep-ex",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "hep-ex",
+      "canonical_group": "physics"
+    },
+    "hep-lat": {
+      "code": "hep-lat",
+      "name": "High Energy Physics - Lattice",
+      "group": "physics",
+      "archive": "hep-lat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "hep-lat",
+      "canonical_group": "physics"
+    },
+    "hep-ph": {
+      "code": "hep-ph",
+      "name": "High Energy Physics - Phenomenology",
+      "group": "physics",
+      "archive": "hep-ph",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "hep-ph",
+      "canonical_group": "physics"
+    },
+    "hep-th": {
+      "code": "hep-th",
+      "name": "High Energy Physics - Theory",
+      "group": "physics",
+      "archive": "hep-th",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "hep-th",
+      "canonical_group": "physics"
+    },
+    "math-ph": {
+      "code": "math-ph",
+      "name": "Mathematical Physics",
+      "group": "physics",
+      "archive": "math-ph",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math-ph",
+      "canonical_group": "physics",
+      "name_zh": "数学物理"
+    },
+    "nlin.AO": {
+      "code": "nlin.AO",
+      "name": "Adaptation and Self-Organizing Systems",
+      "group": "physics",
+      "archive": "nlin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "nlin.AO",
+      "canonical_group": "physics"
+    },
+    "nlin.CD": {
+      "code": "nlin.CD",
+      "name": "Chaotic Dynamics",
+      "group": "physics",
+      "archive": "nlin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "nlin.CD",
+      "canonical_group": "physics"
+    },
+    "nlin.CG": {
+      "code": "nlin.CG",
+      "name": "Cellular Automata and Lattice Gases",
+      "group": "physics",
+      "archive": "nlin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "nlin.CG",
+      "canonical_group": "physics"
+    },
+    "nlin.PS": {
+      "code": "nlin.PS",
+      "name": "Pattern Formation and Solitons",
+      "group": "physics",
+      "archive": "nlin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "nlin.PS",
+      "canonical_group": "physics"
+    },
+    "nlin.SI": {
+      "code": "nlin.SI",
+      "name": "Exactly Solvable and Integrable Systems",
+      "group": "physics",
+      "archive": "nlin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "nlin.SI",
+      "canonical_group": "physics"
+    },
+    "nucl-ex": {
+      "code": "nucl-ex",
+      "name": "Nuclear Experiment",
+      "group": "physics",
+      "archive": "nucl-ex",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "nucl-ex",
+      "canonical_group": "physics"
+    },
+    "nucl-th": {
+      "code": "nucl-th",
+      "name": "Nuclear Theory",
+      "group": "physics",
+      "archive": "nucl-th",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "nucl-th",
+      "canonical_group": "physics"
+    },
+    "physics.acc-ph": {
+      "code": "physics.acc-ph",
+      "name": "Accelerator Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.acc-ph",
+      "canonical_group": "physics"
+    },
+    "physics.ao-ph": {
+      "code": "physics.ao-ph",
+      "name": "Atmospheric and Oceanic Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.ao-ph",
+      "canonical_group": "physics"
+    },
+    "physics.app-ph": {
+      "code": "physics.app-ph",
+      "name": "Applied Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.app-ph",
+      "canonical_group": "physics"
+    },
+    "physics.atm-clus": {
+      "code": "physics.atm-clus",
+      "name": "Atomic and Molecular Clusters",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.atm-clus",
+      "canonical_group": "physics"
+    },
+    "physics.atom-ph": {
+      "code": "physics.atom-ph",
+      "name": "Atomic Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.atom-ph",
+      "canonical_group": "physics"
+    },
+    "physics.bio-ph": {
+      "code": "physics.bio-ph",
+      "name": "Biological Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.bio-ph",
+      "canonical_group": "physics"
+    },
+    "physics.chem-ph": {
+      "code": "physics.chem-ph",
+      "name": "Chemical Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.chem-ph",
+      "canonical_group": "physics"
+    },
+    "physics.class-ph": {
+      "code": "physics.class-ph",
+      "name": "Classical Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.class-ph",
+      "canonical_group": "physics"
+    },
+    "physics.comp-ph": {
+      "code": "physics.comp-ph",
+      "name": "Computational Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.comp-ph",
+      "canonical_group": "physics"
+    },
+    "physics.data-an": {
+      "code": "physics.data-an",
+      "name": "Data Analysis, Statistics and Probability",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.data-an",
+      "canonical_group": "physics"
+    },
+    "physics.ed-ph": {
+      "code": "physics.ed-ph",
+      "name": "Physics Education",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.ed-ph",
+      "canonical_group": "physics"
+    },
+    "physics.flu-dyn": {
+      "code": "physics.flu-dyn",
+      "name": "Fluid Dynamics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.flu-dyn",
+      "canonical_group": "physics"
+    },
+    "physics.gen-ph": {
+      "code": "physics.gen-ph",
+      "name": "General Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.gen-ph",
+      "canonical_group": "physics"
+    },
+    "physics.geo-ph": {
+      "code": "physics.geo-ph",
+      "name": "Geophysics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.geo-ph",
+      "canonical_group": "physics"
+    },
+    "physics.hist-ph": {
+      "code": "physics.hist-ph",
+      "name": "History and Philosophy of Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.hist-ph",
+      "canonical_group": "physics"
+    },
+    "physics.ins-det": {
+      "code": "physics.ins-det",
+      "name": "Instrumentation and Detectors",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.ins-det",
+      "canonical_group": "physics"
+    },
+    "physics.med-ph": {
+      "code": "physics.med-ph",
+      "name": "Medical Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.med-ph",
+      "canonical_group": "physics"
+    },
+    "physics.optics": {
+      "code": "physics.optics",
+      "name": "Optics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.optics",
+      "canonical_group": "physics"
+    },
+    "physics.plasm-ph": {
+      "code": "physics.plasm-ph",
+      "name": "Plasma Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.plasm-ph",
+      "canonical_group": "physics"
+    },
+    "physics.pop-ph": {
+      "code": "physics.pop-ph",
+      "name": "Popular Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.pop-ph",
+      "canonical_group": "physics"
+    },
+    "physics.soc-ph": {
+      "code": "physics.soc-ph",
+      "name": "Physics and Society",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.soc-ph",
+      "canonical_group": "physics"
+    },
+    "physics.space-ph": {
+      "code": "physics.space-ph",
+      "name": "Space Physics",
+      "group": "physics",
+      "archive": "physics",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "physics.space-ph",
+      "canonical_group": "physics"
+    },
+    "quant-ph": {
+      "code": "quant-ph",
+      "name": "Quantum Physics",
+      "group": "physics",
+      "archive": "quant-ph",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "quant-ph",
+      "canonical_group": "physics",
+      "name_zh": "量子物理"
+    },
+    "q-bio.BM": {
+      "code": "q-bio.BM",
+      "name": "Biomolecules",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.BM",
+      "canonical_group": "q-bio"
+    },
+    "q-bio.CB": {
+      "code": "q-bio.CB",
+      "name": "Cell Behavior",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.CB",
+      "canonical_group": "q-bio"
+    },
+    "q-bio.GN": {
+      "code": "q-bio.GN",
+      "name": "Genomics",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.GN",
+      "canonical_group": "q-bio"
+    },
+    "q-bio.MN": {
+      "code": "q-bio.MN",
+      "name": "Molecular Networks",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.MN",
+      "canonical_group": "q-bio"
+    },
+    "q-bio.NC": {
+      "code": "q-bio.NC",
+      "name": "Neurons and Cognition",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.NC",
+      "canonical_group": "q-bio"
+    },
+    "q-bio.OT": {
+      "code": "q-bio.OT",
+      "name": "Other Quantitative Biology",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.OT",
+      "canonical_group": "q-bio"
+    },
+    "q-bio.PE": {
+      "code": "q-bio.PE",
+      "name": "Populations and Evolution",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.PE",
+      "canonical_group": "q-bio"
+    },
+    "q-bio.QM": {
+      "code": "q-bio.QM",
+      "name": "Quantitative Methods",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.QM",
+      "canonical_group": "q-bio"
+    },
+    "q-bio.SC": {
+      "code": "q-bio.SC",
+      "name": "Subcellular Processes",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.SC",
+      "canonical_group": "q-bio"
+    },
+    "q-bio.TO": {
+      "code": "q-bio.TO",
+      "name": "Tissues and Organs",
+      "group": "q-bio",
+      "archive": "q-bio",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-bio.TO",
+      "canonical_group": "q-bio"
+    },
+    "q-fin.CP": {
+      "code": "q-fin.CP",
+      "name": "Computational Finance",
+      "group": "q-fin",
+      "archive": "q-fin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-fin.CP",
+      "canonical_group": "q-fin"
+    },
+    "q-fin.EC": {
+      "code": "q-fin.EC",
+      "name": "Economics",
+      "group": "q-fin",
+      "archive": "q-fin",
+      "alias_of": "econ.GN",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "econ.GN",
+      "canonical_group": "econ"
+    },
+    "q-fin.GN": {
+      "code": "q-fin.GN",
+      "name": "General Finance",
+      "group": "q-fin",
+      "archive": "q-fin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-fin.GN",
+      "canonical_group": "q-fin"
+    },
+    "q-fin.MF": {
+      "code": "q-fin.MF",
+      "name": "Mathematical Finance",
+      "group": "q-fin",
+      "archive": "q-fin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-fin.MF",
+      "canonical_group": "q-fin"
+    },
+    "q-fin.PM": {
+      "code": "q-fin.PM",
+      "name": "Portfolio Management",
+      "group": "q-fin",
+      "archive": "q-fin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-fin.PM",
+      "canonical_group": "q-fin"
+    },
+    "q-fin.PR": {
+      "code": "q-fin.PR",
+      "name": "Pricing of Securities",
+      "group": "q-fin",
+      "archive": "q-fin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-fin.PR",
+      "canonical_group": "q-fin"
+    },
+    "q-fin.RM": {
+      "code": "q-fin.RM",
+      "name": "Risk Management",
+      "group": "q-fin",
+      "archive": "q-fin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-fin.RM",
+      "canonical_group": "q-fin"
+    },
+    "q-fin.ST": {
+      "code": "q-fin.ST",
+      "name": "Statistical Finance",
+      "group": "q-fin",
+      "archive": "q-fin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-fin.ST",
+      "canonical_group": "q-fin"
+    },
+    "q-fin.TR": {
+      "code": "q-fin.TR",
+      "name": "Trading and Market Microstructure",
+      "group": "q-fin",
+      "archive": "q-fin",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "q-fin.TR",
+      "canonical_group": "q-fin"
+    },
+    "stat.AP": {
+      "code": "stat.AP",
+      "name": "Applications",
+      "group": "stat",
+      "archive": "stat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "stat.AP",
+      "canonical_group": "stat"
+    },
+    "stat.CO": {
+      "code": "stat.CO",
+      "name": "Computation",
+      "group": "stat",
+      "archive": "stat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "stat.CO",
+      "canonical_group": "stat"
+    },
+    "stat.ME": {
+      "code": "stat.ME",
+      "name": "Methodology",
+      "group": "stat",
+      "archive": "stat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "stat.ME",
+      "canonical_group": "stat"
+    },
+    "stat.ML": {
+      "code": "stat.ML",
+      "name": "Machine Learning",
+      "group": "stat",
+      "archive": "stat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "stat.ML",
+      "canonical_group": "stat",
+      "name_zh": "机器学习"
+    },
+    "stat.OT": {
+      "code": "stat.OT",
+      "name": "Other Statistics",
+      "group": "stat",
+      "archive": "stat",
+      "alias_of": null,
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "stat.OT",
+      "canonical_group": "stat"
+    },
+    "stat.TH": {
+      "code": "stat.TH",
+      "name": "Statistics Theory",
+      "group": "stat",
+      "archive": "stat",
+      "alias_of": "math.ST",
+      "source_url": "https://arxiv.org/category_taxonomy",
+      "canonical_code": "math.ST",
+      "canonical_group": "math",
+      "name_zh": "统计理论"
+    }
+  },
+  "aliases": {
+    "cs.NA": "math.NA",
+    "cs.SY": "eess.SY",
+    "math.IT": "cs.IT",
+    "math.MP": "math-ph",
+    "q-fin.EC": "econ.GN",
+    "stat.TH": "math.ST"
+  },
+  "sources": [
+    {
+      "url": "https://arxiv.org/category_taxonomy",
+      "snapshot_file": "taxonomy.20261030.html",
+      "sha256": "cbbfc0ccb84801d5e3e805e4e6f40649af6fdaa140a28ce6dff2962b56894ff2"
+    },
+    {
+      "url": "https://info.arxiv.org/help/api/user-manual.html#arxiv-extension-elements",
+      "supports": "Use the explicit arxiv:primary_category in future API ingestion, not category sort order."
+    },
+    {
+      "url": "https://info.arxiv.org/help/cross.html",
+      "supports": "Cross-list categories are additional classifications, not replacement primary categories."
+    }
+  ],
+  "scope": "Official arXiv classification; Chinese names are display translations."
+}

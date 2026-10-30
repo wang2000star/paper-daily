@@ -131,7 +131,7 @@
       "5": "f0a64a503ab7e7e7094c4220c477ea489337619b4fea730d952d88574563905a"
     },
     "selection_criteria": [
-      "在四领域完整候选的逐篇摘要阅读后，比较研究问题的重要性与贡献实质",
+      "在 cs 与 math 公告列表完整候选的逐篇摘要阅读后，比较研究问题的重要性与贡献实质",
       "重视明确的理论边界、可复用方法、可核查的实验设计及负面结果",
       "保留关键条件和证据限制；作者名气、宏大标题及未核验的猜想主张不单独构成入选依据",
       "领域覆盖用于帮助浏览，不设硬配额；未精选不等于研究无价值"
@@ -1597,5 +1597,21 @@
       ],
       "note": "标题作者Affiliation明确，不翻译无法确定正式中文名的实验室。"
     }
-  ]
+  ],
+  "classification_verification": {
+    "method": "official_primary_subject",
+    "selected_papers_verified": 127,
+    "group_counts": {
+      "cs": 71,
+      "math": 54,
+      "physics": 2
+    },
+    "primary_category_count": 34,
+    "taxonomy_path": "data/arxiv-taxonomy.json",
+    "source_urls": [
+      "https://arxiv.org/category_taxonomy",
+      "https://info.arxiv.org/help/api/user-manual.html#arxiv-extension-elements",
+      "https://info.arxiv.org/help/cross.html"
+    ]
+  }
 }

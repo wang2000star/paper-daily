@@ -5,8 +5,8 @@ from datetime import datetime,timedelta,timezone
 from pathlib import Path
 from urllib.parse import urlparse
 R=Path(__file__).resolve().parents[1]
-FIELDS=['id','title','title_zh','authors','source','url','first_date','updated_date','version','publication_status','domains','subfields','problem','result','method','limitations','reading_depth','author_intro','author_institutions','affiliation_sources','evidence_urls']
-DOMAINS=['数学','计算机科学','网络与信息安全','密码学']
+FIELDS=['id','title','title_zh','authors','source','url','first_date','updated_date','version','publication_status','primary_category','canonical_primary_category','arxiv_group','arxiv_archive','cross_categories','arxiv_categories','category_evidence','problem','result','method','limitations','reading_depth','author_intro','author_institutions','affiliation_sources','evidence_urls']
+TAXONOMY=json.loads((R/'data/arxiv-taxonomy.json').read_text())
 def utc(value):
  assert isinstance(value,str) and re.search(r'T.*(?:Z|[+-]\d\d:\d\d)$',value),'Timezone-qualified timestamp required'
  return datetime.fromisoformat(value.replace('Z','+00:00')).astimezone(timezone.utc)
@@ -53,7 +53,16 @@ def validate_issue(j,item,source_ids,formal=True):
    title=re.sub(r'\W','',p['title']).casefold();assert title not in titles,(p['id'],'duplicate title');titles.add(title)
    assert p['source'] in source_ids and p['authors'] and p['author_institutions']
    assert p['reading_depth'] in ['abstract','partial','full_review']
-   assert p['domains'] and all(d in DOMAINS for d in p['domains'])
+   assert not any(k in p for k in ['domains','subfields','keywords']),(p['id'],'custom classification is not allowed')
+   cat=TAXONOMY['category_catalog'];primary=p['primary_category'];assert primary in cat
+   c=cat[primary];assert p['canonical_primary_category']==c['canonical_code']
+   assert p['arxiv_group']==c['canonical_group'] and p['arxiv_group'] in TAXONOMY['groups']
+   canonical=cat[c['canonical_code']];assert p['arxiv_archive']==canonical['archive']
+   assert isinstance(p['cross_categories'],list) and all(x in cat for x in p['cross_categories'])
+   assert len(p['cross_categories'])==len(set(p['cross_categories'])) and primary not in p['cross_categories']
+   assert p['arxiv_categories']==[primary]+p['cross_categories']
+   ce=p['category_evidence'];assert ce['method']=='official_primary_subject' and ce['source_urls']
+   assert all(urlparse(u).hostname in ['arxiv.org','info.arxiv.org','rss.arxiv.org'] for u in ce['source_urls'])
    assert all(valid_url(u) for u in [p['url']]+p['evidence_urls']+p['affiliation_sources'])
    assert all(p[k] is None or re.fullmatch(r'\d{4}-\d{2}-\d{2}',p[k]) for k in ['first_date','updated_date'])
    assert not any(x in json.dumps(p,ensure_ascii=False) for x in ['与你的研究','我的已有研究','我们研究路线'])
@@ -80,6 +89,7 @@ def main():
   assert item['path'].startswith('data/arxiv/') and item['report'].startswith('reports/arxiv/')
   j=json.loads((R/item['path']).read_text());assert j['source_scope']=='arxiv_only'
   assert j['retrieval_log'].startswith('data/retrieval/arxiv/')
+  assert j.get('classification')=='arxiv_official_primary' and j.get('taxonomy')=='data/arxiv-taxonomy.json'
   validate_issue(j,item,{'arxiv'},True)
   for p in j['papers']+j.get('pending_papers',[]):
    evidence=[p['url'],p['public_time_source']]+p['affiliation_sources']+p['evidence_urls']

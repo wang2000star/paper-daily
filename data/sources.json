@@ -8,12 +8,6 @@
       "name": "arXiv",
       "kind": "预印本",
       "url": "https://arxiv.org/",
-      "domains": [
-        "数学",
-        "计算机科学",
-        "网络与信息安全",
-        "密码学"
-      ],
       "entrypoints": [
         "https://arxiv.org/list/math/new",
         "https://arxiv.org/list/cs/new",
@@ -23,10 +17,15 @@
         "https://rss.arxiv.org/rss/cs.CR"
       ],
       "policy": "唯一主动研究来源。通过官方公告列表/RSS确认新公告，按稳定 arXiv 编号跨分类、跨日去重；只在 arXiv 摘要与合法全文中核对研究及署名机构。提交时间、旧稿修订不当首次公告。",
-      "role": "publication_origin"
+      "role": "publication_origin",
+      "search_archives": [
+        "cs",
+        "math"
+      ]
     }
   ],
   "discovery_indexes": [],
   "historical_catalog": "data/history/sources-multisource-2026-10-30.json",
-  "policy": "自2026-10-30改为仅研究arXiv；历史多来源资料仅归档，不再继续研究或计入当前展示。"
+  "policy": "检索 arXiv 数学与计算机科学新稿公告；按官方主分类归组，交叉分类另列标签，并标注实际阅读范围。",
+  "taxonomy": "data/arxiv-taxonomy.json"
 }
