@@ -4,62 +4,8 @@
   "window_start": "2026-10-29T12:00:00Z",
   "window_end": "2026-10-30T12:00:00Z",
   "generated_at": "2026-10-30T12:12:35Z",
-  "scope_note": "本期为选择性阅读日报，不是全量论文解读：arXiv CS/数学新公告目录去重发现 1,970 项，实际完成 60 项完整摘要阅读，其中 15 项另读核心正文；其余目录条目未作逐篇解读。另核 ECCC 与机构原始研究内容。确认新增 63 项、公开时间待核实 1 项；预印本、技术报告和研究博客分型标注。其他来源仅按实际入口进行有限检查，覆盖缺口见检索档案。",
+  "scope_note": "本期为选择性阅读日报，不是全量论文解读：arXiv CS/数学新公告去重发现 1,970 项，完成 60 项完整摘要阅读，其中 15 项另读核心正文。补充通过 Semantic Scholar 发现 203 项候选（并非全部已读），从 Crossref 全学科结果抽查前 1,000 项；另读 7 项非 arXiv 研究，均因公开日期仅到日而待核实。当前确认新增 63 项、时间待核实 8 项；预印本、正式发表事件与研究博客分别标注。确认新增仍主要来自 arXiv，其他来源仅按实际范围检查，不声称多渠道全量覆盖；详细进度、排除与访问缺口见检索归档。",
   "coverage": [
-    {
-      "source": "eccc",
-      "name": "ECCC",
-      "url": "https://eccc.weizmann.ac.il/",
-      "status": "checked",
-      "scope": "最新报告首页、最新 RSS 的10条记录；对临近边界的TR26-286/287核对详情及完整摘要，287阅读正文核心陈述。",
-      "note": "本窗口确认TR26-287，已与arXiv2610.40484合并。286的公开时间为10月29日06:58:21Z，窗口外；RSS更新不自动等于首次发表。",
-      "checked_at": "2026-10-30T12:06:00Z",
-      "entrypoints_checked": [
-        "https://eccc.weizmann.ac.il/",
-        "https://eccc.weizmann.ac.il/feeds/latestReports",
-        "https://eccc.weizmann.ac.il/report/2026/286/",
-        "https://eccc.weizmann.ac.il/report/2026/287/"
-      ],
-      "public_display": true,
-      "id": "eccc"
-    },
-    {
-      "source": "eprint",
-      "name": "IACR ePrint",
-      "url": "https://eprint.iacr.org/",
-      "status": "partial",
-      "scope": "2026年度倒序目录、7日更新目录的最新部分与IACR首页新闻；核对最新编号2026/2671详情。7日列表仅作为筛选入口，不将其整体当本期窗口。",
-      "note": "2026目录最新可见编号2671在10月28日approved，窗口外；29/30日最新更新区包含旧编号修订，未计作新论文。未逐条审计全部132条7日更新；RSS直取403，停止该路径。不能据此断言ePrint全站没有新论文或正式发表事件。",
-      "checked_at": "2026-10-30T12:06:00Z",
-      "entrypoints_checked": [
-        "https://eprint.iacr.org/2026/",
-        "https://eprint.iacr.org/days/7",
-        "https://eprint.iacr.org/2026/2671",
-        "https://eprint.iacr.org/rss/rss.xml",
-        "https://iacr.org/"
-      ],
-      "public_display": false,
-      "id": "eprint"
-    },
-    {
-      "source": "drops",
-      "name": "DROPS",
-      "url": "https://drops.dagstuhl.de/",
-      "status": "partial",
-      "scope": "首页最近出版的5个卷/期及其出版元数据，辅以限定域日期检索。",
-      "note": "TIME2026为10月10日、ESEM2026为10月5日、AFT2026和ATMOS2026为10月2日、TGDK4(3)为9月30日，均非窗口内新卷。未遍历全库逐篇元数据或OAI增量，不能排除其他条目。",
-      "checked_at": "2026-10-30T12:06:00Z",
-      "entrypoints_checked": [
-        "https://drops.dagstuhl.de/",
-        "https://drops.dagstuhl.de/entities/volume/OASIcs-volume-146",
-        "https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-394",
-        "https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-395",
-        "https://drops.dagstuhl.de/entities/volume/OASIcs-volume-147",
-        "https://drops.dagstuhl.de/entities/issue/TGDK-volume-4-issue-3"
-      ],
-      "public_display": false,
-      "id": "drops"
-    },
     {
       "source": "tches",
       "name": "IACR TCHES",
@@ -403,6 +349,239 @@
       "checked_at": null,
       "entrypoints_checked": [],
       "public_display": false
+    },
+    {
+      "source": "eccc",
+      "name": "ECCC",
+      "url": "https://eccc.weizmann.ac.il/",
+      "status": "checked",
+      "scope": "最新RSS的10条公告及详情；另外完整读取2026年度目录，解析出286条带日期记录，用于核对目录遗漏，而非替代公开公告时间。",
+      "note": "本窗口仍只确认既有TR26-287（RSS 2026-10-29T19:12:31Z），已跨arXiv去重。286为06:58:21Z窗口外。年度目录日期与RSS公开时间并不总相同（例如285），故不能用年度目录日期筛选结果冒充首次公开增量。RSS是有限最新10条，不保证覆盖延迟公开或未索引记录。",
+      "checked_at": "2026-10-30T12:41:00Z",
+      "entrypoints_checked": [
+        "https://eccc.weizmann.ac.il/",
+        "https://eccc.weizmann.ac.il/feeds/latestReports",
+        "https://eccc.weizmann.ac.il/report/2026/286/",
+        "https://eccc.weizmann.ac.il/report/2026/287/",
+        "https://eccc.weizmann.ac.il/year/2026/"
+      ],
+      "public_display": true,
+      "id": "eccc",
+      "role": "publication_origin"
+    },
+    {
+      "source": "eprint",
+      "name": "IACR ePrint",
+      "url": "https://eprint.iacr.org/",
+      "status": "partial",
+      "scope": "7日更新索引本次129条，仅将10月29/30日的19条作为本窗口边界候选，逐一尝试详情和版本历史；15条详情可读，4条失败。另核对2026年度最新编号2671、官方RSS/OAI入口说明。",
+      "note": "15条详情明确是既有预印本的修订（包含许可更新），不作为新论文。4条（2026/2524、2651、2575、2639）虽在索引可读完整摘要，但详情/首次公告时间未核实，仅进检索缺口，不进论文列表。3个CCS DOI标签交叉核对尚未取得首次正式发表日期，不据版本标签认定正式新发表。最新编号2671为10月28日approved。RSS直取403后停止，web读取RSS/XML为不支持内容类型；未声称ePrint全站无新增。",
+      "checked_at": "2026-10-30T12:41:00Z",
+      "entrypoints_checked": [
+        "https://eprint.iacr.org/2026/",
+        "https://eprint.iacr.org/days/7",
+        "https://eprint.iacr.org/2026/2671",
+        "https://eprint.iacr.org/rss/rss.xml",
+        "https://iacr.org/",
+        "https://eprint.iacr.org/2023/1080",
+        "https://eprint.iacr.org/2026/444",
+        "https://eprint.iacr.org/2026/1202",
+        "https://eprint.iacr.org/2026/2571",
+        "https://eprint.iacr.org/2022/1430",
+        "https://eprint.iacr.org/2024/2086",
+        "https://eprint.iacr.org/2026/395",
+        "https://eprint.iacr.org/2025/1950",
+        "https://eprint.iacr.org/2025/1363",
+        "https://eprint.iacr.org/2025/1478",
+        "https://eprint.iacr.org/2026/2524",
+        "https://eprint.iacr.org/2026/2465",
+        "https://eprint.iacr.org/2026/2651",
+        "https://eprint.iacr.org/2026/2653",
+        "https://eprint.iacr.org/2026/2147",
+        "https://eprint.iacr.org/2026/2575",
+        "https://eprint.iacr.org/2026/284",
+        "https://eprint.iacr.org/2026/1957",
+        "https://eprint.iacr.org/2026/2639",
+        "https://eprint.iacr.org/rss/",
+        "https://eprint.iacr.org/rss/rss.xml?order=recent"
+      ],
+      "public_display": false,
+      "id": "eprint",
+      "role": "publication_origin"
+    },
+    {
+      "source": "drops",
+      "name": "DROPS",
+      "url": "https://drops.dagstuhl.de/",
+      "status": "partial",
+      "scope": "不止首页5个卷期：检查LIPIcs、OASIcs、TGDK、DARTS、DagRep、DagMan、LITES、DFU共8个系列/期刊入口的最新卷期；补核OASIcs148、DARTS12(2)、DagRep15(12)、DagMan11(1)、LITES11(1)、DFU7；TGDK4(3)全部3篇与LITES11(1)全部2篇逐篇核对Publication Date。",
+      "note": "新增检查中，OASIcs148为9月28日、DARTS12(2)为7月2日、DagRep15(12)为7月28日、DagMan11(1)为2025年11月17日、DFU7为2017年2月21日，均窗口外。TGDK4(3)三篇均9月30日；LITES11(1)两篇分别5月21日及8月20日，证明卷期日期不可替代文章日期。本轮未做全库OAI/所有历史卷期逐篇增量，未排除旧卷期后补文章或索引延迟，不宣称DROPS全站无新增。",
+      "checked_at": "2026-10-30T12:41:00Z",
+      "entrypoints_checked": [
+        "https://drops.dagstuhl.de/",
+        "https://drops.dagstuhl.de/entities/volume/OASIcs-volume-146",
+        "https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-394",
+        "https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-395",
+        "https://drops.dagstuhl.de/entities/volume/OASIcs-volume-147",
+        "https://drops.dagstuhl.de/entities/issue/TGDK-volume-4-issue-3",
+        "https://drops.dagstuhl.de/entities/document/10.4230/TGDK.4.3.1",
+        "https://drops.dagstuhl.de/entities/document/10.4230/TGDK.4.3.2",
+        "https://drops.dagstuhl.de/entities/document/10.4230/TGDK.4.3.3",
+        "https://drops.dagstuhl.de/entities/document/10.4230/LITES.11.1.1",
+        "https://drops.dagstuhl.de/entities/document/10.4230/LITES.11.1.2",
+        "https://drops.dagstuhl.de/entities/volume/OASIcs-volume-148",
+        "https://drops.dagstuhl.de/entities/issue/DARTS-volume-12-issue-2",
+        "https://drops.dagstuhl.de/entities/issue/DagRep-volume-15-issue-12",
+        "https://drops.dagstuhl.de/entities/issue/DagMan-volume-11-issue-1",
+        "https://drops.dagstuhl.de/entities/issue/LITES-volume-11-issue-1",
+        "https://drops.dagstuhl.de/entities/volume/DFU-volume-7"
+      ],
+      "public_display": false,
+      "id": "drops",
+      "role": "publication_origin"
+    },
+    {
+      "source": "crossref",
+      "name": "Crossref出版商正式发表元数据",
+      "url": "https://api.crossref.org/works?filter=from-online-pub-date:2026-10-29,until-online-pub-date:2026-10-30&rows=1000",
+      "status": "partial",
+      "scope": "以published-online筛选10月29—30日，接口报告22951条全学科记录；实际获取前1000条，词汇初筛110条（含跨学科误命中），继续核对主题与原文。",
+      "note": "非全量遍历；不能把Crossref登记/更新时刻当发表时刻。筛出数学、CS与安全候选，正式事件日期与精确窗口分别判断。",
+      "checked_at": "2026-10-30T12:39:00Z",
+      "entrypoints_checked": [
+        "https://api.crossref.org/works?filter=from-online-pub-date:2026-10-29,until-online-pub-date:2026-10-30&rows=1000"
+      ],
+      "public_display": false,
+      "id": "crossref",
+      "role": "discovery_index"
+    },
+    {
+      "source": "ieee",
+      "name": "IEEE Crossref在线发表增量",
+      "url": "https://api.crossref.org/works?filter=from-online-pub-date:2026-10-29,until-online-pub-date:2026-10-30,prefix:10.1109&rows=1000",
+      "status": "partial",
+      "scope": "实际查询10.1109前缀的两日published-online元数据，返回0条。",
+      "note": "仅表明本次Crossref过滤结果为0，不排除IEEE未提供该字段、迟存缴或其他入口事件。",
+      "checked_at": "2026-10-30T12:39:00Z",
+      "entrypoints_checked": [
+        "https://api.crossref.org/works?filter=from-online-pub-date:2026-10-29,until-online-pub-date:2026-10-30,prefix:10.1109&rows=1000"
+      ],
+      "public_display": false,
+      "id": "ieee",
+      "role": "publication_origin"
+    },
+    {
+      "source": "pets",
+      "name": "PoPETs Crossref在线发表增量",
+      "url": "https://api.crossref.org/works?filter=from-online-pub-date:2026-10-29,until-online-pub-date:2026-10-30,prefix:10.56553&rows=1000",
+      "status": "partial",
+      "scope": "实际查询10.56553前缀的两日published-online元数据，返回0条；另读2026卷官方目录。",
+      "note": "不能把年度目录当前存在当本期新发表，亦不把0条元数据结果推广成全站无新增。",
+      "checked_at": "2026-10-30T12:39:00Z",
+      "entrypoints_checked": [
+        "https://api.crossref.org/works?filter=from-online-pub-date:2026-10-29,until-online-pub-date:2026-10-30,prefix:10.56553&rows=1000"
+      ],
+      "public_display": false,
+      "id": "pets",
+      "role": "publication_origin"
+    },
+    {
+      "source": "acm",
+      "name": "ACM正式发表候选",
+      "url": "https://api.crossref.org/works",
+      "status": "partial",
+      "scope": "10.1145前缀两日增量请求返回429；随后三个ePrint提供的CCS DOI逐条Crossref查询均404，ACM原文入口获取失败。",
+      "note": "未取得10.1145/3830454.3832721、10.1145/3830454.3846542、10.1145/3830454.3846540的正式日期证据；不能以ePrint更新或CCS录用标签代替。",
+      "checked_at": "2026-10-30T12:39:00Z",
+      "entrypoints_checked": [
+        "https://api.crossref.org/works"
+      ],
+      "public_display": false,
+      "id": "acm",
+      "role": "publication_origin"
+    },
+    {
+      "source": "springer",
+      "name": "Springer Nature正式论文与RAID章节",
+      "url": "https://link.springer.com/",
+      "status": "partial",
+      "scope": "从Crossref样本和限定原站日期搜索找到相关研究，完整阅读3篇原始摘要/引言及机构；另识别RAID章节doi10.1007/978-3-032-42936-0_1与10.1007/978-3-032-42939-1_14的29/30日online日期。 后从署名作者官网取得LLMalware完整PDF并阅读核心概述，补为时间待核实的正式发表事件。",
+      "note": "本轮4篇进入时间待核实；RAID第二章节元数据无摘要且原站入口本次未获取，不能收录；第一章节已合法取得作者公开全文。10.1007专门前缀查询429；本期非Springer全量。部分HTML午夜Z值与日期字段一致，未当真实精确首发时刻。",
+      "checked_at": "2026-10-30T12:39:00Z",
+      "entrypoints_checked": [
+        "https://link.springer.com/",
+        "https://unixyhuang.github.io/publication/",
+        "https://unixyhuang.github.io/pubs/raid26-final2.pdf"
+      ],
+      "public_display": false,
+      "id": "springer",
+      "role": "publication_origin"
+    },
+    {
+      "source": "iop",
+      "name": "IOP出版商存缴摘要",
+      "url": "https://api.crossref.org/works/10.1088/1361-6420/aeb624",
+      "status": "partial",
+      "scope": "实际读取完整JATS摘要、作者机构及published-online日。",
+      "note": "原文网站本次未获取；摘要完整可核对，日期只有日精度，列待核实不计新增。",
+      "checked_at": "2026-10-30T12:39:00Z",
+      "entrypoints_checked": [
+        "https://api.crossref.org/works/10.1088/1361-6420/aeb624"
+      ],
+      "public_display": false,
+      "id": "iop",
+      "role": "publication_origin"
+    },
+    {
+      "source": "semantic-scholar",
+      "name": "Semantic Scholar",
+      "url": "https://www.semanticscholar.org/",
+      "status": "partial",
+      "scope": "Bulk API 按 Computer Science/Mathematics 和 2026-10-29:2026-10-30 发现候选；单次返回 total=203、token=null。105项日期29日，98项30日，72项索引含摘要；并非203项全部原文审阅。",
+      "note": "逐项原始出版方核查2篇，均取得完整摘要/署名但时间边界不明，移入待核实。索引日期及学科标签只作发现，不当首次公开时间证据。",
+      "checked_at": "2026-10-30T12:40:00Z",
+      "entrypoints_checked": [
+        "https://api.semanticscholar.org/graph/v1/paper/search/bulk?publicationDateOrYear=2026-10-29:2026-10-30&fieldsOfStudy=Computer%20Science,Mathematics&fields=title,authors,publicationDate,externalIds,abstract,url,venue,publicationTypes,openAccessPdf&sort=publicationDate:desc",
+        "https://api.semanticscholar.org/api-docs/snippets",
+        "https://link.springer.com/article/10.1007/s10458-026-09770-8",
+        "https://link.springer.com/article/10.1007/s00245-026-10524-x",
+        "https://link.springer.com/article/10.1007/s12530-026-09888-w"
+      ],
+      "public_display": true,
+      "id": "semantic-scholar",
+      "role": "discovery_index"
+    },
+    {
+      "source": "openalex",
+      "name": "OpenAlex",
+      "url": "https://openalex.org/",
+      "status": "blocked",
+      "scope": "实际尝试免费匿名 works 日期+学科过滤；官方 API 文档及过滤说明已读。",
+      "note": "两次匿名请求均HTTP429；第二次明确网络共享IP的免费日预算已耗尽，Retry-After40775秒，午夜UTC重置。未申请密钥、注册或付费，不绕过限流。未取得记录，不能记为无新增。",
+      "checked_at": "2026-10-30T12:40:00Z",
+      "entrypoints_checked": [
+        "https://api.openalex.org/works?filter=from_publication_date:2026-10-29,to_publication_date:2026-10-30,primary_topic.field.id:17%7C26&per_page=100&cursor=*",
+        "https://help.openalex.org/api/",
+        "https://help.openalex.org/api/filtering/"
+      ],
+      "public_display": false,
+      "id": "openalex",
+      "role": "discovery_index"
+    },
+    {
+      "source": "pubscholar",
+      "name": "PubScholar",
+      "url": "https://pubscholar.cn/",
+      "status": "blocked",
+      "scope": "直接网页读取返回503；普通浏览器入口转向 scholarin.cn，尚未完成有效搜索。",
+      "note": "跳转目标需另行授权，本轮未继续观察内容，不能记为无新增。",
+      "checked_at": "2026-10-30T12:40:00Z",
+      "entrypoints_checked": [
+        "https://pubscholar.cn/"
+      ],
+      "public_display": false,
+      "id": "pubscholar",
+      "role": "discovery_index"
     }
   ],
   "cross_source_merges": [],
@@ -421,6 +600,14 @@
       "source": "openai-research",
       "reason": "已读取引言及训练概述；内容说明已有模型行为更新，并沿用此前训练与防护。未建立本次补充卡具有独立的新原创研究贡献；按旧版本更新排除，不列为待核实论文。",
       "reading_scope": "Introduction 与 Model Data and Training；未审阅完整评估。"
+    },
+    {
+      "doi": "10.1112/blms.70540",
+      "reason": "Crossref摘要含缺失数学公式，Wiley原站获取失败；未满足完整摘要门槛，不生成论文卡片。"
+    },
+    {
+      "doi": "10.46586/er.16.2026.12573",
+      "reason": "10.46586并非IACR专属前缀，此条为宗教研究期刊，与目标领域无关。"
     }
   ],
   "inventory": {
@@ -534,5 +721,302 @@
       "cs.rss": "8c5a1d1bce35bbda070667d69feb45d3bb2a41cb1189ff360b915ff211728a4b",
       "new_inventory.json": "30f8929d61405013b266f520e316b67df87b5e6f3ea98d80eef13683630599b4"
     }
-  }
+  },
+  "amendments": [
+    {
+      "updated_at": "2026-10-30T12:44:30Z",
+      "note": "补充 7 项已读原始研究的正式发表事件候选，均未通过精确日界确认；更正来源数口径，完善实际检索记录。",
+      "prior_scope_note": "本期为选择性阅读日报，不是全量论文解读：arXiv CS/数学新公告目录去重发现 1,970 项，实际完成 60 项完整摘要阅读，其中 15 项另读核心正文；其余目录条目未作逐篇解读。另核 ECCC 与机构原始研究内容。确认新增 63 项、公开时间待核实 1 项；预印本、技术报告和研究博客分型标注。其他来源仅按实际入口进行有限检查，覆盖缺口见检索档案。",
+      "superseded_coverage": [
+        {
+          "source": "eccc",
+          "name": "ECCC",
+          "url": "https://eccc.weizmann.ac.il/",
+          "status": "checked",
+          "scope": "最新报告首页、最新 RSS 的10条记录；对临近边界的TR26-286/287核对详情及完整摘要，287阅读正文核心陈述。",
+          "note": "本窗口确认TR26-287，已与arXiv2610.40484合并。286的公开时间为10月29日06:58:21Z，窗口外；RSS更新不自动等于首次发表。",
+          "checked_at": "2026-10-30T12:06:00Z",
+          "entrypoints_checked": [
+            "https://eccc.weizmann.ac.il/",
+            "https://eccc.weizmann.ac.il/feeds/latestReports",
+            "https://eccc.weizmann.ac.il/report/2026/286/",
+            "https://eccc.weizmann.ac.il/report/2026/287/"
+          ],
+          "public_display": true,
+          "id": "eccc"
+        },
+        {
+          "source": "eprint",
+          "name": "IACR ePrint",
+          "url": "https://eprint.iacr.org/",
+          "status": "partial",
+          "scope": "2026年度倒序目录、7日更新目录的最新部分与IACR首页新闻；核对最新编号2026/2671详情。7日列表仅作为筛选入口，不将其整体当本期窗口。",
+          "note": "2026目录最新可见编号2671在10月28日approved，窗口外；29/30日最新更新区包含旧编号修订，未计作新论文。未逐条审计全部132条7日更新；RSS直取403，停止该路径。不能据此断言ePrint全站没有新论文或正式发表事件。",
+          "checked_at": "2026-10-30T12:06:00Z",
+          "entrypoints_checked": [
+            "https://eprint.iacr.org/2026/",
+            "https://eprint.iacr.org/days/7",
+            "https://eprint.iacr.org/2026/2671",
+            "https://eprint.iacr.org/rss/rss.xml",
+            "https://iacr.org/"
+          ],
+          "public_display": false,
+          "id": "eprint"
+        },
+        {
+          "source": "drops",
+          "name": "DROPS",
+          "url": "https://drops.dagstuhl.de/",
+          "status": "partial",
+          "scope": "首页最近出版的5个卷/期及其出版元数据，辅以限定域日期检索。",
+          "note": "TIME2026为10月10日、ESEM2026为10月5日、AFT2026和ATMOS2026为10月2日、TGDK4(3)为9月30日，均非窗口内新卷。未遍历全库逐篇元数据或OAI增量，不能排除其他条目。",
+          "checked_at": "2026-10-30T12:06:00Z",
+          "entrypoints_checked": [
+            "https://drops.dagstuhl.de/",
+            "https://drops.dagstuhl.de/entities/volume/OASIcs-volume-146",
+            "https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-394",
+            "https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-395",
+            "https://drops.dagstuhl.de/entities/volume/OASIcs-volume-147",
+            "https://drops.dagstuhl.de/entities/issue/TGDK-volume-4-issue-3"
+          ],
+          "public_display": false,
+          "id": "drops"
+        }
+      ],
+      "patch_sha256": {
+        "formal_supplement": "8aa8822e61d718bc7b1eb100e9fc25ba57d513ea700b20185849936db5c1bae2",
+        "cross_indexes": "7360f5b579cb5c2e5dcf6d5dbd9be0c42efc22071a6d4fe80faf96a187b6cd22",
+        "nonarxiv_deep": "41002059ad767161cf307b0e2260eba5c29642ab9aeb07dcec3117360422c760"
+      }
+    }
+  ],
+  "updated_at": "2026-10-30T12:44:30Z",
+  "deepened_checks": {
+    "coverage_replacement_sources": [
+      "eccc",
+      "eprint",
+      "drops"
+    ],
+    "counts": {
+      "new_papers_added": 0,
+      "eprint_index_total_visible": 129,
+      "eprint_oct29_oct30_candidates": 19,
+      "eprint_detail_success": 15,
+      "eprint_detail_failure": 4,
+      "eccc_year_dated_rows_parsed": 286,
+      "eccc_rss_entries": 10,
+      "drops_series_or_journals": 8,
+      "drops_latest_journal_articles_date_checked": 5
+    },
+    "eprint_candidate_log": [
+      {
+        "id": "2023/1080",
+        "url": "https://eprint.iacr.org/2023/1080",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/444",
+        "url": "https://eprint.iacr.org/2026/444",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/1202",
+        "url": "https://eprint.iacr.org/2026/1202",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/2571",
+        "url": "https://eprint.iacr.org/2026/2571",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2022/1430",
+        "url": "https://eprint.iacr.org/2022/1430",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2024/2086",
+        "url": "https://eprint.iacr.org/2024/2086",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/395",
+        "url": "https://eprint.iacr.org/2026/395",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2025/1950",
+        "url": "https://eprint.iacr.org/2025/1950",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2025/1363",
+        "url": "https://eprint.iacr.org/2025/1363",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2025/1478",
+        "url": "https://eprint.iacr.org/2025/1478",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/2524",
+        "url": "https://eprint.iacr.org/2026/2524",
+        "status": "detail_fetch_failed",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情获取失败；首次公开及修订状态待核实，保留检索记录，不进入日报"
+      },
+      {
+        "id": "2026/2465",
+        "url": "https://eprint.iacr.org/2026/2465",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/2651",
+        "url": "https://eprint.iacr.org/2026/2651",
+        "status": "detail_fetch_failed",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情获取失败；首次公开及修订状态待核实，保留检索记录，不进入日报"
+      },
+      {
+        "id": "2026/2653",
+        "url": "https://eprint.iacr.org/2026/2653",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/2147",
+        "url": "https://eprint.iacr.org/2026/2147",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/2575",
+        "url": "https://eprint.iacr.org/2026/2575",
+        "status": "detail_fetch_failed",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情获取失败；首次公开及修订状态待核实，保留检索记录，不进入日报"
+      },
+      {
+        "id": "2026/284",
+        "url": "https://eprint.iacr.org/2026/284",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/1957",
+        "url": "https://eprint.iacr.org/2026/1957",
+        "status": "revision_excluded",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情历史明确显示既有稿件修订；非本期首次预印本公开，正式发表标签另需时间证据"
+      },
+      {
+        "id": "2026/2639",
+        "url": "https://eprint.iacr.org/2026/2639",
+        "status": "detail_fetch_failed",
+        "abstract": "完整摘要已由官方索引或详情读取；不因摘要可得而假定时间合格",
+        "reason": "详情获取失败；首次公开及修订状态待核实，保留检索记录，不进入日报"
+      }
+    ],
+    "drops_article_dates": [
+      {
+        "doi": "10.4230/TGDK.4.3.1",
+        "publication_date": "2026-09-30",
+        "url": "https://drops.dagstuhl.de/entities/document/10.4230/TGDK.4.3.1",
+        "decision": "window_excluded"
+      },
+      {
+        "doi": "10.4230/TGDK.4.3.2",
+        "publication_date": "2026-09-30",
+        "url": "https://drops.dagstuhl.de/entities/document/10.4230/TGDK.4.3.2",
+        "decision": "window_excluded"
+      },
+      {
+        "doi": "10.4230/TGDK.4.3.3",
+        "publication_date": "2026-09-30",
+        "url": "https://drops.dagstuhl.de/entities/document/10.4230/TGDK.4.3.3",
+        "decision": "window_excluded"
+      },
+      {
+        "doi": "10.4230/LITES.11.1.1",
+        "publication_date": "2026-05-21",
+        "url": "https://drops.dagstuhl.de/entities/document/10.4230/LITES.11.1.1",
+        "decision": "window_excluded"
+      },
+      {
+        "doi": "10.4230/LITES.11.1.2",
+        "publication_date": "2026-08-20",
+        "url": "https://drops.dagstuhl.de/entities/document/10.4230/LITES.11.1.2",
+        "decision": "window_excluded"
+      }
+    ],
+    "formal_publication_checks": [
+      {
+        "doi": "10.1145/3830454.3832721",
+        "status": "unconfirmed",
+        "note": "已核查：ACM原站获取失败、Crossref精确DOI查询404；不得以ePrint Publication标签代替正式发表日期"
+      },
+      {
+        "doi": "10.1145/3830454.3846542",
+        "status": "unconfirmed",
+        "note": "已核查：ACM原站获取失败、Crossref精确DOI查询404；不得以ePrint Publication标签代替正式发表日期"
+      },
+      {
+        "doi": "10.1145/3830454.3846540",
+        "status": "unconfirmed",
+        "note": "已核查：ACM原站获取失败、Crossref精确DOI查询404；不得以ePrint Publication标签代替正式发表日期"
+      }
+    ],
+    "limitations": [
+      "7日入口只是筛选工具；日报窗口始终24小时，未将旧条目填充。",
+      "读取发生在截止后，截止仍固定12:00Z，不纳入12:00Z以后的新公开。",
+      "本补丁仅深化三来源，不代表其他来源已完整覆盖；不改变既有合格ECCC条目。",
+      "失败详情不在主页面列为论文条目。"
+    ]
+  },
+  "discovery_inventories": [
+    {
+      "index_id": "semantic-scholar",
+      "discovered": 203,
+      "indexed_with_abstract": 72,
+      "original_works_reviewed": 2,
+      "added_confirmed": 0,
+      "added_pending": 2,
+      "pagination": "Single returned page; token=null for the specific query, not an all-source completeness claim.",
+      "archive": "Metadata-only candidate inventory saved separately in 学术论文日报; not bundled in public source ZIP."
+    },
+    {
+      "index_id": "crossref",
+      "query_reported_total_all_fields": 22951,
+      "metadata_records_fetched": 1000,
+      "lexical_candidates": 110,
+      "added_confirmed": 0,
+      "note": "Keyword candidates include false positives; formal supplement also used publisher-specific searches. No all-record review claim."
+    }
+  ]
 }

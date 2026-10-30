@@ -12,7 +12,8 @@ def render_paper(p):
  if p.get('public_time_range'):
   r=p['public_time_range'];lines += [f"**已证实时间区间：** [{r['start']}, {r['end']})。"]
  if p.get('date_note'):lines+=['**日期说明：** '+p['date_note']]
- if p['eligibility']=='pending':lines+=['**时间待核实：不计入本期确认新增。**']
+ if p['eligibility']=='pending':lines+=['**时间待核实：不计入本期确认新增。**',p.get('pending_reason','')]
+ if p.get('discovered_via'):lines+=['**发现入口（非发布来源）：** '+'；'.join(f"[{d.get('method',d['index_id'])}]({d['record_url']})" for d in p['discovered_via'])]
  label={'abstract':'摘要级解读','partial':'核心内容局部审阅','full_review':'正文审阅（范围见说明）'}[p['reading_depth']]
  lines += ['',f"**阅读深度：** {label}。{p.get('reading_note','未独立复现或核验完整证明。')}",'',f"- **研究问题：** {p['problem']}",f"- **主要结果：** {p['result']}",f"- **方法：** {p['method']}",f"- **条件与局限：** {p['limitations']}"]
  if p.get('abstract_review'):
@@ -27,7 +28,7 @@ def render_paper(p):
 def render(issue,sources):
  ps=issue['papers'];pending=issue.get('pending_papers',[])
  for p in ps+pending:validate_review(p)
- lines=[f"# 学术论文日报（AOE）｜{issue['date']}",'',f"检索窗口：{issue['window_start']} 至 {issue['window_end']}，左闭右开。AOE（UTC−12）已结束自然日。",'',f"**确认新增 {len(ps)} 篇；时间待核实 {len(pending)} 篇（另列，不计入新增）。**",'', '**实际覆盖范围：** '+issue['editorial_note'],'','研究结论按原作者主张转述；摘要或局部正文阅读不等于完整证明审计、性能复现或安全背书。','','## 来源与实际覆盖','', '| 来源 | 本期状态 | 实际范围与局限 |','|---|---|---|']
+ lines=[f"# 学术论文日报（AOE）｜{issue['date']}",'',f"检索窗口：{issue['window_start']} 至 {issue['window_end']}，左闭右开。AOE（UTC−12）已结束自然日。",'',f"**确认新增 {len(ps)} 篇；时间待核实 {len(pending)} 篇（另列，不计入新增）。**",'', '**实际覆盖范围：** '+issue['editorial_note'],'','研究结论按原作者主张转述；摘要或局部正文阅读不等于完整证明审计、性能复现或安全背书。','','## 发布来源与实际覆盖','', '| 来源 | 本期状态 | 实际范围与局限 |','|---|---|---|']
  for c in issue['coverage']:
   if c.get('public_display') is True:
    row=f"| [{c['name']}]({c['url']}) | {c['status']} | {c['scope']} {c['note']} |";lines.append(row.replace('\n',' '))
@@ -35,7 +36,7 @@ def render(issue,sources):
  for src in dict.fromkeys(p['source'] for p in ps):
   row=[str(sum(src==p['source'] and d in p['domains'] for p in ps)) for d in DOMAINS]
   lines.append('| '+sources.get(src,src)+' | '+' | '.join(row)+' |')
- lines+=['','一篇研究可带多个领域标签；领域计数不可相加视为总数。同一研究的预印本、正式版本、研究博客与代码按稳定身份和标题/作者合并。','']
+ lines+=['',f"确认收录来源 {len(set(p['source'] for p in ps))} 个；仅待核实来源 {len(set(p['source'] for p in pending)-set(p['source'] for p in ps))} 个。检索索引不计为发布来源。",'','一篇研究可带多个领域标签；领域计数不可相加视为总数。同一研究的预印本、正式版本、研究博客与代码按稳定身份和标题/作者合并。','']
  if not ps:lines+=['本窗口未取得同时满足阅读门槛及时间证据要求的确认新增；不以旧稿或未读标题补数。','']
  for src in dict.fromkeys(p['source'] for p in ps):
   lines += [f"## {sources.get(src,src)}",'']

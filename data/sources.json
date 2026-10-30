@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated": "2026-10-30",
   "sources": [
     {
@@ -18,7 +18,8 @@
         "https://arxiv.org/list/cs/recent",
         "https://arxiv.org/list/cs.CR/recent"
       ],
-      "policy": "跟踪新稿与修订；核对 submitted、announced、版本号。按稳定arXiv编号合并跨分类。"
+      "policy": "跟踪新稿与修订；核对 submitted、announced、版本号。按稳定arXiv编号合并跨分类。",
+      "role": "publication_origin"
     },
     {
       "id": "eprint",
@@ -33,7 +34,8 @@
         "https://eprint.iacr.org/days/7",
         "https://eprint.iacr.org/2026/"
       ],
-      "policy": "更新列表包括旧稿；分别保留首次收稿和最后修订，不把更新计为首次发表。"
+      "policy": "更新列表包括旧稿；分别保留首次收稿和最后修订，不把更新计为首次发表。",
+      "role": "publication_origin"
     },
     {
       "id": "eccc",
@@ -47,7 +49,8 @@
       "entrypoints": [
         "https://eccc.weizmann.ac.il/"
       ],
-      "policy": "记录报告号、页面登记与Publication日期；未有同行评审证据时不标正式发表。"
+      "policy": "记录报告号、页面登记与Publication日期；未有同行评审证据时不标正式发表。",
+      "role": "publication_origin"
     },
     {
       "id": "drops",
@@ -61,7 +64,8 @@
       "entrypoints": [
         "https://drops.dagstuhl.de/entities/series/LIPIcs"
       ],
-      "policy": "核对卷和单篇正式出版日期；会议举办日期不替代出版日期。"
+      "policy": "核对卷和单篇正式出版日期；会议举办日期不替代出版日期。",
+      "role": "publication_origin"
     },
     {
       "id": "tosc",
@@ -74,7 +78,8 @@
       "entrypoints": [
         "https://tosc.iacr.org/"
       ],
-      "policy": "关注对称密码、密码分析及实现；遇访问限制如实记缺口。"
+      "policy": "关注对称密码、密码分析及实现；遇访问限制如实记缺口。",
+      "role": "publication_origin"
     },
     {
       "id": "tches",
@@ -88,7 +93,8 @@
       "entrypoints": [
         "https://tches.iacr.org/"
       ],
-      "policy": "关注硬件实现、侧信道与故障攻击；不能以ePrint收录推断录用。"
+      "policy": "关注硬件实现、侧信道与故障攻击；不能以ePrint收录推断录用。",
+      "role": "publication_origin"
     },
     {
       "id": "iacr-conferences",
@@ -101,7 +107,8 @@
       "entrypoints": [
         "https://www.iacr.org/conferences/"
       ],
-      "policy": "CRYPTO/EUROCRYPT/ASIACRYPT/TCC等以官方program/proceedings核对录用，按实际更新记日报。"
+      "policy": "CRYPTO/EUROCRYPT/ASIACRYPT/TCC等以官方program/proceedings核对录用，按实际更新记日报。",
+      "role": "publication_origin"
     },
     {
       "id": "pets",
@@ -115,7 +122,8 @@
       "entrypoints": [
         "https://petsymposium.org/popets/2026/"
       ],
-      "policy": "按官方卷期出版日期，不将旧卷重新访问视作新增。"
+      "policy": "按官方卷期出版日期，不将旧卷重新访问视作新增。",
+      "role": "publication_origin"
     },
     {
       "id": "usenix",
@@ -128,7 +136,8 @@
       "entrypoints": [
         "https://www.usenix.org/conferences"
       ],
-      "policy": "官方会议技术日程和开放论文；论文录用与公开日期分开。"
+      "policy": "官方会议技术日程和开放论文；论文录用与公开日期分开。",
+      "role": "publication_origin"
     },
     {
       "id": "ieee-sp",
@@ -141,7 +150,8 @@
       "entrypoints": [
         "https://www.ieee-security.org/"
       ],
-      "policy": "查官方accepted papers及原文；拒绝仅以二手新闻作研究结论。"
+      "policy": "查官方accepted papers及原文；拒绝仅以二手新闻作研究结论。",
+      "role": "publication_origin"
     },
     {
       "id": "ndss",
@@ -154,7 +164,8 @@
       "entrypoints": [
         "https://www.ndss-symposium.org/"
       ],
-      "policy": "查官方论文页、DOI和技术内容，按新公开或修订日期记录。"
+      "policy": "查官方论文页、DOI和技术内容，按新公开或修订日期记录。",
+      "role": "publication_origin"
     },
     {
       "id": "acm",
@@ -168,7 +179,8 @@
       "entrypoints": [
         "https://dl.acm.org/"
       ],
-      "policy": "付费全文不可得时明确仅摘要，不能声称全文审读。"
+      "policy": "付费全文不可得时明确仅摘要，不能声称全文审读。",
+      "role": "publication_origin"
     },
     {
       "id": "dblp",
@@ -183,7 +195,8 @@
       "entrypoints": [
         "https://dblp.org/"
       ],
-      "policy": "用于同名辨认、DOI与跨来源去重，不单独充当最新论文或结论来源。"
+      "policy": "用于同名辨认、DOI与跨来源去重，不单独充当最新论文或结论来源。",
+      "role": "discovery_index"
     },
     {
       "id": "openai-research",
@@ -201,7 +214,8 @@
         "密码学"
       ],
       "checked_at": "2026-10-30",
-      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。"
+      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。",
+      "role": "publication_origin"
     },
     {
       "id": "anthropic-research",
@@ -219,7 +233,8 @@
         "密码学"
       ],
       "checked_at": "2026-10-30",
-      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。"
+      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。",
+      "role": "publication_origin"
     },
     {
       "id": "deepmind-research",
@@ -237,7 +252,8 @@
         "密码学"
       ],
       "checked_at": "2026-10-30",
-      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。"
+      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。",
+      "role": "publication_origin"
     },
     {
       "id": "microsoft-research",
@@ -254,7 +270,8 @@
         "密码学"
       ],
       "checked_at": "2026-10-30",
-      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。"
+      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。",
+      "role": "publication_origin"
     },
     {
       "id": "nvidia-research",
@@ -268,7 +285,8 @@
         "https://research.nvidia.com/publications",
         "https://developer.nvidia.com/blog/"
       ],
-      "policy": "只收有实质方法、结果与条件的公开研究资料；核验原始时间、作者机构和阅读范围，跨来源合并同一研究。"
+      "policy": "只收有实质方法、结果与条件的公开研究资料；核验原始时间、作者机构和阅读范围，跨来源合并同一研究。",
+      "role": "publication_origin"
     },
     {
       "id": "checkpoint-research",
@@ -282,7 +300,40 @@
       "entrypoints": [
         "https://research.checkpoint.com/category/ai-research/"
       ],
-      "policy": "只收有实质方法、结果与条件的公开研究资料；核验原始时间、作者机构和阅读范围，跨来源合并同一研究。"
+      "policy": "只收有实质方法、结果与条件的公开研究资料；核验原始时间、作者机构和阅读范围，跨来源合并同一研究。",
+      "role": "publication_origin"
+    },
+    {
+      "id": "springer",
+      "name": "Springer Nature",
+      "url": "https://link.springer.com/",
+      "kind": "正式期刊与会议论文集",
+      "role": "publication_origin",
+      "domains": [
+        "数学",
+        "计算机科学",
+        "网络与信息安全"
+      ],
+      "entrypoints": [
+        "https://link.springer.com/"
+      ],
+      "policy": "核对单篇正式在线发表日期、版本和早期公开稿；出版商日精度或归一化午夜不视为精确首发。完整摘要或实际核心阅读后才生成研究总结。"
+    },
+    {
+      "id": "iop",
+      "name": "IOP Publishing",
+      "url": "https://iopscience.iop.org/",
+      "kind": "正式期刊",
+      "role": "publication_origin",
+      "domains": [
+        "数学",
+        "计算机科学",
+        "网络与信息安全"
+      ],
+      "entrypoints": [
+        "https://iopscience.iop.org/"
+      ],
+      "policy": "核对单篇正式在线发表日期、版本和早期公开稿；出版商日精度或归一化午夜不视为精确首发。完整摘要或实际核心阅读后才生成研究总结。"
     }
   ],
   "content_types": {
@@ -291,5 +342,60 @@
     "technical_report": "技术报告",
     "research_code": "研究代码",
     "model_release": "含技术材料的模型发布"
-  }
+  },
+  "discovery_indexes": [
+    {
+      "id": "pubscholar",
+      "name": "PubScholar 公益学术平台",
+      "role": "discovery_index",
+      "url": "https://pubscholar.cn/",
+      "entrypoints": [
+        "https://pubscholar.cn/"
+      ],
+      "reference_urls": [
+        "https://www.cas.cn/yw/202311/t20231101_4983866.shtml"
+      ],
+      "policy": "检索发现与原始全文/摘要入口定位；按题目、作者、DOI或稳定编号回溯发布方。索引收录不视为首发或同行评审证据；实际访问和结果范围另记当期检索日志。"
+    },
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "role": "discovery_index",
+      "url": "https://openalex.org/",
+      "entrypoints": [
+        "https://openalex.org/",
+        "https://api.openalex.org/works"
+      ],
+      "reference_urls": [
+        "https://help.openalex.org/"
+      ],
+      "policy": "跨出版方发现候选、DOI及版本关联；区分publication_date与created/updated/indexed元数据。时间、摘要和出版状态回溯原始发布方核验；不把发现于OpenAlex改写成发布于OpenAlex。"
+    },
+    {
+      "id": "semantic-scholar",
+      "name": "Semantic Scholar",
+      "role": "discovery_index",
+      "url": "https://www.semanticscholar.org/",
+      "entrypoints": [
+        "https://www.semanticscholar.org/",
+        "https://api.semanticscholar.org/graph/v1/paper/search/bulk"
+      ],
+      "reference_urls": [
+        "https://api.semanticscholar.org/api-docs/graphs"
+      ],
+      "policy": "使用学术搜索/Academic Graph发现候选与原文入口，保存查询和分页/返回数。日期字段可能缺失或只有年份，不能据此编造AoE窗口内时刻。原始标题与完整摘要/实质内容及日期证据仍需核实。"
+    },
+    {
+      "id": "crossref",
+      "name": "Crossref",
+      "url": "https://www.crossref.org/",
+      "kind": "出版商存缴元数据索引",
+      "role": "discovery_index",
+      "entrypoints": [
+        "https://api.crossref.org/works"
+      ],
+      "policy": "用于发现 DOI、核对出版商存缴发表元数据及完整摘要。created/deposited/indexed 时间不替代公开发表；完整性和原始来源范围明确记录。"
+    }
+  ],
+  "discovery_policy": "发现索引与发布来源分列；目录登记不代表当期已经检索成功。期刊、会议、预印本、机构报告是发布来源，索引仅记在discovered_via和检索日志。"
 }

@@ -89,3 +89,14 @@
 - `editorial_note` 在网页顶部与 Markdown 显著说明本期为选择性/部分阅读覆盖，区分发现条数、实际阅读条数、确认新增和时间待核实。目录发现不等于完成逐篇摘要阅读，更不等于全文审读。
 - `retrieval_log` 指向当日详细检索 JSON，记录所有目录来源的实际入口、覆盖范围、失败/未查、发现与阅读计数及排除原因。未读标题、摘要不可得和访问失败只在检索档案，不进入论文卡片。
 - 新的正式日报 Markdown 仅由正式索引生成，不重写历史试刊。检验命令：`python3 tools/render_markdown.py && python3 tools/validate.py && python3 tools/test_time_validation.py && node --check assets/app.js && node tools/test_ui.cjs`。
+
+## 多渠道发现与发布来源分离
+
+- 每日实际检索 PubScholar、OpenAlex、Semantic Scholar，并以其为发现、交叉核对及原文入口定位工具；不得仅把名字加进目录就宣称完成覆盖。`data/sources.json` 的 `discovery_indexes` 与发布方 `sources` 分列，已有 DBLP 也标为辅助索引；Crossref 用于 DOI 和出版商存缴元数据核对。
+- 每条研究的 `source` 仍是核实后的真实发布平台/期刊/会议/机构；可另存 `discovered_via=[{index_id,record_url,accessed_at}]`。通过 OpenAlex 找到的 arXiv 论文仍属于 arXiv，不得靠改标签制造“多来源”。
+- 检索后回溯原始摘要/全文及发表证据，检查 DOI、稳定论文编号、作者、题目和版本关系。索引 created/updated/indexed 时间不等于论文首发；出版日期仅到日、时区未知或存在更早版本时，按既有规则待核实或作为出版状态更新，不冒充新增。
+- 非 arXiv 来源须继续做实际检索，不用少数入口的失败代替研究。每个渠道记录查询、入口、时间范围、分页完成度、发现/阅读/入选数量和访问缺口；未读标题与失败入口留在检索日志，不进入主页面论文卡片。
+- 网页来源数只统计确认新增的真实发布来源，另列“仅待核实来源”；下拉框及来源快捷筛选展示整期确认/待核实数量。这个展示修正不改变论文内容，也不等于已经扩展阅读覆盖。
+- 当前官方参考：[PubScholar 发布说明](https://www.cas.cn/yw/202311/t20231101_4983866.shtml)、[OpenAlex 帮助](https://help.openalex.org/)、[Semantic Scholar Academic Graph 文档](https://api.semanticscholar.org/api-docs/graphs)。
+
+- 正式发表事件候选可先列 `pending_papers`，明确已有预印本或作者稿，不计新研究首发；后续即使核实发表时间，也应按同一工作关联出版状态，不自动重复加入新增。补录在 `amendments` 保留修改时间、实际新增/待核实数量和旧检索证据。

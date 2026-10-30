@@ -8,15 +8,15 @@
   "window_start": "2026-10-29T12:00:00Z",
   "window_end": "2026-10-30T12:00:00Z",
   "window_label": "AOE 2026-10-29 · UTC 10-29 12:00 至 10-30 12:00",
-  "editorial_note": "本期为选择性阅读日报，不是全量论文解读：arXiv CS/数学新公告目录去重发现 1,970 项，实际完成 60 项完整摘要阅读，其中 15 项另读核心正文；其余目录条目未作逐篇解读。另核 ECCC 与机构原始研究内容。确认新增 63 项、公开时间待核实 1 项；预印本、技术报告和研究博客分型标注。其他来源仅按实际入口进行有限检查，覆盖缺口见检索档案。",
+  "editorial_note": "本期为选择性阅读日报，不是全量论文解读：arXiv CS/数学新公告去重发现 1,970 项，完成 60 项完整摘要阅读，其中 15 项另读核心正文。补充通过 Semantic Scholar 发现 203 项候选（并非全部已读），从 Crossref 全学科结果抽查前 1,000 项；另读 7 项非 arXiv 研究，均因公开日期仅到日而待核实。当前确认新增 63 项、时间待核实 8 项；预印本、正式发表事件与研究博客分别标注。确认新增仍主要来自 arXiv，其他来源仅按实际范围检查，不声称多渠道全量覆盖；详细进度、排除与访问缺口见检索归档。",
   "coverage": [
     {
       "id": "eccc",
       "name": "ECCC",
       "url": "https://eccc.weizmann.ac.il/",
       "status": "确认 1 项",
-      "scope": "最新报告页与 RSS 的10条记录，并核临近边界两项；本期收录 TR26-287。",
-      "note": "与 arXiv:2610.40484 合并；局部阅读定理陈述与证明路线，不是完整证明审核。",
+      "scope": "核对最新 RSS 10 条及年度目录 286 条带日期记录；本期仍为 TR26-287。",
+      "note": "年度登记日期不能替代公告时间；与 arXiv:2610.40484 合并。局部阅读不是完整证明审计。",
       "public_display": true
     },
     {
@@ -53,6 +53,24 @@
       "status": "确认 0 项；时间待核实 1 项",
       "scope": "实际阅读本节所列 1 项原始研究材料并核公开时间。",
       "note": "仅所列条目审阅；未遍历该机构全部出版物与代码发布。仅日期的条目待核实，不计确认新增。",
+      "public_display": true
+    },
+    {
+      "id": "springer",
+      "name": "Springer Nature",
+      "url": "https://link.springer.com/",
+      "status": "确认 0 项；时间待核实 6 项",
+      "scope": "实际阅读 6 项完整摘要或核心内容（含 1 项作者公开稿），并核对正式在线发表日期。",
+      "note": "均仅日期精度，无法确定 UTC 12:00 边界；其中已有早期公开稿者只作为正式发表事件候选，不冒充新研究首发。不是全平台覆盖。",
+      "public_display": true
+    },
+    {
+      "id": "iop",
+      "name": "IOP Publishing",
+      "url": "https://iopscience.iop.org/",
+      "status": "确认 0 项；时间待核实 1 项",
+      "scope": "读取出版商存缴 Crossref 的完整 JATS 摘要及机构、在线发表日。",
+      "note": "不是出版商网页全文阅读；日期仅到日，不计入确认新增。",
       "public_display": true
     }
   ],
@@ -4483,6 +4501,521 @@
       "date_note": "官方页面仅标 2026-10-29，未取得含时区发布时间，无法判断是否晚于 UTC 12:00；不计确认新增。",
       "reading_note": "阅读研究博客正文的监控架构、评估、局限和外部部署章节。",
       "work_id": "openai-monitoring-20261029"
+    },
+    {
+      "id": "doi-10.1007-s00153-026-01037-z",
+      "doi": "10.1007/s00153-026-01037-z",
+      "title": "A diamond embedding in the computably enumerable quasi degrees",
+      "title_zh": "同一图灵度内的可计算可枚举准度菱形嵌入",
+      "authors": [
+        "Kai Jun Khoo",
+        "Keng Meng Ng"
+      ],
+      "source": "springer",
+      "url": "https://link.springer.com/article/10.1007/s00153-026-01037-z",
+      "first_date": "2026-10-29",
+      "updated_date": null,
+      "version": "正式在线发表版本；发布者日期为2026-10-29",
+      "publication_status": "正式期刊论文；本条报道在线发表事件，不主张研究此前从未公开",
+      "domains": [
+        "数学",
+        "计算机科学"
+      ],
+      "subfields": [
+        "可计算性理论",
+        "度结构"
+      ],
+      "problem": "同一图灵度中的可计算可枚举集合，能否在准可约性下构成菱形格？",
+      "result": "论文给出这样的菱形嵌入：构造图灵等价的A、B、C，使A、B在Q可约性下不可比较，而C为二者下确界。",
+      "method": "使用弹球机优先方法，将保持图灵等价的追踪与保持下确界的校正标记结合。",
+      "limitations": "已读摘要、引言与定理1.2及方法概述，未独立审核完整构造证明。M3、N5全元素同图灵度嵌入及S8问题仍列为开放问题。",
+      "reading_depth": "partial",
+      "author_intro": "Kai Jun Khoo：惠灵顿维多利亚大学数学与统计学院；Keng Meng Ng：南洋理工大学物理与数学科学学院。机构按论文署名或出版商提交元数据记录，未推断当前职务。",
+      "author_institutions": [
+        "Kai Jun Khoo：惠灵顿维多利亚大学数学与统计学院",
+        "Keng Meng Ng：南洋理工大学物理与数学科学学院"
+      ],
+      "affiliation_sources": [
+        "https://link.springer.com/article/10.1007/s00153-026-01037-z"
+      ],
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s00153-026-01037-z",
+        "https://api.crossref.org/works/10.1007/s00153-026-01037-z"
+      ],
+      "public_at": null,
+      "public_time_source": "https://link.springer.com/article/10.1007/s00153-026-01037-z",
+      "public_time_precision": "date",
+      "eligibility": "pending",
+      "event_type": "formal_publication",
+      "pending_reason": "正式在线发表日期已核实为10月29日，但未取得可信的时分及时区；不能判断是否落入UTC12:00以后的本期窗口，不计确认新增。",
+      "date_note": "仅日期精度；不将Crossref created/deposited/indexed登记时间当成论文公开时间。 原站Published/Version of record明确为2026-10-29，未用网页归一化午夜字段判为精确时刻。",
+      "code_url": null,
+      "code_note": "本次阅读范围未核实公开实验代码。",
+      "substantive_review": {
+        "content_urls": [
+          "https://link.springer.com/article/10.1007/s00153-026-01037-z"
+        ],
+        "scope": "完整摘要、引言、核心结果陈述及作者机构；未审读全部证明或复现实验。",
+        "method_evidence": "原文摘要和引言的方法说明。",
+        "result_evidence": "原文摘要及引言的主要结果。",
+        "conditions_evidence": "原文对适用条件、未验证部分和开放问题的明确说明。"
+      },
+      "aliases": [
+        "doi:10.1007/s00153-026-01037-z",
+        "10.1007/s00153-026-01037-z"
+      ],
+      "discovered_via": [
+        {
+          "index_id": "crossref",
+          "record_url": "https://api.crossref.org/works/10.1007/s00153-026-01037-z",
+          "accessed_at": "2026-10-30T12:40:00Z"
+        }
+      ],
+      "content_type": "paper",
+      "publication_event_status": "time_pending"
+    },
+    {
+      "id": "doi-10.1007-s43681-026-01442-3",
+      "doi": "10.1007/s43681-026-01442-3",
+      "title": "From principles to measurement: a risk-proportionate, evidence-weighted framework for assessing bias and explainability readiness of healthcare AI in the United Kingdom",
+      "title_zh": "医疗AI公平性与可解释性准备度的证据加权测量",
+      "authors": [
+        "Sanugi Gunasekera",
+        "Khoa Phung"
+      ],
+      "source": "springer",
+      "url": "https://link.springer.com/article/10.1007/s43681-026-01442-3",
+      "first_date": "2026-10-29",
+      "updated_date": null,
+      "version": "正式在线发表版本；发布者日期为2026-10-29",
+      "publication_status": "正式期刊论文；本条报道在线发表事件，不主张研究此前从未公开",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "AI治理",
+        "公平性与可解释性"
+      ],
+      "problem": "如何避免准备度评分把未经验证的自述当作证据，以及用文档优势抵消公平性缺陷？",
+      "result": "作者给出20项指标、证据折扣和风险权重，并在三个构造案例中展示：原等权模型判为中等的缺陷系统会被新模型判为低准备度。",
+      "method": "采用可调补偿性的加权幂均值及关键保障门槛，做20000次不确定性模拟和敏感性分析。",
+      "limitations": "案例为人为构造而非真实部署，尚缺英国利益相关者的心理测量验证；该框架不是认证或临床有效性证明。",
+      "reading_depth": "partial",
+      "author_intro": "Sanugi Gunasekera、Khoa Phung：英国西英格兰大学。机构按论文署名或出版商提交元数据记录，未推断当前职务。",
+      "author_institutions": [
+        "Sanugi Gunasekera、Khoa Phung：英国西英格兰大学"
+      ],
+      "affiliation_sources": [
+        "https://link.springer.com/article/10.1007/s43681-026-01442-3"
+      ],
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s43681-026-01442-3",
+        "https://api.crossref.org/works/10.1007/s43681-026-01442-3"
+      ],
+      "public_at": null,
+      "public_time_source": "https://link.springer.com/article/10.1007/s43681-026-01442-3",
+      "public_time_precision": "date",
+      "eligibility": "pending",
+      "event_type": "formal_publication",
+      "pending_reason": "正式在线发表日期已核实为10月29日，但未取得可信的时分及时区；不能判断是否落入UTC12:00以后的本期窗口，不计确认新增。",
+      "date_note": "仅日期精度；不将Crossref created/deposited/indexed登记时间当成论文公开时间。 原站Published/Version of record明确为2026-10-29，未用网页归一化午夜字段判为精确时刻。",
+      "code_url": null,
+      "code_note": "本次阅读范围未核实公开实验代码。",
+      "substantive_review": {
+        "content_urls": [
+          "https://link.springer.com/article/10.1007/s43681-026-01442-3"
+        ],
+        "scope": "完整摘要、引言、核心结果陈述及作者机构；未审读全部证明或复现实验。",
+        "method_evidence": "原文摘要和引言的方法说明。",
+        "result_evidence": "原文摘要及引言的主要结果。",
+        "conditions_evidence": "原文对适用条件、未验证部分和开放问题的明确说明。"
+      },
+      "aliases": [
+        "doi:10.1007/s43681-026-01442-3",
+        "10.1007/s43681-026-01442-3"
+      ],
+      "discovered_via": [
+        {
+          "index_id": "springer",
+          "record_url": "https://link.springer.com/article/10.1007/s43681-026-01442-3",
+          "accessed_at": "2026-10-30T12:40:00Z",
+          "method": "publisher_search"
+        }
+      ],
+      "content_type": "paper",
+      "publication_event_status": "time_pending"
+    },
+    {
+      "id": "doi-10.1007-s44163-026-02640-y",
+      "doi": "10.1007/s44163-026-02640-y",
+      "title": "Mapping AI related research in education through bibliometric analysis across four selected journals from 2020 to 2025",
+      "title_zh": "四种期刊中的教育AI研究增长与协作结构",
+      "authors": [
+        "Kamal Najem"
+      ],
+      "source": "springer",
+      "url": "https://link.springer.com/article/10.1007/s44163-026-02640-y",
+      "first_date": "2026-10-29",
+      "updated_date": null,
+      "version": "正式在线发表版本；发布者日期为2026-10-29",
+      "publication_status": "正式期刊论文；本条报道在线发表事件，不主张研究此前从未公开",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "教育AI",
+        "文献计量"
+      ],
+      "problem": "四种指定期刊在2020—2025年的教育AI研究呈现怎样的增长与主题变化？",
+      "result": "从2719条记录筛出1397篇AI相关文献，年度数量从54增至558；八个词汇主题覆盖60.3%的样本。",
+      "method": "用明确的AI相关性词汇筛选、主题字典和共同作者网络，分析Scopus记录。",
+      "limitations": "只反映所选四刊，不代表整个教育AI领域；词汇法遗漏的主题不等于不存在，ChatGPT发布与增长的时间关联不证明因果。",
+      "reading_depth": "partial",
+      "author_intro": "Kamal Najem：摩洛哥EMSI的SMARTiLab；拉巴特穆罕默德五世大学IPSS。机构按论文署名或出版商提交元数据记录，未推断当前职务。",
+      "author_institutions": [
+        "Kamal Najem：摩洛哥EMSI的SMARTiLab；拉巴特穆罕默德五世大学IPSS"
+      ],
+      "affiliation_sources": [
+        "https://link.springer.com/article/10.1007/s44163-026-02640-y"
+      ],
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s44163-026-02640-y",
+        "https://api.crossref.org/works/10.1007/s44163-026-02640-y"
+      ],
+      "public_at": null,
+      "public_time_source": "https://link.springer.com/article/10.1007/s44163-026-02640-y",
+      "public_time_precision": "date",
+      "eligibility": "pending",
+      "event_type": "formal_publication",
+      "pending_reason": "正式在线发表日期已核实为10月29日，但未取得可信的时分及时区；不能判断是否落入UTC12:00以后的本期窗口，不计确认新增。",
+      "date_note": "仅日期精度；不将Crossref created/deposited/indexed登记时间当成论文公开时间。 原站Published/Version of record明确为2026-10-29，未用网页归一化午夜字段判为精确时刻。",
+      "code_url": null,
+      "code_note": "本次阅读范围未核实公开实验代码。",
+      "substantive_review": {
+        "content_urls": [
+          "https://link.springer.com/article/10.1007/s44163-026-02640-y"
+        ],
+        "scope": "完整摘要、引言、核心结果陈述及作者机构；未审读全部证明或复现实验。",
+        "method_evidence": "原文摘要和引言的方法说明。",
+        "result_evidence": "原文摘要及引言的主要结果。",
+        "conditions_evidence": "原文对适用条件、未验证部分和开放问题的明确说明。"
+      },
+      "aliases": [
+        "doi:10.1007/s44163-026-02640-y",
+        "10.1007/s44163-026-02640-y"
+      ],
+      "discovered_via": [
+        {
+          "index_id": "springer",
+          "record_url": "https://link.springer.com/article/10.1007/s44163-026-02640-y",
+          "accessed_at": "2026-10-30T12:40:00Z",
+          "method": "publisher_search"
+        }
+      ],
+      "content_type": "paper",
+      "publication_event_status": "time_pending"
+    },
+    {
+      "id": "doi-10.1088-1361-6420-aeb624",
+      "doi": "10.1088/1361-6420/aeb624",
+      "title": "On microlocal artifacts arising in tomography modeled by a class of generalized Radon transforms",
+      "title_zh": "广义Radon变换断层成像伪影的微局部分析",
+      "authors": [
+        "Eric Todd Quinto",
+        "Andreas Rieder"
+      ],
+      "source": "iop",
+      "url": "https://doi.org/10.1088/1361-6420/aeb624",
+      "first_date": "2026-10-29",
+      "updated_date": null,
+      "version": "正式在线发表版本；发布者日期为2026-10-29",
+      "publication_status": "正式期刊论文；本条报道在线发表事件，不主张研究此前从未公开",
+      "domains": [
+        "数学",
+        "计算机科学"
+      ],
+      "subfields": [
+        "逆问题",
+        "计算成像"
+      ],
+      "problem": "有限数据断层成像中，哪些奇性来自真实物体，哪些由重建过程产生？",
+      "result": "作者给出统一微局部分析框架，区分可见、不可见奇性及伪影，并讨论光声、ROI型X射线和线性化地震成像。",
+      "method": "将广义Radon变换视为Fourier积分算子，通过其典范关系描述奇性传播。",
+      "limitations": "摘要级解读；完整定理条件和实际伪影减少性能未核实，不能把理论框架写成已验证的通用降伪影工具。",
+      "reading_depth": "abstract",
+      "author_intro": "Eric Todd Quinto：Tufts University；Andreas Rieder：Karlsruhe Institute of Technology。机构按论文署名或出版商提交元数据记录，未推断当前职务。",
+      "author_institutions": [
+        "Eric Todd Quinto：Tufts University",
+        "Andreas Rieder：Karlsruhe Institute of Technology"
+      ],
+      "affiliation_sources": [
+        "https://api.crossref.org/works/10.1088/1361-6420/aeb624"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1088/1361-6420/aeb624",
+        "https://api.crossref.org/works/10.1088/1361-6420/aeb624"
+      ],
+      "public_at": null,
+      "public_time_source": "https://api.crossref.org/works/10.1088/1361-6420/aeb624",
+      "public_time_precision": "date",
+      "eligibility": "pending",
+      "event_type": "formal_publication",
+      "pending_reason": "正式在线发表日期已核实为10月29日，但未取得可信的时分及时区；不能判断是否落入UTC12:00以后的本期窗口，不计确认新增。",
+      "date_note": "仅日期精度；不将Crossref created/deposited/indexed登记时间当成论文公开时间。",
+      "code_url": null,
+      "code_note": "本次阅读范围未核实公开实验代码。",
+      "abstract_review": {
+        "source_url": "https://api.crossref.org/works/10.1088/1361-6420/aeb624",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "已读取出版商存缴Crossref的完整JATS摘要和作者机构元数据；出版商网页本次获取失败，未读全文。"
+      },
+      "aliases": [
+        "doi:10.1088/1361-6420/aeb624",
+        "10.1088/1361-6420/aeb624"
+      ],
+      "discovered_via": [
+        {
+          "index_id": "crossref",
+          "record_url": "https://api.crossref.org/works/10.1088/1361-6420/aeb624",
+          "accessed_at": "2026-10-30T12:40:00Z"
+        }
+      ],
+      "content_type": "paper",
+      "publication_event_status": "time_pending"
+    },
+    {
+      "id": "doi-10.1007-978-3-032-42936-0_1",
+      "doi": "10.1007/978-3-032-42936-0_1",
+      "aliases": [
+        "doi:10.1007/978-3-032-42936-0_1",
+        "10.1007/978-3-032-42936-0_1"
+      ],
+      "title": "Concept Drifts, Detector Evolves: Malware Detection Made Easy with LLMalware",
+      "title_zh": "LLMalware：以特征融合和知识库更新缓解恶意软件概念漂移",
+      "authors": [
+        "Zijing Ma",
+        "Leming Shen",
+        "Xinyu Huang",
+        "Kai Zhou",
+        "Yuanqing Zheng"
+      ],
+      "source": "springer",
+      "url": "https://doi.org/10.1007/978-3-032-42936-0_1",
+      "first_date": "2026-10-29",
+      "updated_date": null,
+      "version": "RAID 2026会议论文；作者官网公开稿",
+      "publication_status": "会议论文集在线发表事件候选；此前已有作者公开稿，不是全新研究首发",
+      "domains": [
+        "网络与信息安全",
+        "计算机科学"
+      ],
+      "subfields": [
+        "恶意软件检测",
+        "概念漂移",
+        "LLM系统"
+      ],
+      "problem": "如何减少Android恶意软件演变导致的检测退化，又避免频繁完整重训练？",
+      "result": "作者在2020—2025年超过13万应用的数据上评估；摘要报告相对所比基线平均约10%的F1改善。",
+      "method": "融合多个静态检测器特征与LLM提取的动态行为，通过自编码器对齐；以动态知识库和多度量检索完成更新。",
+      "limitations": "收益来自指定Android数据、标签规则及模型配置；约10%的摘要口径不能替代逐表比较，也不等于零漏报。已读摘要、引言、系统概述与部分评测设置，未复现实验。",
+      "reading_depth": "partial",
+      "author_intro": "五位作者均署名香港理工大学，机构按作者官网论文标题页记录。",
+      "author_institutions": [
+        "The Hong Kong Polytechnic University"
+      ],
+      "affiliation_sources": [
+        "https://unixyhuang.github.io/pubs/raid26-final2.pdf"
+      ],
+      "evidence_urls": [
+        "https://api.crossref.org/works/10.1007/978-3-032-42936-0_1",
+        "https://unixyhuang.github.io/publication/",
+        "https://unixyhuang.github.io/pubs/raid26-final2.pdf"
+      ],
+      "public_at": null,
+      "public_time_source": "https://api.crossref.org/works/10.1007/978-3-032-42936-0_1",
+      "public_time_precision": "date",
+      "eligibility": "pending",
+      "event_type": "formal_publication",
+      "pending_reason": "出版商存缴Crossref的published-online为2026-10-29，只有日期；作者此前已公开论文，且会议已于10月11—14日举行。这里只候选记录论文集在线发表事件，时区/时分未定，不计本期新增。",
+      "date_note": "正式在线发表日来自出版商元数据，不使用10月28日created/deposited登记时间。",
+      "code_url": null,
+      "code_note": "本次阅读未核实本论文公开实现仓库。",
+      "substantive_review": {
+        "content_urls": [
+          "https://unixyhuang.github.io/pubs/raid26-final2.pdf"
+        ],
+        "scope": "作者官网29页PDF的第1—3页、系统概述和第14页部分评测设置；非全文独立审核。",
+        "method_evidence": "第3页贡献及第6页系统概述，介绍特征融合、动态知识库与检索。",
+        "result_evidence": "第1页完整摘要给出平均约10%F1改善；第3页引言给出13万应用规模。",
+        "conditions_evidence": "第14页指定2020—2025年AndroZoo样本和默认GPT-4o，未独立复现。"
+      },
+      "discovered_via": [
+        {
+          "index_id": "crossref",
+          "record_url": "https://api.crossref.org/works/10.1007/978-3-032-42936-0_1",
+          "accessed_at": "2026-10-30T12:41:00Z"
+        }
+      ],
+      "content_type": "paper",
+      "publication_event_status": "time_pending"
+    },
+    {
+      "id": "doi-10.1007-s10458-026-09770-8",
+      "doi": "10.1007/s10458-026-09770-8",
+      "title": "Learning safe behaviour via justified human preferences and hypothetical queries",
+      "title_zh": "人类偏好附带理由与假想动作查询的安全学习",
+      "authors": [
+        "Ilias Kazantzidis",
+        "Timothy J. Norman",
+        "Yali Du",
+        "Christopher T. Freeman"
+      ],
+      "source": "springer",
+      "url": "https://link.springer.com/article/10.1007/s10458-026-09770-8",
+      "first_date": "2026-10-29",
+      "updated_date": null,
+      "version": "Version of Record",
+      "publication_status": "期刊正式发表事件；出版页在线日期 2026-10-29，不等于研究首次形成日期",
+      "domains": [
+        "计算机科学"
+      ],
+      "subfields": [
+        "安全强化学习",
+        "人机交互"
+      ],
+      "problem": "如何减少智能体训练中的危险探索及人工反馈负担？",
+      "result": "作者在修改后的 Island Navigation 和移动机器人任务中报告安全性和反馈效率改善；机器人训练可在数分钟内完成。",
+      "method": "JPAL-HA 将偏好理由用于识别不安全动作，并据此生成假想动作查询。",
+      "limitations": "结果针对所测任务；作者讨论状态—动作偏好对长期后果和泛化的限制。本期没有独立复现实验。",
+      "reading_depth": "partial",
+      "author_intro": "Kazantzidis、Norman、Freeman 署名南安普顿大学电子与计算机科学学院；Du 署名伦敦国王学院信息学系，按论文发表时署名记录。",
+      "author_institutions": [
+        "University of Southampton",
+        "King’s College London"
+      ],
+      "affiliation_sources": [
+        "https://link.springer.com/article/10.1007/s10458-026-09770-8"
+      ],
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s10458-026-09770-8",
+        "https://www.semanticscholar.org/paper/ab11693a64bc4f94a439e7d2fe4a46496efa506b"
+      ],
+      "public_at": null,
+      "public_time_source": "https://link.springer.com/article/10.1007/s10458-026-09770-8",
+      "public_time_precision": "date",
+      "eligibility": "pending",
+      "date_note": "出版页 Published/Version of record 仅标 2026-10-29；JSON-LD 是该日 00:00:00Z，与日期字段一致，未证实是真实时钟。该日跨越 UTC 12:00 窗口边界，故不计确认新增。",
+      "pending_reason": "仅确认在线发表日期，无法确定是否位于 UTC 2026-10-29 12:00 至 2026-10-30 12:00 的本期窗口；不计确认新增。",
+      "event_type": "formal_publication",
+      "code_url": "https://github.com/ilkaza/JPAL-HA",
+      "code_note": "原文披露代码链接，未运行。",
+      "abstract_review": {
+        "source_url": "https://link.springer.com/article/10.1007/s10458-026-09770-8",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "已读出版方完整 Abstract，并核对发表日期与 Authors and Affiliations。"
+      },
+      "discovered_via": [
+        {
+          "index_id": "semantic-scholar",
+          "record_url": "https://www.semanticscholar.org/paper/ab11693a64bc4f94a439e7d2fe4a46496efa506b",
+          "accessed_at": "2026-10-30T12:40:00Z"
+        }
+      ],
+      "substantive_review": {
+        "content_urls": [
+          "https://link.springer.com/article/10.1007/s10458-026-09770-8"
+        ],
+        "scope": "完整摘要、Discussion 关于方法差异和泛化限制、作者机构及代码说明；非全文证明或实验复核。",
+        "method_evidence": "摘要和 Discussion 说明直接从状态—动作偏好学习及理由驱动假想查询。",
+        "result_evidence": "摘要报告网格与移动机器人实验；未另造数值。",
+        "conditions_evidence": "Discussion 指出直接状态—动作学习对泛化与长期后果的限制。"
+      },
+      "content_type": "paper",
+      "aliases": [
+        "doi:10.1007/s10458-026-09770-8"
+      ],
+      "publication_event_status": "time_pending"
+    },
+    {
+      "id": "doi-10.1007-s00245-026-10524-x",
+      "doi": "10.1007/s00245-026-10524-x",
+      "title": "Primal-Dual Proximal Splitting for Wasserstein Distributionally Robust Convex Semidefinite Optimization via SDP-Based Spectrahedral Projection",
+      "title_zh": "Wasserstein 分布鲁棒半定优化的原始—对偶分裂",
+      "authors": [
+        "N. D. Dizon",
+        "V. Jeyakumar",
+        "G. Li",
+        "L. Zhao"
+      ],
+      "source": "springer",
+      "url": "https://link.springer.com/article/10.1007/s00245-026-10524-x",
+      "first_date": "2026-10-29",
+      "updated_date": null,
+      "version": "Version of Record",
+      "publication_status": "期刊正式发表事件；出版页在线日期 2026-10-29，不等于研究首次形成日期",
+      "domains": [
+        "数学",
+        "计算机科学"
+      ],
+      "subfields": [
+        "凸优化",
+        "分布鲁棒优化"
+      ],
+      "problem": "如何求解含 Wasserstein 模糊集、谱面体支撑集及分段仿射函数约束的凸半定优化？",
+      "result": "作者给出有限维重构与投影算法，并在含交易成本的组合优化及二分类的中等规模实例中验证可计算性。",
+      "method": "将鲁棒约束化为线性矩阵不等式，结合基于 SDP 的谱面体投影与原始—对偶近端分裂。",
+      "limitations": "摘要仅报告中等规模的数值例子，不能据此断言大规模普遍优势；本期未审查全部证明或复现实验。",
+      "reading_depth": "abstract",
+      "author_intro": "四位作者均署名新南威尔士大学应用数学系；未推断职称或当前任职。",
+      "author_institutions": [
+        "University of New South Wales"
+      ],
+      "affiliation_sources": [
+        "https://link.springer.com/article/10.1007/s00245-026-10524-x"
+      ],
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s00245-026-10524-x",
+        "https://www.semanticscholar.org/paper/4d4dea566bdd55e61d23a8920f47616516776c8a"
+      ],
+      "public_at": null,
+      "public_time_source": "https://link.springer.com/article/10.1007/s00245-026-10524-x",
+      "public_time_precision": "date",
+      "eligibility": "pending",
+      "date_note": "出版页 Published/Version of record 仅标 2026-10-29；JSON-LD 是该日 00:00:00Z，与日期字段一致，未证实是真实时钟。该日跨越 UTC 12:00 窗口边界，故不计确认新增。",
+      "pending_reason": "仅确认在线发表日期，无法确定是否位于 UTC 2026-10-29 12:00 至 2026-10-30 12:00 的本期窗口；不计确认新增。",
+      "event_type": "formal_publication",
+      "code_url": null,
+      "code_note": "本期未核实公开代码。",
+      "abstract_review": {
+        "source_url": "https://link.springer.com/article/10.1007/s00245-026-10524-x",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "已读出版方完整 Abstract，并核对发表日期与 Authors and Affiliations。"
+      },
+      "discovered_via": [
+        {
+          "index_id": "semantic-scholar",
+          "record_url": "https://www.semanticscholar.org/paper/4d4dea566bdd55e61d23a8920f47616516776c8a",
+          "accessed_at": "2026-10-30T12:40:00Z"
+        }
+      ],
+      "content_type": "paper",
+      "aliases": [
+        "doi:10.1007/s00245-026-10524-x"
+      ],
+      "publication_event_status": "time_pending"
+    }
+  ],
+  "updated_at": "2026-10-30T12:44:30Z",
+  "amendments": [
+    {
+      "updated_at": "2026-10-30T12:44:30Z",
+      "kind": "source_expansion_and_count_correction",
+      "added_confirmed": 0,
+      "added_pending": 7,
+      "note": "补充 7 项已读原始研究的正式发表事件候选，均未通过精确日界确认；更正来源数口径，完善实际检索记录。"
     }
   ]
 }

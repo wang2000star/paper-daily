@@ -10,3 +10,5 @@
 .scope-note{padding:14px 18px;border-left:4px solid var(--accent);background:#e8eee8;color:#36564c;font-size:14px;line-height:1.8}
 
 @media(max-width:700px){#pending-section .list-heading{display:block}#pending-count{margin:8px 0;font-size:13px;color:var(--muted)}}
+
+.source-summary{margin:-16px 0 30px}.source-summary>p{font-size:13px;color:var(--muted);margin:0 0 10px}.source-counts{display:flex;flex-wrap:wrap;gap:8px}.source-counts button{display:flex;flex-wrap:wrap;align-items:center;gap:5px 10px;text-align:left;font-size:12px;border-color:var(--line);max-width:100%}.source-counts button strong{font-weight:650;overflow-wrap:anywhere}.source-counts button span{color:var(--muted)}.source-counts button[aria-pressed=true]{background:#dcebe6;border-color:var(--accent)}

@@ -60,6 +60,9 @@ def validate_issue(j,item,source_ids,formal=True):
    if formal:
     assert all(isinstance(p.get(k),str) and p[k].strip() for k in ['title','title_zh','problem','result','method','limitations','author_intro'])
     validate_review(p);validate_time(p,start,end,pending)
+    for discovery in p.get('discovered_via',[]):
+     assert valid_url(discovery.get('record_url')) and isinstance(discovery.get('index_id'),str)
+     utc(discovery.get('accessed_at'))
  assert (R/item.get('report',f"reports/{j['date']}.md")).exists()
  if formal:
   assert (R/j['retrieval_log']).exists(),'Detailed retrieval log must be archived'
@@ -68,7 +71,7 @@ def validate_issue(j,item,source_ids,formal=True):
    assert isinstance(c.get('public_display'),bool)
  print(j['date'],len(j['papers']),'confirmed/legacy;',len(j.get('pending_papers',[])),'pending: PASS')
 def main():
- manifest=json.loads((R/'data/issues.json').read_text());cat=json.loads((R/'data/sources.json').read_text());source_ids={s['id'] for s in cat['sources']}
+ manifest=json.loads((R/'data/issues.json').read_text());cat=json.loads((R/'data/sources.json').read_text());source_ids={s['id'] for s in cat['sources'] if s.get('role')!='discovery_index'}
  assert (manifest['latest'] in [i['date'] for i in manifest['issues']]) if manifest['issues'] else manifest['latest'] is None
  formal_ids={}
  for item in manifest['issues']+manifest.get('historical_trials',[]):

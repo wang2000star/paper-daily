@@ -9,14 +9,21 @@ const root=path.join(__dirname,'..');
 const trial=JSON.parse(fs.readFileSync(path.join(root,'data/trials/2026-10-30.json')));
 const catalog=JSON.parse(fs.readFileSync(path.join(root,'data/sources.json')));
 const elements=new Map();
-function element(selector){if(!elements.has(selector))elements.set(selector,{value:'',innerHTML:'',textContent:'',hidden:false,addEventListener(){}});return elements.get(selector);}
+function element(selector){if(!elements.has(selector))elements.set(selector,{value:'',innerHTML:'',textContent:'',hidden:false,addEventListener(){},querySelectorAll(){return []}});return elements.get(selector);}
 const panels=new Map();
 const context=vm.createContext({console,URL,URLSearchParams,location:{href:'https://example.test/',search:''},history:{replaceState(){}},window:{addEventListener(){}},document:{querySelector:element,getElementById:id=>panels.get(id)},fetch:async()=>({ok:true,json:async()=>structuredClone(trial)})});
 let code=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
 assert.ok(code.endsWith('init();\n'),'test harness must suppress only the final initialization');
 code=code.slice(0,-'init();\n'.length);
-vm.runInContext(code+'\nglobalThis.api={card,render,toggleSummary,overview,eligible,loadIssue,expandedPapers,setIssue:x=>issue=x,setSources:x=>sources=x};',context);
+vm.runInContext(code+'\nglobalThis.api={sourceCounts,sourceCountLabel,renderSourceSummary,card,render,toggleSummary,overview,eligible,loadIssue,expandedPapers,setIssue:x=>issue=x,setSources:x=>sources=x};',context);
 const api=context.api;
+// Metadata-only fixtures verify overlapping confirmed/pending sources without paper claims.
+const rows=api.sourceCounts({papers:[{source:'arxiv'},{source:'arxiv'},{source:'eccc'}],pending_papers:[{source:'openai-research'},{source:'arxiv'}]});
+assert.equal(rows.filter(row=>row.confirmed>0).length,2,'pending-only sources do not inflate confirmed-source count');
+assert.equal(rows.filter(row=>row.confirmed===0&&row.pending>0).length,1);
+assert.equal(api.sourceCountLabel(rows.find(row=>row.id==='openai-research')),'确认 0 / 待核实 1');
+assert.equal(api.sourceCountLabel(rows.find(row=>row.id==='arxiv')),'确认 2 / 待核实 1');
+api.renderSourceSummary(rows);assert.match(element('#source-counts').innerHTML,/确认 0 \/ 待核实 1/);
 api.setSources(Object.fromEntries(catalog.sources.map(s=>[s.id,s])));
 api.setIssue(trial);
 element('#issue-select').value=trial.date;
