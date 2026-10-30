@@ -1,11 +1,18 @@
 {
-  "schema_version": 1,
-  "latest": "2026-10-30",
-  "issues": [
+  "schema_version": 2,
+  "latest": null,
+  "issues": [],
+  "timezone": "Etc/GMT+12",
+  "utc_offset": "-12:00",
+  "cutoff": "24:00",
+  "first_daily_expected": "2026-10-30T12:00:00Z",
+  "first_daily_date": "2026-10-29",
+  "historical_trials": [
     {
       "date": "2026-10-30",
-      "kind": "重建首期",
-      "path": "data/issues/2026-10-30.json"
+      "kind": "历史试刊（非 AOE 日报，不计入日报统计）",
+      "path": "data/issues/2026-10-30.json",
+      "report": "reports/2026-10-30.md"
     }
   ]
 }

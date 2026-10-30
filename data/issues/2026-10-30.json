@@ -6,8 +6,8 @@
   "timezone": "Asia/Shanghai",
   "window_start": "2026-10-23T00:00:00Z",
   "window_end": "2026-10-30T08:52:00Z",
-  "window_label": "首期回看 10.23–10.30 · 非全量",
-  "editorial_note": "客观公开学术日报；仅公开资料，独立按来源和领域分类。首次建立基线，后续按源增量更新。",
+  "window_label": "历史试刊 · 非 AOE 日报 · 不计入日报统计",
+  "editorial_note": "保留旧试刊作为历史档案；不属于按 AOE 00:00–24:00 统计的正式日报。",
   "coverage": [
     {
       "id": "arxiv",
@@ -1342,5 +1342,6 @@
       "event_type": "平台近期公开",
       "verified_at": "2026-10-30T08:52:00Z"
     }
-  ]
+  ],
+  "issue_type": "historical_trial"
 }

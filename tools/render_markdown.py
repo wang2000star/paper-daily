@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sources={s['id']:s['name'] for s in json.loads((ROOT/'data/sources.json').read_text())['sources']}
 for path in sorted((ROOT/'data/issues').glob('*.json')):
- issue=json.loads(path.read_text()); ps=issue['papers']; lines=[f"# 学术论文日报｜{issue['date']}",'',f"检索窗口：{issue['window_start']} 至 {issue['window_end']}。本期为重建首期，回看近期资料；后续按来源增量。",'',f"收录 **{len(ps)} 篇**，按来源与领域双重分类。是经过筛选的日报，不是全量论文清单。所有研究结论按作者主张转述；局部正文阅读不等于完整证明复核。",'', '## 来源与覆盖','', '| 来源 | 本期状态 | 实际范围与局限 |','|---|---|---|']
+ issue=json.loads(path.read_text()); ps=issue['papers']; lines=[f"# {'历史试刊（非 AOE 日报）' if issue.get('issue_type')=='historical_trial' else '学术论文日报（AOE）'}｜{issue['date']}",'',f"检索窗口：{issue['window_start']} 至 {issue['window_end']}。窗口左闭右开。历史试刊不计入正式日报；正式日报按 AOE 已结束自然日归档。",'',f"收录 **{len(ps)} 篇**，按来源与领域双重分类。是经过筛选的日报，不是全量论文清单。所有研究结论按作者主张转述；局部正文阅读不等于完整证明复核。",'', '## 来源与覆盖','', '| 来源 | 本期状态 | 实际范围与局限 |','|---|---|---|']
  for c in issue['coverage']:lines.append(f"| [{c['name']}]({c['url']}) | {c['status']} | {c['scope']} {c['note']} |")
  lines+=['','## 分类索引','', '| 来源 | 数学 | 计算机科学 | 网络与信息安全 | 密码学 |','|---|---:|---:|---:|---:|']
  for src in dict.fromkeys(p['source'] for p in ps):

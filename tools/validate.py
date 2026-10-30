@@ -4,9 +4,9 @@ import json,re
 from pathlib import Path
 from urllib.parse import urlparse
 R=Path(__file__).resolve().parents[1]; m=json.loads((R/'data/issues.json').read_text()); cat=json.loads((R/'data/sources.json').read_text()); ss={s['id'] for s in cat['sources']}
-assert m['latest'] in [i['date'] for i in m['issues']]
+assert (m['latest'] in [i['date'] for i in m['issues']]) if m['issues'] else m['latest'] is None
 seen=set(); fields=['id','title','title_zh','authors','source','url','first_date','updated_date','version','publication_status','domains','subfields','problem','result','method','limitations','reading_depth','author_intro','author_institutions','affiliation_sources','evidence_urls']
-for item in m['issues']:
+for item in m['issues']+m.get('historical_trials',[]):
  p=R/item['path']; j=json.loads(p.read_text()); assert j['date']==item['date']; ids=set();titles=set()
  for x in j['papers']:
   assert all(k in x for k in fields),(x.get('id'),'missing fields')

@@ -184,6 +184,84 @@
         "https://dblp.org/"
       ],
       "policy": "用于同名辨认、DOI与跨来源去重，不单独充当最新论文或结论来源。"
+    },
+    {
+      "id": "openai-research",
+      "name": "OpenAI Research",
+      "kind": "机构研究网页 / 技术报告 / 官方研究仓库",
+      "url": "https://openai.com/research/",
+      "entrypoints": [
+        "https://openai.com/research/",
+        "https://github.com/openai"
+      ],
+      "domains": [
+        "数学",
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "checked_at": "2026-10-30",
+      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。"
+    },
+    {
+      "id": "anthropic-research",
+      "name": "Anthropic Research",
+      "kind": "机构研究网页 / 技术报告 / 官方研究仓库",
+      "url": "https://www.anthropic.com/research",
+      "entrypoints": [
+        "https://www.anthropic.com/research",
+        "https://github.com/anthropics"
+      ],
+      "domains": [
+        "数学",
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "checked_at": "2026-10-30",
+      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。"
+    },
+    {
+      "id": "deepmind-research",
+      "name": "Google DeepMind Research",
+      "kind": "机构研究网页 / 技术报告 / 官方研究仓库",
+      "url": "https://deepmind.google/research/",
+      "entrypoints": [
+        "https://deepmind.google/research/",
+        "https://github.com/google-deepmind"
+      ],
+      "domains": [
+        "数学",
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "checked_at": "2026-10-30",
+      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。"
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research",
+      "kind": "机构研究网页 / 技术报告 / 官方研究仓库",
+      "url": "https://www.microsoft.com/en-us/research/",
+      "entrypoints": [
+        "https://www.microsoft.com/en-us/research/"
+      ],
+      "domains": [
+        "数学",
+        "计算机科学",
+        "网络与信息安全",
+        "密码学"
+      ],
+      "checked_at": "2026-10-30",
+      "policy": "只收有明确方法、实验、证明或技术材料的研究发布，排除纯营销/产品新闻。逐项核作者机构和官方来源，跨预印本/网页/代码合并同一工作；发布时间证据不足标 pending。"
     }
-  ]
+  ],
+  "content_types": {
+    "paper": "论文 / 预印本",
+    "research_blog": "研究博客",
+    "technical_report": "技术报告",
+    "research_code": "研究代码",
+    "model_release": "含技术材料的模型发布"
+  }
 }
