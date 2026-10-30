@@ -86,6 +86,19 @@ def main():
    evidence+=p.get('substantive_review',{}).get('content_urls',[])
    if p.get('abstract_review'):evidence.append(p['abstract_review']['source_url'])
    assert all(urlparse(u).hostname in ['arxiv.org','www.arxiv.org','rss.arxiv.org','info.arxiv.org'] for u in evidence),(p['id'],'research evidence must be arXiv official')
+  if j.get('screening',{}).get('status')=='complete':
+   screen=j['screening'];assert isinstance(screen['candidate_count'],int) and screen['candidate_count']>0
+   assert screen['abstract_screened_count']==screen['candidate_count']
+   assert screen['selected_count']==len(j['papers'])<=screen['candidate_count'] and screen['screen_sha256']
+   assert all(p.get('why_selected') and p.get('selection_evidence_limit') and p.get('selection_stage')=='full_inventory_abstract_screening' for p in j['papers'])
+   proof=json.loads((R/j['retrieval_log']).read_text());parts=proof['screening_parts']
+   assert parts and len({p['part'] for p in parts})==len(parts)
+   assert sum(p['expected'] for p in parts)==screen['candidate_count']
+   assert all(p['complete'] and p['read']==p['expected']>0 and p['missing']==0 for p in parts)
+   assert sum(proof['decision_counts'].values())==screen['candidate_count']
+   assert {str(p['part']):p['sha256'] for p in parts}==screen['screen_sha256']
+   assert len(proof['selected_ids'])==len(set(proof['selected_ids']))==len(j['papers'])
+   assert set(proof['selected_ids'])=={p['id'].removeprefix('arxiv-') for p in j['papers']}
   assert item['confirmed_count']==len(j['papers']) and item.get('pending_count',0)==len(j.get('pending_papers',[]))
   for p in j['papers']:
    assert p['id'] not in formal_ids,(p['id'],'repeated as new across days');formal_ids[p['id']]=j['date']

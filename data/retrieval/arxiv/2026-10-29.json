@@ -95,88 +95,1507 @@
     }
   },
   "source_scope": "arxiv_only",
-  "updated_at": "2026-10-30T14:45:00Z",
-  "scope_note": "仅整理 arXiv 的数学、计算机科学、网络与信息安全及密码学研究。本期 CS/数学新公告目录去重发现 1,970 项，实际完成 60 项完整摘要阅读，其中 15 项另读核心正文；其余目录条目未逐篇解读。这是选择性阅读日报，不是全量覆盖。当前 60 篇确认新增、0 篇时间待核实。",
+  "updated_at": "2026-10-30T15:32:54.329523+00:00",
+  "scope_note": "本期 24 小时窗口内 arXiv CS/数学新公告去重共 1,970 项，已逐篇完成 1,970 项完整摘要初筛；经价值与证据审阅，精选 127 篇。入选稿中 6 篇另读部分核心正文、0 篇标为正文审阅，其余为摘要级解读；全量摘要筛选不等于全部论文全文审读。每篇保留入选理由与验证边界。",
   "coverage": [
     {
-      "source": "arxiv",
-      "name": "arXiv 数学新稿",
-      "url": "https://arxiv.org/list/math/new",
-      "status": "partial",
-      "scope": "完整取得 2026-10-30 数学列表 New submissions 744 条，其中 692 条主分类为 math.*；本数学来源检索实际阅读并原创总结 33 篇完整摘要。交叉列表和修订不计新稿。",
-      "note": "33 篇为分领域选择，不是数学新稿全量解读。未总结的数学主分类条目659篇；另52条非数学主分类由其他来源检索去重处理。27篇摘要级、6篇局部正文阅读并核对机构；未完成全证明审计。 数学HTML列表1347项，RSS共1349项（含不同公告类型），两个源的总数差异保留，不当作完全同一快照；33项均逐项核对RSS new标记与批次pubDate。",
-      "checked_at": "2026-10-30T12:10:00Z",
-      "entrypoints_checked": [
-        "https://arxiv.org/list/math/new",
-        "https://info.arxiv.org/help/availability.html",
-        "https://arxiv.org/abs/2610.38877",
-        "https://arxiv.org/abs/2610.37677",
-        "https://arxiv.org/abs/2610.37777",
-        "https://arxiv.org/abs/2610.37817",
-        "https://arxiv.org/abs/2610.37877",
-        "https://arxiv.org/abs/2610.37975",
-        "https://arxiv.org/abs/2610.38200",
-        "https://arxiv.org/abs/2610.38323",
-        "https://arxiv.org/abs/2610.38328",
-        "https://arxiv.org/abs/2610.38374",
-        "https://arxiv.org/abs/2610.38447",
-        "https://arxiv.org/abs/2610.39705",
-        "https://arxiv.org/abs/2610.39743",
-        "https://arxiv.org/abs/2610.39759",
-        "https://arxiv.org/abs/2610.39838",
-        "https://arxiv.org/abs/2610.39870",
-        "https://arxiv.org/abs/2610.39883",
-        "https://arxiv.org/abs/2610.39967",
-        "https://arxiv.org/abs/2610.40095",
-        "https://arxiv.org/abs/2610.40232",
-        "https://arxiv.org/abs/2610.40270",
-        "https://arxiv.org/abs/2610.40291",
-        "https://arxiv.org/abs/2610.40486",
-        "https://arxiv.org/abs/2610.40590",
-        "https://arxiv.org/abs/2610.40605",
-        "https://arxiv.org/abs/2610.37693",
-        "https://arxiv.org/abs/2610.37885",
-        "https://arxiv.org/abs/2610.37944",
-        "https://arxiv.org/abs/2610.38142",
-        "https://arxiv.org/abs/2610.39767",
-        "https://arxiv.org/abs/2610.40057",
-        "https://arxiv.org/abs/2610.40308",
-        "https://arxiv.org/abs/2610.40438",
-        "https://arxiv.org/html/2610.38877v1",
-        "https://arxiv.org/html/2610.38323v1",
-        "https://arxiv.org/html/2610.39870v1",
-        "https://arxiv.org/html/2610.40486v1",
-        "https://arxiv.org/html/2610.40590v1",
-        "https://arxiv.org/html/2610.39705v1",
-        "https://rss.arxiv.org/rss/math"
-      ],
-      "public_display": true,
-      "rss_last_build": "Fri, 30 Oct 2026 06:39:53 +0000",
-      "rss_total_items": 1349,
-      "id": "arxiv"
-    },
-    {
-      "source": "arxiv",
-      "name": "arXiv Computer Science 新公告批次",
-      "url": "https://arxiv.org/list/cs/new",
-      "status": "partial",
-      "scope": "完整获取 2026-10-30 新公告列表的全部 1306 条 New submissions；129 条 Cross submissions 与 755 条 replacements 不冒充新稿。按 New submissions 与 math 批次合并得到 1970 个唯一候选。CS 本轮实际逐条审阅并写中文总结 27 篇。",
-      "note": "这是有完整候选清单的有限审阅，不是全量论文总结；其余CS新稿未逐篇语义审阅。27篇覆盖程序语言/证明、理论算法、系统/数据库、安全/密码、AI评测、视觉、机器人、HCI、网络、检索与音频，不意味着各子领域完整。CS replacements仅抓到565/755条且不纳入新稿。时刻来自逐条核对RSS new批次pubDate，非submitted日期；原始列表与RSS保存到检索证据。",
-      "checked_at": "2026-10-30T12:11:30Z",
-      "entrypoints_checked": [
-        "https://arxiv.org/list/cs/new?skip=0&show=2000",
-        "https://arxiv.org/list/math/new?skip=0&show=2000",
-        "https://info.arxiv.org/help/availability.html",
-        "https://rss.arxiv.org/rss/cs"
-      ],
-      "public_display": false,
-      "id": "arxiv"
+      "id": "arxiv",
+      "name": "arXiv",
+      "url": "https://arxiv.org/",
+      "status": "1,970 项摘要初筛；精选 127 篇",
+      "scope": "CS 新稿1,306条、数学新稿744条，跨列表重叠80条，合并去重1,970条；五个394条分片逐篇记录摘要阅读、选择与证据边界。",
+      "note": "不把交叉公告和旧稿替换计为新发表；RSS为官方公告批次证据，不等于独立观测的精确首发时刻。全量指该窗口内上述官方新稿目录及逐篇摘要初筛，不宣称覆盖所有论文全文或其他平台首发。",
+      "public_display": true
     }
   ],
   "inventory": {
     "description": "arXiv CS/math New submissions metadata-only inventory, saved separately in 学术论文日报 Space; no full abstracts republished.",
     "discovered_unique": 1970,
-    "formal_arxiv_summaries": 60
+    "formal_arxiv_summaries": 127,
+    "complete_abstracts_screened": 1970
   },
-  "derived_from": "data/retrieval/2026-10-29.json"
+  "derived_from": "data/retrieval/2026-10-29.json",
+  "screening": {
+    "status": "complete",
+    "candidate_count": 1970,
+    "abstract_screened_count": 1970,
+    "selected_count": 127,
+    "partial_text_review_count": 6,
+    "full_text_review_count": 0,
+    "inventory_sha256": "751d2ec743397ed367f71199c079c4c6b028b1719eeceb444bf0b3a9cf593531",
+    "screen_sha256": {
+      "1": "6886e34a10823d2560c2f631cb58c04bbe59400e809f540943c300caca71a985",
+      "2": "bada57ddb11b85e39d5b98c72044eae88a4084eb2ab4e12764b513310b5978b4",
+      "3": "3d9a264408201ef9615d3f1c416ed935f03ea2e825432e98fbedaf83f2042c9b",
+      "4": "dab113e065fd0e8f7e61d7f957137346847cbd477dcffe09265bb7ff48866b28",
+      "5": "f0a64a503ab7e7e7094c4220c477ea489337619b4fea730d952d88574563905a"
+    },
+    "selection_criteria": [
+      "在四领域完整候选的逐篇摘要阅读后，比较研究问题的重要性与贡献实质",
+      "重视明确的理论边界、可复用方法、可核查的实验设计及负面结果",
+      "保留关键条件和证据限制；作者名气、宏大标题及未核验的猜想主张不单独构成入选依据",
+      "领域覆盖用于帮助浏览，不设硬配额；未精选不等于研究无价值"
+    ],
+    "root_qc_completed_at": "2026-10-30T15:21:50.671626+00:00"
+  },
+  "decision_counts": {
+    "reserve": 1261,
+    "not_selected": 582,
+    "shortlist": 127
+  },
+  "screening_parts": [
+    {
+      "part": 1,
+      "expected": 394,
+      "read": 394,
+      "missing": 0,
+      "complete": true,
+      "sha256": "6886e34a10823d2560c2f631cb58c04bbe59400e809f540943c300caca71a985"
+    },
+    {
+      "part": 2,
+      "expected": 394,
+      "read": 394,
+      "missing": 0,
+      "complete": true,
+      "sha256": "bada57ddb11b85e39d5b98c72044eae88a4084eb2ab4e12764b513310b5978b4"
+    },
+    {
+      "part": 3,
+      "expected": 394,
+      "read": 394,
+      "missing": 0,
+      "complete": true,
+      "sha256": "3d9a264408201ef9615d3f1c416ed935f03ea2e825432e98fbedaf83f2042c9b"
+    },
+    {
+      "part": 4,
+      "expected": 394,
+      "read": 394,
+      "missing": 0,
+      "complete": true,
+      "sha256": "dab113e065fd0e8f7e61d7f957137346847cbd477dcffe09265bb7ff48866b28"
+    },
+    {
+      "part": 5,
+      "expected": 394,
+      "read": 394,
+      "missing": 0,
+      "complete": true,
+      "sha256": "f0a64a503ab7e7e7094c4220c477ea489337619b4fea730d952d88574563905a"
+    }
+  ],
+  "selected_ids": [
+    "2610.40591",
+    "2610.38983",
+    "2610.37741",
+    "2610.39189",
+    "2610.39910",
+    "2610.39030",
+    "2610.38730",
+    "2610.40165",
+    "2610.39678",
+    "2610.38396",
+    "2610.40136",
+    "2610.38163",
+    "2610.39996",
+    "2610.40583",
+    "2610.39272",
+    "2610.40552",
+    "2610.39637",
+    "2610.40183",
+    "2610.39967",
+    "2610.38115",
+    "2610.40520",
+    "2610.39444",
+    "2610.38385",
+    "2610.38617",
+    "2610.38439",
+    "2610.38691",
+    "2610.39282",
+    "2610.39744",
+    "2610.38164",
+    "2610.37679",
+    "2610.38799",
+    "2610.39572",
+    "2610.39758",
+    "2610.38133",
+    "2610.38787",
+    "2610.39753",
+    "2610.40510",
+    "2610.37862",
+    "2610.38255",
+    "2610.38331",
+    "2610.40618",
+    "2610.38388",
+    "2610.38821",
+    "2610.37886",
+    "2610.38198",
+    "2610.40315",
+    "2610.40553",
+    "2610.38760",
+    "2610.39032",
+    "2610.37877",
+    "2610.38120",
+    "2610.38392",
+    "2610.39302",
+    "2610.39435",
+    "2610.40397",
+    "2610.39351",
+    "2610.39017",
+    "2610.38860",
+    "2610.40598",
+    "2610.39256",
+    "2610.39415",
+    "2610.40310",
+    "2610.40235",
+    "2610.38736",
+    "2610.37899",
+    "2610.39794",
+    "2610.40135",
+    "2610.39317",
+    "2610.40152",
+    "2610.38900",
+    "2610.39078",
+    "2610.39719",
+    "2610.38414",
+    "2610.40470",
+    "2610.38941",
+    "2610.39424",
+    "2610.39545",
+    "2610.38999",
+    "2610.40535",
+    "2610.38998",
+    "2610.40484",
+    "2610.37872",
+    "2610.38110",
+    "2610.40569",
+    "2610.39457",
+    "2610.39723",
+    "2610.38214",
+    "2610.38610",
+    "2610.38977",
+    "2610.39368",
+    "2610.39838",
+    "2610.40232",
+    "2610.40517",
+    "2610.38515",
+    "2610.39595",
+    "2610.40145",
+    "2610.40291",
+    "2610.38877",
+    "2610.39960",
+    "2610.40608",
+    "2610.40590",
+    "2610.39883",
+    "2610.40566",
+    "2610.37859",
+    "2610.38210",
+    "2610.37869",
+    "2610.37676",
+    "2610.38174",
+    "2610.38126",
+    "2610.38789",
+    "2610.38920",
+    "2610.39922",
+    "2610.38022",
+    "2610.39355",
+    "2610.38206",
+    "2610.38243",
+    "2610.40654",
+    "2610.40378",
+    "2610.38244",
+    "2610.37970",
+    "2610.38010",
+    "2610.39485",
+    "2610.40032",
+    "2610.38834",
+    "2610.38073",
+    "2610.39312",
+    "2610.37677"
+  ],
+  "selected_reused_review_ids": [
+    "2610.40591",
+    "2610.39189",
+    "2610.39910",
+    "2610.39967",
+    "2610.37679",
+    "2610.39572",
+    "2610.39753",
+    "2610.37862",
+    "2610.37877",
+    "2610.39838",
+    "2610.40232",
+    "2610.40291",
+    "2610.38877",
+    "2610.40590",
+    "2610.39883",
+    "2610.37869",
+    "2610.37676",
+    "2610.38789",
+    "2610.37677"
+  ],
+  "selected_new_abstract_summary_ids": [
+    "2610.38983",
+    "2610.37741",
+    "2610.39030",
+    "2610.38730",
+    "2610.40165",
+    "2610.39678",
+    "2610.38396",
+    "2610.40136",
+    "2610.38163",
+    "2610.39996",
+    "2610.40583",
+    "2610.39272",
+    "2610.40552",
+    "2610.39637",
+    "2610.40183",
+    "2610.38115",
+    "2610.40520",
+    "2610.39444",
+    "2610.38385",
+    "2610.38617",
+    "2610.38439",
+    "2610.38691",
+    "2610.39282",
+    "2610.39744",
+    "2610.38164",
+    "2610.38799",
+    "2610.39758",
+    "2610.38133",
+    "2610.38787",
+    "2610.40510",
+    "2610.38255",
+    "2610.38331",
+    "2610.40618",
+    "2610.38388",
+    "2610.38821",
+    "2610.37886",
+    "2610.38198",
+    "2610.40315",
+    "2610.40553",
+    "2610.38760",
+    "2610.39032",
+    "2610.38120",
+    "2610.38392",
+    "2610.39302",
+    "2610.39435",
+    "2610.40397",
+    "2610.39351",
+    "2610.39017",
+    "2610.38860",
+    "2610.40598",
+    "2610.39256",
+    "2610.39415",
+    "2610.40310",
+    "2610.40235",
+    "2610.38736",
+    "2610.37899",
+    "2610.39794",
+    "2610.40135",
+    "2610.39317",
+    "2610.40152",
+    "2610.38900",
+    "2610.39078",
+    "2610.39719",
+    "2610.38414",
+    "2610.40470",
+    "2610.38941",
+    "2610.39424",
+    "2610.39545",
+    "2610.38999",
+    "2610.40535",
+    "2610.38998",
+    "2610.40484",
+    "2610.37872",
+    "2610.38110",
+    "2610.40569",
+    "2610.39457",
+    "2610.39723",
+    "2610.38214",
+    "2610.38610",
+    "2610.38977",
+    "2610.39368",
+    "2610.40517",
+    "2610.38515",
+    "2610.39595",
+    "2610.40145",
+    "2610.39960",
+    "2610.40608",
+    "2610.40566",
+    "2610.37859",
+    "2610.38210",
+    "2610.38174",
+    "2610.38126",
+    "2610.38920",
+    "2610.39922",
+    "2610.38022",
+    "2610.39355",
+    "2610.38206",
+    "2610.38243",
+    "2610.40654",
+    "2610.40378",
+    "2610.38244",
+    "2610.37970",
+    "2610.38010",
+    "2610.39485",
+    "2610.40032",
+    "2610.38834",
+    "2610.38073",
+    "2610.39312"
+  ],
+  "ledger_note": "逐篇原创中文筛选理由与未入选理由另存学术论文日报 Space；不在公共源码中批量转载原始摘要或全文。",
+  "affiliation_coverage": {
+    "selected": 127,
+    "verified": 107,
+    "unknown": 20,
+    "scope": "仅核对 arXiv 署名页或机构脚注，不提升正文阅读深度，不推断当前任职。",
+    "evidence_sha256": "0c0ee91489f603dd4b8ceb43dcad8dffaad00e98bbee9a2ddf6a993adaa036b8"
+  },
+  "affiliation_checks": [
+    {
+      "id": "2610.40591",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40591v1"
+      ],
+      "note": "复用本期已核对的arXiv署名证据。"
+    },
+    {
+      "id": "2610.38983",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38983v1"
+      ],
+      "note": "按论文HTML署名；页面列2027期刊模板信息不作为本期已正式发表证据。"
+    },
+    {
+      "id": "2610.37741",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37741v1"
+      ],
+      "note": "按论文HTML逐名署名。Fellows Program为页面所列项目归属，不推断为任职。"
+    },
+    {
+      "id": "2610.39189",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39189v1"
+      ],
+      "note": "复用本期已核对的arXiv署名证据。"
+    },
+    {
+      "id": "2610.39910",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39910v1"
+      ],
+      "note": "官方HTML返回404；作者机构未核实。"
+    },
+    {
+      "id": "2610.39030",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39030v1"
+      ],
+      "note": "标题署名脚注逐名明确。"
+    },
+    {
+      "id": "2610.38730",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38730v1"
+      ],
+      "note": "官方HTML响应为空，未取得可核对署名机构文本。"
+    },
+    {
+      "id": "2610.40165",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40165v1"
+      ],
+      "note": "按署名星号和匕首上标匹配，不依据邮箱猜测。"
+    },
+    {
+      "id": "2610.39678",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39678v1"
+      ],
+      "note": "标题页列Mingkun Xiao、Yixuan Sun及两机构；提取文本列序不足以可靠逐人映射，故只汇总署名机构。"
+    },
+    {
+      "id": "2610.38396",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38396v1"
+      ],
+      "note": "官方HTML返回404；作者机构未核实。"
+    },
+    {
+      "id": "2610.40136",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40136v1"
+      ],
+      "note": "官方HTML标题署名地址明确。"
+    },
+    {
+      "id": "2610.38163",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38163v1"
+      ],
+      "note": "标题页另注明附录与Daniel Apsley合作；其机构未在所读标题署名中披露。"
+    },
+    {
+      "id": "2610.39996",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39996v1"
+      ],
+      "note": "官方HTML标题署名地址明确。"
+    },
+    {
+      "id": "2610.40583",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40583v1"
+      ],
+      "note": "官方HTML返回404；作者机构未核实。"
+    },
+    {
+      "id": "2610.39272",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39272v1"
+      ],
+      "note": "官方HTML标题署名地址明确。"
+    },
+    {
+      "id": "2610.40552",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40552v1"
+      ],
+      "note": "四名作者标题页地址逐一明确相同机构。"
+    },
+    {
+      "id": "2610.39637",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39637v1"
+      ],
+      "note": "已核对HTML标题署名Shisheng Li、Yong Su，所读标题区域未披露机构。"
+    },
+    {
+      "id": "2610.40183",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40183v1"
+      ],
+      "note": "已核对HTML标题署名Seong-Jin Lee，所读标题区域未披露机构。"
+    },
+    {
+      "id": "2610.39967",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39967v1"
+      ],
+      "note": "按标题署名上标1、2明确匹配。"
+    },
+    {
+      "id": "2610.38115",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38115v1"
+      ],
+      "note": "官方HTML标题署名地址明确。"
+    },
+    {
+      "id": "2610.40520",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40520v1"
+      ],
+      "note": "核对摘要后紧邻署名脚注a、b、c，不推测当前任职。"
+    },
+    {
+      "id": "2610.39444",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39444v1"
+      ],
+      "note": "官方HTML作者Affiliation明确，忽略未展开workshoptitle宏。"
+    },
+    {
+      "id": "2610.38385",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38385v1"
+      ],
+      "note": "标题区域列该机构，但其他作者标签仅剩邮箱；仅汇总明确机构，不凭邮箱逐人扩展。"
+    },
+    {
+      "id": "2610.38617",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38617v1"
+      ],
+      "note": "按论文署名记录；这是厂商作者的研究，不据此认定独立评测。"
+    },
+    {
+      "id": "2610.38439",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38439v1"
+      ],
+      "note": "四名作者标题署名逐一列同一机构。"
+    },
+    {
+      "id": "2610.38691",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38691v1"
+      ],
+      "note": "标题署名逐人列机构，期刊名模板不作为已正式发表证据。"
+    },
+    {
+      "id": "2610.39282",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39282v1"
+      ],
+      "note": "标题署名Vasundra Srinivasan后并列职称、书名及Stanford School of Engineering，未明确校名与任职关系，故机构未核实；不据此认定在斯坦福任职。"
+    },
+    {
+      "id": "2610.39744",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39744v1"
+      ],
+      "note": "标题仅团体署名，未在所读标题区域披露成员名单或进一步机构。"
+    },
+    {
+      "id": "2610.38164",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38164v1"
+      ],
+      "note": "标题署名脚注明确。"
+    },
+    {
+      "id": "2610.37679",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37679v1"
+      ],
+      "note": "复用本期已核对的arXiv署名证据。"
+    },
+    {
+      "id": "2610.38799",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38799v1"
+      ],
+      "note": "标题列五作者与三机构但排版提取不保留逐人对应，故汇总；不凭邮箱猜映射。"
+    },
+    {
+      "id": "2610.39572",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39572v1"
+      ],
+      "note": "复用本期已核对的arXiv署名证据。"
+    },
+    {
+      "id": "2610.39758",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39758v1"
+      ],
+      "note": "作者Affiliation逐一明确。"
+    },
+    {
+      "id": "2610.38133",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38133v1"
+      ],
+      "note": "官方HTML返回404；作者机构未核实。"
+    },
+    {
+      "id": "2610.38787",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38787v1"
+      ],
+      "note": "逐名署名明确；未来SODA2027说明不视为本期正式发表事件。"
+    },
+    {
+      "id": "2610.39753",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39753v1"
+      ],
+      "note": "复用本期已核对的arXiv署名证据。"
+    },
+    {
+      "id": "2610.40510",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40510v1"
+      ],
+      "note": "标题后按姓名分列机构明确。"
+    },
+    {
+      "id": "2610.37862",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37862v1"
+      ],
+      "note": "复用本期已核对的arXiv署名证据。"
+    },
+    {
+      "id": "2610.38255",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38255v1"
+      ],
+      "note": "标题列六名作者及三机构，但提取文本没有可靠逐人上标，故仅机构汇总。"
+    },
+    {
+      "id": "2610.38331",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38331v1"
+      ],
+      "note": "官方HTML标题署名明确。"
+    },
+    {
+      "id": "2610.40618",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40618v1"
+      ],
+      "note": "官方HTML返回404；作者机构未核实。"
+    },
+    {
+      "id": "2610.38388",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38388v1"
+      ],
+      "note": "官方HTML返回404；作者机构未核实。"
+    },
+    {
+      "id": "2610.38821",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38821v1"
+      ],
+      "note": "官方HTML返回404；作者机构未核实。"
+    },
+    {
+      "id": "2610.37886",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37886v1"
+      ],
+      "note": "官方HTML逐人地址明确。"
+    },
+    {
+      "id": "2610.38198",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38198v1"
+      ],
+      "note": "按论文标题署名，不以通讯或贡献脚注推断主导作者。"
+    },
+    {
+      "id": "2610.40315",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40315v1"
+      ],
+      "note": "按标题地址双机构明确。"
+    },
+    {
+      "id": "2610.40553",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40553v1"
+      ],
+      "note": "四名作者标题页地址逐一明确。"
+    },
+    {
+      "id": "2610.38760",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38760v1"
+      ],
+      "note": "官方HTML标题地址明确。"
+    },
+    {
+      "id": "2610.39032",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39032v1"
+      ],
+      "note": "逐名作者地址明确，标题页写作日期不是公开公告时间。"
+    },
+    {
+      "id": "2610.37877",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37877v1"
+      ],
+      "note": "按作者地址，不将资助机构当任职机构。"
+    },
+    {
+      "id": "2610.38120",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38120v1"
+      ],
+      "note": "11名作者Affiliation均为IBM Research，简要汇总不同地点，不推断职务。"
+    },
+    {
+      "id": "2610.38392",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38392v1"
+      ],
+      "note": "标题列Hau-Sing So、Daixian Liu、Weicai Long及两机构，但提取未可靠逐人映射，故汇总机构。"
+    },
+    {
+      "id": "2610.39302",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39302v1"
+      ],
+      "note": "作者Affiliation逐名明确，仅按论文当时署名。"
+    },
+    {
+      "id": "2610.39435",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39435v1"
+      ],
+      "note": "六名作者均列两机构，实验室署名有所不同；简要汇总学校和研究所，不依邮箱推断人员对应。"
+    },
+    {
+      "id": "2610.40397",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40397v1"
+      ],
+      "note": "标题作者脚注明确。"
+    },
+    {
+      "id": "2610.39351",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39351v1"
+      ],
+      "note": "标题作者群后统一机构明确。"
+    },
+    {
+      "id": "2610.39017",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39017v1"
+      ],
+      "note": "逐名作者Affiliation明确。"
+    },
+    {
+      "id": "2610.38860",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38860v1"
+      ],
+      "note": "按逐名脚注机构，资助方不作为任职机构。"
+    },
+    {
+      "id": "2610.40598",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40598v1"
+      ],
+      "note": "按逐名脚注机构，未推断职务或当前任职。"
+    },
+    {
+      "id": "2610.39256",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39256v1"
+      ],
+      "note": "四名作者脚注逐一明确。"
+    },
+    {
+      "id": "2610.39415",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39415v1"
+      ],
+      "note": "逐名Affiliation明确，不从校友邮箱推测任职。"
+    },
+    {
+      "id": "2610.40310",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40310v1"
+      ],
+      "note": "作者群后统一Affiliation明确。"
+    },
+    {
+      "id": "2610.40235",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40235v1"
+      ],
+      "note": "官方HTML标题地址明确。"
+    },
+    {
+      "id": "2610.38736",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38736v1"
+      ],
+      "note": "三名作者地址逐一明确，仅按论文署名不补历史机构。"
+    },
+    {
+      "id": "2610.37899",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37899v1"
+      ],
+      "note": "官方HTML标题地址明确。"
+    },
+    {
+      "id": "2610.39794",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39794v1"
+      ],
+      "note": "逐名标题地址明确。"
+    },
+    {
+      "id": "2610.40135",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40135v1"
+      ],
+      "note": "按逐名地址双机构，区分资助说明。"
+    },
+    {
+      "id": "2610.39317",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39317v1"
+      ],
+      "note": "官方HTML标题地址明确。"
+    },
+    {
+      "id": "2610.40152",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40152v1"
+      ],
+      "note": "逐名标题地址明确。"
+    },
+    {
+      "id": "2610.38900",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38900v1"
+      ],
+      "note": "标题署名Alexander Kolpakov，所读标题区域未披露机构。"
+    },
+    {
+      "id": "2610.39078",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39078v1"
+      ],
+      "note": "按论文逐名地址，保留标题使用的名字首字母，不猜全名。"
+    },
+    {
+      "id": "2610.39719",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39719v1"
+      ],
+      "note": "逐名标题地址明确，DFG为资助机构。"
+    },
+    {
+      "id": "2610.38414",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38414v1"
+      ],
+      "note": "逐名标题地址明确。"
+    },
+    {
+      "id": "2610.40470",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40470v1"
+      ],
+      "note": "标题机构断成两段，按完整院系和大学地址汇总；George的另任机构脚注明确。"
+    },
+    {
+      "id": "2610.38941",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38941v1"
+      ],
+      "note": "标题作者有1、2上标，但所取得署名片段未显示对应机构，不能据姓名猜测。"
+    },
+    {
+      "id": "2610.39424",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39424v1"
+      ],
+      "note": "逐名标题地址明确。"
+    },
+    {
+      "id": "2610.39545",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39545v1"
+      ],
+      "note": "作者标题脚注明确；NSERC为资助机构。"
+    },
+    {
+      "id": "2610.38999",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38999v1"
+      ],
+      "note": "两名作者Affiliation均逐一明确。"
+    },
+    {
+      "id": "2610.40535",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40535v1"
+      ],
+      "note": "标题逐名脚注机构明确。"
+    },
+    {
+      "id": "2610.38998",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38998v1"
+      ],
+      "note": "官方HTML作者Affiliation明确。"
+    },
+    {
+      "id": "2610.40484",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40484v1"
+      ],
+      "note": "标题署名Karthik Sheshadri，所读标题区域未披露机构。"
+    },
+    {
+      "id": "2610.37872",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37872v1"
+      ],
+      "note": "逐名作者Affiliation明确。"
+    },
+    {
+      "id": "2610.38110",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38110v1"
+      ],
+      "note": "官方HTML返回404；作者机构未核实。"
+    },
+    {
+      "id": "2610.40569",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40569v1"
+      ],
+      "note": "按标题署名脚注记录，不推断年龄、职务或私人信息。"
+    },
+    {
+      "id": "2610.39457",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39457v1"
+      ],
+      "note": "官方HTML作者Affiliation明确。"
+    },
+    {
+      "id": "2610.39723",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39723v1"
+      ],
+      "note": "官方HTML作者Affiliation逐名明确。"
+    },
+    {
+      "id": "2610.38214",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38214v1"
+      ],
+      "note": "标题作者群后统一列Affiliation；仅记录论文机构，不补各作者外部双重任职。"
+    },
+    {
+      "id": "2610.38610",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38610v1"
+      ],
+      "note": "按作者Affiliation明确记录，独立研究者为署名身份并非机构名称。"
+    },
+    {
+      "id": "2610.38977",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38977v1"
+      ],
+      "note": "官方HTML请求超时；不重试或推测作者机构。"
+    },
+    {
+      "id": "2610.39368",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39368v1"
+      ],
+      "note": "已核对标题作者Zhiyuan Li，标题区域未披露机构。"
+    },
+    {
+      "id": "2610.39838",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39838v1"
+      ],
+      "note": "按论文逐人地址双机构记录。"
+    },
+    {
+      "id": "2610.40232",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40232v1"
+      ],
+      "note": "官方HTML逐人地址明确。"
+    },
+    {
+      "id": "2610.40517",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40517v1"
+      ],
+      "note": "官方HTML逐人地址明确。"
+    },
+    {
+      "id": "2610.38515",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38515v1"
+      ],
+      "note": "标题页列两机构和Lulu Dai、Chunchao Fan、Qizhong Lin；提取文本无可靠上标映射，故只汇总机构。"
+    },
+    {
+      "id": "2610.39595",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39595v1"
+      ],
+      "note": "标题页唯一作者脚注明确。"
+    },
+    {
+      "id": "2610.40145",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40145v1"
+      ],
+      "note": "逐名标题脚注明确。"
+    },
+    {
+      "id": "2610.40291",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40291v1"
+      ],
+      "note": "逐名作者地址明确。"
+    },
+    {
+      "id": "2610.38877",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38877v1"
+      ],
+      "note": "已核对论文 v1 标题页署名。"
+    },
+    {
+      "id": "2610.39960",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39960v1"
+      ],
+      "note": "按标题页英文机构名及地址记录。"
+    },
+    {
+      "id": "2610.40608",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40608v1"
+      ],
+      "note": "标题列Aryan Mokhtari、Francisco Patitucci及两机构，提取未保留可靠逐人映射，仅汇总机构。"
+    },
+    {
+      "id": "2610.40590",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40590v1"
+      ],
+      "note": "已核对论文 v1 标题页署名。"
+    },
+    {
+      "id": "2610.39883",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39883v1"
+      ],
+      "note": "按作者地址；国家留学基金委是资助方，不作为任职机构。"
+    },
+    {
+      "id": "2610.40566",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40566v1"
+      ],
+      "note": "逐名标题脚注明确。"
+    },
+    {
+      "id": "2610.37859",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37859v1"
+      ],
+      "note": "按标题上标1、2、3匹配，不以共同贡献脚注认定主导作者。"
+    },
+    {
+      "id": "2610.38210",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38210v1"
+      ],
+      "note": "Yipin Guo、Arun M George、Siddharth Joshi统一署名机构；不凭邮箱补职务。"
+    },
+    {
+      "id": "2610.37869",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37869v1"
+      ],
+      "note": "复用本期已核对的arXiv署名证据。"
+    },
+    {
+      "id": "2610.37676",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37676v1"
+      ],
+      "note": "复用本期已核对的arXiv署名证据。"
+    },
+    {
+      "id": "2610.38174",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38174v1"
+      ],
+      "note": "Debargha Ganguly脚注注明工作在AWS实习期间完成，区分论文机构与工作完成地。"
+    },
+    {
+      "id": "2610.38126",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38126v1"
+      ],
+      "note": "按论文Affiliation逐名记录；不擅自修正机构旧称或推定当前任职。"
+    },
+    {
+      "id": "2610.38789",
+      "verified": true,
+      "check_status": "reused_verified_arxiv_header",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38789v1"
+      ],
+      "note": "复用本期已核对的arXiv署名证据。"
+    },
+    {
+      "id": "2610.38920",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38920v1"
+      ],
+      "note": "Asaf Dallal、Robert Krauthgamer作者群后统一机构署名，不将资助方计入机构。"
+    },
+    {
+      "id": "2610.39922",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39922v1"
+      ],
+      "note": "按作者Affiliation明确。"
+    },
+    {
+      "id": "2610.38022",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38022v1"
+      ],
+      "note": "逐人标题脚注明确。"
+    },
+    {
+      "id": "2610.39355",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39355v1"
+      ],
+      "note": "标题署名Jun Chen、Shun Watanabe、Lei Yu，所读标题区域未披露机构。"
+    },
+    {
+      "id": "2610.38206",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38206v1"
+      ],
+      "note": "标题作者群后统一Affiliation。"
+    },
+    {
+      "id": "2610.38243",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38243v1"
+      ],
+      "note": "逐人标题脚注明确。"
+    },
+    {
+      "id": "2610.40654",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40654v1"
+      ],
+      "note": "逐人标题脚注明确。"
+    },
+    {
+      "id": "2610.40378",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40378v1"
+      ],
+      "note": "首作者工作在MPI-SWS实习期间完成，区别作者署名机构与工作完成地。"
+    },
+    {
+      "id": "2610.38244",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38244v1"
+      ],
+      "note": "标题作者与机构排版未可靠逐人对应，只汇总明确署名，不猜映射。"
+    },
+    {
+      "id": "2610.37970",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37970v1"
+      ],
+      "note": "官方HTML逐名Affiliation明确。"
+    },
+    {
+      "id": "2610.38010",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38010v1"
+      ],
+      "note": "按逐名地址明确双机构。"
+    },
+    {
+      "id": "2610.39485",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39485v1"
+      ],
+      "note": "标题地址按姓名明确。"
+    },
+    {
+      "id": "2610.40032",
+      "verified": false,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.40032v1"
+      ],
+      "note": "标题署名Guoqing Wang、Linlin Wang、Jun Yue，所读标题区域未披露机构。"
+    },
+    {
+      "id": "2610.38834",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38834v1"
+      ],
+      "note": "标题署名双地址明确。"
+    },
+    {
+      "id": "2610.38073",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.38073v1"
+      ],
+      "note": "逐名标题地址明确。"
+    },
+    {
+      "id": "2610.39312",
+      "verified": false,
+      "check_status": "header_access_failed",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.39312v1"
+      ],
+      "note": "官方HTML返回404；作者机构未核实。"
+    },
+    {
+      "id": "2610.37677",
+      "verified": true,
+      "check_status": "header_inspected",
+      "evidence_urls": [
+        "https://arxiv.org/html/2610.37677v1"
+      ],
+      "note": "标题作者Affiliation明确，不翻译无法确定正式中文名的实验室。"
+    }
+  ]
 }

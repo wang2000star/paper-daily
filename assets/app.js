@@ -19,14 +19,16 @@ function card(p){
  <h3><button class="paper-title" id="${esc(titleID)}" type="button" data-paper-toggle aria-expanded="${expanded}" aria-controls="${esc(panelID)}">${esc(title)}</button></h3>
  ${p.title_zh&&p.title_zh!==p.title?`<p class="original-title">${esc(p.title)}</p>`:''}
  <p class="paper-overview"><strong>概览</strong> ${esc(overview(p))}</p>
+ ${p.why_selected?`<p class="selection-reason paper-overview"><strong>入选理由（据论文所述贡献）</strong> ${esc(p.why_selected)}</p>`:''}
  <button class="summary-toggle" type="button" data-paper-toggle aria-expanded="${expanded}" aria-controls="${esc(panelID)}"><span class="toggle-label">${expanded?'收起总结':'展开总结'}</span><span class="toggle-chevron" aria-hidden="true">⌄</span><span class="sr-only">：${esc(title)}</span></button>
  <div class="paper-summary" id="${esc(panelID)}" role="region" aria-labelledby="${esc(titleID)}"${expanded?'':' hidden'}>
  <p class="authors"><strong>作者</strong> ${esc(list(p.authors).join(' · '))}</p><p class="authors">${esc(p.author_intro||'作者及机构信息待核实')}</p>
  <p class="dates">首次：${esc(p.first_date||'未核实')} · 更新：${esc(p.updated_date||'未核修订日')} · 版本：${esc(p.version||'未核实')}${p.announcement_date?' · 公告：'+esc(p.announcement_date):''}</p>
- <dl>${p.public_time_source?`<dt>公开时间</dt><dd>${esc(p.public_at||'未确认精确时间')}（${esc(timePrecisions[p.public_time_precision]||p.public_time_precision||'精度未确认')}）${p.public_time_range?`；已证实区间：${esc(p.public_time_range.start)} 至 ${esc(p.public_time_range.end)}`:''} · <a href="${safeURL(p.public_time_source)}">时间证据</a>${p.date_note?`<p class="detail-note">${esc(p.date_note)}</p>`:''}</dd>`:''}<dt>研究问题</dt><dd>${esc(p.problem)}</dd><dt>主要结果</dt><dd>${esc(p.result)}</dd><dt>方法</dt><dd>${esc(p.method)}</dd><dt>条件与局限</dt><dd>${esc(p.limitations)}</dd>
+ <dl>${p.public_time_source?`<dt>公开时间</dt><dd>${esc(p.public_at||'未确认精确时间')}（${esc(timePrecisions[p.public_time_precision]||p.public_time_precision||'精度未确认')}）${p.public_time_range?`；已证实区间：${esc(p.public_time_range.start)} 至 ${esc(p.public_time_range.end)}`:''} · <a href="${safeURL(p.public_time_source)}">时间证据</a>${p.date_note?`<p class="detail-note">${esc(p.date_note)}</p>`:''}</dd>`:''}<dt>研究问题</dt><dd>${esc(p.problem)}</dd><dt>作者报告的结果</dt><dd>${esc(p.result)}</dd><dt>方法</dt><dd>${esc(p.method)}</dd><dt>条件与局限</dt><dd>${esc(p.limitations)}</dd>
  ${review?`<dt>实际审阅范围</dt><dd>${esc(review.scope)}</dd>${[['method_evidence','方法依据'],['result_evidence','结果依据'],['conditions_evidence','条件依据']].filter(([key])=>review[key]).map(([key,label])=>`<dt>${label}</dt><dd>${esc(review[key])}</dd>`).join('')}`:abstract?`<dt>摘要阅读范围</dt><dd>${esc(abstract.scope)} · 仅据完整摘要/实质研究概述解读，不表示已核验全文。</dd>`:''}
  ${p.pending_reason?`<dt>待核实原因</dt><dd>${esc(p.pending_reason)}</dd>`:''}
  ${list(p.discovered_via).length?`<dt>发现入口（非发布来源）</dt><dd>${p.discovered_via.map(d=>`<a href="${safeURL(d.record_url)}">${esc(d.method==='publisher_search'?'出版方检索':d.index_id)}</a>`).join(' · ')}</dd>`:''}
+ ${p.selection_evidence_limit?`<dt>筛选依据的边界</dt><dd>${esc(p.selection_evidence_limit)}</dd>`:''}
  ${p.reading_note?`<dt>阅读说明</dt><dd>${esc(p.reading_note)}</dd>`:''}
  <dt>作者与机构</dt><dd>${esc(Array.isArray(p.author_institutions)?p.author_institutions.join('；'):(p.author_institutions||'待核实'))}${p.affiliation_note?`<p class="detail-note">${esc(p.affiliation_note)}</p>`:''}</dd>
  ${p.date_note&&!p.public_time_source?`<dt>日期说明</dt><dd>${esc(p.date_note)}</dd>`:''}${p.change_note?`<dt>版本变化</dt><dd>${esc(p.change_note)}</dd>`:''}<dt>领域</dt><dd>${esc(list(p.domains).join(' / '))}</dd></dl></div>

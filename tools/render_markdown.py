@@ -15,7 +15,9 @@ def render_paper(p):
  if p['eligibility']=='pending':lines+=['**时间待核实：不计入本期确认新增。**',p.get('pending_reason','')]
  if p.get('discovered_via'):lines+=['**发现入口（非发布来源）：** '+'；'.join(f"[{d.get('method',d['index_id'])}]({d['record_url']})" for d in p['discovered_via'])]
  label={'abstract':'摘要级解读','partial':'核心内容局部审阅','full_review':'正文审阅（范围见说明）'}[p['reading_depth']]
- lines += ['',f"**阅读深度：** {label}。{p.get('reading_note','未独立复现或核验完整证明。')}",'',f"- **研究问题：** {p['problem']}",f"- **主要结果：** {p['result']}",f"- **方法：** {p['method']}",f"- **条件与局限：** {p['limitations']}"]
+ lines += ['',f"**阅读深度：** {label}。{p.get('reading_note','未独立复现或核验完整证明。')}",'',f"- **研究问题：** {p['problem']}",f"- **作者报告的结果：** {p['result']}",f"- **方法：** {p['method']}",f"- **条件与局限：** {p['limitations']}"]
+ if p.get('why_selected'):lines+=['- **入选理由（据论文所述贡献）：** '+p['why_selected']]
+ if p.get('selection_evidence_limit'):lines+=['- **筛选依据的边界：** '+p['selection_evidence_limit']]
  if p.get('abstract_review'):
   r=p['abstract_review'];lines+=['- **摘要/实质概述实际阅读范围：** '+r['scope']+'；未核全文的细节不补猜。']
  if p.get('substantive_review'):
