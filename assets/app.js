@@ -61,7 +61,8 @@ function render(){
  function sections(papers){if(!papers.length)return '<p class="empty">没有符合这些筛选条件的论文。请调整条件或清除筛选。</p>';return Object.keys(taxonomy.groups).filter(g=>papers.some(p=>p.arxiv_group===g)).map(g=>{const ps=papers.filter(p=>p.arxiv_group===g),codes=[...new Set(ps.map(p=>p.canonical_primary_category))].sort();return `<section class="arxiv-group" data-arxiv-group="${esc(g)}" aria-label="${esc(groupLabel(g))}"><h2 class="group-heading">${esc(groupLabel(g))} <small>${ps.length}</small></h2>${codes.map(code=>{const rows=ps.filter(p=>p.canonical_primary_category===code),archive=rows[0].arxiv_archive,archiveName=taxonomy.archives[archive]?.name;return `<section class="arxiv-category" data-arxiv-category="${esc(code)}" data-arxiv-archive="${esc(archive)}" aria-label="${esc(categoryLabel(code))}">${g==='physics'&&archiveName&&archive!==code?`<p class="archive-label">${esc(archiveName)}</p>`:''}<h3 class="category-heading">${esc(categoryLabel(code))} <small>${rows.length}</small></h3>${rows.map(card).join('')}</section>`;}).join('')}</section>`;}).join('');}
  $('#results-heading').textContent='按 arXiv 主分类浏览';
  $('#count').textContent=`显示 ${filtered.length} / ${issue.papers.length} 篇 arXiv 论文（确认新增，去重后）`;
- $('#results').innerHTML=sections(filtered);
+ const emptyIssue=issue.screening?.status!=='complete'?'本期检索或摘要初筛尚未完成。':issue.screening.candidate_count===0?'本期未确认新增论文。':'本期暂无入选论文。';
+ $('#results').innerHTML=issue.papers.length?sections(filtered):`<p class="empty">${emptyIssue}</p>`;
  $('#pending-section').hidden=!list(issue.pending_papers).length;
  $('#pending-count').textContent=`显示 ${pending.length} / ${list(issue.pending_papers).length} 篇时间待核实；不计入确认新增`;
  $('#pending-results').innerHTML=sections(pending);syncURL();

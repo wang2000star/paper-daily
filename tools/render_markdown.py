@@ -35,6 +35,11 @@ def render(issue,sources,report_path):
  ps=issue['papers'];pending=issue.get('pending_papers',[])
  for p in ps+pending:validate_review(p)
  retrieval=os.path.relpath(ROOT/issue['retrieval_log'],(ROOT/report_path).parent)
+ if not ps and not pending and issue.get('screening',{}).get('status')=='complete' and issue['screening']['candidate_count']==0:
+  lines=[f"# arXiv 论文日报（AOE）｜{issue['date']}",'',f"**UTC 收录窗口：** {issue['window_start']} 至 {issue['window_end']}，左闭右开。",'']
+  if issue.get('window_beijing'):lines += ['**北京时间收录窗口：** '+issue['window_beijing']['label']+'，左闭右开。','']
+  lines += ['**确认新增 0 篇；时间待核实 0 篇。**','','## 检索结果','',issue['editorial_note'],'','已核对 arXiv 计算机科学与数学官方公告列表的全部分页及两份 RSS。','',f"[本期检索记录]({retrieval})",'','## 覆盖边界','','- 结论限于本窗口所查 arXiv 计算机科学与数学官方公告，不等于相关学科没有研究进展。','- RSS 日期为来源提供的批次时间，不是独立观测的逐篇首次可访问时间；提交日期未被当作公告日期。','']
+  return '\n'.join(lines)
  lines=[f"# arXiv 论文日报（AOE）｜{issue['date']}",'',f"检索窗口：{issue['window_start']} 至 {issue['window_end']}，左闭右开。AOE（UTC−12）已结束自然日。",'',f"**arXiv 确认新增 {len(ps)} 篇；时间待核实 {len(pending)} 篇（另列，不计入新增）。**",'','**实际阅读范围：** '+issue['editorial_note'],'','研究结论按原作者主张转述；摘要或局部正文阅读不等于完整证明审计、性能复现或安全背书。','','## arXiv 公告与阅读范围','']
  for c in issue['coverage']:
   if c.get('public_display') is True:lines += [c['scope'],c['note'],'']

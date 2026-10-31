@@ -79,6 +79,36 @@ def validate_issue(j,item,source_ids,formal=True):
    assert c.get('id') in source_ids and all(isinstance(c.get(k),str) and c[k].strip() for k in ['name','url','status','scope','note'])
    assert isinstance(c.get('public_display'),bool)
  print(j['date'],len(j['papers']),'confirmed/legacy;',len(j.get('pending_papers',[])),'pending: PASS')
+def validate_screening(j,proof):
+ screen=j['screening'];count=screen['candidate_count']
+ assert type(count) is int and count>=0
+ assert screen['abstract_screened_count']==count
+ assert screen['selected_count']==len(j['papers'])<=count
+ assert all(p.get('why_selected') and p.get('selection_evidence_limit') and p.get('selection_stage')=='full_inventory_abstract_screening' for p in j['papers'])
+ parts=proof['screening_parts'];assert len({p['part'] for p in parts})==len(parts)
+ if count:
+  assert parts and screen['screen_sha256'],'Nonempty inventory needs actual screening evidence'
+  assert sum(p['expected'] for p in parts)==count
+  assert all(p['complete'] and p['read']==p['expected']>0 and p['missing']==0 for p in parts)
+ else:
+  assert parts==[] and screen['screen_sha256']=={},'Zero inventory cannot fabricate screening parts'
+  zero=proof.get('zero_inventory_verification',{})
+  assert zero.get('complete') is True and zero.get('confirmed_new_count')==0,'Zero inventory needs verified official evidence'
+  sources=zero.get('official_sources',[]);assert sources
+  archives=set()
+  for evidence in sources:
+   assert evidence.get('http_status')==200 and re.fullmatch(r'[0-9a-f]{64}',evidence.get('sha256','')),'Zero inventory needs successful response hashes'
+   u=urlparse(evidence['url']);assert u.scheme=='https' and u.hostname in ['arxiv.org','rss.arxiv.org','info.arxiv.org']
+   assert utc(evidence['checked_at'])>=utc(j['window_end']),'Zero inventory must be rechecked after cutoff'
+   for archive in ['cs','math']:
+    if (u.hostname=='arxiv.org' and u.path==f'/list/{archive}/new') or (u.hostname=='rss.arxiv.org' and u.path==f'/rss/{archive}'):
+     archives.add(archive)
+  assert archives=={'cs','math'},'Both official cs and math inventories must be checked'
+ assert all(type(n) is int and n>=0 for n in proof['decision_counts'].values())
+ assert sum(proof['decision_counts'].values())==count
+ assert {str(p['part']):p['sha256'] for p in parts}==screen['screen_sha256']
+ assert len(proof['selected_ids'])==len(set(proof['selected_ids']))==len(j['papers'])
+ assert set(proof['selected_ids'])=={p['id'].removeprefix('arxiv-') for p in j['papers']}
 def main():
  manifest=json.loads((R/'data/issues.json').read_text());cat=json.loads((R/'data/sources.json').read_text())
  assert manifest['source_scope']=='arxiv_only' and cat['active_scope']=='arxiv_only'
@@ -97,18 +127,7 @@ def main():
    if p.get('abstract_review'):evidence.append(p['abstract_review']['source_url'])
    assert all(urlparse(u).hostname in ['arxiv.org','www.arxiv.org','rss.arxiv.org','info.arxiv.org'] for u in evidence),(p['id'],'research evidence must be arXiv official')
   if j.get('screening',{}).get('status')=='complete':
-   screen=j['screening'];assert isinstance(screen['candidate_count'],int) and screen['candidate_count']>0
-   assert screen['abstract_screened_count']==screen['candidate_count']
-   assert screen['selected_count']==len(j['papers'])<=screen['candidate_count'] and screen['screen_sha256']
-   assert all(p.get('why_selected') and p.get('selection_evidence_limit') and p.get('selection_stage')=='full_inventory_abstract_screening' for p in j['papers'])
-   proof=json.loads((R/j['retrieval_log']).read_text());parts=proof['screening_parts']
-   assert parts and len({p['part'] for p in parts})==len(parts)
-   assert sum(p['expected'] for p in parts)==screen['candidate_count']
-   assert all(p['complete'] and p['read']==p['expected']>0 and p['missing']==0 for p in parts)
-   assert sum(proof['decision_counts'].values())==screen['candidate_count']
-   assert {str(p['part']):p['sha256'] for p in parts}==screen['screen_sha256']
-   assert len(proof['selected_ids'])==len(set(proof['selected_ids']))==len(j['papers'])
-   assert set(proof['selected_ids'])=={p['id'].removeprefix('arxiv-') for p in j['papers']}
+   validate_screening(j,json.loads((R/j['retrieval_log']).read_text()))
   assert item['confirmed_count']==len(j['papers']) and item.get('pending_count',0)==len(j.get('pending_papers',[]))
   for p in j['papers']:
    assert p['id'] not in formal_ids,(p['id'],'repeated as new across days');formal_ids[p['id']]=j['date']

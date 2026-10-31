@@ -52,6 +52,7 @@
    python3 tools/render_markdown.py
    python3 tools/validate.py
    python3 tools/test_time_validation.py
+   python3 tools/test_screening_validation.py
    node --check assets/app.js
    node tools/test_ui.cjs
    ```
@@ -71,6 +72,8 @@
 - 最终精选是完成初筛后的已核名单；每篇标“入选理由（据论文所述贡献）”，结果明确为作者报告，未独立审核的重要证明主张不在标题中冒充定论。
 - 署名/机构标题页核对与正文阅读分开统计；核对署名不把摘要级升级为局部正文审阅。机构无证据时明确未核实，不推断当前职务。
 - 全量筛选、最终内容复核及机构元数据冻结完成后统一保存和发布，不上传未完成的中间批次。原始摘要和全文不进入公开源码；逐篇原创筛选台账另存 Space。
+
+- 零库存期必须在截止后复核 cs 与 math 官方列表或 RSS，并记录 `zero_inventory_verification` 的来源 URL、检查时间、完整状态与零新增计数。零库存不伪造阅读分片；非零库存仍须完整分片和逐 ID 审读证据。检索失败或初筛未完不等于零新增。
 
 ## 面向读者的文案
 

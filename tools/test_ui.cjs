@@ -84,13 +84,24 @@ assert.match(element('#pending-results').innerHTML,/aria-expanded="true"/);
 (async()=>{
  response={...trial,papers:[...trial.papers,original.papers.find(p=>p.source!=='arxiv')],pending_papers:original.pending_papers};
  await api.loadIssue(trial.date);
- assert.equal(fetchedPath,manifest.issues[0].path,'load indexed arxiv path, never hardcoded legacy path');
+ assert.equal(fetchedPath,manifest.issues.find(i=>i.date===trial.date).path,'load indexed arxiv path, never hardcoded legacy path');
  assert.equal(api.expandedPapers.size,0,'date loading resets expansion');
  assert.equal((element('#results').innerHTML.match(/class="paper-card"/g)||[]).length,trial.papers.length,'non-arxiv data is defensively excluded');
  assert.equal(element('#pending-section').hidden,true,'foreign pending entries cannot leak into current view');
  assert.equal(element('#markdown-link').href,'reports/arxiv/2026-10-29.md');
  assert.equal(element('#retrieval-link').href,'data/retrieval/arxiv/2026-10-29.json');
  assert.ok(element('#issue-meta').innerHTML.includes(`${trial.papers.length} 篇 arXiv 论文`));
+ // Synthetic empty issue tests UI only; not published paper/retrieval data.
+ const emptyDate='2000-01-01';const emptyRef={date:emptyDate,path:'test-only/empty.json',report:'test-only/empty.md'};
+ api.setRefs([...manifest.issues,emptyRef]);response={...trial,date:emptyDate,papers:[],pending_papers:[],screening:{status:'complete',candidate_count:0},editorial_note:'本期未确认新增论文。'};
+ await api.loadIssue(emptyDate);assert.match(element('#results').innerHTML,/本期未确认新增论文/);
+ assert.doesNotMatch(element('#results').innerHTML,/没有符合/);assert.match(element('#count').textContent,/0 \/ 0/);
+ assert.equal(element('#markdown-link').href,emptyRef.report);assert.equal(api.expandedPapers.size,0);
+ response={...response,screening:{status:'in_progress',candidate_count:10}};await api.loadIssue(emptyDate);assert.match(element('#results').innerHTML,/尚未完成/);assert.doesNotMatch(element('#results').innerHTML,/未确认新增/);
+ response={...response,screening:{status:'failed',candidate_count:0}};await api.loadIssue(emptyDate);assert.match(element('#results').innerHTML,/尚未完成/);
+ response=trial;await api.loadIssue(trial.date);assert.equal((element('#results').innerHTML.match(/class="paper-card"/g)||[]).length,127);
+ element('#search').value='no matching paper sentinel';api.render();assert.match(element('#results').innerHTML,/没有符合/);
+ assert.doesNotMatch(element('#results').innerHTML,/本期未确认新增论文/);element('#search').value='';api.render();
  const before=fetchedPath;await api.loadIssue('1900-01-01');assert.equal(fetchedPath,before,'unknown dates are not fetched');assert.match(element('#results').innerHTML,/不在 arXiv 日报索引/);
  console.log('PASS: arXiv-only selected set, indexed data/download paths, defensive scope guard, collapsed summaries, repeated toggles, escaping, filters/reset/state and unknown-date guard.');
 })().catch(e=>{console.error(e);process.exitCode=1;});
