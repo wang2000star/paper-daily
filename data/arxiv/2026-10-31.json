@@ -1,0 +1,44 @@
+{
+  "schema_version": 5,
+  "date": "2026-10-31",
+  "kind": "arXiv 日报",
+  "issue_type": "daily",
+  "generated_at": "2026-11-01T12:02:20.967641+00:00",
+  "timezone": "Etc/GMT+12",
+  "window_start": "2026-10-31T12:00:00Z",
+  "window_end": "2026-11-01T12:00:00Z",
+  "window_label": "AOE 2026-10-31 · UTC 10-31 12:00 至 11-01 12:00 · 北京时间 10-31 20:00 至 11-01 20:00",
+  "source_scope": "arxiv_only",
+  "papers": [],
+  "pending_papers": [],
+  "coverage": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "url": "https://arxiv.org/",
+      "status": "本期未确认新增论文",
+      "scope": "本期收录窗口为 UTC 2026-10-31 12:00 至 2026-11-01 12:00。已核对 arXiv 计算机科学与数学官方新公告列表及 RSS。",
+      "note": "窗口结束后的复核显示两份 RSS 均为空，官方列表仍显示 2026-10-30 公告批次。本期新增候选、摘要初筛与精选数量均为 0。",
+      "public_display": true
+    }
+  ],
+  "retrieval_log": "data/retrieval/arxiv/2026-10-31.json",
+  "editorial_note": "本期未确认新增论文。arXiv 计算机科学与数学 RSS 均为空，官方列表仍显示 2026-10-30 公告批次；本期新增候选、摘要初筛与精选数量均为 0。",
+  "screening": {
+    "status": "complete",
+    "candidate_count": 0,
+    "abstract_screened_count": 0,
+    "selected_count": 0,
+    "partial_text_review_count": 0,
+    "full_text_review_count": 0,
+    "inventory_sha256": "98ca57d4be668afd9422d4c7a47b9227d7bc4be50df307b7aa66455d0ac8f528",
+    "screen_sha256": {}
+  },
+  "classification": "arxiv_official_primary",
+  "taxonomy": "data/arxiv-taxonomy.json",
+  "window_beijing": {
+    "start": "2026-10-31T20:00:00+08:00",
+    "end": "2026-11-01T20:00:00+08:00",
+    "label": "北京时间 2026-10-31 20:00 至 2026-11-01 20:00（UTC+8）"
+  }
+}

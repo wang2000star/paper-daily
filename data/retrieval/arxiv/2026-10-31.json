@@ -1,0 +1,207 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-31",
+  "window_start": "2026-10-31T12:00:00Z",
+  "window_end": "2026-11-01T12:00:00Z",
+  "generated_at": "2026-11-01T12:02:20.967641+00:00",
+  "source_scope": "arxiv_only",
+  "scope_note": "仅统计本窗口 arXiv cs 与 math 官方列表首次公告的新稿；交叉公告和版本替换分别核对，不重复计作新稿。",
+  "coverage": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "url": "https://arxiv.org/",
+      "status": "本期未确认新增论文",
+      "scope": "本期收录窗口为 UTC 2026-10-31 12:00 至 2026-11-01 12:00。已核对 arXiv 计算机科学与数学官方新公告列表及 RSS。",
+      "note": "窗口结束后的复核显示两份 RSS 均为空，官方列表仍显示 2026-10-30 公告批次。本期新增候选、摘要初筛与精选数量均为 0。",
+      "public_display": true
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://rss.arxiv.org/rss/cs",
+      "requested_at": "2026-11-01T12:00:00.000223+00:00",
+      "completed_at": "2026-11-01T12:00:03.542604+00:00",
+      "status": 200,
+      "bytes": 880,
+      "sha256": "ba0db6ed16fadfd5c045217eac11f6a52d169497329587e81e125d7fd1b375c7"
+    },
+    {
+      "url": "https://rss.arxiv.org/rss/math",
+      "requested_at": "2026-11-01T12:00:03.542721+00:00",
+      "completed_at": "2026-11-01T12:00:06.368400+00:00",
+      "status": 200,
+      "bytes": 888,
+      "sha256": "5a51b7558df7e0109a63c1d6336246f68ea4b3c96a9f4ed907bd2a3eafaa0af6"
+    },
+    {
+      "url": "https://arxiv.org/list/cs/new?skip=0&show=2000",
+      "requested_at": "2026-11-01T12:00:06.368494+00:00",
+      "completed_at": "2026-11-01T12:00:12.363001+00:00",
+      "status": 200,
+      "bytes": 6199929,
+      "sha256": "9a16646737787acb799cf5930ff51b18eaf5b95d846654bf6be82931ebb2f51d"
+    },
+    {
+      "url": "https://arxiv.org/list/cs/new?skip=2000&show=2000",
+      "requested_at": "2026-11-01T12:00:12.397729+00:00",
+      "completed_at": "2026-11-01T12:00:18.029641+00:00",
+      "status": 200,
+      "bytes": 597592,
+      "sha256": "d69760fcd0e0b3e66c0e4154265132f93fc60f0025f1ebabed8be5d3977c6ab5"
+    },
+    {
+      "url": "https://arxiv.org/list/math/new?skip=0&show=2000",
+      "requested_at": "2026-11-01T12:00:18.033105+00:00",
+      "completed_at": "2026-11-01T12:00:20.778952+00:00",
+      "status": 200,
+      "bytes": 3286657,
+      "sha256": "ef83c2aea78285d4794ee772f2528f4c8b0fd98021efc8eb296480e73cee96e0"
+    }
+  ],
+  "rss_observations": {
+    "cs": {
+      "source_url": "https://rss.arxiv.org/rss/cs",
+      "pubDate": "Sun, 01 Nov 2026 00:00:00 -0400",
+      "batch_utc": "2026-11-01T04:00:00+00:00",
+      "lastBuildDate": "Sun, 01 Nov 2026 04:00:00 +0000",
+      "item_count": 0,
+      "type_counts": {},
+      "sha256": "ba0db6ed16fadfd5c045217eac11f6a52d169497329587e81e125d7fd1b375c7"
+    },
+    "math": {
+      "source_url": "https://rss.arxiv.org/rss/math",
+      "pubDate": "Sun, 01 Nov 2026 00:00:00 -0400",
+      "batch_utc": "2026-11-01T04:00:00+00:00",
+      "lastBuildDate": "Sun, 01 Nov 2026 04:00:03 +0000",
+      "item_count": 0,
+      "type_counts": {},
+      "sha256": "5a51b7558df7e0109a63c1d6336246f68ea4b3c96a9f4ed907bd2a3eafaa0af6"
+    }
+  },
+  "list_observations": {
+    "cs": {
+      "counts": {
+        "New submissions": 1306,
+        "Cross submissions": 129,
+        "Replacement submissions": 755
+      },
+      "declared_totals": {
+        "New submissions": 1306,
+        "Cross submissions": 129,
+        "Replacement submissions": 755
+      },
+      "all_entries": 2190,
+      "new_unique": 1306
+    },
+    "math": {
+      "counts": {
+        "New submissions": 744,
+        "Cross submissions": 128,
+        "Replacement submissions": 475
+      },
+      "declared_totals": {
+        "New submissions": 744,
+        "Cross submissions": 128,
+        "Replacement submissions": 475
+      },
+      "all_entries": 1347,
+      "new_unique": 744
+    }
+  },
+  "displayed_previous_batch": {
+    "listing_date": "2026-10-30",
+    "total_listing_records": 3537,
+    "new_section_records": 2050,
+    "cross_section_records": 257,
+    "replacement_section_records": 1230,
+    "unique_new_section_ids": 1970,
+    "cross_list_overlap": 80,
+    "matches_previous_inventory": true,
+    "previous_issue": "2026-10-29",
+    "previous_inventory_sha256": "90bef7866b30f10ce309f320f28d24312a9e97d696a6af73e71e4403928726c2",
+    "previous_screening_ledger_sha256": "3d74fa116c2483c089f32da786bbafef519d6fbf5c6325c235ffd48e288bff1c",
+    "new_not_previous": [],
+    "previous_not_displayed": [],
+    "note": "这些条目属于已公告批次，仅用于日期与稳定编号去重；不计作本期候选或本期摘要阅读。"
+  },
+  "inventory": {
+    "candidate_count": 0,
+    "pending_count": 0,
+    "abstracts_read": 0,
+    "unread_count": 0,
+    "selected_count": 0,
+    "inventory_sha256": "98ca57d4be668afd9422d4c7a47b9227d7bc4be50df307b7aa66455d0ac8f528"
+  },
+  "screening": {
+    "status": "complete",
+    "candidate_count": 0,
+    "abstract_screened_count": 0,
+    "selected_count": 0,
+    "partial_text_review_count": 0,
+    "full_text_review_count": 0,
+    "inventory_sha256": "98ca57d4be668afd9422d4c7a47b9227d7bc4be50df307b7aa66455d0ac8f528",
+    "screen_sha256": {}
+  },
+  "decision_counts": {
+    "selected": 0,
+    "reserve": 0,
+    "not_selected": 0
+  },
+  "screening_parts": [],
+  "selected_ids": [],
+  "zero_inventory_verification": {
+    "complete": true,
+    "confirmed_new_count": 0,
+    "official_sources": [
+      {
+        "url": "https://rss.arxiv.org/rss/cs",
+        "http_status": 200,
+        "sha256": "ba0db6ed16fadfd5c045217eac11f6a52d169497329587e81e125d7fd1b375c7",
+        "checked_at": "2026-11-01T12:00:03.542604+00:00"
+      },
+      {
+        "url": "https://rss.arxiv.org/rss/math",
+        "http_status": 200,
+        "sha256": "5a51b7558df7e0109a63c1d6336246f68ea4b3c96a9f4ed907bd2a3eafaa0af6",
+        "checked_at": "2026-11-01T12:00:06.368400+00:00"
+      },
+      {
+        "url": "https://arxiv.org/list/cs/new?skip=0&show=2000",
+        "http_status": 200,
+        "sha256": "9a16646737787acb799cf5930ff51b18eaf5b95d846654bf6be82931ebb2f51d",
+        "checked_at": "2026-11-01T12:00:12.363001+00:00"
+      },
+      {
+        "url": "https://arxiv.org/list/cs/new?skip=2000&show=2000",
+        "http_status": 200,
+        "sha256": "d69760fcd0e0b3e66c0e4154265132f93fc60f0025f1ebabed8be5d3977c6ab5",
+        "checked_at": "2026-11-01T12:00:18.029641+00:00"
+      },
+      {
+        "url": "https://arxiv.org/list/math/new?skip=0&show=2000",
+        "http_status": 200,
+        "sha256": "ef83c2aea78285d4794ee772f2528f4c8b0fd98021efc8eb296480e73cee96e0",
+        "checked_at": "2026-11-01T12:00:20.778952+00:00"
+      }
+    ]
+  },
+  "independent_verification": {
+    "status": "PASS",
+    "request_count": 5,
+    "response_hashes_verified": true,
+    "previous_inventory_and_ledger_id_sets_equal": true,
+    "eligible_new_count": 0
+  },
+  "limitations": [
+    "结论限于本窗口所查 arXiv 计算机科学与数学官方公告，不等于相关学科没有研究进展。",
+    "RSS pubDate 是来源提供的批次时间，不是独立观测的逐篇首次可访问时间；未以提交日期替代公告时间。",
+    "官方列表中已公告批次的 1,970 个新稿编号已逐项与对应完整候选清单核对，未作为本期摘要审读。",
+    "检索依据截止后的官方响应快照，不代表对全部瞬时变化的连续监测。"
+  ],
+  "window_beijing": {
+    "start": "2026-10-31T20:00:00+08:00",
+    "end": "2026-11-01T20:00:00+08:00",
+    "label": "北京时间 2026-10-31 20:00 至 2026-11-01 20:00（UTC+8）"
+  }
+}
