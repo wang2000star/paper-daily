@@ -1,2585 +1,1908 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "source_scope": "arxiv_only",
+  "index_scope": "published_selected_papers_only",
   "records": [
     {
-      "id": "arxiv-2610.40620",
-      "url": "https://arxiv.org/abs/2610.40620",
-      "title": "Tessera: Fast Join-Aggregates over Skewed Sparse Relations in Database Engines",
-      "version": "v1",
-      "updated_date": "2026-10-29",
-      "first_issue": "2026-10-30",
-      "first_issue_type": "historical_trial",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "v1",
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.40590",
-      "url": "https://arxiv.org/abs/2610.40590",
-      "title": "An Adian-Rabin theorem for quantum automorphism groups of graphs",
-      "version": "v1",
-      "updated_date": "2026-10-29",
-      "first_issue": "2026-10-30",
-      "first_issue_type": "historical_trial",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "v1",
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.38877",
-      "work_id": "arxiv-2610.38877",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38877v1",
-      "title": "Homogeneous polynomial approximation on symmetric convex bodies: A proof of Kroó's conjecture",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.37677",
-      "work_id": "arxiv-2610.37677",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37677v1",
-      "title": "Explicit matrix hitting points for noncommutative algebraic branching programs",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.37777",
-      "work_id": "arxiv-2610.37777",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37777v1",
-      "title": "Maximal Curves with Few Automorphisms",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37817",
-      "work_id": "arxiv-2610.37817",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37817v1",
-      "title": "The generalized Cartan-Hadamard conjecture",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37877",
-      "work_id": "arxiv-2610.37877",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37877v1",
-      "title": "A complete classification of minimal value set polynomials",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.37975",
-      "work_id": "arxiv-2610.37975",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37975v1",
-      "title": "Spectral unions of four intervals tile the real line",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38200",
-      "work_id": "arxiv-2610.38200",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38200v1",
-      "title": "Two-neighbor lattice percolation percolates in all dimensions",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38323",
-      "work_id": "arxiv-2610.38323",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38323v1",
-      "title": "Determination of weight enumerators of binary extremal self-dual codes of length 60",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38328",
-      "work_id": "arxiv-2610.38328",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38328v1",
-      "title": "Sizes of cross-intersecting families",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38374",
-      "work_id": "arxiv-2610.38374",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38374v1",
-      "title": "A five-species counterexample to the Hofbauer--Kon--Saito conjecture on qualitative permanence",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38447",
-      "work_id": "arxiv-2610.38447",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38447v1",
-      "title": "Davenport constants with growing binary rank",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.39705",
-      "work_id": "arxiv-2610.39705",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39705v1",
-      "title": "Optimality of the BCC lattice among 3D lattice quantizers",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.39743",
-      "work_id": "arxiv-2610.39743",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39743v1",
-      "title": "The Berry--Esseen estimate in the Boolean central limit theorem",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.39759",
-      "work_id": "arxiv-2610.39759",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39759v1",
-      "title": "Minimum-degree thresholds beyond bounded colourability",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.39838",
-      "work_id": "arxiv-2610.39838",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39838v1",
-      "title": "The Kawatani--Okawa conjecture in dimensions three and four",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.39870",
-      "work_id": "arxiv-2610.39870",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39870v1",
-      "title": "Optimal self-orthogonal binary linear codes",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.39883",
-      "work_id": "arxiv-2610.39883",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39883v1",
-      "title": "A counterexample to the pure semisimplicity conjecture",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.39967",
-      "work_id": "arxiv-2610.39967",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39967v1",
-      "title": "Petty's equilateral-set conjecture in dimension five",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.40095",
-      "work_id": "arxiv-2610.40095",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40095v1",
-      "title": "On the Erdős--Ginzburg--Ziv Problem for $\\mathbb{Z}_n^r$",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.40232",
-      "work_id": "arxiv-2610.40232",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40232v1",
-      "title": "The fractional Faber--Krahn inequality in sharp quantitative form",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.40270",
-      "work_id": "arxiv-2610.40270",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40270v1",
-      "title": "On separators in $K_t$-minor-free graphs",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.40291",
-      "work_id": "arxiv-2610.40291",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40291v1",
-      "title": "A complete solution to the reverse isoperimetric problem for $λ$-convex bodies",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.40486",
-      "work_id": "arxiv-2610.40486",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40486v1",
-      "title": "Average pairwise Hamming distance of a subset in a hypercube",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.40605",
-      "work_id": "arxiv-2610.40605",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40605v1",
-      "title": "A self-normalized law of the iterated logarithm for Rademacher random multiplicative functions",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37693",
-      "work_id": "arxiv-2610.37693",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37693v1",
-      "title": "Cohomological change of coefficients for noncocommutative Hopf algebras",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37885",
-      "work_id": "arxiv-2610.37885",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37885v1",
-      "title": "Complete $RO$-Graded Tambara Structure of $H\\underline{\\mathbb Z}$ for cyclic groups",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37944",
-      "work_id": "arxiv-2610.37944",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37944v1",
-      "title": "Symmetric List Objects",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38142",
-      "work_id": "arxiv-2610.38142",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38142v1",
-      "title": "New structure for Villadsen algebras of the first type",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.39767",
-      "work_id": "arxiv-2610.39767",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39767v1",
-      "title": "Formality transmission",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.40057",
-      "work_id": "arxiv-2610.40057",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40057v1",
-      "title": "Invariant probability measures on holomorphic functions on the unit disk",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.40308",
-      "work_id": "arxiv-2610.40308",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40308v1",
-      "title": "Enhanced convergence guarantees of score-based generative models in $\\mathcal{W}_2$-distance beyond log-concavity",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.40438",
-      "work_id": "arxiv-2610.40438",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40438v1",
-      "title": "On generic subsystems of a Smale space",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37673",
-      "work_id": "arxiv-2610.37673",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37673v1",
-      "title": "Well-Typed ComfyUI Cannot Go Wrong: Gradual Refinement Types for Generative-AI Workflow Graphs",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37676",
-      "work_id": "arxiv-2610.37676",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37676v1",
-      "title": "Scoring Explanations Without Reading Them: Structural Shortcuts in Automated-Interpretability Evaluation Data",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.37679",
-      "work_id": "arxiv-2610.37679",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37679v1",
-      "title": "Exposure Is Not Commitment: Double-Stratified Evaluation of Latent Monitors for Tool-Using Agents",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.37720",
-      "work_id": "arxiv-2610.37720",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37720v1",
-      "title": "LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37869",
-      "work_id": "arxiv-2610.37869",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37869v1",
-      "title": "Hardness of Coloring $2$-Colorable $3$-Uniform Hypergraphs with $\\log^{Ω(1)} n$ Colors",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.38054",
-      "work_id": "arxiv-2610.38054",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38054v1",
-      "title": "Understanding Post-Quantum Cryptography Adoption: Practices, Challenges, and Evolution in Open-Source Software",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38262",
-      "work_id": "arxiv-2610.38262",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38262v1",
-      "title": "Rosemary: Efficient and Adaptable In-Storage Acceleration for Fully Homomorphic Encryption",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38355",
-      "work_id": "arxiv-2610.38355",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38355v1",
-      "title": "FlatCake: A Flat KVCache Storage Architecture for LLM Serving",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38479",
-      "work_id": "arxiv-2610.38479",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38479v1",
-      "title": "Recurrent Bipartite Graph Neural Networks for QC-MDPC Error Decoding in McEliece Cryptosystems",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38602",
-      "work_id": "arxiv-2610.38602",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38602v1",
-      "title": "STAR: Scalable TEE-based Anonymous Rate-limiter",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38616",
-      "work_id": "arxiv-2610.38616",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38616v1",
-      "title": "Order Maintenance in Worst-Case Constant Time, Verified",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38789",
-      "work_id": "arxiv-2610.38789",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38789v1",
-      "title": "Complexity of Differentially Private Selection via Federated APIs",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.39189",
-      "work_id": "arxiv-2610.39189",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39189v1",
-      "title": "Provably Secure Diffusion Watermarking Against Removal Adversaries with Batched Detector Access",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.39374",
-      "work_id": "arxiv-2610.39374",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39374v1",
-      "title": "DualGuard: Comprehensive and Efficient Memory Safety across Sequential and Speculative Execution",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.39572",
-      "work_id": "arxiv-2610.39572",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39572v1",
-      "title": "RV2GC: Reconstructing the Garbling Boundary in a RISC-V Garbled Processor",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.39753",
-      "work_id": "arxiv-2610.39753",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39753v1",
-      "title": "Four-Coloring Planar Graphs in Linear Time",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.39910",
-      "work_id": "arxiv-2610.39910",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.39910v1",
-      "title": "From if to Oops: Turning a conditional into a key-recovery oracle",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.40012",
-      "work_id": "arxiv-2610.40012",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40012v1",
-      "title": "Reachability in Five-Dimensional Vector Addition Systems Is PSPACE-Complete",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.40538",
-      "work_id": "arxiv-2610.40538",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40538v1",
-      "title": "crush: Extensible Proof Automation for Lean",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
       "id": "arxiv-2610.40591",
-      "work_id": "arxiv-2610.40591",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.40591v1",
-      "title": "Maximum Cardinality Matching in $n^{2+o(1)}$ Time",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.37701",
-      "work_id": "arxiv-2610.37701",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37701v1",
-      "title": "DuQUAD: A Dual-View Framework with Quality-Aware Evidence Pruning for Multi-Document Question Answering",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37799",
-      "work_id": "arxiv-2610.37799",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37799v1",
-      "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37818",
-      "work_id": "arxiv-2610.37818",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37818v1",
-      "title": "GOFish: Full Field-of-View Gaussian Splatting and Mesh Extraction",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.37862",
-      "work_id": "arxiv-2610.37862",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.37862v1",
-      "title": "Improving Group Deliberation through AI-Guided Self-Reflection",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": true
-    },
-    {
-      "id": "arxiv-2610.38004",
-      "work_id": "arxiv-2610.38004",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38004v1",
-      "title": "Opportunistic Optical Link Scheduling in the Scalable Matching Model",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
-    },
-    {
-      "id": "arxiv-2610.38276",
-      "work_id": "arxiv-2610.38276",
-      "aliases": [],
-      "url": "https://arxiv.org/abs/2610.38276v1",
-      "title": "MixCards: Evaluating Structured Descriptions of Multi-Source Sound Scenes",
-      "version": "v1",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "selected_in_final_2026_10_29": false
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38983",
-      "url": "https://arxiv.org/abs/2610.38983",
-      "title": "Beyond atol and rtol: Sound Test Oracles for Low-Precision GPU Kernels",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.37741",
-      "url": "https://arxiv.org/abs/2610.37741",
-      "title": "Agentic Backdoors via Pretraining Poisoning",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.39189",
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.39910",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39030",
-      "url": "https://arxiv.org/abs/2610.39030",
-      "title": "Local Important Separators with Applications to Unbreakable Decomposition and Multicut",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38730",
-      "url": "https://arxiv.org/abs/2610.38730",
-      "title": "Fully Dynamic All-Pairs Min Cuts on Planar Graphs via Planar Pattern Emulators",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40165",
-      "url": "https://arxiv.org/abs/2610.40165",
-      "title": "Closing the Log Gap: Minimax-Optimal Regret for Episodic RL",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39678",
-      "url": "https://arxiv.org/abs/2610.39678",
-      "title": "Tree Equivalence of Higher-Order Recursion Schemes Is Undecidable",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38396",
-      "url": "https://arxiv.org/abs/2610.38396",
-      "title": "Destroying Rigidity in the Plane",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40136",
-      "url": "https://arxiv.org/abs/2610.40136",
-      "title": "The Kodaira dimension and minimal models of $\\mathcal{A}_6$",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38163",
-      "url": "https://arxiv.org/abs/2610.38163",
-      "title": "Test ideals can be computed by boundaries",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39996",
-      "url": "https://arxiv.org/abs/2610.39996",
-      "title": "A Yau-Tian-Donaldson correspondence for degenerations",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40583",
-      "url": "https://arxiv.org/abs/2610.40583",
-      "title": "Asymptotic GIT-stability of KSB-stable varieties",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39272",
-      "url": "https://arxiv.org/abs/2610.39272",
-      "title": "Sharp potential and Brenier map $W_2$-stability for log-concave sources",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40552",
-      "url": "https://arxiv.org/abs/2610.40552",
-      "title": "A Sharp Uniqueness-Nonuniqueness Dichotomy for Neutral Vortex Arrays in $2$D Euler Equations",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39637",
-      "url": "https://arxiv.org/abs/2610.39637",
-      "title": "Solutions to several problems on infinite sumset configurations",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40183",
-      "url": "https://arxiv.org/abs/2610.40183",
-      "title": "Linking-form splitting and four-dimensional genera of knots",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.39967",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38115",
-      "url": "https://arxiv.org/abs/2610.38115",
-      "title": "Geometric properties of the analytic Emerton-Gee stack",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40520",
-      "url": "https://arxiv.org/abs/2610.40520",
-      "title": "Quantitative sub-ballisticity of self-avoiding walk on $\\mathbb{Z}^d$",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39444",
-      "url": "https://arxiv.org/abs/2610.39444",
-      "title": "End-to-End Guarantees for Masked Diffusion Models under Conditional Mixing",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38385",
-      "url": "https://arxiv.org/abs/2610.38385",
-      "title": "Revisiting Temporal Link Prediction through Structural Proximity",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38617",
-      "url": "https://arxiv.org/abs/2610.38617",
-      "title": "How Deterministic SAST and AI Security Agents Divide the Work: Coverage, Harness Policy and Cost in Snyk VulnBench 2.0",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38439",
-      "url": "https://arxiv.org/abs/2610.38439",
-      "title": "Predict the Reward, Not the World: World Reward Models for ML Agents",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38691",
-      "url": "https://arxiv.org/abs/2610.38691",
-      "title": "Beyond fabrication: Misattributed numbers in papers written by AI research agents",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39282",
-      "url": "https://arxiv.org/abs/2610.39282",
-      "title": "What Does \"Now\" Mean to Your Computer-Use Agent? Stale Screenshots, Page Loads, and Which Check to Run Before a Click",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39744",
-      "url": "https://arxiv.org/abs/2610.39744",
-      "title": "PAPERBENCHX: Can AI Reproduce Science Across Disciplines?",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38164",
-      "url": "https://arxiv.org/abs/2610.38164",
-      "title": "Separations between $\\#\\mathrm{BIS}$ and $\\#\\mathrm{IS}$",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.37679",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38799",
-      "url": "https://arxiv.org/abs/2610.38799",
-      "title": "CARI: Cross-Boundary Adversarial Runtime Injection in Coding-Agent Workflows",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.39572",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39758",
-      "url": "https://arxiv.org/abs/2610.39758",
-      "title": "SEAL: Sealed Queries for Local Sanitization against Indirect Prompt Injection",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38133",
-      "url": "https://arxiv.org/abs/2610.38133",
-      "title": "On Worst-Case Guarantees for Graph-Based Nearest-Neighbor Search",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38787",
-      "url": "https://arxiv.org/abs/2610.38787",
-      "title": "Dynamic $(Δ+1)$ Vertex Coloring with Adaptive Adversaries: Entropy Compression to the Rescue",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.39753",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40510",
-      "url": "https://arxiv.org/abs/2610.40510",
-      "title": "Zero-freeness for Random Regular Graphs up to the Replica Symmetry Breaking Threshold",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.37862",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38255",
-      "url": "https://arxiv.org/abs/2610.38255",
-      "title": "ParaTTT: Parallelizing Test-Time Training Layers with Deep Memories",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38331",
-      "url": "https://arxiv.org/abs/2610.38331",
-      "title": "Multi-Token Prediction Done Right",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40618",
-      "url": "https://arxiv.org/abs/2610.40618",
-      "title": "An ODE-based Sampler for Discrete Diffusion Models",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38388",
-      "url": "https://arxiv.org/abs/2610.38388",
-      "title": "ELEVATE: Agentic Controller Acquisition from Task Failure for Quadrupedal Manipulation",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38821",
-      "url": "https://arxiv.org/abs/2610.38821",
-      "title": "From Entanglement Bootstrap to DHR Theory",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.37886",
-      "url": "https://arxiv.org/abs/2610.37886",
-      "title": "An $L^2$ Ahlfors--Beurling inequality in every dimension",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38198",
-      "url": "https://arxiv.org/abs/2610.38198",
-      "title": "Soliton resolution conjecture and soliton gases for the Benjamin-Ono equation with infinite-order multisolitons in the sharp well-posedness space",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40315",
-      "url": "https://arxiv.org/abs/2610.40315",
-      "title": "Nonuniqueness and failure of positivity preservation for doubly critical semilinear heat equations",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40553",
-      "url": "https://arxiv.org/abs/2610.40553",
-      "title": "Nonuniqueness of the $2$D Euler Evolutions with $L^1\\cap L^p$ Vorticity",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38760",
-      "url": "https://arxiv.org/abs/2610.38760",
-      "title": "On a Conjecture of Fiedorowicz",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39032",
-      "url": "https://arxiv.org/abs/2610.39032",
-      "title": "A proof of the Murty--Simon conjecture on diameter-$2$-critical graphs",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.37877",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38120",
-      "url": "https://arxiv.org/abs/2610.38120",
-      "title": "Post-Training Large Language Models with LLMON",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38392",
-      "url": "https://arxiv.org/abs/2610.38392",
-      "title": "Masked Erosion: How Acceptance Gates Lose Redundant Safeguards in Self-Improving Agents",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39302",
-      "url": "https://arxiv.org/abs/2610.39302",
-      "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39435",
-      "url": "https://arxiv.org/abs/2610.39435",
-      "title": "Verifiable LLM-Guided Focal SMT Solving for Quantified Arrays",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40397",
-      "url": "https://arxiv.org/abs/2610.40397",
-      "title": "Random ($\\log{n}$)-CNF Formulas Are Hard for Depth-$2$ Frege with Modular Gates",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39351",
-      "url": "https://arxiv.org/abs/2610.39351",
-      "title": "Measuring Duplication, Leakage, and Rendering Dependence in Malware-as-Image Benchmarks",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39017",
-      "url": "https://arxiv.org/abs/2610.39017",
-      "title": "DistOptimize: Automatic Optimization of Distributed Protocols",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38860",
-      "url": "https://arxiv.org/abs/2610.38860",
-      "title": "Fast Perfect $L_2$ Sampling",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40598",
-      "url": "https://arxiv.org/abs/2610.40598",
-      "title": "On Zeros and Algorithms for Disordered Systems II: The Antiferromagnetic Ising Model up to Kesten-Stigum",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39256",
-      "url": "https://arxiv.org/abs/2610.39256",
-      "title": "On Proximity Gaps for One-Point Algebraic Geometric Codes",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39415",
-      "url": "https://arxiv.org/abs/2610.39415",
-      "title": "Accuracy is not compatibility: two Evo 2 checkpoints hinge on one FP8 matrix multiplication",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40310",
-      "url": "https://arxiv.org/abs/2610.40310",
-      "title": "Hammering with Vampire in Lean",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40235",
-      "url": "https://arxiv.org/abs/2610.40235",
-      "title": "Three-dimensional QCA that are not stably circuits",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38736",
-      "url": "https://arxiv.org/abs/2610.38736",
-      "title": "Transverse rational curves and the homogeneity of contact Fano manifolds",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.37899",
-      "url": "https://arxiv.org/abs/2610.37899",
-      "title": "Hierarchical Laminates Cannot Reproduce All Effective Properties of Planar Two-Phase Composites: A Counterexample with a 16-Component Potential",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39794",
-      "url": "https://arxiv.org/abs/2610.39794",
-      "title": "Arbitrary Dirichlet Eigenvalue Multiplicities on Smooth Star-Shaped Euclidean Domains",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40135",
-      "url": "https://arxiv.org/abs/2610.40135",
-      "title": "Local $Tb$ theorems in non-homogeneous metric spaces, and applications to caloric measure",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39317",
-      "url": "https://arxiv.org/abs/2610.39317",
-      "title": "Linear hereditary quasirandomness",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40152",
-      "url": "https://arxiv.org/abs/2610.40152",
-      "title": "Non-Archimedean Rigidity and the Uniform Dynamical Manin--Mumford for $\\left(\\mathbb{P}^1\\right)^n$",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38900",
-      "url": "https://arxiv.org/abs/2610.38900",
-      "title": "Sharp dimension bounds for right-angled hyperbolic polytopes",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39078",
-      "url": "https://arxiv.org/abs/2610.39078",
-      "title": "Borsuk number in four dimensions is at most seven",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39719",
-      "url": "https://arxiv.org/abs/2610.39719",
-      "title": "Optimal AFEM convergence for any bulk parameter smaller than one",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38414",
-      "url": "https://arxiv.org/abs/2610.38414",
-      "title": "The Borisov--Nuer conjecture and root decompositions in even unimodular Lorentzian lattices",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40470",
-      "url": "https://arxiv.org/abs/2610.40470",
-      "title": "Spectral isometries of unital $C^*$-algebras",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38941",
-      "url": "https://arxiv.org/abs/2610.38941",
-      "title": "Anchored isoperimetry in percolation",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39424",
-      "url": "https://arxiv.org/abs/2610.39424",
-      "title": "Exponential singularity and rank bounds for random symmetric matrices",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39545",
-      "url": "https://arxiv.org/abs/2610.39545",
-      "title": "The Mézard-Parisi formula",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38999",
-      "url": "https://arxiv.org/abs/2610.38999",
-      "title": "A Spectral Boundary for Independence Learnability",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40535",
-      "url": "https://arxiv.org/abs/2610.40535",
-      "title": "Efficient Scalable Oversight via Rewinding",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38998",
-      "url": "https://arxiv.org/abs/2610.38998",
-      "title": "How Hard Is It to Compute Cover Time?",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40484",
-      "url": "https://arxiv.org/abs/2610.40484",
-      "title": "Cubic lower bounds for the permanent in odd characteristic, for Pfaffian representations, and for polynomial entries",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.37872",
-      "url": "https://arxiv.org/abs/2610.37872",
-      "title": "Set an Exploit to Catch an Exploit: Compiling Public Proofs of Concept into Threat Hunting Rules",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38110",
-      "url": "https://arxiv.org/abs/2610.38110",
-      "title": "SPARSEBLEED: Bypassing Attribute-Inference Defenses via Sparsity Optimizations",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40569",
-      "url": "https://arxiv.org/abs/2610.40569",
-      "title": "The Tight Competitive Ratio of Greedy for Online Steiner Forest",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39457",
-      "url": "https://arxiv.org/abs/2610.39457",
-      "title": "Achieving Minimax-Optimal First-Order and Best-of-Both-Worlds Regret Simultaneously in Multi-Armed Bandits",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39723",
-      "url": "https://arxiv.org/abs/2610.39723",
-      "title": "Countable Nondeterminism in Weighted Programming with an Application to Mechanized Foundations for Probabilistic Program Verification",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38214",
-      "url": "https://arxiv.org/abs/2610.38214",
-      "title": "Skeleton Coding: Program Structure as a Specification for Agents",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38610",
-      "url": "https://arxiv.org/abs/2610.38610",
-      "title": "Repairs for Whom? Evaluator-Executor Mismatch in Selecting Repairs for Failed LLM Agents",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38977",
-      "url": "https://arxiv.org/abs/2610.38977",
-      "title": "Beyond Passing Tests: A Systematic Review and Controlled Re-evaluation of Techniques for Improving the Quality of LLM-Generated Code",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39368",
-      "url": "https://arxiv.org/abs/2610.39368",
-      "title": "Bloch's conjecture for (anti-)symplectic automorphisms of K3 surfaces",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.39838",
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.40232",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40517",
-      "url": "https://arxiv.org/abs/2610.40517",
-      "title": "Global Well-Posedness of Landau Equation in Bounded Domains",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38515",
-      "url": "https://arxiv.org/abs/2610.38515",
-      "title": "The asymptotics of off-diagonal book Ramsey numbers",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39595",
-      "url": "https://arxiv.org/abs/2610.39595",
-      "title": "The number of $C_4$-free graphs",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40145",
-      "url": "https://arxiv.org/abs/2610.40145",
-      "title": "A lifted entropy splitting lemma and applications",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.40291",
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.38877",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39960",
-      "url": "https://arxiv.org/abs/2610.39960",
-      "title": "Vanishing near the virtual cohomological dimension of $\\mathrm{SL}_n(\\mathbb Z)$",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40608",
-      "url": "https://arxiv.org/abs/2610.40608",
-      "title": "Improved Gradient Complexity for Quasi-Newton Proximal Extragradient Methods via Certified Curvature Reuse",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.40590",
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.39883",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40566",
-      "url": "https://arxiv.org/abs/2610.40566",
-      "title": "Self-regularization and structural adaptation of NPMLE for Gaussian mixture models in all dimensions",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.37859",
-      "url": "https://arxiv.org/abs/2610.37859",
-      "title": "Seq@K: Evaluating Language Models Under Sequential Feedback",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38210",
-      "url": "https://arxiv.org/abs/2610.38210",
-      "title": "GAAC: Lossless KV Compression for Bandwidth-Efficient LLM Inference on Personal Devices",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.37869",
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.37676",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38174",
-      "url": "https://arxiv.org/abs/2610.38174",
-      "title": "Scaling Lean Theorem Proving for Real-World Code Verification",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38126",
-      "url": "https://arxiv.org/abs/2610.38126",
-      "title": "Answer-Only Disclosure: Private-Context LLM Assistance over Web APIs with a Leakage Ledger",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.38789",
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38920",
-      "url": "https://arxiv.org/abs/2610.38920",
-      "title": "Dimension Reduction and Coresets for Min-Sum $k$-Clustering",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39922",
-      "url": "https://arxiv.org/abs/2610.39922",
-      "title": "Communication-Oblivious Permutation and Sorting",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38022",
-      "url": "https://arxiv.org/abs/2610.38022",
-      "title": "An Improved Johnson Bound for List-Decoding with Hints",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39355",
-      "url": "https://arxiv.org/abs/2610.39355",
-      "title": "A Sharp Fisher-Information Inequality for Boolean Pairs: Proof of the Amari--Kobayashi Conjecture",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38206",
-      "url": "https://arxiv.org/abs/2610.38206",
-      "title": "Averaged Annealed Markov Chains Achieve the Algorithmic Threshold for Tensor PCA, Part II: Langevin Dynamics",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38243",
-      "url": "https://arxiv.org/abs/2610.38243",
-      "title": "Nearly Minimax Optimal Regret for Adversarial Linear Bandits with Strong Corruptions",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40654",
-      "url": "https://arxiv.org/abs/2610.40654",
-      "title": "Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40378",
-      "url": "https://arxiv.org/abs/2610.40378",
-      "title": "On Deciding the Constraint Loop Problem in Dimension Two",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38244",
-      "url": "https://arxiv.org/abs/2610.38244",
-      "title": "Precedent or Intent? What Coding Agents Follow When Evolving Existing Code",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.37970",
-      "url": "https://arxiv.org/abs/2610.37970",
-      "title": "Statistical Detectability of Coordination",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38010",
-      "url": "https://arxiv.org/abs/2610.38010",
-      "title": "Kernel representations of fractional gradient bilinear forms. Part II. Variable coefficients",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39485",
-      "url": "https://arxiv.org/abs/2610.39485",
-      "title": "Strongly explicit Ramanujan 2-lift towers via Hilbert modular forms",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.40032",
-      "url": "https://arxiv.org/abs/2610.40032",
-      "title": "Submodular decompositions: a bounded-variation counterexample and an exact planar cut formula",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38834",
-      "url": "https://arxiv.org/abs/2610.38834",
-      "title": "Solution of Laczkovich's Lipschitz mapping problem",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.38073",
-      "url": "https://arxiv.org/abs/2610.38073",
-      "title": "Determining norm-Euclidean complex cubic fields",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
     },
     {
       "id": "arxiv-2610.39312",
-      "url": "https://arxiv.org/abs/2610.39312",
-      "title": "Bounding martingale dimension by spectral dimension",
-      "version": "arXiv 新稿公告；具体版本号未另核",
-      "updated_date": null,
-      "first_issue": "2026-10-29",
-      "first_issue_type": "daily",
-      "first_formal_issue": "2026-10-29",
-      "formal_issues": [
-        "2026-10-29"
-      ],
-      "latest_formal_version": "arXiv 新稿公告；具体版本号未另核",
-      "selected_in_final_2026_10_29": true
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.37677",
+      "first_issue": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.40659",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40660",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40673",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40679",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40688",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40691",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40694",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40700",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40703",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40712",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40714",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40716",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40721",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40728",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40732",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40740",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40742",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40748",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40753",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40758",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40798",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40799",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40802",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40804",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40806",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40811",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40815",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40820",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40824",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40825",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40828",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40834",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40836",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40842",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40844",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40845",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40855",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40857",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40861",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40863",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40865",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40868",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40872",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40876",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40883",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40893",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40898",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40906",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40913",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40927",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40930",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40931",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40935",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40936",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40939",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40940",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40942",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40945",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40949",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40950",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40959",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40962",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40963",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40966",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40974",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40975",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40980",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40982",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40983",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40992",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40995",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40996",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40998",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41001",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41006",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41014",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41015",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41021",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41023",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41025",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41028",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41030",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41034",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41038",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41040",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41043",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41045",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41046",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41047",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41051",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41055",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41056",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41057",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41060",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41073",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41076",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41094",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41106",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41113",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41118",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41125",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41128",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41136",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41153",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41157",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41170",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41172",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41174",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41178",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41183",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41191",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41202",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41211",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41213",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41216",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41223",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41233",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41234",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41237",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41244",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41263",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41266",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41272",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41275",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41287",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41291",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41301",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41307",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41313",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41324",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41340",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41344",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41345",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41347",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41354",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41356",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41366",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41367",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41387",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41391",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41403",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41411",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41416",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41430",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41433",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41435",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41437",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41449",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41458",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41461",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41470",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41474",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41475",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41499",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41516",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41519",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41521",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41527",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41536",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41548",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41549",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41554",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41555",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41558",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41562",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41566",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41572",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41574",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41581",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41600",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41606",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41609",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41620",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41631",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41637",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41638",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41646",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41651",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41654",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41655",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41661",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41666",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41670",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41672",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41690",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41691",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41696",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41700",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41711",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41713",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41714",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41723",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41732",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41735",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41742",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41746",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41758",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41762",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41766",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41779",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41781",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41787",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41790",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41800",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41802",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41803",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41804",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41811",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41821",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41828",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41840",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41857",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41858",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41862",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41867",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41871",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41875",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41878",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41884",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41885",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41891",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41896",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41902",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41904",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41905",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41911",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41912",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41925",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41931",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41939",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41945",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41954",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41956",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41961",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41970",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41974",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41977",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41980",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41983",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41989",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41990",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41995",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41998",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42001",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42005",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42011",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42012",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42013",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42018",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42022",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42023",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42026",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42030",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42033",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42036",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42040",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42043",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42046",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42048",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42058",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42059",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42063",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42067",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42075",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42081",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42083",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42093",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42094",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42096",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42097",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42101",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42110",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42112",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42117",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42120",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42121",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42126",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42137",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42138",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42139",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42140",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42144",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42147",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42148",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40713",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40874",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40884",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40886",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.40941",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41180",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41277",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41283",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41328",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41579",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41588",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41590",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.41694",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42029",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42069",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2610.42109",
+      "first_issue": "2026-11-01"
+    },
+    {
+      "id": "arxiv-2611.00663",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00070",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00100",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00156",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01318",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01338",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00633",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00046",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01795",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01614",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01296",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01716",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01767",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01711",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00117",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00077",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00002",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01702",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00884",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00512",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00129",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.00007",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01695",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01834",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01864",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01930",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01940",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.01953",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02028",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02039",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02052",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02154",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02765",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02779",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02815",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02849",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03145",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03168",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03205",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03244",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03446",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03452",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03520",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03598",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03604",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03615",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03620",
+      "first_issue": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.03636",
+      "first_issue": "2026-11-02"
     }
   ],
-  "dedup_note": "保留阶段性选读及最终精选的既有身份，避免同一工作跨日重新冒充新论文；selected_in_final_2026_10_29 表示本期最终精选成员。"
+  "dedup_note": "仅索引本网站已发布精选论文及其首次收录日期；不代表完整候选目录。"
 }

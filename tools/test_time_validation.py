@@ -24,4 +24,8 @@ class TimeEligibility(unittest.TestCase):
   validate_time(dict(self.base,eligibility='pending',public_at='2026-10-29',public_time_precision='date',date_note='Date only; timezone and boundary unresolved.'),self.start,self.end,True)
  def test_pending_needs_reason(self):
   with self.assertRaises(AssertionError):validate_time(dict(self.base,eligibility='pending'),self.start,self.end,True)
+ def test_schedule_missing_evidence_rejected(self):
+  with self.assertRaises(AssertionError):self.check(public_at='2026-10-30T00:00:00Z',public_time_precision='official_schedule_inferred_from_dated_list')
+ def test_explicit_schedule_evidence(self):
+  self.check(public_at='2026-10-30T00:00:00Z',announcement_scheduled_at='2026-10-30T00:00:00Z',public_time_precision='official_schedule_inferred_from_dated_list',public_time_source='https://info.arxiv.org/help/availability.html',date_note='Official schedule inference, not observed access.',dated_list_evidence=[{'url':'https://arxiv.org/list/cs/new','section':'New','listing_date':'2026-10-30'}])
 if __name__=='__main__':unittest.main()

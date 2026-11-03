@@ -30,6 +30,12 @@ def validate_time(p,start,end,pending=False):
  if pending:
   assert isinstance(p.get('date_note'),str) and p['date_note'].strip(),(p['id'],'pending needs uncertainty explanation')
   return
+ if p['public_time_precision']=='official_schedule_inferred_from_dated_list':
+  assert p.get('announcement_scheduled_at')==p.get('public_at'),'Inferred schedule must remain explicit'
+  assert p['public_time_source']=='https://info.arxiv.org/help/availability.html'
+  assert p.get('date_note') and p.get('dated_list_evidence'),'Schedule inference needs dated official new-list evidence and caveat'
+  for e in p['dated_list_evidence']:
+   assert urlparse(e['url']).hostname=='arxiv.org' and (e.get('section')=='New' or e.get('section','').startswith('New submissions (')) and re.fullmatch(r'\d{4}-\d{2}-\d{2}',e.get('listing_date',''))
  if p.get('public_time_range'):
   r=p['public_time_range'];a,b=utc(r['start']),utc(r['end'])
   assert start<=a<b<=end,(p['id'],'supported public-time range crosses daily boundary')
@@ -74,7 +80,7 @@ def validate_issue(j,item,source_ids,formal=True):
      utc(discovery.get('accessed_at'))
  assert (R/item.get('report',f"reports/{j['date']}.md")).exists()
  if formal:
-  assert (R/j['retrieval_log']).exists(),'Detailed retrieval log must be archived'
+  assert (R/j['retrieval_log']).exists(),'Public coverage record must exist'
   for c in j['coverage']:
    assert c.get('id') in source_ids and all(isinstance(c.get(k),str) and c[k].strip() for k in ['name','url','status','scope','note'])
    assert isinstance(c.get('public_display'),bool)
@@ -109,6 +115,21 @@ def validate_screening(j,proof):
  assert {str(p['part']):p['sha256'] for p in parts}==screen['screen_sha256']
  assert len(proof['selected_ids'])==len(set(proof['selected_ids']))==len(j['papers'])
  assert set(proof['selected_ids'])=={p['id'].removeprefix('arxiv-') for p in j['papers']}
+def validate_public_coverage(j,summary):
+ # Public consistency checks do not replace the private per-ID screening audit.
+ assert summary['record_type']=='public_coverage_summary'
+ assert summary['source_scope']=='arxiv_only'
+ for key in ['date','window_start','window_end']:
+  assert summary[key]==j[key]
+ assert set(summary['counts'])=={'candidate_count','abstract_screened_count','selected_count','partial_text_review_count','full_text_review_count'}
+ for key,value in summary['counts'].items():
+  assert type(value) is int and value>=0 and value==j['screening'][key]
+ assert summary['counts']['selected_count']==len(j['papers'])
+ assert summary['counts']['abstract_screened_count']==summary['counts']['candidate_count']
+ assert summary['limitations'] and summary['official_sources']
+ assert all(urlparse(u).hostname in ['arxiv.org','rss.arxiv.org','info.arxiv.org'] for u in summary['official_sources'])
+ assert not {'requests','screening_parts','selected_ids','pending_ids','decision_counts'} & set(summary)
+
 def main():
  manifest=json.loads((R/'data/issues.json').read_text());cat=json.loads((R/'data/sources.json').read_text())
  assert manifest['source_scope']=='arxiv_only' and cat['active_scope']=='arxiv_only'
@@ -127,13 +148,21 @@ def main():
    if p.get('abstract_review'):evidence.append(p['abstract_review']['source_url'])
    assert all(urlparse(u).hostname in ['arxiv.org','www.arxiv.org','rss.arxiv.org','info.arxiv.org'] for u in evidence),(p['id'],'research evidence must be arXiv official')
   if j.get('screening',{}).get('status')=='complete':
-   validate_screening(j,json.loads((R/j['retrieval_log']).read_text()))
+   proof=json.loads((R/j['retrieval_log']).read_text())
+   if proof.get('record_type')=='public_coverage_summary':validate_public_coverage(j,proof)
+   else:validate_screening(j,proof)
   assert item['confirmed_count']==len(j['papers']) and item.get('pending_count',0)==len(j.get('pending_papers',[]))
   for p in j['papers']:
    assert p['id'] not in formal_ids,(p['id'],'repeated as new across days');formal_ids[p['id']]=j['date']
  preserved=json.loads((R/'data/history/multisource-preservation.json').read_text())
  for path,expected in preserved['sha256'].items():assert hashlib.sha256((R/path).read_bytes()).hexdigest()==expected,(path,'historical content changed')
  seen=json.loads((R/manifest['active_seen']).read_text());assert seen['source_scope']=='arxiv_only'
- assert set(formal_ids)<=set(r['id'] for r in seen['records'])
+ if seen.get('index_scope')=='published_selected_papers_only':
+  assert seen.get('schema_version')==4
+  assert len(seen['records'])==len(formal_ids)
+  assert all(set(r)=={'id','first_issue'} for r in seen['records'])
+  assert {r['id']:r['first_issue'] for r in seen['records']}==formal_ids
+ else:
+  assert set(formal_ids)<=set(r['id'] for r in seen['records'])
  print('arXiv-only index, counts, review, time, dedup and historical preservation PASS')
 if __name__=='__main__':main()

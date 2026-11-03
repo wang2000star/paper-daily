@@ -34,6 +34,10 @@ assert.ok(html.includes(paper.result),'complete result remains available in the 
 assert.ok(html.includes(paper.method)&&html.includes(paper.limitations));
 assert.match(html,/原始论文 ↗<\/a>/);
 assert.doesNotMatch(html,/<h3><a/,'title must disclose the summary, not navigate away');
+const scheduledHTML=api.card({...paper,public_time_precision:'official_schedule_inferred_from_dated_list',code_status:'未核实公开代码链接'});
+assert.match(scheduledHTML,/<dt>公告批次（规则推定）<\/dt>/);
+assert.match(scheduledHTML,/公告批次（官方规则推定）/);
+assert.match(scheduledHTML,/<dt>公开代码<\/dt><dd>未核实公开代码链接<\/dd>/);
 assert.equal(Array.from(api.overview({result:'界'.repeat(151)})).length,151);
 assert.equal(api.overview({result:'原有结果'}),'原有结果');
 assert.ok(!api.card({...paper,title_zh:'<img src=x onerror=alert(1)>',result:'<script>alert(1)</script>'}).includes('<script>'));
@@ -71,7 +75,7 @@ assert.ok(!code.includes('p.domains')&&!code.includes('p.subfields')&&!code.incl
 // Pending entries remain a distinct filtered list and never inflate confirmed counts.
 api.setIssue({...trial,papers:trial.papers.slice(1),pending_papers:[{...paper,eligibility:'pending'}]});
 api.render();
-assert.ok(element('#count').textContent.includes(`${trial.papers.length-1} / ${trial.papers.length-1} 篇 arXiv 论文`));
+assert.ok(element('#count').textContent.includes(`${trial.papers.length-1} / ${trial.papers.length-1} 篇 arXiv 精选论文`));
 assert.match(element('#pending-count').textContent,/1 \/ 1 篇时间待核实/);
 assert.equal(element('#pending-section').hidden,false);
 assert.match(element('#pending-results').innerHTML,/时间待核实 · 不计入当日新增/);
@@ -90,7 +94,7 @@ assert.match(element('#pending-results').innerHTML,/aria-expanded="true"/);
  assert.equal(element('#pending-section').hidden,true,'foreign pending entries cannot leak into current view');
  assert.equal(element('#markdown-link').href,'reports/arxiv/2026-10-29.md');
  assert.equal(element('#retrieval-link').href,'data/retrieval/arxiv/2026-10-29.json');
- assert.ok(element('#issue-meta').innerHTML.includes(`${trial.papers.length} 篇 arXiv 论文`));
+ assert.ok(element('#issue-meta').innerHTML.includes(`${trial.papers.length} 篇 arXiv 精选论文`));
  // Synthetic empty issue tests UI only; not published paper/retrieval data.
  const emptyDate='2000-01-01';const emptyRef={date:emptyDate,path:'test-only/empty.json',report:'test-only/empty.md'};
  api.setRefs([...manifest.issues,emptyRef]);response={...trial,date:emptyDate,papers:[],pending_papers:[],screening:{status:'complete',candidate_count:0},editorial_note:'本期未确认新增论文。'};

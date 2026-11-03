@@ -9,10 +9,13 @@ def group_label(g):
  t=TAXONOMY['groups'][g];return t.get('name_zh',t['name'])+' · '+t['name']
 def category_label(code):
  t=TAXONOMY['category_catalog'][code];return code+' · '+(t.get('name_zh','')+' / ' if t.get('name_zh') else '')+t['name']
-def render_paper(p):
+def render_paper(p,include_code=False):
+ precision=p['public_time_precision']
+ time_label=('公告批次（官方规则推定）' if precision=='official_schedule_inferred_from_dated_list' else 'RSS公告批次' if precision=='rss_batch_timestamp' else '来源公开时间') if include_code else ('公告批次（官方规则推定）' if precision=='official_schedule_inferred_from_dated_list' else '已核来源公开时间')
+ precision_label={'official_schedule_inferred_from_dated_list':'依据官方列表与公告安排推定','rss_batch_timestamp':'官方RSS批次时间'}.get(precision,precision) if include_code else precision
  lines=[f"#### {p['title_zh']}",'',f"**原标题：** [{p['title']}]({p['url']})",'',f"**作者：** {'、'.join(p['authors'])}",'',f"**作者与机构简介：** {p['author_intro']}",'']
  lines += ['- '+x for x in p.get('author_institutions',[])]
- lines += ['',f"**arXiv 主分类：** {group_label(p['arxiv_group'])} / {category_label(p['primary_category'])}；**交叉分类：** {'；'.join(category_label(c) for c in p['cross_categories']) or '无'}",'',f"**日期与版本：** 首次记录 {p['first_date'] or '未核实'}；更新 {p['updated_date'] or '未核修订日'}；{p['version']}；{p['publication_status']}。",'',f"**已核来源公开时间：** {p.get('public_at') or '精确时间未确认'}（精度：{p['public_time_precision']}）；[时间证据]({p['public_time_source']})。"]
+ lines += ['',f"**arXiv 主分类：** {group_label(p['arxiv_group'])} / {category_label(p['primary_category'])}；**交叉分类：** {'；'.join(category_label(c) for c in p['cross_categories']) or '无'}",'',f"**日期与版本：** {'首次公告' if p.get('first_date_kind')=='announcement' else '首次记录'} {p['first_date'] or '未核实'}；更新 {p['updated_date'] or '未核修订日'}；{p['version']}；{p['publication_status']}。",'',f"**{time_label}：** {p.get('public_at') or '精确时间未确认'}（精度：{precision_label}）；[时间证据]({p['public_time_source']})。"]
  if p.get('public_time_range'):
   r=p['public_time_range'];lines += [f"**已证实时间区间：** [{r['start']}, {r['end']})。"]
  if p.get('date_note'):lines+=['**日期说明：** '+p['date_note']]
@@ -28,6 +31,9 @@ def render_paper(p):
   r=p['substantive_review'];lines+=['- **实际审阅范围：** '+r['scope'],'- **方法依据：** '+r['method_evidence'],'- **结果依据：** '+r['result_evidence'],'- **条件依据：** '+r['conditions_evidence']]
  if p.get('change_note'):lines+=['- **版本变化：** '+p['change_note']]
  if p.get('affiliation_note'):lines+=['- **机构核验说明：** '+p['affiliation_note']]
+ if include_code:
+  urls=list(dict.fromkeys(p.get('code_urls',[])+([p['code_url']] if p.get('code_url') else [])))
+  lines += ['','**公开代码：** '+('；'.join(f'[代码链接{i+1}]({u})' for i,u in enumerate(urls)) if urls else '未核实公开代码链接')+'。'+p.get('code_status','仅记录所读 arXiv 材料提供的链接，未访问外站核查。')]
  refs=list(dict.fromkeys(p.get('evidence_urls',[])+p.get('affiliation_sources',[])+[p['public_time_source']]))
  lines+=['','**原始证据：** '+'；'.join(f'[来源{i+1}]({u})' for i,u in enumerate(refs)),'']
  return lines
@@ -40,7 +46,9 @@ def render(issue,sources,report_path):
   if issue.get('window_beijing'):lines += ['**北京时间收录窗口：** '+issue['window_beijing']['label']+'，左闭右开。','']
   lines += ['**确认新增 0 篇；时间待核实 0 篇。**','','## 检索结果','',issue['editorial_note'],'','已核对 arXiv 计算机科学与数学官方公告列表的全部分页及两份 RSS。','',f"[本期检索记录]({retrieval})",'','## 覆盖边界','','- 结论限于本窗口所查 arXiv 计算机科学与数学官方公告，不等于相关学科没有研究进展。','- RSS 日期为来源提供的批次时间，不是独立观测的逐篇首次可访问时间；提交日期未被当作公告日期。','']
   return '\n'.join(lines)
- lines=[f"# arXiv 论文日报（AOE）｜{issue['date']}",'',f"检索窗口：{issue['window_start']} 至 {issue['window_end']}，左闭右开。AOE（UTC−12）已结束自然日。",'',f"**arXiv 确认新增 {len(ps)} 篇；时间待核实 {len(pending)} 篇（另列，不计入新增）。**",'','**实际阅读范围：** '+issue['editorial_note'],'','研究结论按原作者主张转述；摘要或局部正文阅读不等于完整证明审计、性能复现或安全背书。','','## arXiv 公告与阅读范围','']
+ headline=(f"**确认新公告 {issue['screening']['candidate_count']} 篇，完成摘要初筛 {issue['screening']['abstract_screened_count']} 篇，精选 {len(ps)} 篇；另 {issue.get('unconfirmed_announcement_count',len(pending))} 项首次公告时间待核实，未计入。**" if issue.get('window_beijing') else f"**arXiv 确认新增 {len(ps)} 篇；时间待核实 {len(pending)} 篇（另列，不计入新增）。**")
+ lines=[f"# arXiv 论文日报（AOE）｜{issue['date']}",'',f"检索窗口：{issue['window_start']} 至 {issue['window_end']}，左闭右开。AOE（UTC−12）已结束自然日。",'',headline,'','**实际阅读范围：** '+issue['editorial_note'],'','研究结论按原作者主张转述；摘要或局部正文阅读不等于完整证明审计、性能复现或安全背书。','','## arXiv 公告与阅读范围','']
+ if issue.get('window_beijing'):lines += ['**北京时间收录窗口：** '+issue['window_beijing']['label']+'，左闭右开。','']
  for c in issue['coverage']:
   if c.get('public_display') is True:lines += [c['scope'],c['note'],'']
  lines += [f"[本期检索记录]({retrieval})",'','## arXiv 学科索引','']
@@ -56,10 +64,10 @@ def render(issue,sources,report_path):
    for code in sorted({p['canonical_primary_category'] for p in entries}):
     rows=[p for p in entries if p['canonical_primary_category']==code]
     lines += [f"### {category_label(code)}（{len(rows)} 篇）",'']
-    for p in rows:lines+=render_paper(p)
+    for p in rows:lines+=render_paper(p,include_code=bool(issue.get('window_beijing')))
  if pending:
   lines += ['## 时间待核实（不计入确认新增）','','以下条目已阅读完整摘要或实质研究材料，但 arXiv 公告时间尚不能确认落在本期窗口内。','']
-  for p in pending:lines+=render_paper(p)
+  for p in pending:lines+=render_paper(p,include_code=bool(issue.get('window_beijing')))
  lines += ['## 阅读说明','','- 研究结果按论文作者主张转述；摘要解读或正文阅读不等于独立证明审计与实验复现。','- 作者机构以论文当时署名为准，未核实者已注明。','- arXiv 预印本与已核实的正式发表状态分别标注。','- 新稿统计采用官方公告，同一论文的版本修订不重复计数。','']
  return '\n'.join(lines)
 def main():

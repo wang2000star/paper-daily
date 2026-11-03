@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-01",
+  "window_start": "2026-11-01T12:00:00Z",
+  "window_end": "2026-11-02T12:00:00Z",
+  "window_beijing": {
+    "start": "2026-11-01T20:00:00+08:00",
+    "end": "2026-11-02T20:00:00+08:00",
+    "label": "北京时间2026-11-01 20:00 至2026-11-02 20:00（UTC+8）"
+  },
+  "source_scope": "arxiv_only",
+  "schema_version": 4,
+  "record_type": "public_coverage_summary",
+  "scope": "arXiv 数学与计算机科学新公告及交叉分类，跨类去重后逐篇初筛。",
+  "official_sources": [
+    "https://arxiv.org/list/cs/new",
+    "https://arxiv.org/list/math/new",
+    "https://rss.arxiv.org/rss/cs",
+    "https://rss.arxiv.org/rss/math"
+  ],
+  "counts": {
+    "candidate_count": 1070,
+    "abstract_screened_count": 1070,
+    "selected_count": 300,
+    "partial_text_review_count": 7,
+    "full_text_review_count": 0
+  },
+  "limitations": [
+    "公告时间依据官方RSS批次或明确标注的官方公告规则推定，不等于独立测得逐篇首次可访问时刻。",
+    "摘要初筛与精选正文阅读范围分别统计；未独立复现实验或审计完整证明。",
+    "作者机构仅据所读arXiv材料，未确认者逐篇注明。",
+    "计算机科学RSS为空，相关公告时间结合带日期官方列表与公告安排核定；另有1条时间边界未确认，未计入确认候选或精选。"
+  ]
+}
