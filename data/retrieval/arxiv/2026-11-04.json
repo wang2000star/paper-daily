@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-04",
+  "window_start": "2026-11-04T12:00:00Z",
+  "window_end": "2026-11-05T12:00:00Z",
+  "window_beijing": {
+    "start": "2026-11-04T20:00:00+08:00",
+    "end": "2026-11-05T20:00:00+08:00",
+    "label": "北京时间2026-11-04 20:00 至2026-11-05 20:00（UTC+8）"
+  },
+  "source_scope": "arxiv_only",
+  "schema_version": 4,
+  "record_type": "public_coverage_summary",
+  "scope": "arXiv数学与计算机科学new/cross全量官方RSS，跨类去重并核对首次公告；只研究官方arXiv材料。",
+  "official_sources": [
+    "https://rss.arxiv.org/rss/cs",
+    "https://rss.arxiv.org/rss/math",
+    "https://arxiv.org/list/math/new",
+    "https://arxiv.org/list/cs/new",
+    "https://info.arxiv.org/help/availability.html"
+  ],
+  "counts": {
+    "candidate_count": 1100,
+    "abstract_screened_count": 1100,
+    "selected_count": 44,
+    "partial_text_review_count": 44,
+    "full_text_review_count": 0
+  },
+  "limitations": [
+    "公告时间为官方RSS批次时间，非独立实测逐篇首次可访问时刻；未把提交日期当公告日期。",
+    "摘要初筛覆盖1100篇；正文仅核读精选论文列明范围，不等于完整证明审计或实验复现。",
+    "15条仅交叉公告缺本期首次new证据，未计入；不据论文编号或提交时间臆断其首次公告日。",
+    "cs列表直接访问遇429；完整官方RSS用于全量枚举，未声称逐页读取受限HTML。",
+    "本期对数学与计算机科学官方new/cross公告跨类去重，确认1100篇符合首次公告窗口，逐篇完整阅读摘要并记录初筛决定；其中3条摘要展示异常另读官方全文摘要修复。精选44篇，均另读逐篇列明的局部正文。另15条交叉公告没有核实为本窗口首次公告，未计入。未通审全部证明、运行形式化验证器或独立复现实验。"
+  ]
+}
