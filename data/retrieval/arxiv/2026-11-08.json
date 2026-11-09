@@ -1,0 +1,27 @@
+{
+  "record_type": "public_coverage_summary",
+  "date": "2026-11-08",
+  "window_start": "2026-11-08T12:00:00Z",
+  "window_end": "2026-11-09T12:00:00Z",
+  "source_scope": "arxiv_only",
+  "counts": {
+    "candidate_count": 1014,
+    "abstract_screened_count": 1014,
+    "selected_count": 70,
+    "partial_text_review_count": 10,
+    "full_text_review_count": 0
+  },
+  "confirmed_announcement_count": 1003,
+  "unconfirmed_announcement_count": 11,
+  "official_sources": [
+    "https://arxiv.org/list/cs/new?skip=0&show=2000",
+    "https://arxiv.org/list/math/new?skip=0&show=2000",
+    "https://rss.arxiv.org/rss/cs",
+    "https://rss.arxiv.org/rss/math"
+  ],
+  "limitations": [
+    "RSS时间是官方批次时间，不是独立测得首次访问时刻。",
+    "摘要级解读不等于正文证明审计；重大结论作为作者主张报道。",
+    "11项交叉公告首次公开时间未确认，不计本期新增。"
+  ]
+}

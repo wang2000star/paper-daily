@@ -46,7 +46,7 @@ def render(issue,sources,report_path):
   if issue.get('window_beijing'):lines += ['**北京时间收录窗口：** '+issue['window_beijing']['label']+'，左闭右开。','']
   lines += ['**确认新增 0 篇；时间待核实 0 篇。**','','## 检索结果','',issue['editorial_note'],'','已核对 arXiv 计算机科学与数学官方公告列表的全部分页及两份 RSS。','',f"[本期检索记录]({retrieval})",'','## 覆盖边界','','- 结论限于本窗口所查 arXiv 计算机科学与数学官方公告，不等于相关学科没有研究进展。','- RSS 日期为来源提供的批次时间，不是独立观测的逐篇首次可访问时间；提交日期未被当作公告日期。','']
   return '\n'.join(lines)
- headline=(f"**确认新公告 {issue['screening']['candidate_count']} 篇，完成摘要初筛 {issue['screening']['abstract_screened_count']} 篇，精选 {len(ps)} 篇；另 {issue.get('unconfirmed_announcement_count',len(pending))} 项首次公告时间待核实，未计入。**" if issue.get('window_beijing') else f"**arXiv 确认新增 {len(ps)} 篇；时间待核实 {len(pending)} 篇（另列，不计入新增）。**")
+ headline=(f"**确认新公告 {issue.get('confirmed_announcement_count',issue['screening']['candidate_count'])} 篇，完成摘要初筛 {issue['screening']['abstract_screened_count']} 篇，精选 {len(ps)} 篇；另 {issue.get('unconfirmed_announcement_count',len(pending))} 项首次公告时间待核实，未计入。**" if issue.get('window_beijing') else f"**arXiv 确认新增 {len(ps)} 篇；时间待核实 {len(pending)} 篇（另列，不计入新增）。**")
  lines=[f"# arXiv 论文日报（AOE）｜{issue['date']}",'',f"检索窗口：{issue['window_start']} 至 {issue['window_end']}，左闭右开。AOE（UTC−12）已结束自然日。",'',headline,'','**实际阅读范围：** '+issue['editorial_note'],'','研究结论按原作者主张转述；摘要或局部正文阅读不等于完整证明审计、性能复现或安全背书。','','## arXiv 公告与阅读范围','']
  if issue.get('window_beijing'):lines += ['**北京时间收录窗口：** '+issue['window_beijing']['label']+'，左闭右开。','']
  for c in issue['coverage']:
