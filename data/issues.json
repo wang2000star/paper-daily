@@ -1,7 +1,19 @@
 {
   "schema_version": 3,
-  "latest": "2026-11-08",
+  "latest": "2026-11-09",
   "issues": [
+    {
+      "date": "2026-11-09",
+      "kind": "arXiv 全量摘要筛选精选",
+      "path": "data/arxiv/2026-11-09.json",
+      "report": "reports/arxiv/2026-11-09.md",
+      "confirmed_count": 132,
+      "pending_count": 0,
+      "candidate_count": 2273,
+      "abstract_screened_count": 2273,
+      "selected_count": 132,
+      "unconfirmed_announcement_count": 18
+    },
     {
       "date": "2026-11-08",
       "kind": "arXiv 全量摘要筛选精选",
