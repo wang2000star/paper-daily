@@ -1,0 +1,40 @@
+{
+  "record_type": "public_coverage_summary",
+  "date": "2026-11-10",
+  "window_start": "2026-11-10T12:00:00Z",
+  "window_end": "2026-11-11T12:00:00Z",
+  "source_scope": "arxiv_only",
+  "counts": {
+    "candidate_count": 1187,
+    "abstract_screened_count": 1187,
+    "selected_count": 65,
+    "partial_text_review_count": 8,
+    "full_text_review_count": 0
+  },
+  "confirmed_announcement_count": 1174,
+  "unconfirmed_announcement_count": 13,
+  "official_sources": [
+    "https://arxiv.org/list/cs/new?skip=0&show=2000",
+    "https://arxiv.org/list/math/new?skip=0&show=2000",
+    "https://rss.arxiv.org/rss/cs",
+    "https://rss.arxiv.org/rss/math",
+    "https://rss.arxiv.org/rss/astro-ph",
+    "https://rss.arxiv.org/rss/cond-mat",
+    "https://rss.arxiv.org/rss/econ",
+    "https://rss.arxiv.org/rss/eess",
+    "https://rss.arxiv.org/rss/gr-qc",
+    "https://rss.arxiv.org/rss/hep-th",
+    "https://rss.arxiv.org/rss/math-ph",
+    "https://rss.arxiv.org/rss/nlin",
+    "https://rss.arxiv.org/rss/physics",
+    "https://rss.arxiv.org/rss/q-bio",
+    "https://rss.arxiv.org/rss/q-fin",
+    "https://rss.arxiv.org/rss/quant-ph",
+    "https://rss.arxiv.org/rss/stat"
+  ],
+  "limitations": [
+    "RSS时间为官方公告批次时间，不是独立观测的首次可访问时刻。",
+    "论文结论按作者主张转述，未独立复现或完整审计证明。",
+    "首次公告时间未确认或旧交叉公告不计本期新增。"
+  ]
+}
