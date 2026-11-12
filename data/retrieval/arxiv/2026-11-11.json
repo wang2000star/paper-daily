@@ -1,0 +1,128 @@
+{
+  "record_type": "public_coverage_summary",
+  "date": "2026-11-11",
+  "window_start": "2026-11-11T12:00:00Z",
+  "window_end": "2026-11-12T12:00:00Z",
+  "source_scope": "arxiv_only",
+  "counts": {
+    "candidate_count": 0,
+    "abstract_screened_count": 0,
+    "selected_count": 0,
+    "partial_text_review_count": 0,
+    "full_text_review_count": 0
+  },
+  "confirmed_announcement_count": 0,
+  "unconfirmed_announcement_count": 0,
+  "official_sources": [
+    "https://info.arxiv.org/help/availability.html",
+    "https://arxiv.org/list/cs/new?skip=0&show=2000",
+    "https://arxiv.org/list/cs/recent?skip=0&show=2000",
+    "https://rss.arxiv.org/rss/cs",
+    "https://arxiv.org/list/math/new?skip=0&show=2000",
+    "https://arxiv.org/list/math/recent?skip=0&show=2000",
+    "https://rss.arxiv.org/rss/math"
+  ],
+  "zero_inventory_verification": {
+    "complete": true,
+    "confirmed_new_count": 0,
+    "checked_at": "2026-11-12T12:09:15Z",
+    "official_sources": [
+      {
+        "url": "https://info.arxiv.org/help/availability.html",
+        "http_status": 200,
+        "checked_at": "2026-11-12T12:09:15Z",
+        "sha256": "e054afc2f04462318839cc5eca7d42843dbb5161ce7a791dde2e1f586d29a990",
+        "bytes": 90929,
+        "retrieval_utc_interval": [
+          "2026-11-12T12:05:03Z",
+          "2026-11-12T12:09:15Z"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/list/cs/new?skip=0&show=2000",
+        "http_status": 200,
+        "checked_at": "2026-11-12T12:09:15Z",
+        "sha256": "b1f6c8eae136db88afe3c26a79d1c5f2a6603455604ed720f0ab8473a255f5f7",
+        "bytes": 4027793,
+        "retrieval_utc_interval": [
+          "2026-11-12T12:05:03Z",
+          "2026-11-12T12:09:15Z"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/list/cs/recent?skip=0&show=2000",
+        "http_status": 200,
+        "checked_at": "2026-11-12T12:09:15Z",
+        "sha256": "7ddf5ac19b48a68cf0f28daa5b991dd45a7c3e726f95230dbeb9687c2eea4333",
+        "bytes": 3195477,
+        "retrieval_utc_interval": [
+          "2026-11-12T12:05:03Z",
+          "2026-11-12T12:09:15Z"
+        ]
+      },
+      {
+        "url": "https://rss.arxiv.org/rss/cs",
+        "http_status": 200,
+        "checked_at": "2026-11-12T12:09:15Z",
+        "sha256": "f673d1e8a3bd16057ea054e69cb0bb4a2cd96416cfcd4bf8b51d879b265478b3",
+        "bytes": 880,
+        "retrieval_utc_interval": [
+          "2026-11-12T12:05:03Z",
+          "2026-11-12T12:09:15Z"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/list/math/new?skip=0&show=2000",
+        "http_status": 200,
+        "checked_at": "2026-11-12T12:09:15Z",
+        "sha256": "7a87f6d885e33bd4d349fd2ae4392818fdafa96b88cb09a0b5b79beae6ab9b80",
+        "bytes": 1718813,
+        "retrieval_utc_interval": [
+          "2026-11-12T12:05:03Z",
+          "2026-11-12T12:09:15Z"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/list/math/recent?skip=0&show=2000",
+        "http_status": 200,
+        "checked_at": "2026-11-12T12:09:15Z",
+        "sha256": "bb118430a298dcfb6997ee6578e8847f9818db5e8aa0398905fc8ac1a25d77cb",
+        "bytes": 2698921,
+        "retrieval_utc_interval": [
+          "2026-11-12T12:05:03Z",
+          "2026-11-12T12:09:15Z"
+        ]
+      },
+      {
+        "url": "https://rss.arxiv.org/rss/math",
+        "http_status": 200,
+        "checked_at": "2026-11-12T12:09:15Z",
+        "sha256": "3d74f13d50dff511a668f971dc6053cc8bf91222e9f640aac62aad03a66fa077",
+        "bytes": 888,
+        "retrieval_utc_interval": [
+          "2026-11-12T12:05:03Z",
+          "2026-11-12T12:09:15Z"
+        ]
+      }
+    ],
+    "current_rss_items": {
+      "cs": 0,
+      "math": 0
+    },
+    "rss_are_current_dated_complete_xml": true,
+    "new_lists_are_complete_prior_batch": true,
+    "new_list_raw_hashes_match_prior_issue": true,
+    "matched_prior_issue": "2026-11-10",
+    "holiday_evidence": {
+      "source_url": "https://info.arxiv.org/help/availability.html",
+      "raw_source_sha256": "e054afc2f04462318839cc5eca7d42843dbb5161ce7a791dde2e1f586d29a990",
+      "holiday_line": "Wednesday 2026-11-11"
+    },
+    "time_precision_note": "检索完成时间为截止后的核验时间；请求发生于所列区间内，不将其当作论文公告时间。"
+  },
+  "limitations": [
+    "结果限于本窗口 arXiv 计算机科学与数学官方公告，不代表相关领域没有研究进展。",
+    "RSS 时间为官方批次时间，不是逐篇首次可访问时刻；提交日期不作为公告日期。",
+    "依据截止后的来源快照与官方公告安排，不是连续监测。"
+  ]
+}
