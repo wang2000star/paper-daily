@@ -1,0 +1,2330 @@
+{
+  "schema_version": 5,
+  "date": "2026-11-12",
+  "kind": "arXiv 全量候选初筛精选",
+  "issue_type": "daily",
+  "generated_at": "2026-11-13T12:26:29.198190+00:00",
+  "timezone": "Etc/GMT+12",
+  "window_start": "2026-11-12T12:00:00Z",
+  "window_end": "2026-11-13T12:00:00Z",
+  "window_label": "AoE 2026-11-12 · UTC 11-12 12:00 至 11-13 12:00",
+  "window_beijing": {
+    "start": "2026-11-12T20:00:00+08:00",
+    "end": "2026-11-13T20:00:00+08:00",
+    "label": "北京时间2026-11-12 20:00 至2026-11-13 20:00（UTC+8）"
+  },
+  "source_scope": "arxiv_only",
+  "coverage": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "url": "https://arxiv.org/",
+      "status": "全部发现记录初筛完成；1条源摘要不完整排除",
+      "scope": "计算机科学与数学官方新稿列表及交叉分类，全部分页、跨类去重；主分类按官方标记。",
+      "note": "发现1906条去重记录，完成1905条完整摘要逐篇初筛；1条官方摘要自身不完整，排除收录。1890条确认在本期首次公告（含该条摘要不完整记录）；4条既有版本交叉公告排除，12条首次公告时间待核实、不计新增。精选30篇，其中8篇补读核心正文片段，其余明确标为摘要级解读。未入选不代表质量低。",
+      "public_display": true
+    }
+  ],
+  "retrieval_log": "data/retrieval/arxiv/2026-11-12.json",
+  "editorial_note": "发现1906条去重记录，完成1905条完整摘要逐篇初筛；1条官方摘要自身不完整，排除收录。1890条确认在本期首次公告（含该条摘要不完整记录）；4条既有版本交叉公告排除，12条首次公告时间待核实、不计新增。精选30篇，其中8篇补读核心正文片段，其余明确标为摘要级解读。未入选不代表质量低。",
+  "screening": {
+    "status": "complete",
+    "discovered_count": 1906,
+    "candidate_count": 1905,
+    "abstract_screened_count": 1905,
+    "source_incomplete_excluded_count": 1,
+    "selected_count": 30,
+    "partial_text_review_count": 8,
+    "full_text_review_count": 0,
+    "inventory_sha256": "d9ea52c16ede158afff48b0263b40bee654c6d1b5638d727f745dbc5f259f721",
+    "screen_sha256": {
+      "final_ledger": "b27ab20e64f4618fe1672589b966243f6ad2b8107954e0d9dca0f7b031bb025b"
+    }
+  },
+  "confirmed_announcement_count": 1890,
+  "unconfirmed_announcement_count": 12,
+  "excluded_existing_cross_count": 4,
+  "classification": "arxiv_official_primary",
+  "taxonomy": "data/arxiv-taxonomy.json",
+  "papers": [
+    {
+      "id": "arxiv-2611.14684",
+      "title": "Fundamental Limits of Honest Inference with Heterogeneous Transfer Sources",
+      "authors": [
+        "Meng, Xuran",
+        "Li, Yi"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.14684v1",
+      "original_url": "https://arxiv.org/abs/2611.14684v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "正文首页标“Working draft”“Submitted to Biometrika”，是作者投稿声明，不表示录用；abs备注8 pages, 1 table；未独立确认。",
+      "primary_category": "math.ST",
+      "canonical_primary_category": "math.ST",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.ST"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.14684"
+        ],
+        "primary_subject": "Statistics Theory (math.ST)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Xuran Meng：University of Michigan, Ann Arbor",
+        "Yi Li：University of Michigan, Ann Arbor"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.14684v1"
+      ],
+      "affiliation_note": "机构按所读论文当时署名记录；职务与个人研究方向未核实。",
+      "author_intro": "作者：Meng, Xuran、Li, Yi。机构按以下论文署名记录；职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.14684v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/html/2611.14684v1",
+        "https://arxiv.org/abs/2611.14684"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "外部数据再多，也未必能缩短可信区间",
+      "overview": "作者刻画多来源迁移推断的精度极限：不仅取决于样本数，也取决于事先可信的来源偏差上界。",
+      "problem": "要求在允许的全部偏差配置上维持覆盖率时，多源数据究竟能帮多少？",
+      "result": "定理3.2给出区间长度尺度ρ：n₀ρ²+Σₛnₛ(ρ−dₛ)₊²=1。所有dₛ无限时ρ=n₀^(-1/2)，即使实际来源无偏，也不能在诚实覆盖要求下突破目标样本单独使用的速率。单位协方差高斯位置模型中构造达到同阶的区间。",
+      "method": "构造目标参数与各来源联合扰动，利用局部KL上界、总变差与两点覆盖推导下界；高斯模型最小化标准误与最坏偏差之和，权重wₛ∝nₛ(r*−dₛ)₊。",
+      "limitations": "dₛ是已知/预先指定上界，不是论文从数据中自动学得；下界要求真实偏差处于上界内部。一般模型只有下界，不能宣称普遍最优算法。高维与来源数增长须保持统一条件。",
+      "why_selected": "把“更多外部数据不一定更可信”变成可计算界，公众可读且理论边界明确。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.14684",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读：已读所列核心章节及署名；未完整审计证明或独立复现实验。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.14684v1"
+        ],
+        "scope": "正文核心部分已读，非仅摘要；§2–4（含定理3.2、命题3.3、高斯构造及两个反例、Cox推广）；§5实验设置。；仅转述作者结果；未完整审计证明，未运行代码",
+        "method_evidence": "§2.2比较配置；§3 Assumption 3.1；§4.1高斯权重和式(4.1)。",
+        "result_evidence": "定理3.2、式(3.1)；§4.1区间长度上下界；§4.2两个反例。",
+        "conditions_evidence": "α∈(0,1/2)；|δₛ⁰|≤c*dₛ，固定c*∈(0,1)；比较点属于参数域；局部单观测KL≤κa²且κ不随维数/来源数变。Cox例用高斯协变量、统一坐标方差上界；删失独立于生存时间（给定协变量），比较间删失机制不变。"
+      }
+    },
+    {
+      "id": "arxiv-2611.14694",
+      "title": "Real positive definite counterexamples to a monotonicity conjecture for the $q$-permanent",
+      "authors": [
+        "da Fonseca, Carlos M.",
+        "Goyal, Dev D."
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.14694v1",
+      "original_url": "https://arxiv.org/abs/2611.14694v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv v1预印本；所读正文未见已发表声明，未独立核实发表状态。",
+      "primary_category": "math.CO",
+      "canonical_primary_category": "math.CO",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.CO"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.14694"
+        ],
+        "primary_subject": "Combinatorics (math.CO)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Carlos M. da Fonseca：Kuwait College of Science and Technology, Kuwait",
+        "Dev D. Goyal：Independent Researcher, New Delhi, India"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.14694v1"
+      ],
+      "affiliation_note": "机构按所读论文当时署名记录；职务与个人研究方向未核实。",
+      "author_intro": "作者：da Fonseca, Carlos M.、Goyal, Dev D.。机构按以下论文署名记录；职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.14694v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/html/2611.14694v1",
+        "https://arxiv.org/abs/2611.14694"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "q-permanent单调性推广猜想出现实正定反例",
+      "overview": "作者用显式小矩阵反驳把q-permanent单调区间扩展到所有q>1的猜想，而不是解决实对称情形原本[-1,1]区间的猜想。",
+      "problem": "q-permanent在行列式q=−1与permanent q=1之间插值；实对称正定矩阵的单调性是否可一直延伸？",
+      "result": "五阶整数矩阵满足P₁₄=8,968,822,249>P₁₅=7,441,960,000；任意r>1均可构造在r处导数为负的实对称正定矩阵。作者另报告最小反例阶数为4，间隔坐标族可在维数O(1/(r−1))内制造任意r>1处失败。",
+      "method": "稀疏正定块加放在指定位置的单位坐标，改变排列逆序数而保持正定性；枚举非零排列贡献得到短多项式；利用负导数项压过正项。",
+      "limitations": "不反驳实对称情形[-1,1]区间单调性；所有文中显式例在该区间仍递增。作者称有Lean形式化及精确算术证书，本次未访问或运行、未独立验证。注意摘要“nine nonzero terms”实际是九个非零排列贡献，合并后显示多项式只有七项。",
+      "why_selected": "具体反例、精确整数对比直观；可用于解释数学猜想的适用范围，不宜标题写成Bapat原猜想全面推翻。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.14694",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读：已读所列核心章节及署名；未完整审计证明或独立复现实验。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.14694v1"
+        ],
+        "scope": "正文核心部分已读，非仅摘要；§1–4完整核心构造及证明；§5–6结果在引言中的陈述已读，未逐条审计其证明。；仅转述作者结果；未完整审计证明，未运行代码",
+        "method_evidence": "§2 Table 1九排列；§3 Lemma 3.1：Pq=d⁴+d²q^(2m+1)(1+2a²q²+q⁴)+q^(4m+4)(a²−q)²；§4 Theorem 4.1。",
+        "result_evidence": "Theorem 2.1显式矩阵、特征值1和5±√17、P14/P15；Theorem 4.1任意r>1。最小阶和O界由§1贡献概述核对。",
+        "conditions_evidence": "矩阵实对称正定、按展示的固定坐标顺序计算；一般族a≥0、d>√(a²+1)、m为非负整数；失败参数限定r>1。"
+      }
+    },
+    {
+      "id": "arxiv-2611.14836",
+      "title": "Beyond weak convergence of signed spectral measures: Eigenvector overlaps and high-dimensional prediction risk",
+      "authors": [
+        "Stark, Thomas",
+        "Köstenberger, Georg",
+        "Dörnemann, Nina"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.14836v1",
+      "original_url": "https://arxiv.org/abs/2611.14836v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv v1预印本；所读正文未见已发表声明，未独立核实发表状态。",
+      "primary_category": "math.ST",
+      "canonical_primary_category": "math.ST",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "math.PR"
+      ],
+      "arxiv_categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.14836"
+        ],
+        "primary_subject": "Statistics Theory (math.ST)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Thomas Stark：Department of Mathematics, Aarhus University, Denmark",
+        "Georg Köstenberger：Institute for Statistics and Mathematics, WU Vienna University of Economics and Business",
+        "Nina Dörnemann：Department of Mathematics, Aarhus University, Denmark"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.14836v1"
+      ],
+      "affiliation_note": "机构按所读论文当时署名记录；职务与个人研究方向未核实。",
+      "author_intro": "作者：Stark, Thomas、Köstenberger, Georg、Dörnemann, Nina。机构按以下论文署名记录；职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.14836v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/html/2611.14836v1",
+        "https://arxiv.org/abs/2611.14836"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "带符号谱测度不收敛，预测风险仍可求极限",
+      "overview": "作者指出把概率测度的Stieltjes变换收敛论证直接用于带符号测度会留下缺口，并用双线性型恢复连续谱滤波估计量的风险极限。",
+      "problem": "正负质量可相互抵消，使变换收敛却不保证测度弱收敛；怎样避免据此误用高维回归风险公式？",
+      "result": "共同紧支撑时，变换逐点收敛加总变差一致有界与弱收敛等价。作者构造双总体特征值高斯设计反例，再证明在其假设下任意连续谱滤波的预测风险收敛，无须对应特征向量重叠测度弱收敛。",
+      "method": "以Bₙ(g,h)=βᵀg(Sₙ)Σₙh(Sₙ)β/||β||²取代二维带符号测度；其算子范数由||Σₙ||控制。先在resolvent核上收敛，再推广到连续函数乘积，正好覆盖风险中的偏差项。",
+      "limitations": "不是宣布既有风险结论全部错误，作者明确指出部分文献已满足总变差条件、另一些结论可修复。连续滤波范围不应直接等同任意不连续PCR截断。岭最优性和最小范数插值结论还需额外假设，不能无条件报道。",
+      "why_selected": "既指出缺口又给出替代证明路线，是基础理论可靠性的强候选；大众传播门槛较高。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.14836",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读：已读所列核心章节及署名；未完整审计证明或独立复现实验。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.14836v1"
+        ],
+        "scope": "正文核心部分已读，非仅摘要；§1–3定义、Example 1、Proposition 1、Theorem 1；§4回归设置；§5 Assumption 5.1、Theorem 3、Corollary 2；§6.2定理3证明。；仅转述作者结果；未完整审计证明，未运行代码",
+        "method_evidence": "§5与§6.2式(27)双线性型及统一范数界；resolvent极限转连续函数乘积。",
+        "result_evidence": "Example 1：μₙ=√n(δ₁/ₙ−δ₀)，变换→0但对f(x)=√x积分恒为1。Proposition 1紧支撑判据；Theorem 3式(12)风险极限。",
+        "conditions_evidence": "Assumption 5.1：p/n→γ∈(0,∞)，独立标准化设计坐标且八阶矩统一有界，确定性半正定Σₙ算子范数有界，谱分布Hₙ⇒H且H正谱质量非零，确定信号加权Gₙ⇒G、||βₙ||→τ>0；一般非紧支撑测度判据另需|μₙ|紧性。岭最优性Corollary 2另承Theorem 4全部正则条件、σ>0和G({0})<1。"
+      }
+    },
+    {
+      "id": "arxiv-2611.15632",
+      "title": "Metriplectic Lotka--Volterra systems with noise:interactions invisible at stationarity, visible in time",
+      "authors": [
+        "Capitán, J. A.",
+        "Megías, A.",
+        "Sardón, C."
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.15632v1",
+      "original_url": "https://arxiv.org/abs/2611.15632v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv v1预印本；所读正文未见已发表声明，未独立核实发表状态。",
+      "primary_category": "math-ph",
+      "canonical_primary_category": "math-ph",
+      "arxiv_group": "physics",
+      "arxiv_archive": "math-ph",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math-ph"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.15632"
+        ],
+        "primary_subject": "Mathematical Physics (math-ph)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Jose Á. Capitán：Department of Applied Mathematics, E.T.S. de Edificación, Universidad Politécnica de Madrid, Spain",
+        "Alberto Megías：Department of Applied Mathematics, E.T.S. de Edificación, Universidad Politécnica de Madrid, Spain",
+        "Cristina Sardón：Department of Applied Mathematics, E.T.S. de Edificación, Universidad Politécnica de Madrid, Spain"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.15632v1"
+      ],
+      "affiliation_note": "机构按所读论文当时署名记录；职务与个人研究方向未核实。",
+      "author_intro": "作者：Capitán, J. A.、Megías, A.、Sardón, C.。机构按以下论文署名记录；职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.15632v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/html/2611.15632v1",
+        "https://arxiv.org/abs/2611.15632"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "静态看似互不相关，物种仍可强烈相互作用",
+      "overview": "在一类耗散Lotka–Volterra随机系统中，作者展示不同物种交互可以共享完全相同的独立Gamma稳态分布，交互信息却保留在短时滞协方差中。",
+      "problem": "单次快照观察不到相关性，是否足以推出生态系统没有交互？",
+      "result": "相容噪声下稳态为独立Gamma乘积；给定稳态可对应n²维开锥中的交互矩阵。对数丰度滞后协方差R的右导数满足R′(0+)=AK，K=Cov(x,log x)；相容情况下K=kC⁻¹，因此可由动态信息恢复A。",
+      "method": "将AC⁻¹分解为反对称Poisson部分和负半定耗散部分，按涨落耗散关系选噪声Σ=−k(AC⁻¹+C⁻¹Aᵀ)；在log丰度坐标构造Gibbs稳态并推导精确矩恒等式。",
+      "limitations": "是特定LV模型与相容环境噪声下的数学结论，不证明真实微生物群落都符合该机制；尚未对有限、离散、含测量噪声时间序列给出统计误差理论或真实数据验证。独立不等同仅零Pearson相关；反向定理用Cov(xᵢ,log xⱼ)=0。同噪声无交互孪生模型的Corollary 5.2需要噪声协方差为对角阵。",
+      "why_selected": "日常直觉反差强，可清晰说明“静态无相关≠无相互作用”，并给出动态识别方向。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.15632",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读：已读所列核心章节及署名；未完整审计证明或独立复现实验。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.15632v1"
+        ],
+        "scope": "正文核心部分已读，非仅摘要；§3分类主张；§4.1参考测度、Theorem 4.2及证明；§5.1–5.2；§6.1矩恒等式；§7.1–7.2；§8数值设置；§9局限。；仅转述作者结果；未完整审计证明，未运行代码",
+        "method_evidence": "§4 Theorem 4.2：log坐标常系数噪声、Gibbs稳态；§6 Theorem 6.1：R′(0+)=AK与R′+R′ᵀ=−Q。",
+        "result_evidence": "Theorem 4.2(d)：Gamma(shape=cᵢxᵢ*/k, rate=cᵢ/k)；Theorem 5.1：A=(Ω−Σ/2)D，D=C/k，Ω反对称、Σ正定；Theorem 7.2：AK+KᵀAᵀ+Q=0。",
+        "conditions_evidence": "内部平衡x*>0、正对角C，CA+AᵀC≤0给结构与稳态；严格<0给非爆炸及唯一稳态。参考测度固定为∏dxᵢ/xᵢ；人口SDE用Stratonovich形式（Itô需漂移修正）。矩恒等式要求稳态以及x和log x有限二阶矩；§7独立性充要论证另在Q>0设置下。"
+      }
+    },
+    {
+      "id": "arxiv-2611.14754",
+      "title": "Modular $n$-queens in higher dimensions",
+      "authors": [
+        "Halberstam, Zachary",
+        "Lee, Mitchell",
+        "Schildkraut, Carl"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.14754v1",
+      "original_url": "https://arxiv.org/abs/2611.14754v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.CO",
+      "canonical_primary_category": "math.CO",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.CO"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.14754"
+        ],
+        "primary_subject": "Combinatorics (math.CO)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Halberstam, Zachary、Lee, Mitchell、Schildkraut, Carl。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.14754v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "高维模棋盘上的n皇后问题",
+      "overview": "能否放满互不攻击的皇后，由棋盘边长的素因子决定。",
+      "problem": "在d维模棋盘上，何时可放置n^(d−1)个互不攻击的皇后？",
+      "result": "作者宣称充要条件是n的全部素因子均大于2^d，包含1981年提出的三维猜想。",
+      "method": "摘要定义所有超立方体边及对角方向的攻击规则，并披露证明结合人类思路与大量AI辅助；未给详细证明路线。",
+      "limitations": "仅指模棋盘和指定攻击规则，不是普通有限棋盘的同一问题；AI参与不替代证明核验。",
+      "why_selected": "充要条件简洁且覆盖所有维度，既有组合理论价值，也适合清楚解释参数边界。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.14754",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.15209",
+      "title": "The loop-ensemble scaling limits of near-critical percolation in the plane",
+      "authors": [
+        "Yao, Chang-Long"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.15209v1",
+      "original_url": "https://arxiv.org/abs/2611.15209v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.PR",
+      "canonical_primary_category": "math.PR",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "math-ph"
+      ],
+      "arxiv_categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.15209"
+        ],
+        "primary_subject": "Probability (math.PR)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Yao, Chang-Long。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.15209v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "平面近临界渗流的环系综缩放极限",
+      "overview": "三角格近临界渗流的全部边界具有唯一连续极限。",
+      "problem": "网格趋零时，近临界簇边界能否作为整体收敛，并确定唯一极限？",
+      "result": "作者证明固定近临界参数下环系综缩放极限唯一，并得到圆盘探索路径分布收敛及旋转不变、尺度协变等性质。",
+      "method": "在近临界耦合中构造截断环系综，结合增强网络、四边形穿越极限和簇链几何。",
+      "limitations": "限定三角格点渗流与所述参数设置；不直接覆盖任意格点模型，证明未独立复核。",
+      "why_selected": "建立全部簇边界的统一极限而非单个统计量，具有概率模型结构层面的意义。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.15209",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.15407",
+      "title": "Cleanness and real rank zero in $C^*$-algebras",
+      "authors": [
+        "Cui, Lu",
+        "Ma, Minghui",
+        "Yuan, Wei"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.15407v1",
+      "original_url": "https://arxiv.org/abs/2611.15407v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.OA",
+      "canonical_primary_category": "math.OA",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.OA"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.15407"
+        ],
+        "primary_subject": "Operator Algebras (math.OA)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Cui, Lu、Ma, Minghui、Yuan, Wei。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.15407v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "C*代数中的clean分解与实秩零",
+      "overview": "每个元素可写成幂等元加可逆元，恰对应实秩零。",
+      "problem": "哪些含单位C*代数具有clean分解，且分解能否带统一范数控制？",
+      "result": "作者证明clean性等价实秩零，可逆部分逆范数可取不超过2+ε且常数2最优；由此所有von Neumann代数均clean。",
+      "method": "进一步用幂等部分统一有界、投影替代幂等元及精确常数2的分解，联系稳定秩、K1群和SAW*性质。",
+      "limitations": "不同强化分解各有附加条件；摘要未展开主证明，本条不作独立证明认证。",
+      "why_selected": "把代数分解性质与分析秩不变量等价连接，并给最优常数及进一步结构刻画。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.15407",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16614",
+      "title": "Nonsense nonlinear correlations between independent random walks",
+      "authors": [
+        "Zhu, Liping",
+        "Xie, Zhongming"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16614v1",
+      "original_url": "https://arxiv.org/abs/2611.16614v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.PR",
+      "canonical_primary_category": "math.PR",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "math.ST",
+        "stat.ME"
+      ],
+      "arxiv_categories": [
+        "math.PR",
+        "math.ST",
+        "stat.ME"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16614"
+        ],
+        "primary_subject": "Probability (math.PR)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Zhu, Liping、Xie, Zhongming。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16614v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "独立随机游走之间的虚假非线性相关",
+      "overview": "两条独立随机游走也会被普通置换检验几乎必然判为相关。",
+      "problem": "距离相关能否避免传统随机游走伪相关，普通置换检验是否仍可靠？",
+      "result": "作者证明样本距离相关收敛到严格介于0和1的非退化随机极限，普通置换检验在任何固定显著性水平下拒绝独立的概率趋一。",
+      "method": "将极限表达为两条独立布朗路径联合占用测度的距离相关，计算距离协方差矩并做高斯模拟。",
+      "limitations": "要求中心化随机游走、独立同分布增量及有限正方差；不能把结论泛化为所有时间序列检验均无效。",
+      "why_selected": "揭示常用非线性相关与置换校准在时间序列中的根本失败，理论结论具有广泛实用警示。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16614",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16682",
+      "title": "The coercivity conjecture for nonlocal energies",
+      "authors": [
+        "Behn, Linus",
+        "Colombo, Roberto",
+        "Fernández-Real, Xavier",
+        "Grube, Florian",
+        "Prasad, Harsh",
+        "Ros-Oton, Xavier"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16682v1",
+      "original_url": "https://arxiv.org/abs/2611.16682v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.AP",
+      "canonical_primary_category": "math.AP",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.AP"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16682"
+        ],
+        "primary_subject": "Analysis of PDEs (math.AP)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Behn, Linus、Colombo, Roberto、Fernández-Real, Xavier、Grube, Florian、Prasad, Harsh、Ros-Oton, Xavier。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16682v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "非局部能量的强制性猜想",
+      "overview": "非局部方程的一致椭圆性未必足够保证能量强制性。",
+      "problem": "对阶数2s的对称非局部核，一致椭圆性是否蕴含Hs强制性？",
+      "result": "作者在n>2s构造失败例及有界不连续弱解；在n=1、s>1/2证明成立，并给若干重要核类的正面结果。",
+      "method": "以环带抵消建立局部强制性判据，应用于双重对称核、稳定核可比类及满足几何非集中的Boltzmann核。",
+      "limitations": "正面结论须保留抵消、几何或参数条件；不是宣称所有非局部椭圆方程正则性均失败。",
+      "why_selected": "给出核心假设不足的反例，同时提供恢复保证的可用条件，兼具基础与方法价值。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16682",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16690",
+      "title": "Hilbert's 17th problem for symmetric functions: undecidability and a counterexample",
+      "authors": [
+        "Debus, Sebastian",
+        "Schabert, Robin"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16690v1",
+      "original_url": "https://arxiv.org/abs/2611.16690v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.AG",
+      "canonical_primary_category": "math.AG",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "math.OC",
+        "quant-ph"
+      ],
+      "arxiv_categories": [
+        "math.AG",
+        "math.OC",
+        "quant-ph"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16690"
+        ],
+        "primary_subject": "Algebraic Geometry (math.AG)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Debus, Sebastian、Schabert, Robin。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16690v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "对称函数的Hilbert第十七问题：不可判定性与反例",
+      "overview": "逐维成立的非负性，不能总由跨维统一平方和证书表达。",
+      "problem": "能否判定一个有理系数对称函数在任意变量数下非负？是否存在统一维度的平方和乘子？",
+      "result": "作者证明全维非负性不可判定，并构造各维正定的八次齐次对称函数，却不存在变量数无关的平方和乘子。",
+      "method": "摘要给出不可判定性结果与显式反例的结论，并联系量子纠缠的无维数矩判据；未披露归约细节。",
+      "limitations": "结论针对跨所有维度的统一问题，不否定固定维Hilbert第十七问题；证明尚未独立核验。",
+      "why_selected": "明确区分固定维与所有维度统一保证，揭示代数证书的实质边界。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16690",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16777",
+      "title": "Three Lipschitz functions on infinite-dimensional Hilbert spaces with no common point of Fréchet differentiability",
+      "authors": [
+        "Wang, Zhouzhe"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16777v1",
+      "original_url": "https://arxiv.org/abs/2611.16777v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.FA",
+      "canonical_primary_category": "math.FA",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.FA"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16777"
+        ],
+        "primary_subject": "Functional Analysis (math.FA)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Wang, Zhouzhe。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16777v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "无限维Hilbert空间上无共同可微点的三个Lipschitz函数",
+      "overview": "三个Lipschitz函数可以找不到共同的Fréchet可微点。",
+      "problem": "无限维实Hilbert空间的有限组Lipschitz函数是否必有共同可微点？",
+      "result": "作者构造三函数反例，否定所述长期问题；由于映向R²的Lipschitz映射必有可微点，目标维度三是最优的。",
+      "method": "构造性证明使用初等微积分和有限维线性代数；摘要未给具体构造。",
+      "limitations": "只指无限维实Hilbert空间和Fréchet可微性；不是否定有限维Rademacher定理，尚待证明核验。",
+      "why_selected": "最小目标维度为三的尖锐反例，清楚展示无限维分析与有限维直觉的差别。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16777",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16898",
+      "title": "A complete solution to the Naor isomorphic reverse isoperimetry conjecture",
+      "authors": [
+        "Mengwei, Su",
+        "Qiang, Sun",
+        "Ge, Xiong"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16898v1",
+      "original_url": "https://arxiv.org/abs/2611.16898v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.MG",
+      "canonical_primary_category": "math.MG",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.MG"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16898"
+        ],
+        "primary_subject": "Metric Geometry (math.MG)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Mengwei, Su、Qiang, Sun、Ge, Xiong。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16898v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "Naor同构反等周猜想的一项完整解答主张",
+      "overview": "经合适线性变换，凸体可由等周商受控的内部凸体逼近。",
+      "problem": "任意中心对称凸体能否在同一保体积线性坐标下，获得全精度的良好反等周近似？",
+      "result": "作者宣称存在T∈SLn，使每个0<ε<1都能选L满足(1−ε)TK⊆L⊆TK，且等周商不超过40ε⁻¹√n。",
+      "method": "摘要直接陈述统一存在性定理，未公开证明方法或构造算法细节。",
+      "limitations": "这是作者对猜想的解答主张，本日报未独立认证；须保留中心对称、线性变换及内部近似条件。",
+      "why_selected": "对任意中心对称凸体给维数依赖明确的统一界，结论有基础凸几何意义。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16898",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.17255",
+      "title": "The lifting problem for Galois representations of global fields",
+      "authors": [
+        "Scavia, Federico"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17255v1",
+      "original_url": "https://arxiv.org/abs/2611.17255v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.NT",
+      "canonical_primary_category": "math.NT",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.NT"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17255"
+        ],
+        "primary_subject": "Number Theory (math.NT)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Scavia, Federico。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17255v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "全局域Galois表示的提升问题",
+      "overview": "模2表示总可升至模4，奇素数却存在不能提升的例子。",
+      "problem": "全局域的模p Galois表示能否提升为模p²表示？",
+      "result": "作者证明所有模2表示可提升至模4，为每个奇素数给反例，并以广义四元数群的提升性完成所述有限群分类。",
+      "method": "摘要概述提升方法与反例用途，但未披露具体构造或证明细节。",
+      "limitations": "结论不表示可无限逐层提升；全局域及模p²范围必须保留，尚未独立复核证明。",
+      "why_selected": "模2与奇素数的鲜明二分及有限群分类，体现算术结构的实质差异。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17255",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16908",
+      "title": "A constructive computer-assisted existence proof for a Calabi--Yau metric",
+      "authors": [
+        "Douglas, Michael R.",
+        "Gómez-Serrano, Javier",
+        "Lehmann, Fabian",
+        "Platt, Daniel",
+        "Qi, Yidi"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16908v1",
+      "original_url": "https://arxiv.org/abs/2611.16908v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.DG",
+      "canonical_primary_category": "math.DG",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "hep-th"
+      ],
+      "arxiv_categories": [
+        "math.DG",
+        "hep-th"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16908"
+        ],
+        "primary_subject": "Differential Geometry (math.DG)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Douglas, Michael R.、Gómez-Serrano, Javier、Lehmann, Fabian、Platt, Daniel、Qi, Yidi。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16908v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "Calabi–Yau度量的构造性计算机辅助存在证明",
+      "overview": "Fermat四次曲面的近似度量被纳入严格存在性认证。",
+      "problem": "如何为具体Calabi–Yau流形给出可用的近似Ricci平坦度量，并证明真正的解存在？",
+      "result": "作者报告独立于Yau存在定理的Fermat四次曲面Ricci平坦Kähler度量构造性证明，并提供显式解析近似。",
+      "method": "先数值求近似度量，再用固定点定理和验证数值控制所需界，并讨论推广至其他流形的计算困难。",
+      "limitations": "已完成对象是具体Fermat四次曲面；摘要未给误差数值或资源开销，不能称解决任意流形的高效算法。",
+      "why_selected": "把数值近似与可验证存在性联系，而不是只给可视化或残差数值，具有方法复用价值。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16908",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16521",
+      "title": "Online Survivable Network Design with Arbitrarily Small Connectivity Loss",
+      "authors": [
+        "Hajiaghayi, MohammadTaghi",
+        "Seddighin, Saeed"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16521v1",
+      "original_url": "https://arxiv.org/abs/2611.16521v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv v1，2026-11-12提交；abs未列录用信息。",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.DS"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16521"
+        ],
+        "primary_subject": "Data Structures and Algorithms (cs.DS)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Hajiaghayi, MohammadTaghi、Seddighin, Saeed。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16521v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/abs/2611.16521",
+        "https://arxiv.org/html/2611.16521v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "以任意小连通性损失实现在线容错网络设计",
+      "overview": "允许少留一点备用路径，能否显著降低在线建网成本？作者给出肯定的理论保证。",
+      "problem": "网络已知、请求逐个到来，买边不可撤销，须为每对节点提供多条边不相交路径。",
+      "result": "对0<ε≤1，始终提供ceil(k/(1+ε))条路径；统一需求的期望竞争比为O(log³n/ε)，非统一需求为O(log n log²m/ε)。",
+      "method": "通过生成树奇偶覆盖、缺陷割修复与带上限的随机舍入利用冗余选择；另有直接割算法。",
+      "limitations": "无向单位容量多重图，非负有理边成本；保证针对预先固定、独立于随机性的请求序列。精确保留全部连通性的多对数竞争比仍未解决。",
+      "why_selected": "理论结论清楚地区分可靠性让步与成本收益，适合解释在线算法的双指标权衡。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16521",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读：已读所列核心章节及署名；未完整审计证明或独立复现实验。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.16521v1"
+        ],
+        "scope": "已读完整摘要、§1.1–1.2模型与定理、§2.1–2.2方法片段；未逐行核验全部证明。具体依据：定理1.1/1.3的舍入路径数与竞争比，§1.1的oblivious条件，§2.1式(7)的k−ℓ个见证。",
+        "method_evidence": "通过生成树奇偶覆盖、缺陷割修复与带上限的随机舍入利用冗余选择；另有直接割算法。",
+        "result_evidence": "对0<ε≤1，始终提供ceil(k/(1+ε))条路径；统一需求的期望竞争比为O(log³n/ε)，非统一需求为O(log n log²m/ε)。",
+        "conditions_evidence": "无向单位容量多重图，非负有理边成本；保证针对预先固定、独立于随机性的请求序列。精确保留全部连通性的多对数竞争比仍未解决。"
+      }
+    },
+    {
+      "id": "arxiv-2611.16573",
+      "title": "Tight Cycle-Cover Inequalities and Improved Approximation for Shortest Common Superstring with Reverse Complements",
+      "authors": [
+        "Yamano, Ryosuke",
+        "Shibuya, Tetsuo"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16573v1",
+      "original_url": "https://arxiv.org/abs/2611.16573v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv v1，2026-11-12提交。HTML有明显模板会议占位字段，不视为录用证据。",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.DS"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16573"
+        ],
+        "primary_subject": "Data Structures and Algorithms (cs.DS)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Ryosuke Yamano：东京大学信息理工学系研究科计算机科学系；东京大学医科学研究所人类基因组中心医学数据信息学部门",
+        "Tetsuo Shibuya：东京大学医科学研究所人类基因组中心医学数据信息学部门"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.16573v1"
+      ],
+      "affiliation_note": "机构按所读论文当时署名记录；职务与个人研究方向未核实。",
+      "author_intro": "作者：Yamano, Ryosuke、Shibuya, Tetsuo。机构按以下论文署名记录；职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16573v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/abs/2611.16573",
+        "https://arxiv.org/html/2611.16573v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "反向互补最短公共超串的紧循环覆盖界与更好近似",
+      "overview": "DNA读段方向未知，拼接模型须允许读段或其反向互补。本文改进这一理想化问题的最坏情形保证。",
+      "problem": "寻找包含每个输入串或其反向互补的最短字符串。",
+      "result": "作者证明MGREEDY-RC的3近似界且DNA字母表上紧；TGREEDY-RC为2.5；新算法对固定ε>0达到22/9+ε，优于此前8/3。",
+      "method": "扩展Rauzy图与循环覆盖计数，再将最大压缩归约到含指定完美匹配的最大权Hamilton路径。",
+      "limitations": "这是理想化组合模型的理论近似比，并非真实测序误差下的基因组装实验；3的紧界仅针对指定算法。",
+      "why_selected": "明确的常数改进连接字符串算法与双链DNA，兼具严谨性与可解释性。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16573",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读：已读所列核心章节及署名；未完整审计证明或独立复现实验。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.16573v1"
+        ],
+        "scope": "完整摘要、§1贡献与定理1–4、§2设定、§4紧下界构造及§5归约开头；未审计全部证明。依据：§4引理18构造逼近3的实例；§5给定匹配的路径等权转换。机构见HTML署名。",
+        "method_evidence": "扩展Rauzy图与循环覆盖计数，再将最大压缩归约到含指定完美匹配的最大权Hamilton路径。",
+        "result_evidence": "作者证明MGREEDY-RC的3近似界且DNA字母表上紧；TGREEDY-RC为2.5；新算法对固定ε>0达到22/9+ε，优于此前8/3。",
+        "conditions_evidence": "这是理想化组合模型的理论近似比，并非真实测序误差下的基因组装实验；3的紧界仅针对指定算法。"
+      }
+    },
+    {
+      "id": "arxiv-2611.16694",
+      "title": "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision",
+      "authors": [
+        "Tang, Yupeng",
+        "Lin, Mingfeng"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16694v1",
+      "original_url": "https://arxiv.org/abs/2611.16694v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv v1，2026-11-12；abs作者备注称Accepted at NeurIPS 2026，未在外站独立核验。",
+      "primary_category": "cs.AI",
+      "canonical_primary_category": "cs.AI",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "cs.CL"
+      ],
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16694"
+        ],
+        "primary_subject": "Artificial Intelligence (cs.AI)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Yupeng Tang：Georgia Institute of Technology，College of Computing",
+        "Mingfeng Lin：Georgia Institute of Technology，Scheller College of Business"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.16694v1"
+      ],
+      "affiliation_note": "机构按所读论文当时署名记录；职务与个人研究方向未核实。",
+      "author_intro": "作者：Tang, Yupeng、Lin, Mingfeng。机构按以下论文署名记录；职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16694v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/abs/2611.16694",
+        "https://arxiv.org/html/2611.16694v1"
+      ],
+      "code_urls": [
+        "https://github.com/yupengtang/when-expert-disagreement-hurts"
+      ],
+      "code_status": "仅记录所读arXiv材料提供的链接，未访问外站核查。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "专家异议何时有害：大模型改答案中的声望效应与选择性",
+      "overview": "改答案不等于纠错；研究将改错与改对分开，检验“专家不同意”标签的作用。",
+      "problem": "模型会不会在没有新证据时，因为对方看似权威而放弃正确判断？",
+      "result": "主实验五模型、1,989题中，专家异议条件准确率下降1.9–16.1个百分点。专家标签相对匿名异议的准确率效应却可正可负，不能把全部下降归于标签。",
+      "method": "两轮配对审计固定题目、证据和初答，比较中性复核、匿名与专家异议；二分类盈亏条件为纠错率大于a/(1−a)乘改错率。",
+      "limitations": "限固定证据二分类；主实验提示有填充语混杂，另设无填充同论据对照。模型端点与时间影响外推，非真实专业决策部署验证。",
+      "why_selected": "提醒公众别把多智能体一致或频繁自纠错直接当作可靠性。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16694",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读：已读所列核心章节及署名；未完整审计证明或独立复现实验。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.16694v1"
+        ],
+        "scope": "完整摘要、§4–5方案、§6.1结果、§7–8讨论与局限。具体证据：表1三领域890/299/800题；主温度0.7；§4.3承认填充混杂；§8限定固定证据及端点。代码链接仅记录未访问。",
+        "method_evidence": "两轮配对审计固定题目、证据和初答，比较中性复核、匿名与专家异议；二分类盈亏条件为纠错率大于a/(1−a)乘改错率。",
+        "result_evidence": "主实验五模型、1,989题中，专家异议条件准确率下降1.9–16.1个百分点。专家标签相对匿名异议的准确率效应却可正可负，不能把全部下降归于标签。",
+        "conditions_evidence": "限固定证据二分类；主实验提示有填充语混杂，另设无填充同论据对照。模型端点与时间影响外推，非真实专业决策部署验证。"
+      }
+    },
+    {
+      "id": "arxiv-2611.16701",
+      "title": "Sprint3D: Accelerating End-to-End 3D Asset Generation through Pipeline Optimization",
+      "authors": [
+        "Kuno, Sho",
+        "Yu, Ruihan",
+        "Yu, Yonghao",
+        "Lin, Guixu",
+        "Fu, Lian",
+        "Niu, Muyao",
+        "Tsai, Yu-Ju",
+        "Huang, Zheng-Hui",
+        "Huang, Yi-Chuan",
+        "Yang, Siqi",
+        "Lan, Fengbo",
+        "Wu, Erwin",
+        "Zhang, Kaipeng",
+        "Wang, Zhixiang"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16701v1",
+      "original_url": "https://arxiv.org/abs/2611.16701v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv v1，2026-11-12提交；abs未列录用信息。",
+      "primary_category": "cs.CV",
+      "canonical_primary_category": "cs.CV",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "cs.GR"
+      ],
+      "arxiv_categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16701"
+        ],
+        "primary_subject": "Computer Vision and Pattern Recognition (cs.CV)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Alaya Lab",
+        "The University of Tokyo",
+        "University of California, Merced",
+        "Institute of Science Tokyo",
+        "National Yang Ming Chiao Tung University"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.16701v1"
+      ],
+      "affiliation_note": "机构列表见HTML署名区；个人上标映射解析不完整，未擅配个人机构。",
+      "author_intro": "作者：Kuno, Sho、Yu, Ruihan、Yu, Yonghao、Lin, Guixu、Fu, Lian、Niu, Muyao、Tsai, Yu-Ju、Huang, Zheng-Hui、Huang, Yi-Chuan、Yang, Siqi、Lan, Fengbo、Wu, Erwin、Zhang, Kaipeng、Wang, Zhixiang。机构按以下论文署名记录；职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16701v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/abs/2611.16701",
+        "https://arxiv.org/html/2611.16701v1"
+      ],
+      "code_urls": [
+        "https://github.com/AlayaLab/sprint3d"
+      ],
+      "code_status": "仅记录所读arXiv材料提供的链接，未访问外站核查。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "Sprint3D：从整条流水线加速三维资产生成",
+      "overview": "三维生成的主要等待未必在神经网络，优化导出与网格处理可带来大幅提速。",
+      "problem": "公开Pixal3D流水线的网格后处理占主要耗时。",
+      "result": "作者在单H200、相同目标面数和纹理分辨率下报告中位端到端时间133秒降至4.05秒，约33倍。",
+      "method": "GPU网格/UV处理、流模型执行优化及分阶段蒸馏，学生步数4/1/1/2。",
+      "limitations": "计时不含模型加载；导出资产并非逐项相同。2,653个留出对象的输入视角法线指标改善，但轮廓IoU、点云对齐与细纹理存在损失；其他测量用参与选型的验证集。",
+      "why_selected": "系统优化实例，避免只数网络步数，并坦诚展示速度与质量取舍。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16701",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读：已读所列核心章节及署名；未完整审计证明或独立复现实验。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.16701v1"
+        ],
+        "scope": "完整摘要、§3.2与表1、§4.1–4.2/表2、§4.5解释及§5局限。具体条件：约100万面、4096²纹理；专门计时与累加测试分开；§4.5指出法线改善部分来自平滑，不等同整体质量无损。署名HTML机构列表已核实；未读全部附录，未复现。",
+        "method_evidence": "GPU网格/UV处理、流模型执行优化及分阶段蒸馏，学生步数4/1/1/2。",
+        "result_evidence": "作者在单H200、相同目标面数和纹理分辨率下报告中位端到端时间133秒降至4.05秒，约33倍。",
+        "conditions_evidence": "计时不含模型加载；导出资产并非逐项相同。2,653个留出对象的输入视角法线指标改善，但轮廓IoU、点云对齐与细纹理存在损失；其他测量用参与选型的验证集。"
+      }
+    },
+    {
+      "id": "arxiv-2611.14573",
+      "title": "Beyond the First Hit: Towards Tight Guarantees for $k$-means++",
+      "authors": [
+        "Reddy, Aravind"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.14573v1",
+      "original_url": "https://arxiv.org/abs/2611.14573v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "cs.LG"
+      ],
+      "arxiv_categories": [
+        "cs.DS",
+        "cs.LG"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.14573"
+        ],
+        "primary_subject": "Data Structures and Algorithms (cs.DS)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Reddy, Aravind。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.14573v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "arXiv作者备注称附有精确算术证书数据和验证代码（ancillary files）；本次未下载或运行，未另行核实代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "超越首次命中：逼近k-means++的紧保证",
+      "overview": "重复抽中一个簇也有价值：它会修复残余成本。",
+      "problem": "k-means++种子选择的最坏期望成本，离最优k均值成本究竟多远？",
+      "result": "作者把对数主项上界系数从5降到2.108，并给2.3139的简短解析界；还求得R2=5、R3=185/32及新下界。",
+      "method": "不再把簇首次命中的成本一直计费，而跟踪后续重采样对高残差簇的修复效应。",
+      "limitations": "针对种子选择的最坏期望近似比，不是每次运行或后续Lloyd迭代保证；最强界含计算机辅助论证，尚未独立审计。",
+      "why_selected": "对广泛使用初始化算法改善最坏保证，并同时提供解析界、计算机辅助界和精确小规模值。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.14573",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.14827",
+      "title": "Sublogarithmic Online Graph Exploration",
+      "authors": [
+        "Baligacs, Julia"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.14827v1",
+      "original_url": "https://arxiv.org/abs/2611.14827v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "cs.DM"
+      ],
+      "arxiv_categories": [
+        "cs.DS",
+        "cs.DM"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.14827"
+        ],
+        "primary_subject": "Data Structures and Algorithms (cs.DS)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Baligacs, Julia。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.14827v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "次对数竞争比的在线图探索",
+      "overview": "在线探索一般图不必付出完整的对数竞争代价。",
+      "problem": "探索者仅到达顶点后才知道邻边及权重，如何遍历所有顶点并返回起点？",
+      "result": "作者给出O(log n/log log n)竞争算法，改善一般图此前O(log n)保证。",
+      "method": "对层次深度优先搜索作小幅修改，并给出所述竞争比证明。",
+      "limitations": "是最坏情形渐近保证，不自动代表实际地图上的常数优势；假设每次到达即揭示全部邻边及权重。",
+      "why_selected": "在一般未知加权图上改进长期沿用的对数阶保证，问题与信息模型清楚。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.14827",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.15035",
+      "title": "RPX: Certifying Agent-Generated MILP Reformulations at Scale",
+      "authors": [
+        "Bai, Haozhen",
+        "Zhu, Wenjie",
+        "Hu, Qian",
+        "Chen, Caihua"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.15035v1",
+      "original_url": "https://arxiv.org/abs/2611.15035v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.OC",
+      "canonical_primary_category": "math.OC",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.OC"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.15035"
+        ],
+        "primary_subject": "Optimization and Control (math.OC)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Bai, Haozhen、Zhu, Wenjie、Hu, Qian、Chen, Caihua。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.15035v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "RPX：规模化认证智能体生成的MILP改写",
+      "overview": "模型改写能否保住最优值，可以交给独立证书检查器。",
+      "problem": "AI生成的混合整数线性规划改写是否真正等价，所得解能否回到原变量？",
+      "result": "作者在MIPLIB 2017 Benchmark v2全部240实例上认证改写；证书解码与检查中位0.312秒、95分位10.1秒。",
+      "method": "直接从原模型与改写模型导出检查项，以精确算术及复用恢复规则证明双向可行解转换均不恶化目标值。",
+      "limitations": "认证等价性不等于改写加快求解；不据240实例推断任意模型和任意改写都可高效认证。",
+      "why_selected": "把AI数学建模的正确性与生成模型分离，精确算术和双向解恢复支持实质认证。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.15035",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.15299",
+      "title": "Small classes have linear neighbourhood complexity",
+      "authors": [
+        "Sylvester, John",
+        "Zamaraev, Viktor",
+        "Zhukovskii, Maksim"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.15299v1",
+      "original_url": "https://arxiv.org/abs/2611.15299v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "math.CO",
+      "canonical_primary_category": "math.CO",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "cs.DM"
+      ],
+      "arxiv_categories": [
+        "math.CO",
+        "cs.DM"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.15299"
+        ],
+        "primary_subject": "Combinatorics (math.CO)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Sylvester, John、Zamaraev, Viktor、Zhukovskii, Maksim。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.15299v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "小型遗传图类具有线性邻域复杂度",
+      "overview": "图类足够“小”，其邻域模式也必然线性受控。",
+      "problem": "最多含n!c^n个标号图的遗传图类，是否都具有线性邻域复杂度？",
+      "result": "作者证明任意k顶点子集只产生O(k)种邻域交集模式，并把此类图的邻接标签长度从O(log³ n)改为O(log² n)。",
+      "method": "利用“小型遗传图类”的计数约束推出邻域结构定理；摘要未展开证明细节。",
+      "limitations": "必须保留遗传性与计数增长条件；隐藏常数依图类，不能把结果套到任意图集合。",
+      "why_selected": "把图类计数增长条件转化为通用结构与表示能力，影响不局限单个图族。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.15299",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.15849",
+      "title": "Sharp Lower Bounds for Parallel Log-Concave Sampling",
+      "authors": [
+        "Dogariu, Evan"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.15849v1",
+      "original_url": "https://arxiv.org/abs/2611.15849v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "math.PR"
+      ],
+      "arxiv_categories": [
+        "cs.DS",
+        "math.PR"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.15849"
+        ],
+        "primary_subject": "Data Structures and Algorithms (cs.DS)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Dogariu, Evan。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.15849v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "并行对数凹采样的尖锐下界",
+      "overview": "更多并行查询不能把一般对数凹采样压缩到常数轮。",
+      "problem": "固定条件数下，每轮可做多项式数量查询的采样器，至少需要多少轮？",
+      "result": "作者证明最坏情形需Ωκ(log d)轮，即使查询返回任意阶导数；结合已有上界得到Θκ(log d)，并刻画中心高斯目标的深宽折衷。",
+      "method": "建立并行查询下界，并在高斯情形追踪轮数系数对应的最优查询宽度。",
+      "limitations": "固定κ>1、常数总变差误差和多项式宽度是关键；不是所有特定分布都必须用对数轮。",
+      "why_selected": "即使高阶导数与并行查询很强，仍存在不可消除的轮数障碍，并给深宽权衡。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.15849",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16097",
+      "title": "A Matching Lower Bound for Online Smooth Calibration",
+      "authors": [
+        "Ji, Kaixuan",
+        "Gu, Quanquan"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16097v1",
+      "original_url": "https://arxiv.org/abs/2611.16097v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "cs.LG",
+      "canonical_primary_category": "cs.LG",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "stat.ML"
+      ],
+      "arxiv_categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16097"
+        ],
+        "primary_subject": "Machine Learning (cs.LG)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Ji, Kaixuan、Gu, Quanquan。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16097v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "在线平滑校准的匹配下界",
+      "overview": "面对自适应对手，平滑校准误差的最优阶是根号T。",
+      "problem": "已知T^(1/3)下界与√T上界之间的差距能否闭合？",
+      "result": "作者构造使任何预测器期望平滑校准误差至少为Ω(√T)的对手，匹配已有上界，并推出两类校准距离的同阶下界。",
+      "method": "让结果均值跟随预测器累积残差变化，使弥补过去残差本身付出代价。",
+      "limitations": "针对顺序二元预测及自适应对手的最坏保证；不能据此判断某个真实数据集上校准是否困难。",
+      "why_selected": "关闭顺序概率预测的重要极小极大速率缺口，贡献独立于具体模型或排行榜。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16097",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.17292",
+      "title": "The Submodular Secretary Problem: Tight $1-1/e$ for Monotone Objectives, and Strictly Between $1/e$ and $1/2$ in General",
+      "authors": [
+        "Abdi, Hamed",
+        "Banihashem, Kiarash",
+        "Hajiaghayi, MohammadTaghi",
+        "Mittal, Danny"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17292v1",
+      "original_url": "https://arxiv.org/abs/2611.17292v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "cs.GT"
+      ],
+      "arxiv_categories": [
+        "cs.DS",
+        "cs.GT"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17292"
+        ],
+        "primary_subject": "Data Structures and Algorithms (cs.DS)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Abdi, Hamed、Banihashem, Kiarash、Hajiaghayi, MohammadTaghi、Mittal, Danny。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17292v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "次模秘书问题：单调目标的紧1−1/e界",
+      "overview": "随机到达的单调次模选择，大预算最优比例趋于1−1/e。",
+      "problem": "元素随机依次到达、选择不可撤销且最多选k个，能保留多少离线最优次模价值？",
+      "result": "作者声称单调目标大预算紧极限为1−1/e，所有预算最坏值为1/e，算法只需至多4n+1次价值查询；一般非单调目标的上下界也获改进。",
+      "method": "用资格衰减按元素此前满足价格测试的累计时间调整接受概率，从而精确控制已被选择的概率。",
+      "limitations": "须保留随机顺序、非负次模及基数约束；1−1/e是k趋大时的结论，不能写作所有预算统一保证。",
+      "why_selected": "同时推进可达竞争比、不可超越界和查询效率，理论结论及预算条件明确。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17292",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.15506",
+      "title": "KernelAudit: Contract-Aware Auditing of Validators for LLM-Generated GPU Kernels",
+      "authors": [
+        "Li, Ziyuan",
+        "Song, Zihe",
+        "Qi, Xiaofang",
+        "Yang, Wei",
+        "Xie, Tao"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.15506v1",
+      "original_url": "https://arxiv.org/abs/2611.15506v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "cs.SE",
+      "canonical_primary_category": "cs.SE",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.SE"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.15506"
+        ],
+        "primary_subject": "Software Engineering (cs.SE)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Li, Ziyuan、Song, Zihe、Qi, Xiaofang、Yang, Wei、Xie, Tao。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.15506v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "KernelAudit：审计LLM生成GPU内核的验证器",
+      "overview": "验证器自己也需要验证，不能把一次PASS等同正确又合规。",
+      "problem": "验证器是否准确检查语义、允许的实现方式以及完整运行时间？",
+      "result": "作者审计六个验证器、七个语料的716个候选，报告不可忽视的误拒，并称独立标签与人工判断高度一致。",
+      "method": "分别用参考校准压力测试检查输出、运行轨迹检查库调用、计时检查验证完整计算成本。",
+      "limitations": "摘要未列精确误拒率或一致性数值；审计oracle仍有覆盖范围，不能据此宣称全部错误都被发现。",
+      "why_selected": "性能奖励与代码选择都依赖验证器，独立核查其合同覆盖具有可复用工程意义。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.15506",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.15928",
+      "title": "Runtime Safety and Emergency Stops on a Full-Size Humanoid: Deployment Lessons and a Case for Graduated Force Authority",
+      "authors": [
+        "Conway, Max",
+        "Zhang, Yutong",
+        "Devaraj, Allen",
+        "Xie, William",
+        "Roncone, Alessandro",
+        "Correll, Nikolaus"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.15928v1",
+      "original_url": "https://arxiv.org/abs/2611.15928v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "cs.RO",
+      "canonical_primary_category": "cs.RO",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.RO"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.15928"
+        ],
+        "primary_subject": "Robotics (cs.RO)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Conway, Max、Zhang, Yutong、Devaraj, Allen、Xie, William、Roncone, Alessandro、Correll, Nikolaus。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.15928v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "全尺寸人形机器人的急停与运行时安全：部署教训",
+      "overview": "人形机器人急停可能撤掉平衡控制，反而造成跌倒。",
+      "problem": "急停、关节限位和力权限如何共同影响全尺寸人形机器人风险？",
+      "result": "作者报告所试站立失衡中控制器未能恢复，每次需操作者急停；急停撤去平衡控制导致跌倒，操控用限位也会被正常行走触发。",
+      "method": "在Unitree H1-2上部署独立安全层并进行推扰测试，结合案例提出分阶段授予施力权限的设计论证。",
+      "limitations": "摘要未列试验次数或量化伤害风险；分级权限是主张而非已验证解决方案，不宜泛化至所有人形平台。",
+      "why_selected": "实物部署暴露“停止就更安全”的隐含假设，对人机共处工程有直接警示。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.15928",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16095",
+      "title": "Data-center growth impacts household electricity costs more through wholesale prices than through grid reinforcement",
+      "authors": [
+        "Zhou, Lingdong",
+        "Xia, Wenjia",
+        "Wang, Jiyu",
+        "Ding, Fei",
+        "Zhu, Xiangqi"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16095v1",
+      "original_url": "https://arxiv.org/abs/2611.16095v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "eess.SY",
+      "canonical_primary_category": "eess.SY",
+      "arxiv_group": "eess",
+      "arxiv_archive": "eess",
+      "cross_categories": [
+        "econ.GN"
+      ],
+      "arxiv_categories": [
+        "eess.SY",
+        "econ.GN"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16095"
+        ],
+        "primary_subject": "Systems and Control (eess.SY)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Zhou, Lingdong、Xia, Wenjia、Wang, Jiyu、Ding, Fei、Zhu, Xiangqi。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16095v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "数据中心增长如何推高居民电价：批发价格与电网费用",
+      "overview": "模型中，数据中心负荷通过批发电价带来的成本高于输电投资分摊。",
+      "problem": "大量新增数据中心需求如何传导到居民电费，机制与规划选择各贡献多少？",
+      "result": "基于德州371个、合计38.9GW的2030年公告项目，代表情景模型增价1.64美分/kWh，其中68%来自批发价格、32%来自输电收费；其他选址和分摊情景给0.92与1.87美分/kWh。",
+      "method": "联立电源扩建、批发市场、输电增强和零售成本分配模型，比较不同建设与收费安排。",
+      "limitations": "这些是模型情景结果，不是已发生账单或确定预测；结果依需求实现、发电选址及成本分摊假设。",
+      "why_selected": "把公众关心的账单变化拆成可比较机制，并明确呈现规划与分摊情景。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16095",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.16248",
+      "title": "MegaOps: A Kernel Overlapping Framework with PyTorch-like Modularity and Megakernel Performance",
+      "authors": [
+        "Lin, Jinkun",
+        "Oh, Byungsoo",
+        "Singh, Rachee"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.16248v1",
+      "original_url": "https://arxiv.org/abs/2611.16248v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审或正式发表状态。",
+      "primary_category": "cs.DC",
+      "canonical_primary_category": "cs.DC",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.DC"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.16248"
+        ],
+        "primary_subject": "Distributed, Parallel, and Cluster Computing (cs.DC)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Lin, Jinkun、Oh, Byungsoo、Singh, Rachee。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.16248v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "MegaOps：保持模块化的GPU内核重叠框架",
+      "overview": "消除内核间等待，不一定要把整层写成一个巨型内核。",
+      "problem": "模块化逐算子GPU框架能否接近手工巨型内核的吞吐？",
+      "result": "作者在多款单卡及多卡密集Llama3、Qwen3评估中匹配手工巨型内核吞吐；相对最佳基线解码为1.09–1.10倍，prefill为0.98–1.10倍。",
+      "method": "将依赖内核放到不同CUDA流，仅在生产者与消费者共享的数据tile上同步；同分块约定下可组合现有内核。",
+      "limitations": "不是所有阶段都提速，prefill下界为0.98倍；依赖共同分块约定及所测模型硬件，不是通用数量级加速。",
+      "why_selected": "以数据块同步替代整核屏障，在不强制融合代码的情况下保留组合性，系统设计可复用。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.16248",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    },
+    {
+      "id": "arxiv-2611.17052",
+      "title": "Auditing AI peer reviewers: a benchmark on real scientific papers",
+      "authors": [
+        "Zubeldia, Íñigo",
+        "Bolliet, Boris",
+        "Villaescusa-Navarro, Francisco",
+        "Villanueva-Domingo, Pablo",
+        "Cranmer, Miles"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17052v1",
+      "original_url": "https://arxiv.org/abs/2611.17052v1",
+      "first_date": "2026-11-13",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-13",
+      "publication_status": "arXiv预印本；作者备注称已被NeurIPS 2026接收，未访问会议网站独立核实。",
+      "primary_category": "cs.CL",
+      "canonical_primary_category": "cs.CL",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "astro-ph.IM",
+        "cs.AI",
+        "cs.DL"
+      ],
+      "arxiv_categories": [
+        "cs.CL",
+        "astro-ph.IM",
+        "cs.AI",
+        "cs.DL"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17052"
+        ],
+        "primary_subject": "Computation and Language (cs.CL)",
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-13T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间是arXiv官方RSS公告批次，不是独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "依据所读arXiv材料的贡献、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "本次所读材料未核实署名机构。"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构、职务与个人研究方向在本次所读材料中未核实。",
+      "author_intro": "作者：Zubeldia, Íñigo、Bolliet, Boris、Villaescusa-Navarro, Francisco、Villanueva-Domingo, Pablo、Cranmer, Miles。机构、职务与个人研究方向未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17052v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读arXiv材料未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-13T12:26:29.198190+00:00",
+      "title_zh": "审计AI审稿人：真实科学论文上的错误检测基准",
+      "overview": "模型选择可能比复杂审稿编排更影响错误发现率。",
+      "problem": "自动审稿系统能发现哪些真实论文错误，又会错误指控哪些正常内容？",
+      "result": "30篇天体物理与机器学习预印本被注入357处错误，12系统比较中同提示前沿模型检出率相差约50个百分点；工具收益随领域变化，数学项是主要误报来源。",
+      "method": "控制四类错误及三档严重程度，使用干净副本测误报；配合文献检索、计算代数和执行代码核查，并发布评估与裁定记录。",
+      "limitations": "人工注入的可定位错误不代表真实审稿全部能力；30篇与两个领域限制外推，工具不是在所有领域都有显著收益。",
+      "why_selected": "以局部可定位错误和干净稿误报一起评估，避免把长评语或工具数量当审稿质量。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17052",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并复核官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读：已阅读完整官方摘要，未核验核心正文、完整证明或独立复现实验。"
+    }
+  ],
+  "pending_papers": []
+}

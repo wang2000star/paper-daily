@@ -1,0 +1,46 @@
+{
+  "record_type": "public_coverage_summary",
+  "date": "2026-11-12",
+  "window_start": "2026-11-12T12:00:00Z",
+  "window_end": "2026-11-13T12:00:00Z",
+  "source_scope": "arxiv_only",
+  "counts": {
+    "candidate_count": 1905,
+    "abstract_screened_count": 1905,
+    "selected_count": 30,
+    "partial_text_review_count": 8,
+    "full_text_review_count": 0
+  },
+  "discovered_count": 1906,
+  "source_incomplete_excluded_count": 1,
+  "confirmed_announcement_count": 1890,
+  "unconfirmed_announcement_count": 12,
+  "excluded_existing_cross_count": 4,
+  "official_sources": [
+    "https://arxiv.org/list/cs/new?show=2000",
+    "https://arxiv.org/list/cs/new?skip=2000&show=2000",
+    "https://arxiv.org/list/math/new?show=2000",
+    "https://rss.arxiv.org/rss/cs",
+    "https://rss.arxiv.org/rss/math",
+    "https://rss.arxiv.org/rss/stat",
+    "https://rss.arxiv.org/rss/quant-ph",
+    "https://rss.arxiv.org/rss/q-fin",
+    "https://rss.arxiv.org/rss/q-bio",
+    "https://rss.arxiv.org/rss/physics",
+    "https://rss.arxiv.org/rss/nlin",
+    "https://rss.arxiv.org/rss/math",
+    "https://rss.arxiv.org/rss/hep-th",
+    "https://rss.arxiv.org/rss/hep-ph",
+    "https://rss.arxiv.org/rss/gr-qc",
+    "https://rss.arxiv.org/rss/eess",
+    "https://rss.arxiv.org/rss/econ",
+    "https://rss.arxiv.org/rss/cond-mat",
+    "https://rss.arxiv.org/rss/astro-ph"
+  ],
+  "limitations": [
+    "1890是确认公告数，不等于可收录数；其中1条官方摘要不完整，未收录。",
+    "12条cross-only记录首次公告时间未确认，4条既有版本交叉公告，不作为本期新增。",
+    "RSS时间是官方公告批次，不是独立观测的逐篇首次可访问时间。",
+    "8篇局部正文阅读，其余为摘要级解读；均未完整审计证明或独立复现。"
+  ]
+}
