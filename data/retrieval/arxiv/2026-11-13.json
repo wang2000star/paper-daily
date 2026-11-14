@@ -1,0 +1,123 @@
+{
+  "record_type": "public_coverage_summary",
+  "date": "2026-11-13",
+  "window_start": "2026-11-13T12:00:00Z",
+  "window_end": "2026-11-14T12:00:00Z",
+  "source_scope": "arxiv_only",
+  "counts": {
+    "candidate_count": 0,
+    "abstract_screened_count": 0,
+    "selected_count": 0,
+    "partial_text_review_count": 0,
+    "full_text_review_count": 0
+  },
+  "confirmed_announcement_count": 0,
+  "unconfirmed_announcement_count": 0,
+  "official_sources": [
+    "https://rss.arxiv.org/rss/cs",
+    "https://rss.arxiv.org/rss/math",
+    "https://arxiv.org/list/cs/new?skip=0&show=2000",
+    "https://arxiv.org/list/cs/new?skip=2000&show=2000",
+    "https://arxiv.org/list/math/new?skip=0&show=2000",
+    "https://info.arxiv.org/help/availability.html"
+  ],
+  "zero_inventory_verification": {
+    "complete": true,
+    "confirmed_new_count": 0,
+    "checked_at": "2026-11-14T12:09:02Z",
+    "official_sources": [
+      {
+        "url": "https://rss.arxiv.org/rss/cs",
+        "http_status": 200,
+        "checked_at": "2026-11-14T12:08:18Z",
+        "sha256": "4054513bae3b98fb2cf6fff52583aa96e21eecc9a1900ef65c4c4e3840a3b79b",
+        "bytes": 880,
+        "item_count": 0,
+        "pubDate": "Sat, 14 Nov 2026 00:00:00 -0500",
+        "lastBuildDate": "Sat, 14 Nov 2026 05:00:00 +0000"
+      },
+      {
+        "url": "https://rss.arxiv.org/rss/math",
+        "http_status": 200,
+        "checked_at": "2026-11-14T12:08:20Z",
+        "sha256": "094c1bd890e925ae0f19f3fdfa3321dceba283bc28a21e5529ad56f9912c1508",
+        "bytes": 888,
+        "item_count": 0,
+        "pubDate": "Sat, 14 Nov 2026 00:00:00 -0500",
+        "lastBuildDate": "Sat, 14 Nov 2026 05:00:00 +0000"
+      },
+      {
+        "url": "https://arxiv.org/list/cs/new?skip=0&show=2000",
+        "http_status": 200,
+        "checked_at": "2026-11-14T12:08:23Z",
+        "sha256": "82b2cb0bc7abb18125ca8846a2598e97c4dead2aef61a5d2657c7ec15b80b8ea",
+        "bytes": 6249446,
+        "headings": [
+          "Showing new listings for Friday, 13 November 2026",
+          "New submissions (showing 1151 of 1151 entries)",
+          "Cross submissions (showing 127 of 127 entries)",
+          "Replacement submissions (showing first 722 of 776 entries)"
+        ],
+        "page_entries": 2000,
+        "pagination": [
+          "Total of 2054 entries :      <span>1-2000</span>",
+          "Total of 2054 entries :      <span>1-2000</span>"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/list/cs/new?skip=2000&show=2000",
+        "http_status": 200,
+        "checked_at": "2026-11-14T12:08:27Z",
+        "sha256": "f1129cbd2eb286bbb7476e9c1865413cdccd373543e07a0ab7e6adfa0e27a3e8",
+        "bytes": 173343,
+        "headings": [
+          "Showing new listings for Friday, 13 November 2026",
+          "Replacement submissions (continued, showing last 54 of 776 entries)"
+        ],
+        "page_entries": 54,
+        "pagination": [
+          "Total of 2054 entries :      <a href=/list/cs/new?skip=0&amp;show=2000>1-2000</a>",
+          "Total of 2054 entries :      <a href=/list/cs/new?skip=0&amp;show=2000>1-2000</a>"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/list/math/new?skip=0&show=2000",
+        "http_status": 200,
+        "checked_at": "2026-11-14T12:08:29Z",
+        "sha256": "92586d75b6ff0fded5ee29a9d7701bb5b6f7f3fe888854a543472c41c0d89070",
+        "bytes": 3125212,
+        "headings": [
+          "Showing new listings for Friday, 13 November 2026",
+          "New submissions (showing 665 of 665 entries)",
+          "Cross submissions (showing 102 of 102 entries)",
+          "Replacement submissions (showing 497 of 497 entries)"
+        ],
+        "page_entries": 1264,
+        "pagination": [
+          "Total of 1264 entries ",
+          "Total of 1264 entries "
+        ]
+      },
+      {
+        "url": "https://info.arxiv.org/help/availability.html",
+        "http_status": 200,
+        "checked_at": "2026-11-14T12:08:32Z",
+        "sha256": "e054afc2f04462318839cc5eca7d42843dbb5161ce7a791dde2e1f586d29a990",
+        "bytes": 90929,
+        "schedule": "No announcements Friday or Saturday (US Eastern); Thursday 20:00 announcement precedes this window."
+      }
+    ],
+    "current_rss_items": {
+      "cs": 0,
+      "math": 0
+    },
+    "rss_are_current_dated_complete_xml": true,
+    "new_lists_are_complete_prior_batch": true,
+    "prior_batch_list_date": "2026-11-13",
+    "announcement_schedule_note": "Thursday 2026-11-12 20:00 America/New_York = Friday 2026-11-13 01:00 UTC, before window start. Friday/Saturday have no scheduled announcements."
+  },
+  "limitations": [
+    "仅覆盖本窗口arXiv数学和计算机科学官方新稿及交叉公告。",
+    "截止后快照与官方安排相互印证，不是连续监测；RSS批次时间不等同逐篇独立测定的首次可访问时刻。"
+  ]
+}

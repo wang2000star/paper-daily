@@ -1,0 +1,46 @@
+{
+  "schema_version": 5,
+  "date": "2026-11-13",
+  "kind": "arXiv 日报",
+  "issue_type": "daily",
+  "generated_at": "2026-11-14T12:09:02Z",
+  "timezone": "Etc/GMT+12",
+  "window_start": "2026-11-13T12:00:00Z",
+  "window_end": "2026-11-14T12:00:00Z",
+  "window_label": "AoE 2026-11-13 · UTC 11-13 12:00 至 11-14 12:00",
+  "window_beijing": {
+    "start": "2026-11-13T20:00:00+08:00",
+    "end": "2026-11-14T20:00:00+08:00",
+    "label": "北京时间2026-11-13 20:00 至2026-11-14 20:00（UTC+8）"
+  },
+  "source_scope": "arxiv_only",
+  "papers": [],
+  "pending_papers": [],
+  "coverage": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "url": "https://arxiv.org/",
+      "status": "本期未确认新增论文",
+      "scope": "已核对计算机科学与数学官方新公告列表及 RSS，包含列表交叉公告。",
+      "note": "本期新增候选、摘要初筛与精选均为0。截止后核对的计算机科学与数学官方 RSS 均为11月14日完整空列表；新公告列表完整分页仍显示11月13日批次，属于前一窗口。官方公告安排为美东周日至周四晚间发布，周五与周六不公告。此结论基于截止后的官方快照，不是连续监测。",
+      "public_display": true
+    }
+  ],
+  "retrieval_log": "data/retrieval/arxiv/2026-11-13.json",
+  "editorial_note": "本期新增候选、摘要初筛与精选均为0。截止后核对的计算机科学与数学官方 RSS 均为11月14日完整空列表；新公告列表完整分页仍显示11月13日批次，属于前一窗口。官方公告安排为美东周日至周四晚间发布，周五与周六不公告。此结论基于截止后的官方快照，不是连续监测。",
+  "screening": {
+    "status": "complete",
+    "candidate_count": 0,
+    "abstract_screened_count": 0,
+    "selected_count": 0,
+    "partial_text_review_count": 0,
+    "full_text_review_count": 0,
+    "inventory_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "screen_sha256": {}
+  },
+  "confirmed_announcement_count": 0,
+  "unconfirmed_announcement_count": 0,
+  "classification": "arxiv_official_primary",
+  "taxonomy": "data/arxiv-taxonomy.json"
+}
