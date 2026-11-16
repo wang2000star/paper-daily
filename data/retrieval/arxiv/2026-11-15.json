@@ -1,0 +1,29 @@
+{
+  "record_type": "public_coverage_summary",
+  "source_scope": "arxiv_only",
+  "date": "2026-11-15",
+  "window_start": "2026-11-15T12:00:00Z",
+  "window_end": "2026-11-16T12:00:00Z",
+  "counts": {
+    "candidate_count": 831,
+    "abstract_screened_count": 831,
+    "selected_count": 32,
+    "partial_text_review_count": 26,
+    "full_text_review_count": 0
+  },
+  "official_sources": [
+    "https://arxiv.org/list/cs/new?skip=0&show=2000",
+    "https://arxiv.org/list/math/new?skip=0&show=2000",
+    "https://rss.arxiv.org/rss/cs",
+    "https://rss.arxiv.org/rss/math"
+  ],
+  "limitations": [
+    "发现832条去重记录，逐条处理并完成831条完整摘要初筛；1条官方摘要残缺，排除收录。824条确认本期首次公告（含该残缺摘要），4条既有版本交叉公告排除，4条首次公告时间待核实、不计确认新增。精选32篇，其中26篇局部正文阅读，其余为摘要级解读。未入选不代表论文质量低。",
+    "RSS批次时间不是逐篇独立测得的可访问时刻。",
+    "全文阅读仅覆盖注明章节，不是完整证明审计；不曾运行论文代码。"
+  ],
+  "pagination": {
+    "cs": "skip=0, show=2000；官方936条完整页",
+    "math": "skip=0, show=2000；官方554条完整页"
+  }
+}

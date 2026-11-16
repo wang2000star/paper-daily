@@ -1,0 +1,2635 @@
+{
+  "schema_version": 5,
+  "date": "2026-11-15",
+  "kind": "arXiv 全量候选初筛精选",
+  "issue_type": "daily",
+  "generated_at": "2026-11-16T13:10:28.344240+00:00",
+  "timezone": "Etc/GMT+12",
+  "window_start": "2026-11-15T12:00:00Z",
+  "window_end": "2026-11-16T12:00:00Z",
+  "window_label": "AoE 2026-11-15 · UTC 11-15 12:00 至 11-16 12:00",
+  "window_beijing": {
+    "start": "2026-11-15T20:00:00+08:00",
+    "end": "2026-11-16T20:00:00+08:00",
+    "label": "北京时间2026-11-15 20:00 至2026-11-16 20:00（UTC+8）"
+  },
+  "source_scope": "arxiv_only",
+  "coverage": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "url": "https://arxiv.org/",
+      "status": "全部发现记录已处理；1条源摘要残缺排除",
+      "scope": "数学与计算机科学官方新稿列表及交叉分类，完整分页、跨类去重；分类按官方主分类标记。",
+      "note": "发现832条去重记录，逐条处理并完成831条完整摘要初筛；1条官方摘要残缺，排除收录。824条确认本期首次公告（含该残缺摘要），4条既有版本交叉公告排除，4条首次公告时间待核实、不计确认新增。精选32篇，其中26篇局部正文阅读，其余为摘要级解读。未入选不代表论文质量低。",
+      "public_display": true
+    }
+  ],
+  "retrieval_log": "data/retrieval/arxiv/2026-11-15.json",
+  "editorial_note": "发现832条去重记录，逐条处理并完成831条完整摘要初筛；1条官方摘要残缺，排除收录。824条确认本期首次公告（含该残缺摘要），4条既有版本交叉公告排除，4条首次公告时间待核实、不计确认新增。精选32篇，其中26篇局部正文阅读，其余为摘要级解读。未入选不代表论文质量低。",
+  "screening": {
+    "status": "complete",
+    "discovered_count": 832,
+    "candidate_count": 831,
+    "abstract_screened_count": 831,
+    "source_incomplete_excluded_count": 1,
+    "selected_count": 32,
+    "partial_text_review_count": 26,
+    "full_text_review_count": 0,
+    "inventory_sha256": "2800df519163d75c53502fd953fa48596c9db2a956a53863ca204c511fbba235",
+    "screen_sha256": {
+      "final_ledger": "6e2d616a330197666e058603eff4a1587ab5bb166cc4181cd0639d3238712ebf"
+    }
+  },
+  "confirmed_announcement_count": 824,
+  "unconfirmed_announcement_count": 4,
+  "excluded_existing_cross_count": 4,
+  "classification": "arxiv_official_primary",
+  "taxonomy": "data/arxiv-taxonomy.json",
+  "papers": [
+    {
+      "id": "arxiv-2611.17339",
+      "title": "Does the Ranking Hold? A Practitioner-Facing Audit of Hallucination Detectors on Small, Quantized, On-Device LLMs",
+      "title_zh": "幻觉检测器的排名能迁移到小型量化模型吗？",
+      "authors": [
+        "Shubhra Mittal",
+        "Gaurav Naresh Mittal"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17339v1",
+      "original_url": "https://arxiv.org/abs/2611.17339v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-08-31",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "cs.AI",
+      "canonical_primary_category": "cs.AI",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17339v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Shubhra Mittal：Microsoft Responsible AI（美国Redmond）；Gaurav Naresh Mittal：独立研究者，依据论文署名。职务未进一步核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2611.17339v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Shubhra Mittal、Gaurav Naresh Mittal。Shubhra Mittal：Microsoft Responsible AI（美国Redmond）；Gaurav Naresh Mittal：独立研究者，依据论文署名。职务未进一步核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17339v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/pdf/2611.17339v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料中未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "作者在单张T4上比较两个4位量化模型与四种幻觉检测器，发现同一检测方法的优劣排名会反转，廉价词汇基线与采样一致性方法的差异也未达到所用置信标准。研究还指出，TruthfulQA生成答案转选择题标签的流程可能使检测表现接近随机。结论限于所测模型、数据与标注方法，不是所有检测器均失效的证明。",
+      "why_selected": "对小量化模型的检测器排名反转和指标失效提供具体对照，具有评估复用价值，列为精选。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17339v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "资源受限小模型上的幻觉检测器排序能否从其他模型迁移？",
+      "method": "在Llama-3.2-3B与Qwen2.5-3B的4-bit NF4版本上，以统一流程比较四检测器、两种基准标签设置及bootstrap区间。",
+      "result": "TriviaQA跨模型Spearman为−0.80；词汇与采样基线差异未能区分；TruthfulQA所测标签流程AUROC为0.46–0.59。",
+      "limitations": "仅两种实际受测模型及给定标签流程；未独立复现实验，不将区间重叠当方法等价证明。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/pdf/2611.17339v1"
+        ],
+        "scope": "arXiv完整摘要；PDF第1–3页的署名、引言、贡献说明、相关工作及方法开头，未阅读全部实验表。",
+        "method_evidence": "在Llama-3.2-3B与Qwen2.5-3B的4-bit NF4版本上，以统一流程比较四检测器、两种基准标签设置及bootstrap区间。",
+        "result_evidence": "TriviaQA跨模型Spearman为−0.80；词汇与采样基线差异未能区分；TruthfulQA所测标签流程AUROC为0.46–0.59。",
+        "conditions_evidence": "仅两种实际受测模型及给定标签流程；未独立复现实验，不将区间重叠当方法等价证明。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17358",
+      "title": "Automatic $n$-dimensional recurrences over finite $p$-groups with negative predecessor coordinates",
+      "title_zh": "允许负前驱坐标的有限p群多维递推：自动性与反例",
+      "authors": [
+        "Bogdan Dumitru",
+        "Mihai Prunescu"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17358v1",
+      "original_url": "https://arxiv.org/abs/2611.17358v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-10-23",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "math.CO",
+      "canonical_primary_category": "math.CO",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.CO"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17358v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Bogdan Dumitru：布加勒斯特大学数学与计算机科学学院；Mihai Prunescu：该校LOS中心及罗马尼亚科学院Simion Stoilow数学研究所。职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2611.17358v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Bogdan Dumitru、Mihai Prunescu。Bogdan Dumitru：布加勒斯特大学数学与计算机科学学院；Mihai Prunescu：该校LOS中心及罗马尼亚科学院Simion Stoilow数学研究所。职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17358v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/pdf/2611.17358v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料中未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "这项研究问：无限递推数组何时能由有限状态自动机计算？作者对有限p群、自动边界及有序群同态乘积给出条件：至多一个坐标同时出现正负偏移时可保证自动性，覆盖一维和二维；三维仅有字典序正性则不够。方法结合幂级数除法、模素数幂提升和中心子群，并提供有限证书。结论并非任意递推均自动，证明未作完整审计。",
+      "why_selected": "有限p群递推给自动性充分条件和三维反例，适用边界清楚，可复用性较高，作为精选。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17358v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "带负前驱坐标的多维群递推何时仍为p-自动？",
+      "method": "非负情形显式自动机构造；负坐标通过代数幂级数除法、素数幂提升、中心子群和保边界坐标变换处理。",
+      "result": "一维及二维满足既定条件均自动；三维提供对每个素数都非自动的固定反例；并给Delannoy模27计数证书。",
+      "limitations": "要求有限p群、指定同态乘积规则及兼容自动边界；不涵盖任意负坐标结构，未运行证书。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/pdf/2611.17358v1"
+        ],
+        "scope": "arXiv完整摘要；HTML署名、第1节引言与问题条件、方法说明，未审阅全部证明。",
+        "method_evidence": "非负情形显式自动机构造；负坐标通过代数幂级数除法、素数幂提升、中心子群和保边界坐标变换处理。",
+        "result_evidence": "一维及二维满足既定条件均自动；三维提供对每个素数都非自动的固定反例；并给Delannoy模27计数证书。",
+        "conditions_evidence": "要求有限p群、指定同态乘积规则及兼容自动边界；不涵盖任意负坐标结构，未运行证书。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17360",
+      "title": "Positive Dual Certificates for Real Separated Subset Sums: Chamber Optimality of the Conway-Guy and Bohman Sets, and Exact Values up to Eight",
+      "title_zh": "分离子集和的正对偶证书：腔室最优性与八元素以内精确值",
+      "authors": [
+        "Esther Notik"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17360v1",
+      "original_url": "https://arxiv.org/abs/2611.17360v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-10-28",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "math.CO",
+      "canonical_primary_category": "math.CO",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.CO"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17360v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Esther Notik：以色列Petah Tikva独立研究者，依据论文署名；未披露其他机构。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2611.17360v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Esther Notik。Esther Notik：以色列Petah Tikva独立研究者，依据论文署名；未披露其他机构。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17360v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/pdf/2611.17360v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料中未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "如何让一组数的全部子集和彼此至少相隔1，同时压低最大元素？作者把实数问题划成线性规划腔室，用正对偶证书证明Conway–Guy与Bohman集合在各自腔室内唯一最优；再以有理证书分支定界，声称得到八元素以内实数与整数最优值相同，七、八元素分别为44、84。腔室最优不等于任意规模全局最优，证书尚未独立重算。",
+      "why_selected": "实数分离子集和用正对偶证书与精确分支界给n≤8结果，证据形式明确，作为精选。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17360v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "允许实数而非整数是否能降低分离子集和的最大元素？",
+      "method": "按三元符号关系划分多面体腔室，构造正对偶证书并用精确有理分支定界覆盖小规模腔室。",
+      "result": "所有规模的Conway–Guy和两类Bohman集合各自腔室唯一最优；n≤8实数与整数最优值相同。",
+      "limitations": "未解决一般n全局最优；其他腔室存在非整数顶点；未独立执行有理证书检查。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/pdf/2611.17360v1"
+        ],
+        "scope": "arXiv完整摘要；PDF第1–3页的署名、主结果、腔室和证书定义、Conway–Guy定理及证明开头，未运行附带证书。",
+        "method_evidence": "按三元符号关系划分多面体腔室，构造正对偶证书并用精确有理分支定界覆盖小规模腔室。",
+        "result_evidence": "所有规模的Conway–Guy和两类Bohman集合各自腔室唯一最优；n≤8实数与整数最优值相同。",
+        "conditions_evidence": "未解决一般n全局最优；其他腔室存在非整数顶点；未独立执行有理证书检查。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17373",
+      "title": "Smale's mean value constant (1981) equals 4",
+      "title_zh": "预印本主张：Smale平均值常数等于4",
+      "authors": [
+        "Dave Goel"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17373v1",
+      "original_url": "https://arxiv.org/abs/2611.17373v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-10",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "math.CV",
+      "canonical_primary_category": "math.CV",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.CV"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17373v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "所读署名未披露机构；职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2611.17373v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Dave Goel。所读署名未披露机构；职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17373v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/pdf/2611.17373v1"
+      ],
+      "code_urls": [
+        "https://github.com/david44hello/paper_smale-mean-value-constant-equals-4/tree/v2.50"
+      ],
+      "code_status": "仅列所读arXiv材料提供的链接，未访问外站核查。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "作者主张复多项式Smale平均值问题的跨次数最佳常数为4，并在次数趋于无穷时逼近该值。方法先用Jatar–Ng归约把多项式问题转为解析域上的函数构造，再结合接近Koebe极值的映射与整函数。正文说明构造不给达到指定下界所需次数的有效界，且有限次数不能取到4。作者称已Lean形式化；本报道未运行形式化证明，也未独立审计这一重大结论。",
+      "why_selected": "Smale常数等于4是重大的作者主张；需谨慎审计构造与形式化，列为待深入候选而非定论。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17373v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "复多项式平均值比的跨次数最优上界能否低于4？",
+      "method": "Jatar–Ng解析域归约，独立构造近Koebe映射与局部无临界点函数，使两个估计同时接近极值。",
+      "result": "作者定理1.1主张sup_d K(d)=lim_d K(d)=4；每个固定次数仍小于4。",
+      "limitations": "重大预印本主张，未独立证明审计；作者称Lean验证但本次未执行；构造不提供达到给定比值所需次数的有效界。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/pdf/2611.17373v1"
+        ],
+        "scope": "arXiv完整摘要；HTML署名、引言、定理1.1、非有效性说明和证明思路，未逐引理审计。",
+        "method_evidence": "Jatar–Ng解析域归约，独立构造近Koebe映射与局部无临界点函数，使两个估计同时接近极值。",
+        "result_evidence": "作者定理1.1主张sup_d K(d)=lim_d K(d)=4；每个固定次数仍小于4。",
+        "conditions_evidence": "重大预印本主张，未独立证明审计；作者称Lean验证但本次未执行；构造不提供达到给定比值所需次数的有效界。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17375",
+      "title": "The four-dimensional Borsuk number is five or six",
+      "title_zh": "四维Borsuk数的候选范围缩至5或6",
+      "authors": [
+        "Logan R. Chalmers"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17375v1",
+      "original_url": "https://arxiv.org/abs/2611.17375v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-10",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "math.MG",
+      "canonical_primary_category": "math.MG",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.MG"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17375v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Logan R. Chalmers：新西兰奥塔哥大学，依据论文署名；职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2611.17375v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Logan R. Chalmers。Logan R. Chalmers：新西兰奥塔哥大学，依据论文署名；职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17375v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/pdf/2611.17375v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料中未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "四维中，直径固定的集合最少需要分成多少个直径更小的部分？作者声称将通用上界从7降到6，而已知下界为5。论证按外接球半径分三种情况，用六个锥体、五个球与剩余第六部分，以及有理多面体直径估计完成覆盖。正文给出阈值和构造，作者称定理已Lean形式化；本次未运行证明，且准确值究竟为5还是6仍未解决。",
+      "why_selected": "四维Borsuk上界由7降6且称Lean形式化，结果及三种几何情形清楚，列为精选。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17375v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "四维Borsuk问题的通用划分数能否降到6？",
+      "method": "按外接半径分区，小半径用六锥，大半径用五球及无直径对的补集，中间半径用有理多面体。",
+      "result": "作者定理1：四维正直径有界集可分至多六个严格更小直径子集，即5≤b4≤6。",
+      "limitations": "尚未判定5或6；作者形式化声明未被本次执行验证，未完整审计中间半径证书。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/pdf/2611.17375v1"
+        ],
+        "scope": "arXiv完整摘要；HTML署名、第1节、命题2大半径证明及命题3小半径证明，未审计第4节全部证书。",
+        "method_evidence": "按外接半径分区，小半径用六锥，大半径用五球及无直径对的补集，中间半径用有理多面体。",
+        "result_evidence": "作者定理1：四维正直径有界集可分至多六个严格更小直径子集，即5≤b4≤6。",
+        "conditions_evidence": "尚未判定5或6；作者形式化声明未被本次执行验证，未完整审计中间半径证书。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17378",
+      "title": "A $19/5$ lower bound for the four-dimensional Erd\\H{o}s box problem",
+      "title_zh": "四维Erdős盒子问题的下界指数提高到19/5",
+      "authors": [
+        "Dean Matthew Menezes"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17378v1",
+      "original_url": "https://arxiv.org/abs/2611.17378v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-11",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "math.CO",
+      "canonical_primary_category": "math.CO",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.CO"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17378v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "所读署名未披露机构；作者摘要页全名为Dean Matthew Menezes，正文署名Dean Menezes。职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2611.17378v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Dean Matthew Menezes。所读署名未披露机构；作者摘要页全名为Dean Matthew Menezes，正文署名Dean Menezes。职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17378v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/pdf/2611.17378v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料中未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "在四维网格中，最多能留下多少点而不形成完整轴平行盒子？作者用特征2有限域的矩形引理与四维双线性空间构造，在边长q⁵的网格中保留q¹⁹点，并把全网格分为q个同构无盒子集合。由此下界指数从15/4增至19/5，并导出一般尺寸和染色后果。这是下界进展，不是确定最优指数；本次只局部阅读构造，未完成证明审计。",
+      "why_selected": "四维箱问题指数改进及有限域构造清楚，方法可复用，列为精选。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17378v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "如何提高四维网格无盒子子集的规模下界？",
+      "method": "在q为2的幂时，用F_(q³)上的置换逆、迹配对和正交差空间排除盒子。",
+      "result": "[q⁵]⁴可分成q个各q¹⁹点的无盒子集合，且给f4(n)≥2^(−19/20)n^(19/5)。",
+      "limitations": "只改善下界，尚未闭合与上界的差距；未独立证明审计。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/pdf/2611.17378v1"
+        ],
+        "scope": "arXiv完整摘要；HTML署名、第1节、第2节矩形引理及证明、第3节构造与部分证明。",
+        "method_evidence": "在q为2的幂时，用F_(q³)上的置换逆、迹配对和正交差空间排除盒子。",
+        "result_evidence": "[q⁵]⁴可分成q个各q¹⁹点的无盒子集合，且给f4(n)≥2^(−19/20)n^(19/5)。",
+        "conditions_evidence": "只改善下界，尚未闭合与上界的差距；未独立证明审计。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17386",
+      "title": "TSP instances that require exponentially many subtour elimination constraints",
+      "title_zh": "某些旅行商实例需要指数多个子回路消除约束",
+      "authors": [
+        "Eleonora Vercesi",
+        "Austin Buchanan"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17386v1",
+      "original_url": "https://arxiv.org/abs/2611.17386v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-11",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "cs.DM",
+      "canonical_primary_category": "cs.DM",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "math.CO"
+      ],
+      "arxiv_categories": [
+        "cs.DM",
+        "math.CO"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17386v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Eleonora Vercesi：瑞士意大利语大学及USI-SUPSI Dalle Molle人工智能研究所；Austin Buchanan：俄克拉荷马州立大学。职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2611.17386v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Eleonora Vercesi、Austin Buchanan。Eleonora Vercesi：瑞士意大利语大学及USI-SUPSI Dalle Molle人工智能研究所；Austin Buchanan：俄克拉荷马州立大学。职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17386v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/pdf/2611.17386v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料中未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "旅行商整数规划常只需少量子回路约束，但作者构造了任何较小约束集都会留下更便宜不连通解的实例。球轴承式图构造支持平面距离情形，Fibonacci结构给非对称问题Ω(φⁿ)及度量问题Ω(φⁿᐟ²)界。作者还报告Concorde即使在整数间隙很小时仍困难。结论限定DFJ模型与构造实例，不是所有TSP算法的指数时间下界；实验未独立复现。",
+      "why_selected": "TSP指数SEC需求同时覆盖度量与平面实例，揭示小整性间隙不代表易解，作为精选。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17386v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "DFJ旅行商模型是否存在必须加入指数多个子回路约束才能达到最优巡回成本的实例？",
+      "method": "构造含大量便宜二分巡回的球轴承图，并用Fibonacci构造及节点分裂推广。",
+      "result": "非对称需要Ω(φⁿ)，度量需Ω(φⁿᐟ²)；平面欧氏等度量也存在指数族。",
+      "limitations": "模型特定约束数下界，不是一般算法复杂度下界；Concorde增长为作者实验，未复现。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/pdf/2611.17386v1"
+        ],
+        "scope": "arXiv完整摘要；HTML署名、第1节定义与结果、第2节球轴承图和定理2.1证明；未审阅实验原始记录。",
+        "method_evidence": "构造含大量便宜二分巡回的球轴承图，并用Fibonacci构造及节点分裂推广。",
+        "result_evidence": "非对称需要Ω(φⁿ)，度量需Ω(φⁿᐟ²)；平面欧氏等度量也存在指数族。",
+        "conditions_evidence": "模型特定约束数下界，不是一般算法复杂度下界；Concorde增长为作者实验，未复现。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17469",
+      "title": "Improved Regret via Variance-Aware Policy Optimization in Adversarial MDPs",
+      "title_zh": "方差感知策略优化缩小对抗MDP遗憾界差距",
+      "authors": [
+        "Ofir Schlisselberg",
+        "Alon Cohen",
+        "Yishay Mansour"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17469v1",
+      "original_url": "https://arxiv.org/abs/2611.17469v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-12",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "cs.LG",
+      "canonical_primary_category": "cs.LG",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.LG"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17469v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Ofir Schlisselberg：特拉维夫大学；Alon Cohen与Yishay Mansour：特拉维夫大学及Google Research。职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/pdf/2611.17469v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Ofir Schlisselberg、Alon Cohen、Yishay Mansour。Ofir Schlisselberg：特拉维夫大学；Alon Cohen与Yishay Mansour：特拉维夫大学及Google Research。职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17469v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/pdf/2611.17469v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料中未核实公开代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "对奖励随回合变化、转移未知且奖励全信息可见的MDP，作者给出主导项约√(H³SAK)的遗憾界。方法把未知转移问题归约到只依赖后续步信息的算法，再用稳定性匹配奖励项改进VOPO策略更新。与文中两类旧界相比有所改善，但仍比目标尺度差√H；已知转移下另有改进。结果是给定信息和模型假设下的理论界，不是实测强化学习性能提升。",
+      "why_selected": "对抗MDP的方差策略优化改善遗憾界，未知动力学约化与剩余缺口明确，作为精选。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17469v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "未知转移、全信息对抗奖励下策略优化能否降低遗憾的时域依赖？",
+      "method": "下游依赖算法归约、稳定性匹配bonus与方差敏感分析，构造VOPO。",
+      "result": "未知转移主导项Õ(√(H³SAK))；已知转移全信息Õ(√(H³K))及轨迹banditÕ(√(H²SAK))。",
+      "limitations": "未知转移仍差√H；省略对数与低阶加性项；特定参数区间下界匹配不等于所有设定最优。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/pdf/2611.17469v1"
+        ],
+        "scope": "arXiv完整摘要；HTML署名、第1节结果表与归约/方法概述、第2节开头设定，未完整证明审计。",
+        "method_evidence": "下游依赖算法归约、稳定性匹配bonus与方差敏感分析，构造VOPO。",
+        "result_evidence": "未知转移主导项Õ(√(H³SAK))；已知转移全信息Õ(√(H³K))及轨迹banditÕ(√(H²SAK))。",
+        "conditions_evidence": "未知转移仍差√H；省略对数与低阶加性项；特定参数区间下界匹配不等于所有设定最优。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17697",
+      "title": "Numerical verification for harmonic maps: Counterexamples to Eells' conjecture",
+      "title_zh": "调和映射的数值验证：Eells猜想的反例",
+      "authors": [
+        "Hirst, Edward",
+        "Platt, Daniel",
+        "Earp, Henrique N. Sá",
+        "Stein, Jakob"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17697v1",
+      "original_url": "https://arxiv.org/abs/2611.17697v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "math.DG",
+      "canonical_primary_category": "math.DG",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.DG"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17697v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "论文列出巴西坎皮纳斯州立大学IMECC及英国帝国理工学院数学系；不由邮箱推断个人归属或职务。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.17697v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Hirst, Edward、Platt, Daniel、Earp, Henrique N. Sá、Stein, Jakob。论文列出巴西坎皮纳斯州立大学IMECC及英国帝国理工学院数学系；不由邮箱推断个人归属或职务。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17697v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/html/2611.17697v1"
+      ],
+      "code_urls": [
+        "https://github.com/edhirst/eells_counterexamples"
+      ],
+      "code_status": "仅列所读arXiv材料提供的链接，未访问外站核验。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "局部正文解读。论文研究三维球面到二维球面的调和映射，先在Hopf不变量为2至6的同伦类中数值构造近似解，再以严格不动点论证声称附近存在相同不变量的真正解。作者据此主张得到Eells猜想及相关Ding猜想的一族反例。贡献在于把数值搜索接到存在性认证；本次读了摘要及部分正文，未审计不动点估计、计算证书或证明，不能将重大猜想结论称作独立验证。",
+      "why_selected": "作者以严格不动点论证认证数值调和映射并主张反驳经典猜想，适合重点核验，不能将摘要主张当独立证明。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17697v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "能否把特定同伦类中的数值近似调和映射认证为真实存在的解？",
+      "method": "在S³到S²的Hopf不变量2至6类别中搜索，利用O(2)×Z₂等变性降维，以不动点论证及残差、线性和高阶项界做认证。",
+      "result": "作者声称构造相同Hopf不变量的真实调和映射，并据此主张Eells猜想及相关Ding猜想的反例。",
+      "limitations": "重大猜想结论是预印本作者主张；本次未审计不动点估计、计算证书或完整证明。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.17697v1"
+        ],
+        "scope": "首页署名、引言开头、定理1.1及紧随其后的证明方法说明",
+        "method_evidence": "在S³到S²的Hopf不变量2至6类别中搜索，利用O(2)×Z₂等变性降维，以不动点论证及残差、线性和高阶项界做认证。",
+        "result_evidence": "作者声称构造相同Hopf不变量的真实调和映射，并据此主张Eells猜想及相关Ding猜想的反例。",
+        "conditions_evidence": "重大猜想结论是预印本作者主张；本次未审计不动点估计、计算证书或完整证明。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17737",
+      "title": "Super-Analysis for Aggressive yet Scalable Compiler Optimization",
+      "title_zh": "超级分析：兼顾激进优化与可扩展性的编译器方法",
+      "authors": [
+        "Ebrahimzadeh, Amirali",
+        "Shaikhha, Amir"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17737v1",
+      "original_url": "https://arxiv.org/abs/2611.17737v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "cs.PL",
+      "canonical_primary_category": "cs.PL",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "cs.SC"
+      ],
+      "arxiv_categories": [
+        "cs.PL",
+        "cs.SC"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17737v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Amirali Ebrahimzadeh署名密歇根大学；Amir Shaikhha署名达姆施塔特工业大学；职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.17737v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Ebrahimzadeh, Amirali、Shaikhha, Amir。Amirali Ebrahimzadeh署名密歇根大学；Amir Shaikhha署名达姆施塔特工业大学；职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17737v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.17737v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料未核实代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "局部正文解读。作者把SMT求解用于证明常规编译变换安全，而不合成完整程序，以填补快速启发式与昂贵超级优化之间的空隙。LLVM实现ODeSSy移除不可达安全检查，另以便宜守卫复制快速循环。摘要报告四种前端语言收益，包括Julia矩阵乘3.78倍、LZ77压缩4.01倍加速。数字来自作者特定程序评测，不能外推为普遍编译加速；安全证明与完整运行成本尚未独立审计。",
+      "why_selected": "以SMT补强传统变换安全证明而不合成程序，四语言案例显示优化与编译成本的可用折中。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17737v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "能否在快速启发式与昂贵超级优化之间，获得可认证的常规编译优化？",
+      "method": "以SMT证明候选变换安全而不合成整个程序；LLVM实现移除不可达检查，并通过便宜守卫复制快速循环。",
+      "result": "ODeSSy在四种前端语言展示收益；作者报告Julia矩阵乘3.78倍、LZ77压缩4.01倍加速。",
+      "limitations": "数字来自特定程序和硬件；不代表所有编译任务普遍同幅加速，完整编译成本与安全证明未独立审计。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.17737v1"
+        ],
+        "scope": "首页署名、引言开头、6.1实验设置与6.2开头",
+        "method_evidence": "以SMT证明候选变换安全而不合成整个程序；LLVM实现移除不可达检查，并通过便宜守卫复制快速循环。",
+        "result_evidence": "ODeSSy在四种前端语言展示收益；作者报告Julia矩阵乘3.78倍、LZ77压缩4.01倍加速。",
+        "conditions_evidence": "数字来自特定程序和硬件；不代表所有编译任务普遍同幅加速，完整编译成本与安全证明未独立审计。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17744",
+      "title": "Minimaxity in Robust Nonparametric Regression: from Heavy-Tailed to Sub-Gaussian Assumptions",
+      "title_zh": "鲁棒非参数回归的极小极大性：从重尾到次高斯假设",
+      "authors": [
+        "Li, Yikun",
+        "Neykov, Matey"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17744v1",
+      "original_url": "https://arxiv.org/abs/2611.17744v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "math.ST",
+      "canonical_primary_category": "math.ST",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.ST"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17744v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "两位作者署名西北大学统计与数据科学系；职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.17744v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Li, Yikun、Neykov, Matey。两位作者署名西北大学统计与数据科学系；职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17744v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/html/2611.17744v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料未核实代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "局部正文解读。论文研究攻击者可查看干净样本再替换部分观测的回归问题，在有限直径星形函数类上用局部度量熵刻画统计误差。作者在增量矩条件和噪声条件二阶矩有界时给匹配上下界；更强次高斯条件将污染项从ε改善至ε平方，上界仍含对数损失。价值在于明确尾部假设改变鲁棒性极限，而非报告可部署算法实测。证明及假设适用性尚未全文审计。",
+      "why_selected": "强对抗污染下星形函数类得到匹配极小极大界，并区分重尾与次高斯污染项，理论条件清晰。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17744v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "攻击者查看干净样本后替换部分观测时，鲁棒回归的最佳统计精度是什么？",
+      "method": "以有限直径星形函数类的局部度量熵构造上下界，区分有限矩和次高斯假设。",
+      "result": "作者给出匹配的统计速率刻画；加强尾部条件可使污染项从ε改善到ε²，上界仍有对数损失。",
+      "limitations": "统计最优构造可能计算不可行；依赖增量矩与噪声条件，不能理解为已部署高效估计器。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.17744v1"
+        ],
+        "scope": "首页署名、问题表述开头、第6节讨论约2700字符",
+        "method_evidence": "以有限直径星形函数类的局部度量熵构造上下界，区分有限矩和次高斯假设。",
+        "result_evidence": "作者给出匹配的统计速率刻画；加强尾部条件可使污染项从ε改善到ε²，上界仍有对数损失。",
+        "conditions_evidence": "统计最优构造可能计算不可行；依赖增量矩与噪声条件，不能理解为已部署高效估计器。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17756",
+      "title": "Compiling Matrix Formulas to Quantum Block Encodings",
+      "title_zh": "将矩阵公式编译为量子块编码",
+      "authors": [
+        "Shami, Daksh",
+        "Yuan, Charles"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17756v1",
+      "original_url": "https://arxiv.org/abs/2611.17756v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "cs.PL",
+      "canonical_primary_category": "cs.PL",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "quant-ph"
+      ],
+      "arxiv_categories": [
+        "cs.PL",
+        "quant-ph"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17756v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "两位作者署名威斯康星大学麦迪逊分校；职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.17756v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Shami, Daksh、Yuan, Charles。两位作者署名威斯康星大学麦迪逊分校；职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17756v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.17756v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料未核实代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "局部正文解读。MARBLE把矩阵元素公式改写为已有电路实现的符号组合，评估表示成本，特别是影响量子复杂度的次归一化因子，并输出OpenQASM电路及成本证书。作者报告39个文献基线中37个持平或改善，某流体构造该因子改善10487倍。维数超过2的100次方的快速编译指紧凑公式处理，不是模拟如此大的矩阵或量子硬件运行；本次未核查完整证书与比较口径。",
+      "why_selected": "从矩阵公式自动生成量子块编码并分析子归一化成本，37/39基线比较使算法资源声明可核验。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17756v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "如何把矩阵元素公式自动转成成本较好的量子块编码？",
+      "method": "符号改写组合已有电路，估计次归一化因子并输出OpenQASM和成本证书。",
+      "result": "MARBLE在39个基线中37个持平或改善，作者报告某流体构造的次归一化因子改善10487倍。",
+      "limitations": "规则不完备、探索上限10万节点，非全局最优；超大维数编译指紧凑表达式，不是量子硬件或显式矩阵模拟。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.17756v1"
+        ],
+        "scope": "首页署名、引言开头、第8节局限",
+        "method_evidence": "符号改写组合已有电路，估计次归一化因子并输出OpenQASM和成本证书。",
+        "result_evidence": "MARBLE在39个基线中37个持平或改善，作者报告某流体构造的次归一化因子改善10487倍。",
+        "conditions_evidence": "规则不完备、探索上限10万节点，非全局最优；超大维数编译指紧凑表达式，不是量子硬件或显式矩阵模拟。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17804",
+      "title": "Tight Quantum Query Bounds for Collision Finding over Arbitrary Bounded Types",
+      "title_zh": "任意有界类型碰撞搜索的紧量子查询界",
+      "authors": [
+        "Peng, Tianci",
+        "Hou, Shiqi",
+        "Dong, Xiaoyang"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17804v1",
+      "original_url": "https://arxiv.org/abs/2611.17804v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "quant-ph",
+      "canonical_primary_category": "quant-ph",
+      "arxiv_group": "physics",
+      "arxiv_archive": "quant-ph",
+      "cross_categories": [
+        "cs.CC"
+      ],
+      "arxiv_categories": [
+        "quant-ph",
+        "cs.CC"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17804v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/quant-ph",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "三位作者署名清华大学；Xiaoyang Dong另署中关村实验室及清华大学密码与数字经济安全国家重点实验室，为通讯作者，不推定主导作者。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.17804v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Peng, Tianci、Hou, Shiqi、Dong, Xiaoyang。三位作者署名清华大学；Xiaoyang Dong另署中关村实验室及清华大学密码与数字经济安全国家重点实验室，为通讯作者，不推定主导作者。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17804v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.17804v1",
+        "https://rss.arxiv.org/rss/quant-ph"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料未核实代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "局部正文解读。论文为预先指定各相等值类大小的函数给出r重碰撞搜索的匹配量子查询上下界，连接碰撞丰富与稀疏目标两类情形。方法包括过滤压缩置换预言机、碰撞列表和自适应学习图；作者称解决Belovs提出的特定唯一碰撞问题。条件要求最大类大小和碰撞阶数固定，结论是查询复杂度而非完整运行时间或实验加速。本次读了摘要及部分正文，未独立核验复杂下界证明。",
+      "why_selected": "固定有界碰撞类型给出匹配量子查询上下界及置换预言机分析，理论问题明确且可复用，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17804v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "给定函数各等值类大小时，量子寻找r重碰撞需要多少查询？",
+      "method": "过滤压缩置换预言机、碰撞列表和自适应学习图，连接稀疏与丰富碰撞结构。",
+      "result": "作者给出匹配上下界，并声称解决Belovs提出的特定唯一碰撞问题。",
+      "limitations": "最大等值类大小及碰撞阶数固定；仅查询复杂度，不是完整运行时间保证，未独立审计下界。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.17804v1"
+        ],
+        "scope": "首页署名、1.1贡献及定理1.1约2700字符",
+        "method_evidence": "过滤压缩置换预言机、碰撞列表和自适应学习图，连接稀疏与丰富碰撞结构。",
+        "result_evidence": "作者给出匹配上下界，并声称解决Belovs提出的特定唯一碰撞问题。",
+        "conditions_evidence": "最大等值类大小及碰撞阶数固定；仅查询复杂度，不是完整运行时间保证，未独立审计下界。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17884",
+      "title": "HOL in HOL: mechanized soundness, completeness and consistency, with and without infinity",
+      "title_zh": "在HOL内形式化HOL：健全性、完备性与一致性的边界",
+      "authors": [
+        "Benzmüller, Christoph",
+        "Kirchner, Daniel"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17884v1",
+      "original_url": "https://arxiv.org/abs/2611.17884v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "math.LO",
+      "canonical_primary_category": "math.LO",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "cs.LO"
+      ],
+      "arxiv_categories": [
+        "math.LO",
+        "cs.LO"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17884v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Christoph Benzmüller署名班贝格大学及柏林自由大学；Daniel Kirchner署名班贝格大学；职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.17884v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Benzmüller, Christoph、Kirchner, Daniel。Christoph Benzmüller署名班贝格大学及柏林自由大学；Daniel Kirchner署名班贝格大学；职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17884v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.17884v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料未核实代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "局部正文解读。作者在Isabelle/HOL中深嵌入简单类型论，以Henkin语义证明完备性，并区分两层自验证：无无穷公理的对象逻辑可在普通HOL中认证；加入Dedekind无穷公理的一致性需要更大的集合论宇宙。可数Henkin模型展示“任意有限大”与单一无穷公理不同。意义是明确形式证明的元理论依赖，而非无条件自证全部一致性；本次未运行证明文件。",
+      "why_selected": "HOL深嵌入加入Henkin完备性并精确区分无穷公理所需元理论，机械化边界可核查，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17884v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "形式化高阶逻辑的自验证到底依赖怎样的元理论？",
+      "method": "在Isabelle/HOL中深嵌入简单类型论，以Henkin语义证明完备性，区分是否包含无穷公理。",
+      "result": "不含无穷公理的对象逻辑可在普通HOL认证；Dedekind无穷公理的一致性需要更大集合论宇宙。",
+      "limitations": "不能解释成无条件自证全部一致性；机器定理与未形式化元解释不同，本次未执行证明文件。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.17884v1"
+        ],
+        "scope": "首页署名、引言开头、第12节结论及制品说明开头",
+        "method_evidence": "在Isabelle/HOL中深嵌入简单类型论，以Henkin语义证明完备性，区分是否包含无穷公理。",
+        "result_evidence": "不含无穷公理的对象逻辑可在普通HOL认证；Dedekind无穷公理的一致性需要更大集合论宇宙。",
+        "conditions_evidence": "不能解释成无条件自证全部一致性；机器定理与未形式化元解释不同，本次未执行证明文件。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17923",
+      "title": "High-Dimensional Gaussian and Bootstrap Approximation: Near $1/\\sqrt{n}$ Rates with General Covariance",
+      "title_zh": "一般协方差下高维高斯与Bootstrap逼近的近根号n速率",
+      "authors": [
+        "Lopes, Miles E.",
+        "Masini, Ricardo"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17923v1",
+      "original_url": "https://arxiv.org/abs/2611.17923v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "math.ST",
+      "canonical_primary_category": "math.ST",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "math.PR"
+      ],
+      "arxiv_categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17923v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "首页列加州大学戴维斯分校统计与数据科学系，但HTML作者脚注映射有缺失标记，不据此逐人分配机构；职务未核实。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.17923v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Lopes, Miles E.、Masini, Ricardo。首页列加州大学戴维斯分校统计与数据科学系，但HTML作者脚注映射有缺失标记，不据此逐人分配机构；职务未核实。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17923v1",
+        "https://rss.arxiv.org/rss/math",
+        "https://arxiv.org/html/2611.17923v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料未核实代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "局部正文解读。论文研究独立同分布高维随机向量和在矩形事件上的高斯逼近，作者在各分量次高斯且方差非零时，不限制总体协方差结构，获得仅差维度及样本对数因子的根号n倒数误差界。插值导数控制避免对协方差结构敏感，并推广至bootstrap与高斯比较。结论需保留尾部与独立同分布条件，不等于任意重尾数据也适用；证明尚未经本次全文审计。",
+      "why_selected": "一般协方差下高维矩形高斯与bootstrap近根号n界回答基础问题，条件与方法清楚，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17923v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "协方差可奇异时，高维矩形事件的高斯逼近能否仍有接近n的负二分之一次方误差？",
+      "method": "控制插值导数，避免对协方差结构敏感，并推广至bootstrap与高斯比较。",
+      "result": "作者在独立同分布、各分量次高斯且方差非零下给出CB log³(pn)log(n)/√n型界，允许奇异总体协方差。",
+      "limitations": "保留尾部、独立性及方差条件，不适用于任意重尾数据；证明未完整审计。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.17923v1"
+        ],
+        "scope": "首页与引言开头、2.1定理及2.2开头",
+        "method_evidence": "控制插值导数，避免对协方差结构敏感，并推广至bootstrap与高斯比较。",
+        "result_evidence": "作者在独立同分布、各分量次高斯且方差非零下给出CB log³(pn)log(n)/√n型界，允许奇异总体协方差。",
+        "conditions_evidence": "保留尾部、独立性及方差条件，不适用于任意重尾数据；证明未完整审计。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17947",
+      "title": "A narrow band method for non-causal discretizations of anisotropic eikonal equations, with adaptive width, sub-and super-solution construction, and quasi-linear complexity",
+      "title_zh": "非因果各向异性程函离散的自适应窄带算法",
+      "authors": [
+        "Mirebeau, Jean-Marie",
+        "Mouheb, Yanis"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17947v1",
+      "original_url": "https://arxiv.org/abs/2611.17947v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "math.NA",
+      "canonical_primary_category": "math.NA",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.NA"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17947v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "机构未核实；摘要页未提供作者职务与研究方向"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Mirebeau, Jean-Marie、Mouheb, Yanis。机构未核实；摘要页未提供作者职务与研究方向",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17947v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "所读材料未核实代码链接。",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "摘要级解读。作者为各向异性程函方程及部分非凸Hamilton–Jacobi方程提出无需快速行进法因果性质的窄带法，同时构造数值下解和上解，按两者差异调整带宽。论文给定容差下的终止误差控制及O(N|lnε|ln(N/ε))最坏复杂度，并提供数值实验。常数依赖离散格式性质，结果不等于任意PDE统一快速求解；摘要中的上下解符号排版需全文确认，未独立复现实验。",
+      "why_selected": "无需因果离散化的自适应窄带同时构造上下解并给准线性复杂度，方法适用广且误差可控，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17947v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读；未阅读正文，未独立验证作者结果。",
+      "problem": "不满足快速行进因果性质的程函与部分Hamilton–Jacobi方程如何自适应窄带求解？",
+      "method": "同步构造数值上下解，以二者差异控制带宽和终止。",
+      "result": "作者给出容差误差控制与O(N|lnε|ln(N/ε))最坏复杂度，并报告数值实验。",
+      "limitations": "摘要级解读；HTML不可用，上下解排版需进一步全文核实；复杂度常数依赖离散格式，不是任意PDE保证。"
+    },
+    {
+      "id": "arxiv-2611.17951",
+      "title": "Parameterized Approximation for Minimizing Uncovered Elements and Unsatisfied Constraints",
+      "title_zh": "最小未覆盖元素与未满足约束的参数化近似",
+      "authors": [
+        "Rudranarayan Kar",
+        "Souvik Saha",
+        "Abhishek Sahu"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17951v1",
+      "original_url": "https://arxiv.org/abs/2611.17951v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.DS"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17951v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Rudranarayan Kar、Abhishek Sahu署名NISER计算机科学学院；Souvik Saha署名Chennai Mathematical Institute。未核实职务。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.17951v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Rudranarayan Kar、Souvik Saha、Abhishek Sahu。Rudranarayan Kar、Abhishek Sahu署名NISER计算机科学学院；Souvik Saha署名Chennai Mathematical Institute。未核实职务。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17951v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.17951v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读部分未确认本工作代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "在只能选择少量集合或置真少量变量时，怎样最小化剩余错误？基于全零解比较和高权重变量分支，并用着色编码处理小集合覆盖。作者给出有界元数CSP确定性(1+ε)近似，时间为(dk/ε)^{O(k)}N^{O(1)}；另以条件困难性划出不可近似区域。正面保证依赖元数等限制；负面结果假设FPT不等于W[1]，不能解释为一般问题绝对不可解。",
+      "why_selected": "有界元数约束满足给出参数化近似算法并配套条件困难性，正反结果共同刻画可解边界，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17951v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "在只能选择少量集合或置真少量变量时，怎样最小化剩余错误？",
+      "method": "基于全零解比较和高权重变量分支，并用着色编码处理小集合覆盖。",
+      "result": "作者给出有界元数CSP确定性(1+ε)近似，时间为(dk/ε)^{O(k)}N^{O(1)}；另以条件困难性划出不可近似区域。",
+      "limitations": "正面保证依赖元数等限制；负面结果假设FPT不等于W[1]，不能解释为一般问题绝对不可解。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.17951v1"
+        ],
+        "scope": "首页、摘要、引言结果概述及第3节算法思路；未完整审计证明、未独立复现",
+        "method_evidence": "基于全零解比较和高权重变量分支，并用着色编码处理小集合覆盖。",
+        "result_evidence": "作者给出有界元数CSP确定性(1+ε)近似，时间为(dk/ε)^{O(k)}N^{O(1)}；另以条件困难性划出不可近似区域。",
+        "conditions_evidence": "正面保证依赖元数等限制；负面结果假设FPT不等于W[1]，不能解释为一般问题绝对不可解。"
+      }
+    },
+    {
+      "id": "arxiv-2611.17999",
+      "title": "Additive cubes are avoidable over $\\{0,1,2,3\\}$, $\\{0,1,4\\}$ and $\\{0,2,5\\}$",
+      "title_zh": "在若干小整数集合上避免加性立方",
+      "authors": [
+        "Damien Jamet",
+        "Matthieu Rosenfeld"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.17999v1",
+      "original_url": "https://arxiv.org/abs/2611.17999v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "math.CO",
+      "canonical_primary_category": "math.CO",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "cs.DM",
+        "cs.FL"
+      ],
+      "arxiv_categories": [
+        "math.CO",
+        "cs.DM",
+        "cs.FL"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.17999v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Damien Jamet署名Université de Lorraine/LORIA；Matthieu Rosenfeld署名法属波利尼西亚大学GAATI实验室。未核实职务。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.17999v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Damien Jamet、Matthieu Rosenfeld。Damien Jamet署名Université de Lorraine/LORIA；Matthieu Rosenfeld署名法属波利尼西亚大学GAATI实验室。未核实职务。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.17999v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.17999v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读部分未确认本工作代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "能否构造不出现三个连续等长且元素和相等块的无限词？把态射像中的加性立方检索约化为有限图遍历，给出八个显式候选。作者主张在{0,1,2,3}上解决1994年提出的问题；正文描述78,340个可达顶点的计算核验。这是预印本作者主张；尚未独立执行代码或审计证明。正文部分谱常数以浮点计算后上调，不能称为全部精确机器证明。",
+      "why_selected": "加性立方避免构造结合有限图约化与显式态射回应既有问题，结果可明确陈述，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.17999v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "能否构造不出现三个连续等长且元素和相等块的无限词？",
+      "method": "把态射像中的加性立方检索约化为有限图遍历，给出八个显式候选。",
+      "result": "作者主张在{0,1,2,3}上解决1994年提出的问题；正文描述78,340个可达顶点的计算核验。",
+      "limitations": "这是预印本作者主张；尚未独立执行代码或审计证明。正文部分谱常数以浮点计算后上调，不能称为全部精确机器证明。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.17999v1"
+        ],
+        "scope": "首页、摘要、第1节约化定理及第6节计算过程；未完整审计证明、未独立复现",
+        "method_evidence": "把态射像中的加性立方检索约化为有限图遍历，给出八个显式候选。",
+        "result_evidence": "作者主张在{0,1,2,3}上解决1994年提出的问题；正文描述78,340个可达顶点的计算核验。",
+        "conditions_evidence": "这是预印本作者主张；尚未独立执行代码或审计证明。正文部分谱常数以浮点计算后上调，不能称为全部精确机器证明。"
+      }
+    },
+    {
+      "id": "arxiv-2611.18028",
+      "title": "Long rational and Gaussian integer multiplication",
+      "title_zh": "长普通整数与高斯整数乘法",
+      "authors": [
+        "Yuval Spiizer",
+        "Raphael S. Steiner"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18028v1",
+      "original_url": "https://arxiv.org/abs/2611.18028v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "math.NT"
+      ],
+      "arxiv_categories": [
+        "cs.DS",
+        "math.NT"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18028v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Yuval Spiizer署名Tel Aviv University；Raphael S. Steiner署名Huawei Zurich Research Center Computing Systems Lab。未核实职务。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.18028v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Yuval Spiizer、Raphael S. Steiner。Yuval Spiizer署名Tel Aviv University；Raphael S. Steiner署名Huawei Zurich Research Center Computing Systems Lab。未核实职务。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18028v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.18028v1"
+      ],
+      "code_urls": [
+        "https://github.com/huawei-csl/gaussian-toom-cook"
+      ],
+      "code_status": "仅抄录所读arXiv正文提供链接，未访问外站核查",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "能否借助更丰富的数域降低长整数乘法的实际代价？反转通常的归约方向，把普通整数Toom–Cook乘法转到高斯整数，利用插值点与代数对称性。作者提供C与汇编实现，并报告相对GMP最高29%的加速。收益属于所测Toom–Cook范围和机器，不能推广为任意长度或新的最优渐近复杂度；尚未独立复现。",
+      "why_selected": "以高斯整数反向构造Toom–Cook乘法并报告GMP比较，基础算法复用性强，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18028v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "能否借助更丰富的数域降低长整数乘法的实际代价？",
+      "method": "反转通常的归约方向，把普通整数Toom–Cook乘法转到高斯整数，利用插值点与代数对称性。",
+      "result": "作者提供C与汇编实现，并报告相对GMP最高29%的加速。",
+      "limitations": "收益属于所测Toom–Cook范围和机器，不能推广为任意长度或新的最优渐近复杂度；尚未独立复现。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.18028v1"
+        ],
+        "scope": "首页、摘要、引言及第8.1节实现、第9节讨论；未完整审计证明、未独立复现",
+        "method_evidence": "反转通常的归约方向，把普通整数Toom–Cook乘法转到高斯整数，利用插值点与代数对称性。",
+        "result_evidence": "作者提供C与汇编实现，并报告相对GMP最高29%的加速。",
+        "conditions_evidence": "收益属于所测Toom–Cook范围和机器，不能推广为任意长度或新的最优渐近复杂度；尚未独立复现。"
+      }
+    },
+    {
+      "id": "arxiv-2611.18036",
+      "title": "C-to-Rust Translation Validation at the LLVM IR Level via AI-Assisted Refinement Proof",
+      "title_zh": "通过AI辅助精化证明在LLVM层验证C到Rust翻译",
+      "authors": [
+        "Eunsu Kim",
+        "Sukyoung Ryu",
+        "Jaemin Hong"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18036v1",
+      "original_url": "https://arxiv.org/abs/2611.18036v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "cs.PL",
+      "canonical_primary_category": "cs.PL",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.PL"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18036v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Eunsu Kim、Sukyoung Ryu署名KAIST；Jaemin Hong署名UNIST。未核实职务。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.18036v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Eunsu Kim、Sukyoung Ryu、Jaemin Hong。Eunsu Kim、Sukyoung Ryu署名KAIST；Jaemin Hong署名UNIST。未核实职务。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18036v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.18036v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读部分未确认本工作代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "如何证明迁移后的程序不引入原C程序没有的行为？把两端编译到LLVM IR，以共同抽象关联数据表示，再让AI构造由Rocq检查的精化证明。作者验证519个翻译中的486个；正文报告26个反例和7个不支持案例，摘要突出其中现有工具未发现的3个错误。证明信任底包括Rocq、语义、解析器及库规格；基准平均仅13.3行，输入限制人工确定，不等于完整大型工程迁移认证。",
+      "why_selected": "C到Rust翻译由小可信证明检查链验证，明确区分AI生成与验证，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18036v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "如何证明迁移后的程序不引入原C程序没有的行为？",
+      "method": "把两端编译到LLVM IR，以共同抽象关联数据表示，再让AI构造由Rocq检查的精化证明。",
+      "result": "作者验证519个翻译中的486个；正文报告26个反例和7个不支持案例，摘要突出其中现有工具未发现的3个错误。",
+      "limitations": "证明信任底包括Rocq、语义、解析器及库规格；基准平均仅13.3行，输入限制人工确定，不等于完整大型工程迁移认证。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.18036v1"
+        ],
+        "scope": "首页、摘要、第4.1节及第7.1—7.2.1节；未完整审计证明、未独立复现",
+        "method_evidence": "把两端编译到LLVM IR，以共同抽象关联数据表示，再让AI构造由Rocq检查的精化证明。",
+        "result_evidence": "作者验证519个翻译中的486个；正文报告26个反例和7个不支持案例，摘要突出其中现有工具未发现的3个错误。",
+        "conditions_evidence": "证明信任底包括Rocq、语义、解析器及库规格；基准平均仅13.3行，输入限制人工确定，不等于完整大型工程迁移认证。"
+      }
+    },
+    {
+      "id": "arxiv-2611.18069",
+      "title": "Quantifying the Advantage of Coarser DPOR",
+      "title_zh": "量化更粗动态部分序归约的收益",
+      "authors": [
+        "Minjian Zhang",
+        "Rupak Majumdar",
+        "Umang Mathur",
+        "C.-H. Luke Ong"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18069v1",
+      "original_url": "https://arxiv.org/abs/2611.18069v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "cs.PL",
+      "canonical_primary_category": "cs.PL",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.PL"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18069v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Minjian Zhang、C.-H. Luke Ong署名NTU；Rupak Majumdar署名MPI-SWS；Umang Mathur署名NUS。未核实职务。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.18069v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Minjian Zhang、Rupak Majumdar、Umang Mathur、C.-H. Luke Ong。Minjian Zhang、C.-H. Luke Ong署名NTU；Rupak Majumdar署名MPI-SWS；Umang Mathur署名NUS。未核实职务。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18069v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.18069v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读部分未确认本工作代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "并发检查采用更粗执行等价关系，是否一定更快？先证明计数及比例估计的困难性，再以成对采样估计reads-from与Mazurkiewicz等价类数量。CoEst的计数估计无偏且渐近一致；作者在34个配置中以一分钟估计预算，99.4%的运行选中较快检查器。每次试验多项式界要求线程数固定；实验实现使用回溯，有限样本界依赖方差，成功率不构成所有程序保证。",
+      "why_selected": "并发部分序归约类数估计兼具困难性与无偏算法，并报告多配置验证，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18069v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "并发检查采用更粗执行等价关系，是否一定更快？",
+      "method": "先证明计数及比例估计的困难性，再以成对采样估计reads-from与Mazurkiewicz等价类数量。",
+      "result": "CoEst的计数估计无偏且渐近一致；作者在34个配置中以一分钟估计预算，99.4%的运行选中较快检查器。",
+      "limitations": "每次试验多项式界要求线程数固定；实验实现使用回溯，有限样本界依赖方差，成功率不构成所有程序保证。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.18069v1"
+        ],
+        "scope": "首页、摘要、第6.1节实验协议及附录J有限样本分析；未完整审计证明、未独立复现",
+        "method_evidence": "先证明计数及比例估计的困难性，再以成对采样估计reads-from与Mazurkiewicz等价类数量。",
+        "result_evidence": "CoEst的计数估计无偏且渐近一致；作者在34个配置中以一分钟估计预算，99.4%的运行选中较快检查器。",
+        "conditions_evidence": "每次试验多项式界要求线程数固定；实验实现使用回溯，有限样本界依赖方差，成功率不构成所有程序保证。"
+      }
+    },
+    {
+      "id": "arxiv-2611.18124",
+      "title": "Muon Attains $\\mathcal{O}(\\varepsilon^{-3})$ Iteration Complexity under Shuffling",
+      "title_zh": "Muon在无放回遍历下达到O(ε⁻³)迭代复杂度",
+      "authors": [
+        "Kun Huang",
+        "Shi Pu",
+        "Karl Henrik Johansson"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18124v1",
+      "original_url": "https://arxiv.org/abs/2611.18124v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "math.OC",
+      "canonical_primary_category": "math.OC",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "cs.LG"
+      ],
+      "arxiv_categories": [
+        "math.OC",
+        "cs.LG"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18124v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Kun Huang、Karl Henrik Johansson署名KTH及Digital Futures；Shi Pu署名香港中文大学（深圳）数据科学学院。未核实职务。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.18124v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Kun Huang、Shi Pu、Karl Henrik Johansson。Kun Huang、Karl Henrik Johansson署名KTH及Digital Futures；Shi Pu署名香港中文大学（深圳）数据科学学院。未核实职务。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18124v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.18124v1"
+      ],
+      "code_urls": [],
+      "code_status": "所读部分未确认本工作代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "常用的无放回数据遍历如何影响Muon收敛？分析精确极分解更新与任意排列序列，并构造固定动量失效的光滑凸反例。作者得到寻找ε驻点的O(ε⁻³)界，同时证明固定β无法对任意样本规模保证驻点收敛。保证依赖光滑、目标下界和梯度增长条件，β需随问题调整；精确极映射不等于实际有限步Newton–Schulz近似。",
+      "why_selected": "Muon随机重排的收敛条件与固定动量反例并列，能防止误用理论保证，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18124v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "常用的无放回数据遍历如何影响Muon收敛？",
+      "method": "分析精确极分解更新与任意排列序列，并构造固定动量失效的光滑凸反例。",
+      "result": "作者得到寻找ε驻点的O(ε⁻³)界，同时证明固定β无法对任意样本规模保证驻点收敛。",
+      "limitations": "保证依赖光滑、目标下界和梯度增长条件，β需随问题调整；精确极映射不等于实际有限步Newton–Schulz近似。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.18124v1"
+        ],
+        "scope": "首页、摘要、引言及第2.1—2.2节假设与算法；未完整审计证明、未独立复现",
+        "method_evidence": "分析精确极分解更新与任意排列序列，并构造固定动量失效的光滑凸反例。",
+        "result_evidence": "作者得到寻找ε驻点的O(ε⁻³)界，同时证明固定β无法对任意样本规模保证驻点收敛。",
+        "conditions_evidence": "保证依赖光滑、目标下界和梯度增长条件，β需随问题调整；精确极映射不等于实际有限步Newton–Schulz近似。"
+      }
+    },
+    {
+      "id": "arxiv-2611.18133",
+      "title": "Forget the Lineage: Forward-Secure, Lineage-Complete Cryptographic Erasure for LLM-Agent Memory",
+      "title_zh": "遗忘整个衍生链：LLM记忆的前向安全密码学擦除",
+      "authors": [
+        "Yulliwas Ameur",
+        "Billal Mokhtari",
+        "Samia Bouzefrane"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18133v1",
+      "original_url": "https://arxiv.org/abs/2611.18133v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "cs.CR",
+      "canonical_primary_category": "cs.CR",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.CR"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18133v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Yulliwas Ameur署名Efrei Research Lab和Cnam Cédric；Billal Mokhtari、Samia Bouzefrane署名Cnam Cédric。未核实职务。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.18133v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Yulliwas Ameur、Billal Mokhtari、Samia Bouzefrane。Yulliwas Ameur署名Efrei Research Lab和Cnam Cédric；Billal Mokhtari、Samia Bouzefrane署名Cnam Cédric。未核实职务。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18133v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.18133v1"
+      ],
+      "code_urls": [
+        "https://github.com/yulliwasameur/linera"
+      ],
+      "code_status": "仅抄录所读arXiv正文提供链接，未访问外站核查",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "删除原消息后，如何同时保护摘要、事实和备份中的衍生信息？LinEra用可穿孔伪随机函数和父子密钥依赖图，使源密钥被撤销后后代密文也不可读。作者给出安全证明并报告十段对话中遗忘秘密未被恢复；小上下文写入降低附带删除范围。要求记录写入器看过的完整输入；不覆盖遗忘瞬间内存、运行侧信道或模型权重，图形状仍泄露，实验不等于无条件安全。",
+      "why_selected": "沿信息谱系的密码学遗忘把删除语义与后续记忆联系，并披露附带删除代价，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18133v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "删除原消息后，如何同时保护摘要、事实和备份中的衍生信息？",
+      "method": "LinEra用可穿孔伪随机函数和父子密钥依赖图，使源密钥被撤销后后代密文也不可读。",
+      "result": "作者给出安全证明并报告十段对话中遗忘秘密未被恢复；小上下文写入降低附带删除范围。",
+      "limitations": "要求记录写入器看过的完整输入；不覆盖遗忘瞬间内存、运行侧信道或模型权重，图形状仍泄露，实验不等于无条件安全。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.18133v1"
+        ],
+        "scope": "首页、摘要、引言、第4.3—4.4节威胁模型及第9节局限；未完整审计证明、未独立复现",
+        "method_evidence": "LinEra用可穿孔伪随机函数和父子密钥依赖图，使源密钥被撤销后后代密文也不可读。",
+        "result_evidence": "作者给出安全证明并报告十段对话中遗忘秘密未被恢复；小上下文写入降低附带删除范围。",
+        "conditions_evidence": "要求记录写入器看过的完整输入；不覆盖遗忘瞬间内存、运行侧信道或模型权重，图形状仍泄露，实验不等于无条件安全。"
+      }
+    },
+    {
+      "id": "arxiv-2611.18148",
+      "title": "Certificate-Based Verification of Pulsed Field Ablation Models",
+      "title_zh": "脉冲电场消融模型的证书式数值验证",
+      "authors": [
+        "Konstantinos Dovelos"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18148v1",
+      "original_url": "https://arxiv.org/abs/2611.18148v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立确认同行评审",
+      "primary_category": "cs.CE",
+      "canonical_primary_category": "cs.CE",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "math.NA",
+        "physics.med-ph"
+      ],
+      "arxiv_categories": [
+        "cs.CE",
+        "math.NA",
+        "physics.med-ph"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18148v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Konstantinos Dovelos署名Dovelos Engineering。机构与姓名来自论文，未核实职务及其他背景。"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.18148v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Konstantinos Dovelos。Konstantinos Dovelos署名Dovelos Engineering。机构与姓名来自论文，未核实职务及其他背景。",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18148v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.18148v1"
+      ],
+      "code_urls": [
+        "https://github.com/kostisdov/certsim"
+      ],
+      "code_status": "仅抄录所读arXiv正文提供链接，未访问外站核查",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "怎样确认单次电场模拟真正解对了指定物理方程？让不可信求解器提交势与守恒电流，独立检查器以超圆定理和球算术计算双侧误差界。作者给出阻抗与分块均方根场界；指定电压阈值下深度为3.50—3.75毫米，检查耗时约求解的十分之一。界仅认证给定轴对称线性准静态模型；不证明真实组织疗效，检查器及规格也未完成形式化验证。",
+      "why_selected": "独立证书给出单次物理模型求解的严格数值界，明确区别数值正确与真实模型有效，具有可复用验证价值，优先深入。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18148v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "怎样确认单次电场模拟真正解对了指定物理方程？",
+      "method": "让不可信求解器提交势与守恒电流，独立检查器以超圆定理和球算术计算双侧误差界。",
+      "result": "作者给出阻抗与分块均方根场界；指定电压阈值下深度为3.50—3.75毫米，检查耗时约求解的十分之一。",
+      "limitations": "界仅认证给定轴对称线性准静态模型；不证明真实组织疗效，检查器及规格也未完成形式化验证。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.18148v1"
+        ],
+        "scope": "首页、摘要及第7.1、7.4节可信边界与局限；未完整审计证明、未独立复现",
+        "method_evidence": "让不可信求解器提交势与守恒电流，独立检查器以超圆定理和球算术计算双侧误差界。",
+        "result_evidence": "作者给出阻抗与分块均方根场界；指定电压阈值下深度为3.50—3.75毫米，检查耗时约求解的十分之一。",
+        "conditions_evidence": "界仅认证给定轴对称线性准静态模型；不证明真实组织疗效，检查器及规格也未完成形式化验证。"
+      }
+    },
+    {
+      "id": "arxiv-2611.18258",
+      "title": "Equivariant resolution of singularities for $T$-varieties in positive characteristic",
+      "title_zh": "正特征下T簇的等变奇点消解",
+      "authors": [
+        "Martínez-Núnez, Gary"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18258v1",
+      "original_url": "https://arxiv.org/abs/2611.18258v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "math.AG",
+      "canonical_primary_category": "math.AG",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "math.AG"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18258v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "未核实；官方摘要页未披露机构及职务"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Martínez-Núnez, Gary。未核实；官方摘要页未披露机构及职务",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18258v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "未在已读材料中发现公开代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "作者在环面一般轨道余维至多3的条件下，构造与环面作用兼容的奇点消解。",
+      "why_selected": "在长期困难问题的明确子类给出可复用构造，并清楚界定适用范围。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18258v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读；未阅读正文，未独立验证作者结果。",
+      "problem": "正特征代数几何中，如何在保留环面对称性的同时消除奇点？",
+      "method": "结合多面体除子、扇结构、低维对数消解与环面型消解，把问题归约到受控低维几何。",
+      "result": "论文声称对代数闭正特征域上一般环面轨道余维不超过3的T簇实现等变消解。",
+      "limitations": "这不是任意维正特征奇点消解的一般解答；核心余维约束不可删除。本文为摘要级解读，未独立审计证明。"
+    },
+    {
+      "id": "arxiv-2611.18262",
+      "title": "Exact-Quota Facility Location: A Transfer Framework and Three Approximation Guarantees",
+      "title_zh": "精确配额设施选址的近似算法",
+      "authors": [
+        "Luo, Hang"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18262v1",
+      "original_url": "https://arxiv.org/abs/2611.18262v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.DS"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18262v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "未核实；官方摘要页未披露机构及职务"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Luo, Hang。未核实；官方摘要页未披露机构及职务",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18262v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "未在已读材料中发现公开代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "设施必须恰好满足指定配额时，作者给出多类选址问题的近似保证与转移框架。",
+      "why_selected": "严格配额是有实际含义的约束，算法转移和显式常数使理论贡献易于比较。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18262v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读；未阅读正文，未独立验证作者结果。",
+      "problem": "配额必须精确满足而不是允许超额时，怎样兼顾设施开启成本和服务成本？",
+      "method": "控制排序前缀的配额亏缺，利用超模阈值覆盖的贪心策略，并预先支付少数高成本设施；以有理数证书验证参数界。",
+      "result": "作者给出多项式算法：度量设施选址比率571/376（小于1.52），优先级版本小于1.853，平方距离版本小于2.17。",
+      "limitations": "不同目标对应不同保证，不能互换；近似比为最坏情况理论界而非实测节省。摘要级阅读，未运行实现或检查证书。"
+    },
+    {
+      "id": "arxiv-2611.18269",
+      "title": "Inverse energy transfer for 2D Navier--Stokes near a self-similar vortex collapse",
+      "title_zh": "三涡自相似坍缩附近的二维Navier–Stokes逆向能量传递",
+      "authors": [
+        "Nguyen, Trinh T."
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18269v1",
+      "original_url": "https://arxiv.org/abs/2611.18269v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "math.AP",
+      "canonical_primary_category": "math.AP",
+      "arxiv_group": "math",
+      "arxiv_archive": "math",
+      "cross_categories": [
+        "math-ph"
+      ],
+      "arxiv_categories": [
+        "math.AP",
+        "math-ph"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18269v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/math",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "未核实；官方摘要页未披露机构及职务"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Nguyen, Trinh T.。未核实；官方摘要页未披露机构及职务",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18269v1",
+        "https://rss.arxiv.org/rss/math"
+      ],
+      "code_urls": [],
+      "code_status": "未在已读材料中发现公开代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "作者研究黏性趋零时，二维涡流如何在缩短的时间区间把能量从高频传向低频。",
+      "why_selected": "将常见流体直觉转化为明确可分析构造，且极限与误差边界是结果的重要组成。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18269v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读；未阅读正文，未独立验证作者结果。",
+      "problem": "能否在具体二维Navier–Stokes演化中严格刻画正的高频到低频能量转移？",
+      "method": "围绕自相似三涡坍缩构造并分析流场，控制频率截断误差和黏性趋零的极限。",
+      "result": "论文声称在收缩时间区间中存在正的净逆向能量转移，且不同截断下得到一致正极限并有统一误差控制。",
+      "limitations": "特定涡构造与极限结果不等同于一般湍流谱律，也不是Navier–Stokes一般光滑性问题的解决；未完整证明审计。"
+    },
+    {
+      "id": "arxiv-2611.18463",
+      "title": "VellSSLH: Sound Type-Guided Selective Speculative Load Hardening for LLVM IR",
+      "title_zh": "LLVM层的类型指导选择性推测执行加固",
+      "authors": [
+        "Priya, Swarn"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18463v1",
+      "original_url": "https://arxiv.org/abs/2611.18463v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "cs.CR",
+      "canonical_primary_category": "cs.CR",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.CR"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18463v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Swarn Priya署名华盛顿州立大学；职务未核实"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.18463v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Priya, Swarn。Swarn Priya署名华盛顿州立大学；职务未核实",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18463v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.18463v1"
+      ],
+      "code_urls": [],
+      "code_status": "作者声明研究制品将在论文接受后公开；当前已读材料未给可用制品链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "作者以形式化类型检查减少推测执行防护的冗余成本，同时明确机器码安全仍依赖后端和硬件。",
+      "why_selected": "形式化安全与真实成本比较结合，并主动说明证明层级和未覆盖部分，具有可复用性。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18463v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "如何在防止常数时间密码程序的推测执行泄漏时，避免对所有值都施加昂贵防护？",
+      "method": "在LLVM IR推测语义下跟踪公共与秘密数据，选择性插入加固，并用从Rocq提取的检查器验证；涵盖SSA、poison、指针来源与可观察异常。",
+      "result": "作者证明检查通过程序满足推测常数时间安全，参考变换保持架构行为；24个密码条目上，较LLVM SLH的几何平均运行时间低4.03%，X25519低22.69%。 正文说明与Ultimate SLH的19.65%运行时间差还涉及LLVM版本及实验批次差异，不是完全同条件算法比较。",
+      "limitations": "优化变体重新检查安全但不在行为保持证明内；保证止于LLVM IR，后端及硬件需另加假设。前向模型不含回滚、间接分支攻击、存储绕过和其他计时通道；标量片段排除SIMD等。24例中13更快、8更慢、3不确定；仅一台Intel主机，不是完整生产密码库比较。未运行形式检查或基准。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.18463v1"
+        ],
+        "scope": "HTML首页署名、完整摘要、引言与贡献段、第9节局限及数据可用性声明",
+        "method_evidence": "在LLVM IR推测语义下跟踪公共与秘密数据，选择性插入加固，并用从Rocq提取的检查器验证；涵盖SSA、poison、指针来源与可观察异常。",
+        "result_evidence": "作者证明检查通过程序满足推测常数时间安全，参考变换保持架构行为；24个密码条目上，较LLVM SLH的几何平均运行时间低4.03%，X25519低22.69%。 正文说明与Ultimate SLH的19.65%运行时间差还涉及LLVM版本及实验批次差异，不是完全同条件算法比较。",
+        "conditions_evidence": "优化变体重新检查安全但不在行为保持证明内；保证止于LLVM IR，后端及硬件需另加假设。前向模型不含回滚、间接分支攻击、存储绕过和其他计时通道；标量片段排除SIMD等。24例中13更快、8更慢、3不确定；仅一台Intel主机，不是完整生产密码库比较。未运行形式检查或基准。"
+      }
+    },
+    {
+      "id": "arxiv-2611.18498",
+      "title": "A Common Improved Bound for Asymmetric TSP and Path TSP",
+      "title_zh": "非对称旅行商及路径问题的共同改进近似界",
+      "authors": [
+        "Hajiaghayi, MohammadTaghi",
+        "Yun, Changki"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18498v1",
+      "original_url": "https://arxiv.org/abs/2611.18498v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.DS"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18498v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "未核实；官方摘要页未披露机构及职务"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Hajiaghayi, MohammadTaghi、Yun, Changki。未核实；官方摘要页未披露机构及职务",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18498v1",
+        "https://rss.arxiv.org/rss/cs"
+      ],
+      "code_urls": [],
+      "code_status": "未在已读材料中发现公开代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "作者给两个经典路线优化问题提供约12.2604的统一最坏情况保证。",
+      "why_selected": "在基础组合优化问题给出显式、可比的统一近似常数与松弛积分间隙上界。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18498v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读；未阅读正文，未独立验证作者结果。",
+      "problem": "如何进一步缩小非对称旅行商与非对称路径旅行商的多项式可解近似差距？",
+      "method": "增强层状框架中的子巡回覆盖和递归增广，联合计入收缩区域内路径成本与对偶质量，并比较互补的初始路径完成界。",
+      "result": "对固定ε>0，两个问题都获得R*+ε近似，其中R*=6+√2+√(15+6√2)≈12.2604；相对子巡回松弛也成立。摘要将其与先前低于14.7和15的保证比较。",
+      "limitations": "是理论最坏情况界，不表示实际路线长度必然改善同样比例；前作比较依据本文摘要，未独立审计新旧证明。"
+    },
+    {
+      "id": "arxiv-2611.18542",
+      "title": "Elliptic Sampling: Optimal Interpolant Schedules for Gaussians and Beyond",
+      "title_zh": "椭圆采样：高斯分布的最优插值日程及推广",
+      "authors": [
+        "Becker, Cole",
+        "Kargin, Taylan",
+        "Hassibi, Kimia",
+        "Ozdaglar, Asuman",
+        "Parrilo, Pablo A."
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18542v1",
+      "original_url": "https://arxiv.org/abs/2611.18542v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "stat.ML",
+      "canonical_primary_category": "stat.ML",
+      "arxiv_group": "stat",
+      "arxiv_archive": "stat",
+      "cross_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18542v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/stat",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "未核实；官方摘要页未披露机构及职务"
+      ],
+      "affiliation_sources": [],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Becker, Cole、Kargin, Taylan、Hassibi, Kimia、Ozdaglar, Asuman、Parrilo, Pablo A.。未核实；官方摘要页未披露机构及职务",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18542v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://rss.arxiv.org/rss/stat"
+      ],
+      "code_urls": [],
+      "code_status": "未在已读材料中发现公开代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "作者用复解析与有理逼近设计生成采样日程，在高斯目标上获得特定算法类中的最优查询界。",
+      "why_selected": "把日程设计与离散误差统一，明确最优性所在模型，且与常用生成采样相关。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18542v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "abstract",
+      "reading_note": "摘要级解读；未阅读正文，未独立验证作者结果。",
+      "problem": "生成模型的插值日程和ODE离散应怎样共同设计，才能减少采样所需的得分函数调用？",
+      "method": "通过复化轨迹解析性和保角映射构造Jacobi椭圆日程，再结合Zolotarev最优有理逼近形成Zoloflow。",
+      "result": "高斯目标、精确得分访问下，达到Θ(logκ·log(√d/ε))查询的总变差误差ε，并在oblivious score-span算法类中minimax最优；对数凹推广给出约√d乘多对数的得分调用界。",
+      "limitations": "κ为目标条件数，理论需精确得分及指定目标/算法类；一般非对数凹实验不自动继承最优保证。摘要级，未复现采样。 高斯结论使用总变差误差，对数凹推广使用2-Wasserstein误差，两者不能互换。"
+    },
+    {
+      "id": "arxiv-2611.18544",
+      "title": "Tight Bounds for k-Median++ and Improved Bounds for k-Means++",
+      "title_zh": "k-Median++紧界与k-Means++改进界",
+      "authors": [
+        "Kaplan, Haim",
+        "Naori, David"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18544v1",
+      "original_url": "https://arxiv.org/abs/2611.18544v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [],
+      "arxiv_categories": [
+        "cs.DS"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18544v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Haim Kaplan与David Naori署名特拉维夫大学Blavatnik计算机科学与人工智能学院；职务未核实"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.18544v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Kaplan, Haim、Naori, David。Haim Kaplan与David Naori署名特拉维夫大学Blavatnik计算机科学与人工智能学院；职务未核实",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18544v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.18544v1"
+      ],
+      "code_urls": [],
+      "code_status": "未在已读材料中发现公开代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "作者重新分析常用聚类初始化，揭示多抽取少量中心即可带来的理论收益。",
+      "why_selected": "广泛使用算法的基础保证得到清晰改进，并给出额外资源与理论质量之间的可计算关系。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18544v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "D幂采样在抽取k+Δ个中心时，相比最优k中心到底差多少？",
+      "method": "对任意距离指数ℓ>0、中心数k与额外中心数Δ建立统一双标准分析，并构造匹配下界。",
+      "result": "一般度量k-median无额外中心的精确比率为2(1+H(k−1))，所有Δ有紧界；欧氏情形无额外中心同样紧。额外一个中心带来Θ(log log k)加性改善。欧氏k-means无额外中心上界为(1+黄金比)(1+H(k−1))；多10%中心保证5.7，作者引述前界25.9。",
+      "limitations": "一般度量k-median的所有Δ紧界不能推广为欧氏k-median在Δ>0也紧：正文明确该情形仍有差距。k-means只有改进上界，非全部k的精确比率。这些是期望近似成本保证而非聚类准确率；未审计完整证明。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.18544v1"
+        ],
+        "scope": "HTML首页、完整摘要、引言与1.1主要结果及表1",
+        "method_evidence": "对任意距离指数ℓ>0、中心数k与额外中心数Δ建立统一双标准分析，并构造匹配下界。",
+        "result_evidence": "一般度量k-median无额外中心的精确比率为2(1+H(k−1))，所有Δ有紧界；欧氏情形无额外中心同样紧。额外一个中心带来Θ(log log k)加性改善。欧氏k-means无额外中心上界为(1+黄金比)(1+H(k−1))；多10%中心保证5.7，作者引述前界25.9。",
+        "conditions_evidence": "一般度量k-median的所有Δ紧界不能推广为欧氏k-median在Δ>0也紧：正文明确该情形仍有差距。k-means只有改进上界，非全部k的精确比率。这些是期望近似成本保证而非聚类准确率；未审计完整证明。"
+      }
+    },
+    {
+      "id": "arxiv-2611.18545",
+      "title": "From smoothed analysis to backward error: The power of adaptive perturbations",
+      "title_zh": "从平滑分析到后向误差：自适应扰动的力量",
+      "authors": [
+        "Dereziński, Michał",
+        "Mahoney, Michael W.",
+        "Meyer, Raphael A.",
+        "Musco, Christopher"
+      ],
+      "version": 1,
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2611.18545v1",
+      "original_url": "https://arxiv.org/abs/2611.18545v1",
+      "first_date": "2026-11-16",
+      "first_date_kind": "announcement",
+      "updated_date": null,
+      "announcement_date": "2026-11-16",
+      "submission_date": "2026-11-13",
+      "publication_status": "arXiv预印本；未独立核实同行评审状态",
+      "primary_category": "cs.DS",
+      "canonical_primary_category": "cs.DS",
+      "arxiv_group": "cs",
+      "arxiv_archive": "cs",
+      "cross_categories": [
+        "math.NA"
+      ],
+      "arxiv_categories": [
+        "cs.DS",
+        "math.NA"
+      ],
+      "category_evidence": {
+        "method": "official_primary_subject",
+        "source_urls": [
+          "https://arxiv.org/abs/2611.18545v1"
+        ],
+        "selector": ".primary-subject"
+      },
+      "public_at": "2026-11-16T05:00:00Z",
+      "public_time_source": "https://rss.arxiv.org/rss/cs",
+      "public_time_precision": "rss_batch_timestamp",
+      "date_note": "时间为arXiv官方RSS首次公告批次，非独立测得的逐篇首次可访问时刻；提交日期不代替公告日期。",
+      "eligibility": "confirmed",
+      "selection_stage": "full_inventory_abstract_screening",
+      "selection_evidence_limit": "按所读arXiv材料的贡献、方法、条件和证据作编辑选择；未独立复现实验或完整审计证明。",
+      "author_institutions": [
+        "Michał Dereziński署名密歇根大学；Michael W. Mahoney与Raphael A. Meyer署名加州大学伯克利分校、ICSI、LBNL；Christopher Musco署名纽约大学。职务未核实"
+      ],
+      "affiliation_sources": [
+        "https://arxiv.org/html/2611.18545v1"
+      ],
+      "affiliation_note": "机构按所读署名；未核实者明确标注，职务和个人研究方向不作推断。",
+      "author_intro": "作者：Dereziński, Michał、Mahoney, Michael W.、Meyer, Raphael A.、Musco, Christopher。Michał Dereziński署名密歇根大学；Michael W. Mahoney与Raphael A. Meyer署名加州大学伯克利分校、ICSI、LBNL；Christopher Musco署名纽约大学。职务未核实",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2611.18545v1",
+        "https://rss.arxiv.org/rss/cs",
+        "https://arxiv.org/html/2611.18545v1"
+      ],
+      "code_urls": [],
+      "code_status": "未在已读材料中发现公开代码链接",
+      "final_review_status": "complete",
+      "final_review_at": "2026-11-16T13:10:28.344240+00:00",
+      "overview": "解一个接近原问题的线性系统，与解随机扰动后的系统，在查询复杂度上可能相差很大。",
+      "why_selected": "明确分离两个易混淆的鲁棒性概念，并揭示自适应性、随机性和矩阵结构各自的作用。",
+      "abstract_review": {
+        "source_url": "https://arxiv.org/abs/2611.18545v1",
+        "complete_abstract_accessed": true,
+        "read_confirmed": true,
+        "scope": "完整官方摘要逐篇初筛，并核对官方摘要页元数据。"
+      },
+      "reading_depth": "partial",
+      "reading_note": "局部正文解读；未完整审计证明或独立复现。",
+      "problem": "数值分析的后向误差与理论计算机科学的平滑分析是否具有同等计算代价？",
+      "method": "在矩阵向量乘访问模型中构造算法和下界，区分随输入自适应的扰动、随机扰动和确定性求解。",
+      "result": "以已有随机自适应算法的O(log n/ε)次矩阵向量乘上界作参照，本文证明：输入无关的小扰动后求小前向误差，最坏仍需Ω(n)次；确定性通用后向误差算法也需Ω(n)次。本文另给对称系统确定性至多5/ε次算法，并有同阶下界。",
+      "limitations": "查询模型允许A及A转置的矩阵向量乘；后向误差为(A+Δ)x=b且谱范数扰动≤ε‖A‖。随机扰动下界针对分布不依赖输入、扰动后系统的小前向误差求解。上界O(log n/ε)来自所引用前作，不应归为本文新算法。未审计证明，也不等同实测墙钟加速。",
+      "substantive_review": {
+        "content_urls": [
+          "https://arxiv.org/html/2611.18545v1"
+        ],
+        "scope": "HTML首页、完整摘要、引言误差定义、第2节贡献及定理2.1至2.3",
+        "method_evidence": "在矩阵向量乘访问模型中构造算法和下界，区分随输入自适应的扰动、随机扰动和确定性求解。",
+        "result_evidence": "以已有随机自适应算法的O(log n/ε)次矩阵向量乘上界作参照，本文证明：输入无关的小扰动后求小前向误差，最坏仍需Ω(n)次；确定性通用后向误差算法也需Ω(n)次。本文另给对称系统确定性至多5/ε次算法，并有同阶下界。",
+        "conditions_evidence": "查询模型允许A及A转置的矩阵向量乘；后向误差为(A+Δ)x=b且谱范数扰动≤ε‖A‖。随机扰动下界针对分布不依赖输入、扰动后系统的小前向误差求解。上界O(log n/ε)来自所引用前作，不应归为本文新算法。未审计证明，也不等同实测墙钟加速。"
+      }
+    }
+  ],
+  "pending_papers": []
+}
