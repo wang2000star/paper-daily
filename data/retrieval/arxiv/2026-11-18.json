@@ -1,0 +1,29 @@
+{
+  "record_type": "public_coverage_summary",
+  "source_scope": "arxiv_only",
+  "date": "2026-11-18",
+  "window_start": "2026-11-18T12:00:00Z",
+  "window_end": "2026-11-19T12:00:00Z",
+  "counts": {
+    "candidate_count": 1274,
+    "abstract_screened_count": 1274,
+    "selected_count": 42,
+    "partial_text_review_count": 41,
+    "full_text_review_count": 0
+  },
+  "official_sources": [
+    "https://rss.arxiv.org/rss/cs",
+    "https://arxiv.org/list/cs/new?skip=0&show=2000",
+    "https://rss.arxiv.org/rss/math",
+    "https://arxiv.org/list/math/new?skip=0&show=2000"
+  ],
+  "limitations": [
+    "从数学与计算机科学官方新稿及交叉公告发现1274条去重记录，全部1274份完整摘要已逐篇初筛；1266条确认为本期首次公告，8条旧稿交叉公告排除，无首次公告日期待核实项。精选42篇，其中41篇局部正文阅读、1篇摘要级解读。未精选不代表论文质量低。",
+    "RSS批次时间不是逐篇独立测得的可访问时刻。",
+    "局部正文阅读仅覆盖注明章节；未完整审计证明或运行论文代码。"
+  ],
+  "pagination": {
+    "cs": "skip=0；show=2000；共1370条（839新稿、70交叉、461修订）",
+    "math": "skip=0；show=2000；共694条（383新稿、63交叉、248修订）"
+  }
+}
