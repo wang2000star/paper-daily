@@ -1,0 +1,48 @@
+{
+  "schema_version": 5,
+  "date": "2026-11-20",
+  "kind": "arXiv 日报",
+  "issue_type": "daily",
+  "generated_at": "2026-11-21T12:04:09.003040+00:00",
+  "timezone": "Etc/GMT+12",
+  "window_start": "2026-11-20T12:00:00Z",
+  "window_end": "2026-11-21T12:00:00Z",
+  "window_label": "AoE 2026-11-20 · UTC 11-20 12:00 至 11-21 12:00",
+  "window_beijing": {
+    "start": "2026-11-20T20:00:00+08:00",
+    "end": "2026-11-21T20:00:00+08:00",
+    "label": "北京时间 11 月 20 日 20:00 至 11 月 21 日 20:00（UTC+8）"
+  },
+  "source_scope": "arxiv_only",
+  "papers": [],
+  "pending_papers": [],
+  "coverage": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "url": "https://arxiv.org/",
+      "status": "本期未确认新增论文",
+      "scope": "已核对计算机科学与数学官方新公告列表及 RSS，包含列表交叉公告。",
+      "note": "本期确认新公告 0 篇，实际摘要初筛 0 篇，精选 0 篇。截止后，计算机科学和数学的官方 RSS 均无条目；官方新稿页面显示的 11 月 20 日清单对应窗口开始前的公告。本窗口没有排定的公告批次。",
+      "public_display": true
+    }
+  ],
+  "retrieval_log": "data/retrieval/arxiv/2026-11-20.json",
+  "editorial_note": "本期确认新公告 0 篇，实际摘要初筛 0 篇，精选 0 篇。截止后，计算机科学和数学的官方 RSS 均无条目；官方新稿页面显示的 11 月 20 日清单对应窗口开始前的公告。本窗口没有排定的公告批次。",
+  "screening": {
+    "status": "complete",
+    "candidate_count": 0,
+    "abstract_screened_count": 0,
+    "selected_count": 0,
+    "partial_text_review_count": 0,
+    "full_text_review_count": 0,
+    "inventory_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "screen_sha256": {},
+    "discovered_count": 0
+  },
+  "confirmed_announcement_count": 0,
+  "unconfirmed_announcement_count": 0,
+  "classification": "arxiv_official_primary",
+  "taxonomy": "data/arxiv-taxonomy.json",
+  "excluded_existing_cross_count": 0
+}

@@ -1,0 +1,101 @@
+{
+  "record_type": "public_coverage_summary",
+  "date": "2026-11-20",
+  "window_start": "2026-11-20T12:00:00Z",
+  "window_end": "2026-11-21T12:00:00Z",
+  "source_scope": "arxiv_only",
+  "counts": {
+    "candidate_count": 0,
+    "abstract_screened_count": 0,
+    "selected_count": 0,
+    "partial_text_review_count": 0,
+    "full_text_review_count": 0
+  },
+  "confirmed_announcement_count": 0,
+  "unconfirmed_announcement_count": 0,
+  "official_sources": [
+    "https://rss.arxiv.org/rss/cs",
+    "https://arxiv.org/list/cs/new?show=2000",
+    "https://rss.arxiv.org/rss/math",
+    "https://arxiv.org/list/math/new?show=2000",
+    "https://info.arxiv.org/help/availability.html"
+  ],
+  "zero_inventory_verification": {
+    "complete": true,
+    "confirmed_new_count": 0,
+    "checked_at": "2026-11-21T12:04:09.003040+00:00",
+    "official_sources": [
+      {
+        "url": "https://rss.arxiv.org/rss/cs",
+        "http_status": 200,
+        "checked_at": "2026-11-21T12:02:07.704833+00:00",
+        "sha256": "c626586f9ce5f346d3dce59b5cb3139bff93fe05e4cf2a8aae86ecb9101234fd",
+        "bytes": 880,
+        "item_count": 0,
+        "pubDate": "Sat, 21 Nov 2026 00:00:00 -0500",
+        "lastBuildDate": "Sat, 21 Nov 2026 05:00:12 +0000"
+      },
+      {
+        "url": "https://arxiv.org/list/cs/new?show=2000",
+        "http_status": 200,
+        "checked_at": "2026-11-21T12:02:05.452852+00:00",
+        "sha256": "f292c545c7c067e770410de56dc162bc64540017ddac00725d78a11a550859e2",
+        "bytes": 4306982,
+        "headings": [
+          "Showing new listings for Friday, 20 November 2026",
+          "New submissions (showing 822 of 822 entries)",
+          "Cross submissions (showing 70 of 70 entries)",
+          "Replacement submissions (showing 490 of 490 entries)"
+        ],
+        "page_entries": 1382
+      },
+      {
+        "url": "https://rss.arxiv.org/rss/math",
+        "http_status": 200,
+        "checked_at": "2026-11-21T12:02:07.708833+00:00",
+        "sha256": "fe2504a517ce0cc1f77ab761e95cc19c827ad0ca134adb8a624339275999b2b7",
+        "bytes": 888,
+        "item_count": 0,
+        "pubDate": "Sat, 21 Nov 2026 00:00:00 -0500",
+        "lastBuildDate": "Sat, 21 Nov 2026 05:00:03 +0000"
+      },
+      {
+        "url": "https://arxiv.org/list/math/new?show=2000",
+        "http_status": 200,
+        "checked_at": "2026-11-21T12:02:05.428853+00:00",
+        "sha256": "8d38a2f608fc947df389e1f690721e61155100c0cfb3ef91edea91f456b2f8c9",
+        "bytes": 1642455,
+        "headings": [
+          "Showing new listings for Friday, 20 November 2026",
+          "New submissions (showing 340 of 340 entries)",
+          "Cross submissions (showing 62 of 62 entries)",
+          "Replacement submissions (showing 272 of 272 entries)"
+        ],
+        "page_entries": 674
+      },
+      {
+        "url": "https://info.arxiv.org/help/availability.html",
+        "http_status": 200,
+        "checked_at": "2026-11-21T12:04:08.815748+00:00",
+        "sha256": "e054afc2f04462318839cc5eca7d42843dbb5161ce7a791dde2e1f586d29a990",
+        "bytes": 90929,
+        "schedule": "美东周日至周四 20:00 公告；周五和周六不公告。窗口对应美东周五 07:00 至周六 07:00。"
+      }
+    ],
+    "current_rss_items": {
+      "cs": 0,
+      "math": 0
+    },
+    "rss_are_current_dated_complete_xml": true,
+    "new_lists_are_complete_prior_batch": true,
+    "pending_boundary_items": 0
+  },
+  "limitations": [
+    "本期确认新公告 0 篇，实际摘要初筛 0 篇，精选 0 篇。截止后，计算机科学和数学的官方 RSS 均无条目；官方新稿页面显示的 11 月 20 日清单对应窗口开始前的公告。本窗口没有排定的公告批次。",
+    "结论依据截止后的官方快照，不是对每篇论文首次可访问时刻的独立监测。"
+  ],
+  "pagination": {
+    "cs": "1 页，show=2000；11 月 20 日列表共 1382 条（含修订），全部属窗口开始前的列表批次。",
+    "math": "1 页，show=2000；11 月 20 日列表共 674 条（含修订），全部属窗口开始前的列表批次。"
+  }
+}
